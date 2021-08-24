@@ -9,7 +9,7 @@
         @click="toggle"
       ></v-app-bar-nav-icon>
       <v-btn text large href="/">
-        <g-image src="~/logo-white.png" height="40" width="60" class="mr-5" />
+        <g-image src="~/assets/snowflakes-white.png" height="40" width="32" class="mr-5" />
         {{
           $static.metadata.siteName
         }}
@@ -22,7 +22,8 @@
       <v-toolbar-items class="d-none d-sm-flex">
         <v-btn text to="/">Home</v-btn>
         <v-btn text to="/about">About</v-btn>
-        <v-btn text to="/articles">Articles</v-btn>
+        <v-btn text to="/projects">Projects</v-btn>
+        <v-btn text to="/resources">Resources</v-btn>
         <v-btn text to="/contact">Contact</v-btn>
       </v-toolbar-items>
     </v-toolbar>
@@ -34,7 +35,7 @@
     >
       <v-list-item>
         <v-list-item-avatar>
-          <g-image src="~/cryo-logo.png"></g-image>
+          <g-image src="~/assets/cryo-logo.png"></g-image>
         </v-list-item-avatar>
 
         <v-btn icon @click.stop="mini = !mini">
@@ -80,7 +81,7 @@ export default {
       items: [
         { title: "Home", icon: "fa-home", path: "/" },
         { title: "About", icon: "fa-user-astronaut", path: "/about" },
-        { title: "Articles", icon: "fa-newspaper", path: "/articles" },
+        { title: "Projects", icon: "fa-newspaper", path: "/projects" },
         { title: "Contact", icon: "fa-envelope", path: "/contact" }
       ],
       mini: false

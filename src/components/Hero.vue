@@ -1,11 +1,16 @@
 <template>
-  <v-parallax dark :src="heroData.hero.heroImgSrc">
+  <v-parallax 
+  :src="heroData.hero.heroImgSrc">
+
+  <!-- <v-parallax 
+    dark
+    src="~/assets/celia-terminus.jpg"> -->
     <v-row align="center" justify="center">
       <v-col/>
       <v-col>
-        <h1 class="display-2 font-weight-thin mb-4 text-center">{{heroData.hero.heroTitle}}</h1>
+        <h1 class="h1 font-weight-bold text-center">{{heroData.hero.heroTitle}}</h1>
         <br />
-        <h4 class="subheading text-center">{{heroData.hero.heroSubtitle}}</h4>
+        <h3 class="h3 text-center">{{heroData.hero.heroSubtitle}}</h3>
       </v-col>
       <v-col/>
     </v-row>
