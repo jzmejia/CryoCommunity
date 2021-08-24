@@ -6,7 +6,10 @@
 
  cryocommunity.org website built using [Gridsome](http://gridsome.org), [Vue.js](http://vuejs.org), and [Vuetify.js](http://vuetifyjs.com).
 
-
+### Contributors
+<a href="https://github.com/jzmejia/cryocommunity/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jzmejia/cryocommunity" />
+</a>
 
  ## Requirements
  - Gridsome jamstack framework  
