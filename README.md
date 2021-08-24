@@ -1,5 +1,5 @@
 
-![CryoCollective Logo](/src/cryo-logo.png)
+![CryoCollective Logo](/src/assets/cryo-logo.png)
 
 
 
