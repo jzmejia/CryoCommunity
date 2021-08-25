@@ -25,7 +25,7 @@
 
  # Credits
  [J. Mejia](http://github.com/jzmejia)  
- M. Lummus
+ [M. Lummus](https://github.com/mlummus)
 
 
 
