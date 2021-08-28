@@ -5,10 +5,10 @@ aboutMe:
   long_summary_title: My Journey
   long_summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
   hashtags: 
-    - '#javascript'
-    - '#traveler'
-    - '#dancer'
-    - '#chef'
+    - 'javascript'
+    - 'traveler'
+    - 'dancer'
+    - 'chef'
   timeline: 
     - event: 1000 AD
       caption: I was born.

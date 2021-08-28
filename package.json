@@ -14,6 +14,8 @@
   "devDependencies": {
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.3",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^10.1.1",
     "webpack-node-externals": "^1.7.2"
   }
 }

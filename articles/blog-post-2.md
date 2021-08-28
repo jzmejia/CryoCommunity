@@ -5,6 +5,9 @@ title: Title 2
 published: true
 date: 2019-09-15T05:00:00Z
 excerpt: This is a summary of the blog post that will display in the article list.
+tags: 
+    - Undergraduate
+    - Applications
 ---
 
 This is a blog post with content.

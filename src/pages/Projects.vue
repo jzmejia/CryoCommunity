@@ -15,6 +15,14 @@
             <h3 class="primary--text font-weight-bold mx-0 display-1">
               {{ item.node.title }}
             </h3>
+            <v-chip
+                class="ma-1 elevation-16"
+                color="secondary"
+                link
+                small
+                v-for="(tag, index) in item.node.tags"
+                :key="index"
+              >{{tag}}</v-chip>
             <br />
             <span class="subtitle-1">{{ item.node.author }}</span>
             <br />
@@ -52,6 +60,7 @@ query AllArticle ($page: Int) {
         id
         path
         title
+        tags
         author
         published
         preview_image (quality: 90)

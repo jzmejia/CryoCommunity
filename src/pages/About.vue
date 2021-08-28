@@ -25,21 +25,15 @@
             </div>
           </v-card>
         </v-col>
-        <v-col md="8" cols="12">
+        <!-- <v-col md="8" cols="12">
           <v-card color="accent lighten-2">
             <v-card-title
               class="display-2 align-end fill-height"
             >{{aboutData.aboutMe.long_summary_title}}</v-card-title>
             <v-card-text class="headline">{{aboutData.aboutMe.long_summary}}</v-card-text>
           </v-card>
-        </v-col>
+        </v-col> -->
       </v-row>
-      <v-row>
-        <v-col cols="12">
-          <Chart :skillsData="aboutData.aboutMe.skills" />
-        </v-col>
-      </v-row>
-
       <v-row>
         <v-col cols="12">
           <div class="display-2 text-center my-5">My Developer Story</div>
@@ -52,13 +46,11 @@
 
 <script>
 import Timeline from "../components/Timeline";
-import Chart from "../components/Chart";
 import aboutData from "~/data/about.yml";
 
 export default {
   components: {
     Timeline,
-    Chart
   },
   data() {
     return {
