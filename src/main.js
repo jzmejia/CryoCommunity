@@ -3,6 +3,7 @@ import DefaultLayout from "~/layouts/Default.vue";
 
 import "vuetify/dist/vuetify.min.css";
 import colors from "vuetify/lib/util/colors";
+import '~/assets/styles.scss'
 
 export default function(Vue, { appOptions, head }) {
   head.link.push({
