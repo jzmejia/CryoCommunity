@@ -14,8 +14,11 @@
   "devDependencies": {
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.3",
+    "autoprefixer": "^10.3.4",
     "node-sass": "^6.0.1",
+    "postcss": "^8.3.6",
     "sass-loader": "^10.1.1",
+    "tailwindcss": "^2.2.9",
     "webpack-node-externals": "^1.7.2"
   }
 }

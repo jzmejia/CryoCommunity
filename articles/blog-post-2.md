@@ -1,19 +1,20 @@
 ---
-preview_image: "/uploads/undraw_plans_y8ru.png"
-author: Author Name 2
-title: Title 2 
+preview_image: "/uploads/Dronbreen_sunrise.jpg"
+author: MARS (Midwest and Random Stragglers) URGE Pod Participants
+title: Considerations and Best Practices for Executing Field Work 
 published: true
-date: 2019-09-15T05:00:00Z
-excerpt: This is a summary of the blog post that will display in the article list.
+date: 2021-09-03T05:00:00Z
+excerpt: We get it. Planning for field work is tough! Here are some resources for ensuring your field season is safe, considerate, and fun
 tags: 
-    - Undergraduate
-    - Applications
+    - PIs
+    - Field Work
 ---
 
 This is a blog post with content.
 
-# Liftoff!
-
-## This is a vuetify starter for a blog
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
+# Fieldwork Resources
+▫ Tips & Tricks for going to the bathroom and other bodily functions in the field -Dr. Chris Carr
+▫ INTERACT Fieldwork Planning Handbook
+▫ Safe fieldwork strategies for at-risk individuals, their supervisors and institutions -Demery & Pipkin (2021)
+▫ MARS Field Safety Plan (link)
+▫ Six simple steps to make fieldwork more accessible and inclusive - A.Lawrence
