@@ -3,6 +3,7 @@ import DefaultLayout from "~/layouts/Default.vue";
 
 import "vuetify/dist/vuetify.min.css";
 import colors from "vuetify/lib/util/colors";
+import "~/assets/styles.scss"
 
 export default function(Vue, { appOptions, head }) {
   head.link.push({
@@ -22,7 +23,7 @@ export default function(Vue, { appOptions, head }) {
     theme: {
       themes: {
         light: {
-          primary: "#005AE0",
+          primary: "glacier500",
           secondary: "#0093F5",
           accent: "#FF600A",
           error: "#FF5252",
@@ -32,6 +33,7 @@ export default function(Vue, { appOptions, head }) {
         }
       }
     }
+
   };
   Vue.use(Vuetify);
 

@@ -16,9 +16,10 @@
               {{ item.node.title }}
             </h3>
             <v-chip
-                class="ma-1 elevation-16"
+                class="ma-1"
                 color="secondary"
                 link
+                
                 small
                 v-for="(tag, index) in item.node.tags"
                 :key="index"
