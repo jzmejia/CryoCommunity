@@ -1,0 +1,13 @@
+# card info for team members
+teamInfo:
+  - name: Jessica Mejia
+    affil: University at Buffalo
+    avatar: https://i.ibb.co/k1dQx22/jess.png
+    alt_text: illustration of a white woman with long wavy brown hair, gold hoop earrings, and a light brown sweater
+    website: https://jessicamejia.xyz
+  - name: Celia Trunz
+    affil:
+    avatar: celia.png
+    alt_text: illustration of a woman with long straight brown hair with bangs and an orange sleeveless blouse.
+    website: 
+  - name: 

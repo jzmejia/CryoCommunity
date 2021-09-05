@@ -5,7 +5,7 @@
         <v-card class="ma-sm-5 xs-sm-6">
           <v-img height="500px" :src="$page.article.preview_image"> </v-img>
           <v-card-text>
-            <h3 class="primary--text font-weight-bold mx-0 display-2 px-xs-5">
+            <h3 class="secondary--text font-weight-bold mx-0 display-2 px-xs-5">
               {{ $page.article.title }}
             </h3>
             <br />
@@ -34,6 +34,7 @@ query Article ($path: String!) {
     date (format: "MMMM D, YYYY")
     timeToRead
     content
+    tags
     excerpt
     published
     preview_image
