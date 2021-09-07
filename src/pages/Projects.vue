@@ -41,7 +41,7 @@
       </div>
       <div class="text-center">
         <Pager
-          linkClass="v-btn v-btn--contained v-btn--fab v-btn--round theme--dark v-size--small primary mx-1"
+          linkClass="v-btn v-btn--contained v-btn--fab v-btn--round v-size--small secondary mx-1"
           :info="$page.articles.pageInfo"
         />
       </div>

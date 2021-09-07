@@ -25,6 +25,9 @@
             </div>
           </v-card>
         </v-col>
+        <v-col>
+          <v-btn color="secondary" to="/team">Our Team</v-btn>
+        </v-col>
         <!-- <v-col md="8" cols="12">
           <v-card color="accent lighten-2">
             <v-card-title
@@ -34,12 +37,12 @@
           </v-card>
         </v-col> -->
       </v-row>
-      <v-row>
+      <!-- <v-row>
         <v-col cols="12">
           <div class="display-2 text-center my-5">My Developer Story</div>
           <Timeline :timeline="aboutData.aboutMe.timeline" />
         </v-col>
-      </v-row>
+      </v-row> -->
     </v-container>
   </Layout>
 </template>

@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <v-toolbar
-      color="primary overflow-hidden"
+    <v-app-bar
       dark
+      color="primary"
     >
       <v-app-bar-nav-icon
         class="d-flex d-sm-none"
@@ -26,7 +26,7 @@
         <v-btn text to="/resources">Resources</v-btn>
         <v-btn text to="/contact">Contact</v-btn>
       </v-toolbar-items>
-    </v-toolbar>
+    </v-app-bar>
     <v-navigation-drawer
       absolute
       v-model="collapse"

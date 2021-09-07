@@ -1,0 +1,112 @@
+# card info for team members
+  # - name: 
+  #   title: 
+  #   pronouns: 
+  #   affil: 
+  #   avatar: 
+  #   alt: 
+  #   website: 
+  #   twitter: 
+  #   email: 
+
+
+teamInfo:
+  - name: Jessica Mejia
+    title: Ph.D.
+    pronouns: she/her/hers
+    affil: University at Buffalo
+    avatar: jess.png
+    alt: illustration of a woman with long wavy brown hair, gold hoop earrings, and a light brown sweater
+    website: http://jessicamejia.xyz
+    twitter: moulinology
+    email: jzmejia@buffalo.edu
+  - name: Leigh Stearns
+    title: Ph.D.
+    pronouns: she/her/hers
+    affil: University of Kansas
+    avatar: leigh_nonhipster.png
+    alt: woman illustration with short brown hair and green jacket.
+    website: https://stearns.ku.edu
+    twitter: leigh_stearns
+    email: stearns@ku.edu
+  - name: Lauren Simkins
+    title: Ph.D.
+    pronouns: she/her/hers
+    affil: University of Virginia
+    avatar: simkins.png
+    alt: illustration of a woman wiith long brown hair, red lipstick, and a black shirt with whitie collar
+    website: http://www.iceocean.org/
+    twitter: 
+    email: lsimkins@virginia.edu
+  - name: Jeremy Bassis
+    title: Ph.D.
+    pronouns: he/him/his
+    affil: University of Michigan
+    avatar: jeremy.png
+    alt: illustration of a man wearing a yellow "IGS" hat, dark brown hair and facial stubble with grey eyebrows weariing a blue shirt.
+    website: https://clasp-research.engin.umich.edu/faculty/bassis/index.php
+    twitter: BassisJeremy
+    email: jbassis@umich.edu
+  - name: Malisse Lummus
+    title: B.Sc.
+    pronouns: she/her/hers
+    affil: University of Kansas
+    avatar: malisse.png
+    alt: illustration of women with short brown hair with a green shirt and blue jumper.
+    website: https://twitter.com/LummusMalisse
+    twitter: LummusMalisse
+    email: mlummus@ku.edu
+  - name: Ravindra Duddu
+    title: Ph.D.
+    pronouns: he/him/his
+    affil: Vanderbilt University
+    avatar: ravi.png
+    alt: illustration of a man wearing a blue shirt
+    website: https://twitter.com/CpmlVandy
+    twitter: CPMLVandy
+    email: ravindra.duddu@vanderbilt.edu
+  - name: Cody Barnett
+    title:
+    pronouns: he/him/his
+    affil: University of Kansas
+    avatar: barnett.png
+    alt: illustration of a man with black hair and facial hair wearing a blue t-shiirt and an open black button-down.
+    website: https://twitter.com/CodyTBarnett 
+    twitter: CodyTBarnett
+    email: codybarnett@ku.edu
+  - name: Michael Shahin
+    title: 
+    pronouns: he/him/his
+    affil: University of Kansas
+    avatar: shahin.png
+    alt: illustration of a bald man with glasses, a brown beard, and a blue shirt.
+    website: https://twitter.com/LaserGlaciers
+    twitter: LaserGlaciers
+    email: shahinmg@ku.edu
+  - name: Celia Trunz
+    title: Ph.D.
+    pronouns: she/her/hers
+    affil: Université de Sherbrooke
+    avatar: celia.png
+    alt: illustration of a woman with long straight brown hair with bangs and an orange sleeveless blouse.
+    website: https://ubwp.buffalo.edu/glaciermodelinglab/glacier-modeling-lab-alumni/celia-trunz-research/
+    twitter: 
+    email: 
+  # - name: Lizz Ultee
+  #   title: 
+  #   pronouns: 
+  #   affil: 
+  #   avatar: 
+  #   alt: 
+  #   website: 
+  #   twitter: 
+  #   email: 
+  # - name: Sophie Goliber
+  #   title: 
+  #   pronouns: 
+  #   affil: 
+  #   avatar: 
+  #   alt: 
+  #   website: 
+  #   twitter: 
+  #   email: 
