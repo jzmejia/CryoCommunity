@@ -92,21 +92,21 @@ teamInfo:
     website: https://ubwp.buffalo.edu/glaciermodelinglab/glacier-modeling-lab-alumni/celia-trunz-research/
     twitter: 
     email: 
-  # - name: Lizz Ultee
-  #   title: 
-  #   pronouns: 
-  #   affil: 
-  #   avatar: 
-  #   alt: 
-  #   website: 
-  #   twitter: 
-  #   email: 
-  # - name: Sophie Goliber
-  #   title: 
-  #   pronouns: 
-  #   affil: 
-  #   avatar: 
-  #   alt: 
-  #   website: 
-  #   twitter: 
-  #   email: 
+  - name: Lizz Ultee
+    title: Ph.D.
+    pronouns: she/her/hers
+    affil: Middlebury College
+    avatar: jess.png
+    alt: illustration of a women 
+    website: https://ehultee.github.io/
+    twitter: LizzUltee
+    email: ehultee@mit.edu
+  - name: Sophie Goliber
+    title: 
+    pronouns: she/her/hers
+    affil: University of Texas
+    avatar: sophie.png
+    alt: illustration of a women with short brown hair and glasses wearing a black sweater
+    website: 
+    twitter: 
+    email: sgoliber@utexas.edu
