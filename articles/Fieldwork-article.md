@@ -8,6 +8,8 @@ excerpt: We get it. Creating a safe space for work, whether it be in the lab or 
 tags: 
     - PIs
     - Field Work
+documents:
+
 ---
 ### Let's get started
 Glaciologists at all training and career levels work in a variety of environments including, but not limited to, laboratories, private and shared university/institutional offices, and field sites of varying remoteness for wide ranging durations from days to several months. To promote the well-being and safety of researchers and foster accessible and inclusive working environments, there are several considerations that are transferable to glaciologists working all of these environments that are highlighted here. Some components of this safety plan rely heavily on [“Safe Fieldwork Strategies for At-Risk Individuals”] (https://www.nature.com/articles/s41559-020-01328-5) by Demery and Pipkin (2020) published in Nature Ecology & Evolution. 

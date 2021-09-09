@@ -9,13 +9,16 @@ tags:
     - PIs
     - Mentoring
     - Graduate
+MARSdocs:
+    - LGBT+
+docLinks:
+    - https://drive.google.com/drive/folders/1o1DapPRrinIiMMmoyfOtdIPwDq3nrutH
 ---
-This article draws on policy's and recommendations from the University of Michigan's Rackhman School of Graduate Studies. The complete write up can be found [here] (https://drive.google.com/drive/folders/1o1DapPRrinIiMMmoyfOtdIPwDq3nrutH).
+
+This article draws on policy's and recommendations from the University of Michigan's Rackhman Graduate School. The complete write up can be found [here] (https://drive.google.com/drive/folders/1o1DapPRrinIiMMmoyfOtdIPwDq3nrutH).
 
 ### What is a Mentor and what do they do?
-The role of a mentor is multi-faceted, and the definition can change over time or even person to person. "The role of a mentor is centered on a commitment to guidance, experience, and expertise."
-
-Mentors must:
+The role of a mentor is multi-faceted, and the definition can change over time or even person to person. The University of Michigan's Rackman Graduate School defines the responsibility of a mentor as "centered on a commitment to guidance, experience, and expertise." Just as our students have unique skill sets that should be celebrated and expanded upon, so too must the skills and perspectives of the mentor. When developing their unique methods of mentoring, the mentor must:
 * Know their mentees
 * Model and guide excellence in research, teaching, and service
 * Establish effective communication 
@@ -28,18 +31,6 @@ Mentors must:
 ### What is a Mentee and what do they do?
 
 ### Guidelines for being a good Mentor/Mentee
+Clarity and agreed upon expections between the mentor and the mentee are important aspects to a healthy mentoring relationship. One way to help demystify graduate school and write down those "unwritten rules" that swirl around academia is to create a shared expectations document. These documents are created and discussed by both the mentor and the mentee and are not supposed to act as a form of intimidation or a strict contract. Instead, they set healthy boundaries that recognize that both parties are humans who are likely to fail to meet some expectations, and they put in place a plan for those inevitabilities. Here are some templates for shared expectations documents for the STEM and Social Sciences and for co-mentori
 
 ### Links
-<v-row>
-<v-col
-    cols="12"
-    align-self="left"
->
-<div class="text-left">
-<!-- <span class="d-flex justify-space-around"> -->
-<v-btn
-    elevation="2"
-    small
-    rounded
-    color="secondary"
->LGBT+</v-btn>
