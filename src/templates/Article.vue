@@ -21,11 +21,14 @@
           </v-card-text>
           <v-card-actions>
             <v-btn
-              v-for="(item, index) in $page.article.MARSdocs"
+              v-for="(item, index) in $page.article.documents"
               :key="index"
               flat
+              text
+              color="accent"
+              :href="item.url"
             >
-              {{ item }}
+              {{ item.name }}
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -44,7 +47,7 @@ query Article ($path: String!) {
     timeToRead
     content
     tags
-    MARSdocs
+    documents {name, url}
     excerpt
     published
     preview_image

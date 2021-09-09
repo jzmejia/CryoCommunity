@@ -9,10 +9,9 @@ tags:
     - PIs
     - Mentoring
     - Graduate
-MARSdocs:
-    - LGBT+
-docLinks:
-    - https://drive.google.com/drive/folders/1o1DapPRrinIiMMmoyfOtdIPwDq3nrutH
+documents:
+    - name: LGBTQIA+
+      url: https://drive.google.com/file/d/1yvOpUBAx-jGBRyhD-r24zhOx3Ek1wbMb/view?usp=sharing
 ---
 
 This article draws on policy's and recommendations from the University of Michigan's Rackhman Graduate School. The complete write up can be found [here] (https://drive.google.com/drive/folders/1o1DapPRrinIiMMmoyfOtdIPwDq3nrutH).
