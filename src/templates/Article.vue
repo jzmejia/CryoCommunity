@@ -19,6 +19,9 @@
               <ArticleContent :content="$page.article.content" />
             </div>
           </v-card-text>
+          <!-- <v-card-actions>
+            <v-btn v-for="(item, index) in $page.article.docs" :key="index" :href="item.linkTo"> {{item.name} </v-btn>
+          </v-card-actions> -->
         </v-card>
       </div>
     </v-container>
