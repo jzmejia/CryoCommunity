@@ -19,6 +19,15 @@
               <ArticleContent :content="$page.article.content" />
             </div>
           </v-card-text>
+          <v-card-actions>
+            <v-btn
+              v-for="(item, index) in $page.article.MARSdocs"
+              :key="index"
+              flat
+            >
+              {{ item }}
+            </v-btn>
+          </v-card-actions>
         </v-card>
       </div>
     </v-container>
@@ -35,6 +44,7 @@ query Article ($path: String!) {
     timeToRead
     content
     tags
+    MARSdocs
     excerpt
     published
     preview_image
@@ -47,8 +57,8 @@ import ArticleContent from "@/components/ArticleContent";
 
 export default {
   components: {
-    ArticleContent
-  }
+    ArticleContent,
+  },
 };
 </script>
 
