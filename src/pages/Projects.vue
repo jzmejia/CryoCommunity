@@ -19,7 +19,6 @@
                 class="ma-1"
                 color="secondary"
                 link
-                
                 small
                 v-for="(tag, index) in item.node.tags"
                 :key="index"

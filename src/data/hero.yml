@@ -2,3 +2,10 @@ hero:
   heroImgSrc: /ice.jpg
   heroTitle: CryoCommunity
   heroSubtitle: fostering inclusivity within the cryospheric sciences
+buttons:
+  - name: Career Stage
+    link: /careerstage
+  - name: About
+    link: /about
+  - name: Recent
+    link: /projects

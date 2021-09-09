@@ -1,7 +1,7 @@
 <template>
   <v-parallax
   :src="heroData.hero.heroImgSrc"
-  height="600"
+  height="800"
   >
     <v-row align="center" justify="center">
       <v-col>
@@ -15,30 +15,16 @@
               align-self="center"
             >
             <div class="text-center">
-            <!-- <span class="d-flex justify-space-around"> -->
             <v-btn
+              v-for="(button, index) in heroData.buttons"
+              :key="index"
               elevation="2"
               small
               rounded
               color="secondary"
-            >Career Stage</v-btn>
-            <v-btn
-              rounded
-              small
-              elevation="2"
-              class="mx-4"
-              min-width="100"
-              color="secondary"
-              >Button 2</v-btn>
-            <v-btn
-              rounded
-              elevation="2"
-              min-width="100"
-              small
-              color="secondary"
-              >Button 3
-            </v-btn>
-            <!-- </span> -->
+              class="mx-2"
+              :to="button.link"
+            >{{button.name}}</v-btn>
             </div>
             </v-col>
           </v-row>
