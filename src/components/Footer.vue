@@ -1,9 +1,8 @@
 <template>
   <v-footer padless>
-    <v-img src="/turnabreen_footer.jpg">
       <v-container>
         <v-row style="height: 100px"> </v-row>
-        <!-- <v-card flat tile class="primary white--text text-center align-self-md-stretch" width="100%"> -->
+        <v-card flat tile class="primary white--text text-center align-self-md-stretch" width="100%">
 
         <v-row align="center">
           <v-col cols="6">
@@ -52,8 +51,8 @@
             </v-card-text>
           </v-col>
         </v-row>
+        </v-card>
       </v-container>
-    </v-img>
   </v-footer>
 </template>
 
