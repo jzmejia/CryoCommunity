@@ -1,37 +1,44 @@
 <template>
-  <nav>
+  <!-- <div> -->
     <v-app-bar
-      dark
-      color="primary"
+      app
+      dense
+      elevate-on-scroll
+      :style="{
+        backdropFilter: 'blur(2px) !important',
+        background: '#ffffffd0 !important',
+      }"
     >
-      <v-app-bar-nav-icon
-        class="d-flex d-sm-none"
+      <!-- <v-app-bar-nav-icon
         @click="toggle"
-      ></v-app-bar-nav-icon>
-      <v-btn text large href="/">
-        <g-image src="~/assets/snowflakes-white.png" height="40" width="32" class="mr-5" />
-        {{
-          $static.metadata.siteName
-        }}
-      </v-btn>
+      ></v-app-bar-nav-icon> -->
+      <v-toolbar-title>
+      <!-- <v-btn text href="/" tile> -->
+        <!-- <g-image src="~/assets/snowflakes-white.png" height="40" width="32" class="mr-5"/> -->
+        {{ $static.metadata.siteName }}
+      <!-- </v-btn> -->
+      </v-toolbar-title>
 
       <v-spacer></v-spacer>
-      <v-btn icon>
+      <!-- <v-btn icon>
         <v-icon>fa-search</v-icon>
-      </v-btn>
-      <v-toolbar-items class="d-none d-sm-flex">
-        <v-btn text to="/">Home</v-btn>
-        <v-btn text to="/about">About</v-btn>
-        <v-btn text to="/projects">Projects</v-btn>
-        <v-btn text to="/resources">Resources</v-btn>
-        <v-btn text to="/contact">Contact</v-btn>
+      </v-btn> -->
+      <v-toolbar-items>
+        <v-btn
+          v-for="(item, index) in items"
+          :key="index"
+          
+          text
+          :to="item.path"
+          >{{ item.title }}</v-btn
+        >
       </v-toolbar-items>
     </v-app-bar>
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
+      app
       absolute
       v-model="collapse"
       :mini-variant.sync="mini"
-      class="d-flex d-sm-none dark"
     >
       <v-list-item>
         <v-list-item-avatar>
@@ -61,8 +68,8 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>
-  </nav>
+    </v-navigation-drawer> -->
+  <!-- </div> -->
 </template>
 
 <static-query>
@@ -79,18 +86,19 @@ export default {
     return {
       collapse: false,
       items: [
-        { title: "Home", icon: "fa-home", path: "/" },
-        { title: "About", icon: "fa-user-astronaut", path: "/about" },
-        { title: "Projects", icon: "fa-newspaper", path: "/projects" },
-        { title: "Contact", icon: "fa-envelope", path: "/contact" }
+        { title: "Home", path: "/" },
+        { title: "About", path: "/about" },
+        { title: "Projects", path: "/projects" },
+        { title: "Resources", path: "/resources" },
+        { title: "Contact", path: "/contact" },
       ],
-      mini: false
+      mini: false,
     };
   },
   methods: {
     toggle() {
       this.collapse = !this.collapse;
-    }
-  }
+    },
+  },
 };
 </script>

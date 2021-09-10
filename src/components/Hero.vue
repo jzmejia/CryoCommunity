@@ -1,7 +1,8 @@
 <template>
   <v-parallax
   :src="heroData.hero.heroImgSrc"
-  height="800"
+  height="1000"
+   
   >
     <v-row align="center" justify="center">
       <v-col>
@@ -18,11 +19,12 @@
             <v-btn
               v-for="(button, index) in heroData.buttons"
               :key="index"
-              elevation="2"
+              elevation="1"
               small
               rounded
-              color="secondary"
-              class="mx-2"
+              color=#61b9f7
+              class="mx-2 black--text"
+              min-width="100px"
               :to="button.link"
             >{{button.name}}</v-btn>
             </div>
@@ -40,6 +42,6 @@ export default {
     return {
       heroData
     };
-  }
+  },
 };
 </script>

@@ -1,18 +1,21 @@
 <template>
-  <v-app>
+  <v-app class="overflow-hidden">
     <Header />
-    <Hero v-if="isHome" />
-    <v-container fill-height class="d-md-flex">
+    <Hero v-if="isHome" :height="dynamicHeight" />
+
+    <v-main>
+      <v-container>
       <slot />
-    </v-container>
+      </v-container>
+    </v-main>
     <Footer />
   </v-app>
 </template>
 
 <script>
-import Header from "../components/Header"
-import Hero from "../components/Hero"
-import Footer from "../components/Footer"
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Footer from "../components/Footer";
 
 export default {
   components: {
@@ -22,10 +25,11 @@ export default {
   },
   computed: {
     isHome() {
-      return this.$route.path === "/"
+      return this.$route.path === "/";
     },
   },
-}
+};
 </script>
 
-<style></style>
+<style scoped>
+</style>
