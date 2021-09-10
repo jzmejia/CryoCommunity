@@ -24,8 +24,8 @@ export default function(Vue, { appOptions, head }) {
       themes: {
         light: {
           primary: "#008ee8", //glacierblue500
-          secondary: "#0093F5",
-          accent: "#FF600A",
+          secondary: "#b9ddfc",
+          accent: "#ff9703",
           error: "#FF5252",
           info: "#2196F3",
           success: "#4CAF50",
