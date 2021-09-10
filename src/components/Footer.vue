@@ -7,8 +7,9 @@
           <v-list subheader>
             <v-subheader>site map</v-subheader>
             <v-list-item-content>
-              <v-list-item-title>
+              <v-list-item-title></v-list-item-title>
             </v-list-item-content>
+          </v-list>
         </v-col>
         <v-col cols=3></v-col>
         <v-col cols=3></v-col>
