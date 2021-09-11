@@ -3,24 +3,27 @@
     <v-container>
       <v-row
         ><v-spacer></v-spacer
-        ><v-col cols="4" align="right"><h4>join the community</h4></v-col></v-row
+        ><v-col cols="4" align="right" class="mr-12"
+          ><h5>join the community</h5>
+          <div><email-bar/></div>
+          
+        </v-col></v-row
       >
       <v-row>
-        <v-col cols="1"></v-col>
-        <v-col cols="3" class="justify-content-left">
-          <span class="overline ml-3 font-weight-medium">site map</span>
+        <v-col cols="3" class="justify-content-left ml-12">
+          <div class="ml-4 overline">SITE MAP</div>
           <!-- <v-divider></v-divider> -->
           <div v-for="link in sitemap" :key="link">
-            <v-btn text flat plain small :to="link.path"
+            <v-btn text flat plain :to="link.path"
               >{{ link.title }}
             </v-btn>
           </div>
         </v-col>
         <v-col cols="3" class="justify-content-left pl-0">
-          <span class="overline ml-3 font-weight-medium">career stage</span>
+          <span class="overline ml-4">career stage</span>
           <!-- <v-divider></v-divider> -->
           <div v-for="link in featured" :key="link">
-            <v-btn text flat plain small :to="link.path"
+            <v-btn text flat :to="link.path"
               >{{ link.title }}
             </v-btn>
           </div>
@@ -28,7 +31,7 @@
         <v-col cols="3" class="justify-content-left pl-0">
           <span class="overline ml-3 font-weight-medium"></span>
           <div v-for="link in other" :key="link">
-            <v-btn text flat plain small :to="link.path"
+            <v-btn text flat :to="link.path"
               >{{ link.title }}
             </v-btn>
           </div>
@@ -54,8 +57,13 @@ query {
 </static-query>
 
 <script>
+import EmailBar from './EmailBar.vue';
+
+
 export default {
-  components: {},
+  components: {
+    EmailBar,
+  },
   data: () => ({
     icons: [
       {
@@ -81,7 +89,7 @@ export default {
       { title: "Geo Grad App", path: "http://geogradapp.com" },
       { title: "CryoSciListen", path: "https://cryoscilisten.weebly.com" },
       { title: "Best Practices", path: "/projects" },
-      { title: "", path: "" },
+      // { title: "URGE", path: "https://urgeoscience.org/" },
     ],
   }),
 };
