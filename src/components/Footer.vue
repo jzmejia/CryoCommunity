@@ -28,8 +28,8 @@
           </div>
         </v-col>
         <v-col cols="12" class="overline text-center">
-          {{ new Date().getFullYear() }} —
-          <b>{{ $static.metadata.siteName }}</b>
+          &copy; {{ new Date().getFullYear() }}
+          {{ $static.metadata.siteName }}
         </v-col>
       </v-row>
     </v-container>
