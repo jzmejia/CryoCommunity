@@ -6,8 +6,10 @@ published: true
 date: 2019-10-15T05:00:00Z
 excerpt: The graduate application process can be daunting. Luckily, you don't need to figure it out alone. Through geogradapp.com, you can view a complete timeline of the application process along with tips and resources for navigating your way to graduate school in the Geosciences. 
 tags: 
+    - Undergrad
+    - Grad
     - Applications
-    - Graduate
+    - Admissions
 documents:
 ---
 
@@ -32,7 +34,7 @@ Some folks will want a traditional Masters degree while others may want a profes
 #### Finding an advisor
 The advisor is arguably the most important part of a degree program, but finding the right one can be tricky. The Graduate Application Station outlines all of their best advice on where to look and how to gauge who might be best for you.
 #### Expressing interest
-Once you have made your list of advisors and programs, you will need to express your interest. It can be daunting to reach out! The website has templates and advice for constructing those emails, as well as what to ask about once you have heard back.
+Once you have made your list of advisors and programs, you will need to express your interest. It can be daunting to reach out! The website has templates and advice for constructing those emails, as well as what to ask about once you have heard back. Visit the websites of individual professors or research groups to find potential openings and information on past projects. Reach out to people you are interested in working with in late-summer early-mid Fall to find out if they have funding. Even if a professor does not currently have funding, they may give you advice on who else to reach out to.
 
 ## **Early-Mid Fall**
 #### Preparing to apply
@@ -45,6 +47,9 @@ There are only two parts to this time period because the personal statement for 
 Letters of recommendation can be scary to ask for, but your professors and mentors are generally happy to do it as long as you make it easy for them. Getting together your materials, asking them early, and gently reminding them about deadlines will help your letter writers deliver glowing reviews about your academic performance.
 #### Actually applying
 You did it! The final step is setting a work schedule, sticking to it, and actually turning in your applications. 
+
+#### You have an offer, now what?
+Before accepting any graduate position, reach out to your potential advisors, current or past graduate students to find out more about the lab environment. By talking to current or past graduate students candidly, you will be able to decide if that lab is a good fit for you and for your goals. 
 
 ## Check it out for yourself!
 Please check out the [Graduate School Application Station] (https://geogradapp.com/) for the full breakdown of the process as well as resources and links. Be aware that these are loose recommendations, thoughts, and opinions of two students who recently went through the application process. It is possible that things have changed since it was written. Always check with your advisor, and do what is best for you.
