@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@gridsome/remark-prismjs": "^0.2.0",
+    "axios": "^0.21.4",
     "gridsome": "^0.7.17",
     "vuetify": "^2.3.0"
   },

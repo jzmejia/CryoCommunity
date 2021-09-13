@@ -24,6 +24,7 @@
         <v-btn text color="orange" :href="item.node.path">Read More</v-btn>
       </v-card-actions>
     </v-card>
+    <Twitter/>
   </Layout>
 </template>
 
@@ -46,6 +47,13 @@
   }
 </page-query>
 
-<script></script>
+<script>
+import Twitter from "~/components/Twitter"
+export default {
+  components:{
+    Twitter
+  }
+}
+</script>
 
 <style></style>
