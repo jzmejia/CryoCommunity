@@ -1,5 +1,5 @@
 <template>
-  <v-footer app absolute>
+  <v-footer>
     <v-container>
       <v-row>
         <v-col cols="4" align="right" offset="8"

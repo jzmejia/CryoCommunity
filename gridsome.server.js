@@ -5,9 +5,10 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 const nodeExternals = require('webpack-node-externals')
-
+const axios = require("axios");
 module.exports = function (api) {
   api.chainWebpack((config, { isServer }) => {
+    
     if (isServer) {
       config.externals([
         nodeExternals({
@@ -15,10 +16,36 @@ module.exports = function (api) {
         })
       ])
     }
+    config.devServer
+          .public("localhost:8080")
+          .host("localhost")
+          .port(8080)
+          .hotOnly(true)
+          .watchOptions({ poll: 1000 })
+          .https(false)
+          .disableHostCheck(true)
+          .headers({ "Access-Control-Allow-Origin": ["*"] });
   })
   
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+  api.loadSource(async({ addCollection }) => {
+    const collection = addCollection("Tweets");
+    let user_id = "1429908995721027594"
+    let url = `https://api.twitter.com/2/users/${user_id}/tweets`
+    const { data } = await axios.get(url, {
+      params: {
+        expansions: 'author_id',
+        'tweet.fields': 'id,created_at,text',
+        'user.fields': 'name,profile_image_url'
+      },
+        headers: {
+          Authorization: `Bearer ${process.env.BEARER_TOKEN}`,
+        },
+    });
+    console.log(data.includes.users[0])
+    for (const tweet of data.data) {
+      
+      collection.addNode({...tweet, ...data.includes.users[0]})
+    }
   })
 
   api.createPages(({ createPage }) => {
