@@ -3,7 +3,11 @@
     <v-container>
       <div class="d-flex">
         <v-card class="ma-sm-5 xs-sm-6">
-          <v-img height="500px" :src="$page.article.preview_image"> </v-img>
+          <v-img 
+            height="500px" 
+            :src="$page.article.preview_image"
+            :alt="$page.article.alt"
+            > </v-img>
           <v-card-text>
             <h3 class="secondary--text font-weight-bold mx-0 display-2 px-xs-5">
               {{ $page.article.title }}
@@ -51,6 +55,7 @@ query Article ($path: String!) {
     excerpt
     published
     preview_image
+    alt
   }
 }
 </page-query>
