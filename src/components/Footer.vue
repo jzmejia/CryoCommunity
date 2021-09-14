@@ -11,20 +11,20 @@
           <!-- <v-divider></v-divider> -->
           <!-- <v-subheader>Site map</v-subheader> -->
           <div v-for="link in sitemap" :key="link">
-            <v-btn text flat :small="smAndDown" plain :to="link.path">{{ link.title }} </v-btn>
+            <v-btn text :small="smAndDown" plain :to="link.path">{{ link.title }} </v-btn>
           </div>
         </v-col>
         <v-col cols="3" class="ml-n6 mr-6">
           <!-- <span class="overline">career stage</span> -->
           <!-- <v-divider></v-divider> -->
           <div v-for="link in featured" :key="link">
-            <v-btn text flat plain :small="smAndDown" :to="link.path">{{ link.title }} </v-btn>
+            <v-btn text plain :small="smAndDown" :to="link.path">{{ link.title }} </v-btn>
           </div>
         </v-col>
         <v-col cols="3">
           <!-- <span class="overline ml-3 font-weight-medium"></span> -->
           <div v-for="link in other" :key="link">
-            <v-btn text flat plain :small="smAndDown" :to="link.path">{{ link.title }} </v-btn>
+            <v-btn text plain :small="smAndDown" :to="link.path">{{ link.title }} </v-btn>
           </div>
         </v-col>
         <v-col cols="12" class="overline text-center">
