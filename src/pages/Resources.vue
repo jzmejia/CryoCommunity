@@ -24,7 +24,7 @@
           </p>
         </v-col>
 
-        <v-col>
+        <!-- <v-col>
           <v-card-title>Teaching</v-card-title>
           <v-card height="500" class="overflow-y-auto">
             <v-list v-for="(item, index) in teaching" :key="index">
@@ -60,11 +60,10 @@
               </v-list-item-group>
             </v-list>
           </v-card>
-        </v-col>
-        <v-col cols="12">
+        </v-col> -->
+        <!-- <v-col cols="12">
           <v-card-title>Teaching</v-card-title>
           <v-card rounded="lg">
-            <!-- <v-toolbar color="transparent" flat> -->
               <v-tabs v-model="tab">
                 <template v-for="item in teaching">
                   <v-tab
@@ -77,7 +76,6 @@
                   </v-tab>
                 </template>
               </v-tabs>
-            <!-- </v-toolbar> -->
 
             <v-tabs-items :key="index" v-model="tab">
               <template v-for="item in teaching">
@@ -106,8 +104,6 @@
                           {{ tag }}</v-chip
                         >
                       </v-list-item-title>
-                      <!-- <v-list-item-subtitle> -->
-                      <!-- </v-list-item-subtitle> -->
                       <v-list-item-subtitle class="text-wrap">{{
                         link.description
                       }}</v-list-item-subtitle>
@@ -117,7 +113,38 @@
               </template>
             </v-tabs-items>
           </v-card>
+        </v-col> -->
+        <v-col cols="12">
+          <v-card-title>Teaching</v-card-title>
+          <v-col cols="6">
+            <resource obj="teaching"></resource>
+          </v-col>
+          <v-col cols="6"></v-col>
+          <v-divider></v-divider>
         </v-col>
+        
+
+        <v-col cols="12">
+          <v-card-title>Fieldwork</v-card-title>
+          <v-row>
+          <v-col cols="6">
+            <v-card rounded="lg" flat>
+              <v-img
+                src="\ropeteam.jpg"
+                height="500"
+              ></v-img>
+            </v-card>
+          </v-col>
+          <v-col cols="6">
+            <resource obj="fieldwork"></resource>
+          </v-col>
+          </v-row>
+        </v-col>
+
+        <v-col cols="6">
+          <v-card-title>Community</v-card-title>
+          <resource obj="community"></resource
+        ></v-col>
       </v-row>
     </v-container>
   </Layout>
@@ -125,8 +152,12 @@
 
 <script>
 import resources from "~/data/resources.yml";
+import Resource from "~/components/ResourceCard";
 
 export default {
+  components: {
+    Resource,
+  },
   data() {
     return {
       resources,
@@ -136,6 +167,12 @@ export default {
   computed: {
     teaching() {
       return resources.teaching;
+    },
+    fieldwork() {
+      return resources.fieldwork;
+    },
+    community() {
+      return resources.community;
     },
   },
 };
