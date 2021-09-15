@@ -1,7 +1,7 @@
 <template>
   <v-app class="overflow-hidden">
     <Header />
-    <Hero v-if="isHome" :height="dynamicHeight" />
+    <Hero v-if="isHome" />
 
     <v-main>
       <v-container>
