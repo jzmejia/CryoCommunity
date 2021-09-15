@@ -38,7 +38,7 @@ module.exports = function (api) {
         'user.fields': 'name,profile_image_url'
       },
         headers: {
-          Authorization: `Bearer ${process.env.BEARER_TOKEN}`,
+          Authorization: `Bearer ${process.env.GRIDSOME_BEARER_TOKEN}`,
         },
     });
     console.log(data.includes.users[0])

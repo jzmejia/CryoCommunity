@@ -75,5 +75,7 @@ query{
 <script>
 export default {
   name: "Twitter",
+  data: () => ({}),
+  computed: {},
 };
 </script>

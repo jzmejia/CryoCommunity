@@ -1,5 +1,5 @@
 <template>
-  <v-card rounded="lg" height="500" class="overflow-y-auto">
+  <v-card rounded="lg" height="500">
     <v-tabs v-model="tab">
       <template v-for="item in resource">
         <v-tab v-for="(links, key) in item" :key="key" :href="`#${key}`" exact>
@@ -8,7 +8,7 @@
       </template>
     </v-tabs>
 
-    <v-tabs-items v-model="tab">
+    <v-tabs-items v-model="tab" style="max-height: 450px; overflow-y: auto;">
       <template v-for="item in resource">
         <v-tab-item v-for="(links, key) in item" :key="key" :value="`${key}`">
           <v-list-item

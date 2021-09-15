@@ -16,15 +16,18 @@ teaching:
     - name: EarthPy
       url: http://earthpy.org
       description: open-source Python package helping users use spatial data
+      tags: [Python]
     - name: EarthLab
       url: https://earthlab.colorado.edu/our-work/teaching-and-learning-earth-data-science
       description: data-intensive open, reproducible environmental science
     - name: Earth Data Science
       url: https://www.earthdatascience.org/
-      description: courses, tutorials, and tools (R & Python)
+      description: courses, tutorials, and tools
+      tags: [Python, R]
     - name: SeismoLive
-      url: http://tbartholomaus.org/papers/Krischer_etal_2018_SRL.pdf
+      url: https://krischer.github.io/seismo_live_build/tree/index.html
       description: Jupyter notebooks for seismology
+      tags: [Jupyter]
   - Modules:
     - name: Antarctic Ice Sheet-past and present
       url: http://www.iceocean.org/educational-products.html
