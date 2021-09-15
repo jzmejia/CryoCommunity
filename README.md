@@ -1,9 +1,6 @@
 
 ![CryoCollective Logo](/src/assets/cryo-logo.png)
 
-
-
-
  cryocommunity.org website built using [Gridsome](http://gridsome.org), [Vue.js](http://vuejs.org), and [Vuetify.js](http://vuetifyjs.com).
 
 ### Contributors
@@ -12,12 +9,13 @@
 </a>
 
  ## Requirements
- - Gridsome jamstack framework  
+built with Gridsome
+- gridsome v0.7.17
+- nodejs v14.17.6
+- axios v0.21.4
+- vuetify v2.3.0
 
 
- ## Set up
-
- ## Front-end compiling
 
 
  ## Deployment
