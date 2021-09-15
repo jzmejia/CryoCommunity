@@ -24,127 +24,41 @@
           </p>
         </v-col>
 
-        <!-- <v-col>
-          <v-card-title>Teaching</v-card-title>
-          <v-card height="500" class="overflow-y-auto">
-            <v-list v-for="(item, index) in teaching" :key="index">
-              <v-list-item-group>
-                <template v-for="(links, key) in item">
-                  <v-subheader :key="key">{{ key }}</v-subheader>
-                  <v-list-item
-                    exact
-                    v-for="(link, linkId) in links"
-                    :key="linkId"
-                    :href="link.url"
-                    target="_default"
-                  >
-                    <v-list-item-content>
-                      <v-list-item-title
-                        ><span class="mr-4">{{ link.name }}</span>
-                        <v-chip
-                          v-for="(tag, tagId) in link.tags"
-                          :key="tagId"
-                          color="accent"
-                          x-small
-                          link
-                        >
-                          {{ tag }}</v-chip
-                        >
-                      </v-list-item-title>
-                      <v-list-item-subtitle class="text-wrap">{{
-                        link.description
-                      }}</v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-                </template>
-              </v-list-item-group>
-            </v-list>
-          </v-card>
-        </v-col> -->
-        <!-- <v-col cols="12">
-          <v-card-title>Teaching</v-card-title>
-          <v-card rounded="lg">
-              <v-tabs v-model="tab">
-                <template v-for="item in teaching">
-                  <v-tab
-                    v-for="(links, key) in item"
-                    :key="key"
-                    :href="`#${key}`"
-                    exact
-                  >
-                    {{ key }}
-                  </v-tab>
-                </template>
-              </v-tabs>
-
-            <v-tabs-items :key="index" v-model="tab">
-              <template v-for="item in teaching">
-                <v-tab-item
-                  v-for="(links, key) in item"
-                  :key="key"
-                  :value="`${key}`"
-                >
-                  <v-list-item
-                    exact
-                    v-for="(link, linkId) in links"
-                    :key="linkId"
-                    :href="link.url"
-                    target="_default"
-                  >
-                    <v-list-item-content>
-                      <v-list-item-title
-                        ><span class="mr-4">{{ link.name }}</span>
-                        <v-chip
-                          v-for="(tag, tagId) in link.tags"
-                          :key="tagId"
-                          color="accent"
-                          x-small
-                          link
-                        >
-                          {{ tag }}</v-chip
-                        >
-                      </v-list-item-title>
-                      <v-list-item-subtitle class="text-wrap">{{
-                        link.description
-                      }}</v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-tab-item>
-              </template>
-            </v-tabs-items>
-          </v-card>
-        </v-col> -->
         <v-col cols="12">
           <v-card-title>Teaching</v-card-title>
-          <v-col cols="6">
+          <v-row>
+          <v-col cols="12" md="6">
             <resource obj="teaching"></resource>
           </v-col>
-          <v-col cols="6"></v-col>
+          <v-col cols="12" md="6">
+            <v-card rounded="lg" flat>
+              <v-img src="\ropeteam.jpg" height="500"></v-img>
+            </v-card>
+          </v-col>
+          </v-row>
           <v-divider></v-divider>
         </v-col>
-        
 
         <v-col cols="12">
           <v-card-title>Fieldwork</v-card-title>
           <v-row>
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <v-card rounded="lg" flat>
-              <v-img
-                src="\ropeteam.jpg"
-                height="500"
-              ></v-img>
+              <v-img src="\ropeteam.jpg" height="500"></v-img>
             </v-card>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <resource obj="fieldwork"></resource>
           </v-col>
           </v-row>
         </v-col>
 
-        <v-col cols="6">
+        <v-col cols="12">
           <v-card-title>Community</v-card-title>
-          <resource obj="community"></resource
-        ></v-col>
+          <v-col cols="12" md="6"> <resource obj="community"></resource></v-col>
+          <v-col cols="12" md="6"></v-col>
+          <v-divider />
+        </v-col>
       </v-row>
     </v-container>
   </Layout>

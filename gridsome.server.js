@@ -16,15 +16,15 @@ module.exports = function (api) {
         })
       ])
     }
-    config.devServer
-          .public("localhost:8080")
-          .host("localhost")
-          .port(8080)
-          .hotOnly(true)
-          .watchOptions({ poll: 1000 })
-          .https(false)
-          .disableHostCheck(true)
-          .headers({ "Access-Control-Allow-Origin": ["*"] });
+    // config.devServer
+    //       .public("localhost:8080")
+    //       .host("localhost")
+    //       .port(8080)
+    //       .hotOnly(true)
+    //       .watchOptions({ poll: 1000 })
+    //       .https(false)
+    //       .disableHostCheck(true)
+    //       .headers({ "Access-Control-Allow-Origin": ["*"] });
   })
   
   api.loadSource(async({ addCollection }) => {

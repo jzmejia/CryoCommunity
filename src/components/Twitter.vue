@@ -1,21 +1,15 @@
 <template>
-  <v-row>
+
     <v-col cols="4">
       <v-card
-        color="indigo accent-3"
-        dark
+        color="#b9ddfc"
+        light
         v-for="tweet in $static.tweets.edges"
         :key="tweet.node.id"
       >
-        <v-card-title>
-          <!-- <v-icon
-        v-text="'mdi-twitter'"
-      >
-      </v-icon> -->
-          <span class="font-weight-light">Twitter</span>
-        </v-card-title>
+        <v-icon>mdi-twitter</v-icon>
 
-        <v-card-text class="text-h5 font-weight-bold">
+        <v-card-text>
           "{{ tweet.node.text }}"
         </v-card-text>
 
@@ -51,7 +45,7 @@
         </v-card-actions>
       </v-card>
     </v-col>
-  </v-row>
+
 </template>
 
 <static-query>

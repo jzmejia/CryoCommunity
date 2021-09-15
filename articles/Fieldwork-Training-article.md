@@ -1,13 +1,15 @@
 ---
 preview_image: "/uploads/Dronbreen_sunrise.jpg"
-author: MARS (Midwest and Random Stragglers) Glaciology URGE Pod Participants
-title: A Safety Plan for Working Environments in Glaciology 
+author: MARS Pod Participants
+title: Creating a Safety Plan in Glaciology
+subtitle: for a wide-range of working environments
 published: true
 date: 2021-09-03T05:00:00Z
-excerpt: We get it. Creating a safe space for work, whether it be in the lab or in the field is tough! Here are some resources for ensuring your work environment is safe, considerate, and fun
+excerpt: We get it. Creating a safe space for work, whether it be in the lab or in the field is tough! Here are some resources for ensuring your work environment is safe, considerate, and fun.
 tags: 
     - PIs
-    - Field Work
+    - Fieldwork
+    - Lab
 documents:
 alt: description for screen readers
 

@@ -3,39 +3,52 @@
     <v-container>
       <div class="d-flex-row d-block flex-wrap d-sm-inline-flex">
         <v-card
-          class="ma-sm-2 my-5"
-          max-width="375"
+          class="ma-sm-2 my-5 d-flex align-start flex-column"
+          max-width="360"
+          max-height="650"
           v-for="item in $page.articles.edges"
           :key="item.node.id"
           :href="item.node.path"
         >
-          <v-img height="200px" :src="item.node.preview_image"> </v-img>
+          <v-img
+            max-height="250px"
+            min-height="250px"
+            :src="item.node.preview_image"
+          >
+          </v-img>
 
+          <v-card-title class="primary--text text-justify">
+            {{ item.node.title }}
+          </v-card-title>
+          <v-card-subtitle class="primary--text">
+            {{ item.node.subtitle }}
+          </v-card-subtitle>
           <v-card-text>
-            <h3 class="primary--text font-weight-bold mx-0 display-1">
-              {{ item.node.title }}
-            </h3>
+            <!-- <v--{{ item.node.subtitle }}</span> -->
             <v-chip
-                class="ma-1"
-                color="secondary"
-                link
-                small
-                v-for="(tag, index) in item.node.tags"
-                :key="index"
-              >{{tag}}</v-chip>
+              class="mr-1 mb-1"
+              color="accent"
+              link
+              x-small
+              v-for="(tag, index) in item.node.tags"
+              :key="index"
+              >#{{ tag }}</v-chip
+            >
+          </v-card-text>
+          <v-card-text class="body-2 text-justify"
+            >{{ item.node.excerpt }}
+          </v-card-text>
+          <v-card-text>
+            <span class="caption">{{ item.node.author }}</span>
             <br />
-            <span class="subtitle-1">{{ item.node.author }}</span>
-            <br />
-            <span class="text--primary">
-              <span>{{ item.node.date }}</span>
-              <br />
-              <span>{{ item.node.excerpt }}</span>
-            </span>
+            <span class="caption">{{ item.node.date }}</span>
           </v-card-text>
 
-          <v-card-actions>
-            <v-btn text color="orange">Read More</v-btn>
-          </v-card-actions>
+          <!-- <v-card-actions>
+            <v-btn text bottom color="orange" 
+              >Read More</v-btn
+            >
+          </v-card-actions> -->
         </v-card>
       </div>
       <div class="text-center">
@@ -60,11 +73,12 @@ query AllArticle ($page: Int) {
         id
         path
         title
+        subtitle
         tags
         author
         published
         preview_image (quality: 90)
-        date (format: "MMMM D, YYYY")
+        date (format: "DD.MM.YY")
         excerpt
       }
     }
@@ -77,7 +91,7 @@ import { Pager } from "gridsome";
 
 export default {
   components: {
-    Pager
-  }
+    Pager,
+  },
 };
 </script>

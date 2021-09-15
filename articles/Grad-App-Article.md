@@ -1,7 +1,8 @@
 ---
 preview_image: "/uploads/D24CA937-9C4C-461F-8425-541CF0A3B9F8_1_105_c.jpeg"
-author: Malisse Lummus, Asmara Lehrmann, and the MARS (Midwest and Random Stragglers) URGE Pod Participants
+author: Malisse Lummus, Asmara Lehrmann, and the MARS Pod Participants
 title: Applying to Graduate School in the Geosciences
+subtitle: 
 published: true
 date: 2019-10-15T05:00:00Z
 excerpt: The graduate application process can be daunting. Luckily, you don't need to figure it out alone. Through geogradapp.com, you can view a complete timeline of the application process along with tips and resources for navigating your way to graduate school in the Geosciences. 

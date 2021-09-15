@@ -9,15 +9,17 @@
             :alt="$page.article.alt"
             > </v-img>
           <v-card-text>
-            <h3 class="secondary--text font-weight-bold mx-0 display-2 px-xs-5">
+            <h2>
               {{ $page.article.title }}
-            </h3>
-            <br />
-            <span class="px-xs-5">{{ $page.article.author }}</span
+            </h2>
+            <h5 class="mt-n2 px-1">{{ $page.article.subtitle }}</h5>
+            <span class="px-xs-5 mx-1">{{ $page.article.author }}</span
             ><br />
-            <span class="px-xs-5"
-              >Date: {{ $page.article.date }} | Time:
-              {{ $page.article.timeToRead }} min to read</span
+            <span class="px-xs-5 mx-1"
+              >{{ $page.article.date }}</span>
+              |
+            <span class="px-xs-5 mx-1 text-right">
+             {{ $page.article.timeToRead }} min to read</span
             >
             <div class="pa-xs-5 body-1">
               <ArticleContent :content="$page.article.content" />
@@ -46,8 +48,9 @@ query Article ($path: String!) {
   article: article (path: $path) {
     path
     title
+    subtitle
     author
-    date (format: "MMMM D, YYYY")
+    date (format: "DD.MM.YY")
     timeToRead
     content
     tags

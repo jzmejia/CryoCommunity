@@ -1,5 +1,8 @@
 <template>
   <Layout>
+    <v-container>
+    <v-row>
+      <v-col cols="12" md="6">
     <v-card
       class="mx-sm-auto"
       v-for="item in $page.articles.edges"
@@ -24,7 +27,10 @@
         <v-btn text color="orange" :href="item.node.path">Read More</v-btn>
       </v-card-actions>
     </v-card>
+      </v-col>
     <Twitter/>
+    </v-row>
+    </v-container>
   </Layout>
 </template>
 
