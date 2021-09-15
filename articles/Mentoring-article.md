@@ -11,25 +11,31 @@ tags:
     - Graduate
 documents:
     - name: LGBTQIA+
-      url: https://drive.google.com/file/d/1yvOpUBAx-jGBRyhD-r24zhOx3Ek1wbMb/view?usp=sharing
+      url: https://drive.google.com/file/d/1T9IAuaVVKm46YelsWkUhQK3JRRz_Xzon/view?usp=sharing
+    - name: Mentoring agreement
+      url: https://docs.google.com/document/d/18RvYd-6PqaHi9_9Kvhtj5PBYhziIud4U/edit?usp=sharing&ouid=103882217726560507397&rtpof=true&sd=true
+    - name: Individual Development Plan
+      url: https://myidp.sciencecareers.org/?AspxAutoDetectCookieSupport=1
+    - name: Anti-Racist Lab
+      url: https://ecoevorxiv.org/4a9p8/
+    - name: Outdoor Leadership
+      url: https://pyramidbooks.indielite.org/book/9780898865028
 ---
 
-This article draws on policy's and recommendations from the University of Michigan's Rackhman Graduate School. The complete write up can be found [here] (https://drive.google.com/drive/folders/1o1DapPRrinIiMMmoyfOtdIPwDq3nrutH).
+Few aspects of the graduate experience are as critical as the mentor-mentee relationship. Despite this important role, many students may not know how to successfully interact with their mentor and many advisors have not received any training in how to be a successful mentor, especially for students that might come from backgrounds very different than their own. Below we outline a few recommendations for advisors and advisees that are primarily drawn from research based recommendations from the University of Michigan's Rackham Graduate School. The complete write up can be found [here] (https://drive.google.com/file/d/1k76uSv99ofsENkB5wyxarRYqxrJRhy-a/view?usp=sharing).  But we emphasize two takeaways here:
 
-### What is a Mentor and what do they do?
-The role of a mentor is multi-faceted, and the definition can change over time or even person to person. The University of Michigan's Rackman Graduate School defines the responsibility of a mentor as "centered on a commitment to guidance, experience, and expertise." Just as our students have unique skill sets that should be celebrated and expanded upon, so too must the skills and perspectives of the mentor. When developing their unique methods of mentoring, the mentor must:
-* Know their mentees
+###1.  Establish the boundaries of the mentor/mentee relationship.
+
+Mentors serve many different purposes and the purpose can even evolve over time. This is why it is important for mentors to work with their mentees to establish the area(s) where the mentor is expected to (and feels as though they can effectively) provide advice and guidance. For example, a mentor might be primarily responsible for advising a mentee on something as specific as appropriate coursework or a slew of related activities including research and teaching practices, professional development, work-life-balance. Establishing the boundaries of the mentor-mentee relationship means that both the mentor and mentee know what to expect.
+
+Here are some examples of areas a mentor can provide advice:
 * Model and guide excellence in research, teaching, and service
-* Establish effective communication 
 * Demystify graduate school
 * Facilitate professional development
-* Assiste with finding other mentors
+* Assist with finding other mentors
 * Model professional responsibility
 * Support mental health and well-being
 
-### What is a Mentee and what do they do?
+###2. Have a written shared expectations document where you write down the unwritten rules of the relationship. Good communication is key for successful mentoring relationships and a big part of this is establishing shared expectations that document what the advisor can expect from the advisee and what vice versa.  This can involve things that are simple as establishing how often to meet, how to communicate (email? phone? Morse Code? carrier-pigeon?), how long to wait for a response. [See here] (https://docs.google.com/document/d/1bQgO-VPfSVXUW3PYsrmW4B5CWBeNaz1O/edit?usp=sharing&ouid=103882217726560507397&rtpof=true&sd=true) for a template of a mentor-mentee shared expectations document developed by the University of Michigan.
 
-### Guidelines for being a good Mentor/Mentee
-Clarity and agreed upon expections between the mentor and the mentee are important aspects to a healthy mentoring relationship. One way to help demystify graduate school and write down those "unwritten rules" that swirl around academia is to create a shared expectations document. These documents are created and discussed by both the mentor and the mentee and are not supposed to act as a form of intimidation or a strict contract. Instead, they set healthy boundaries that recognize that both parties are humans who are likely to fail to meet some expectations, and they put in place a plan for those inevitabilities. Here are some templates for shared expectations documents for the STEM and Social Sciences and for co-mentori
-
-### Links
+Here are some examples of helpful written resources:
