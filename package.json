@@ -1,5 +1,5 @@
 {
-  "name": "CryoCommunity",
+  "name": "cryo-community",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -23,5 +23,6 @@
     "sass-loader": "^10.1.1",
     "tailwindcss": "^2.2.9",
     "webpack-node-externals": "^1.7.2"
-  }
+  },
+  "version": "0.0.0"
 }
