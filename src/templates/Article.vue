@@ -29,7 +29,6 @@
             <v-btn
               v-for="(item, index) in $page.article.documents"
               :key="index"
-              flat
               text
               color="accent"
               :href="item.url"
