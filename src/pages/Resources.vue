@@ -32,11 +32,13 @@
           </v-col>
           <v-col cols="12" md="6">
             <v-card rounded="lg" flat>
-              <v-img src="\ropeteam.jpg" height="500"></v-img>
+              <v-img contain src="/illustrated_fig_barnett.png" height="500">
+              <v-card-actions>
+              <v-btn text bottom x-small href="https://twitter.com/CodyTBarnett">illustrated by Cody Barnett</v-btn></v-card-actions>
+            </v-img>
             </v-card>
           </v-col>
           </v-row>
-          <v-divider></v-divider>
         </v-col>
 
         <v-col cols="12">
@@ -55,9 +57,14 @@
 
         <v-col cols="12">
           <v-card-title>Community</v-card-title>
+          <v-row>
           <v-col cols="12" md="6"> <resource obj="community"></resource></v-col>
-          <v-col cols="12" md="6"></v-col>
-          <v-divider />
+          <v-col cols="12" md="6">
+            <v-card rounded="lg" flat>
+            <v-img constrain src="/networking-01.png" height="400"></v-img></v-card>
+          </v-col>
+          </v-row>
+          
         </v-col>
       </v-row>
     </v-container>

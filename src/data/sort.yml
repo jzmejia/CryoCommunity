@@ -1,0 +1,48 @@
+Undergraduate:
+  - tag: Applications
+    path: "/articles/grad-app-article"
+  - tag: Fieldwork Prep
+    path: "/articles/fieldwork-article"
+  - tag: Networking
+    path: "/resources"
+  - tag: Mentoring
+    path: "/articles/mentoring-article"
+Graduate:
+  - tag: Applications
+    path: "/articles/grad-app-article"
+  - tag: Fieldwork Prep
+    path: "/articles/fieldwork-article"
+  - tag: Safety Plan
+    path: "/articles/fieldwork-training-article"
+  - tag: Labwork
+    path: "/articles/fieldwork-training-article"
+  - tag: Networking
+    path: "/resources"
+  - tag: Mentorship
+    path: "/articles/mentoring-article"
+ECR:
+  - tag: Fieldwork Prep
+    path: "/articles/fieldwork-article"
+  - tag: Safety Plan
+    path: "/articles/fieldwork-training-article"
+  - tag: Labwork
+    path: "/articles/fieldwork-training-article"
+  - tag: Teaching
+    path:  "/resources"
+  - tag: Networking
+    path: "/resources"
+  - tag: Mentoring
+    path: "/articles/mentoring-article"
+PI:
+  - tag: Field Safety Plan
+    path: "/articles/fieldwork-training-article"
+  - tag: Building a Lab
+    path: "/articles/fieldwork-training-article"
+  - tag: Teaching
+    path: "/resources"
+  - tag: Networking
+    path: "/resources"
+  - tag: Mentoring
+    path: "/articles/mentoring-article"
+
+
