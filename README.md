@@ -9,7 +9,6 @@
 </a>
 
  ## Requirements
-built with Gridsome
 - gridsome v0.7.17
 - nodejs v14.17.6
 - axios v0.21.4
