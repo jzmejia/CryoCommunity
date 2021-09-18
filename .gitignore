@@ -1,8 +1,10 @@
 *.log
 .cache
 .DS_Store
-src/.temp
-node_modules
-dist
+src/.temp/
+node_modules/
 .env
 .env.*
+yarn.lock
+yarn-error.log
+dist

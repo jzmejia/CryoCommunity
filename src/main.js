@@ -1,7 +1,6 @@
-import Vuetify from "vuetify";
+import Vuetify from 'vuetify/lib/framework';
+import 'vuetify/dist/vuetify.min.css';
 import DefaultLayout from "~/layouts/Default.vue";
-
-import "vuetify/dist/vuetify.min.css";
 import "~/assets/styles.scss"
 
 export default function(Vue, { appOptions, head }) {
@@ -16,13 +15,12 @@ export default function(Vue, { appOptions, head }) {
 
   const opts = {
     icons: {
-      iconfont: "fa" // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4'
+      iconfont: "fa"
     },
-    // adjust the theme if you would like to
     theme: {
       themes: {
         light: {
-          primary: "#008ee8", //glacierblue500
+          primary: "#008ee8",
           secondary: "#b9ddfc",
           accent: "#ff9703",
           error: "#FF5252",
@@ -38,6 +36,5 @@ export default function(Vue, { appOptions, head }) {
 
   appOptions.vuetify = new Vuetify(opts);
 
-  // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
 }
