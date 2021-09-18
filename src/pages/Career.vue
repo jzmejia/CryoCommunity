@@ -124,15 +124,3 @@ export default {
 </script>
 
 
-<style lang="scss">
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.how-it-works.row .col-2.full-right:after {
-  height: 100%;
-  left: calc(50% - 3px);
-}
-</style>
