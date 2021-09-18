@@ -24,7 +24,7 @@
         <v-col cols="3">
           <!-- <span class="overline ml-3 font-weight-medium"></span> -->
           <div v-for="(link, index) in other" :key="index">
-            <v-btn text plain :small="smAndDown" :to="link.path">{{ link.title }} </v-btn>
+            <v-btn text plain :small="smAndDown" :href="link.path">{{ link.title }} </v-btn>
           </div>
         </v-col>
         <v-col class="caption my-0 py-0 mt-8 d-flex align-center" cols="12">
@@ -85,16 +85,16 @@ export default {
       { title: "Contact", path: "/contact" },
     ],
     featured: [
-      { title: "career stage", path: "/careerstage"},
-      { title: "undergraduates", path: "/careerstage" },
-      { title: "graduate students", path: "/careerstage" },
-      { title: "early career", path: "/careerstage" },
-      { title: "pi's", path: "/careerstage" },
+      { title: "career stage", path: "/career"},
+      { title: "undergraduates", path: "/career#undergrad" },
+      { title: "graduate students", path: "/career#grad" },
+      { title: "early career", path: "/career#ecr" },
+      { title: "pi's", path: "/career#pi" },
     ],
     other: [
       { title: "Geo Grad App", path: "http://geogradapp.com" },
       { title: "CryoSciListen", path: "https://cryoscilisten.weebly.com" },
-      { title: "Best Practices", path: "/projects" },
+      // { title: "Best Practices", path: "https://"+window.location.hostname+"/projects" },
       { title: "URGE", path: "https://urgeoscience.org/" },
     ],
   }),

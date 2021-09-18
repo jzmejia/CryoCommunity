@@ -70,15 +70,6 @@ export default {
         case 'xl': return 125
       }
     },
-    width() {
-      switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return 150
-        case 'sm': return 150
-        case 'md': return 150
-        case 'lg': return 100
-        case 'xl': return 100
-      }
-    }
   },
 };
 </script>

@@ -24,7 +24,7 @@
           </p>
         </v-col>
 
-        <v-col cols="12">
+        <v-col cols="12" id="teaching">
           <v-card-title>Teaching</v-card-title>
           <v-row>
           <v-col cols="12" md="6">
@@ -41,7 +41,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12">
+        <v-col cols="12" id="fieldwork">
           <v-card-title>Fieldwork</v-card-title>
           <v-row>
           <v-col cols="12" md="6">
@@ -55,7 +55,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="12">
+        <v-col cols="12" id="community">
           <v-card-title>Community</v-card-title>
           <v-row>
           <v-col cols="12" md="6"> <resource obj="community"></resource></v-col>

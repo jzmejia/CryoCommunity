@@ -4,7 +4,7 @@ hero:
   heroSubtitle: fostering inclusivity within the cryospheric sciences
 buttons:
   - name: Career Stage
-    link: /careerstage
+    link: /career
   - name: About
     link: /about
   - name: Recent

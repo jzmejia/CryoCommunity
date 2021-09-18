@@ -4,7 +4,7 @@ Undergraduate:
   - tag: Fieldwork Prep
     path: "/articles/fieldwork-prep"
   - tag: Networking
-    path: "/resources"
+    path: "/resources#community"
   - tag: Mentoring
     path: "/articles/mentoring"
 Graduate:
@@ -13,35 +13,35 @@ Graduate:
   - tag: Fieldwork Prep
     path: "/articles/safety-plan"
   - tag: Safety Plan
-    path: "/articles/fieldwork-prep"
+    path: "/articles/safety-plan"
   - tag: Labwork
     path: "/articles/fieldwork-prep"
   - tag: Networking
-    path: "/resources"
+    path: "/resources#community"
   - tag: Mentorship
     path: "/articles/mentoring"
 ECR:
   - tag: Fieldwork Prep
-    path: "/articles/safety-plan"
-  - tag: Safety Plan
     path: "/articles/fieldwork-prep"
+  - tag: Safety Plan
+    path: "/articles/safety-plan"
   - tag: Labwork
     path: "/articles/fieldwork-prep"
   - tag: Teaching
-    path:  "/resources"
+    path:  "/resources#teaching"
   - tag: Networking
-    path: "/resources"
+    path: "/resources#community"
   - tag: Mentoring
     path: "/articles/mentoring"
 PI:
   - tag: Field Safety Plan
     path: "/articles/safety-plan"
   - tag: Building a Lab
-    path: "/articles/fieldwork-prep"
+    path: "/articles/safety-plan"
   - tag: Teaching
-    path: "/resources"
+    path: "/resources#teaching"
   - tag: Networking
-    path: "/resources"
+    path: "/resources#community"
   - tag: Mentoring
     path: "/articles/mentoring"
 
