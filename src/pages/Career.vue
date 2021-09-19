@@ -16,7 +16,7 @@
         </v-col>
       </v-row>
       <v-row id="undergrad">
-        <v-col cols="12">
+        <v-col sm="12" lg="8" offset-lg="2">
           <v-timeline
             :dense="$vuetify.breakpoint.smAndDown"
           >
