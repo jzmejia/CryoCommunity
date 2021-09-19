@@ -46,8 +46,8 @@ teaching:
       description: Jupyter tool that allows creating and grading assignments in a Jupyter notebook.
       tags: [Jupyter]
   - Reading:
-    - name: Diversity & Inclusiive Teaching
-      url: http://crlt.umich.edu/multicultural-teaching
+    - name: Diversity & Inclusive Teaching
+      url: https://crlt.umich.edu/multicultural-teaching/inclusive-teaching-strategies
       description: by University of Michigan Center for Research on Learning and Teaching
     - name: How to be an anti-racist educator
       url: https://www.ascd.org/el/articles/how-to-be-an-antiracist-educator
