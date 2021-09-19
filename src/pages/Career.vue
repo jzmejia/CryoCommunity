@@ -4,10 +4,10 @@
     <v-container>
       <v-row class="mt-10">
         <v-col cols="8" offset="2">
-          <h4 class="text-center" color="accent">
+          <h4 class="text-center accent--text">
             Browse the CryoCommunity Directory
           </h4>
-          <p class="body-1">
+          <p class="body-1 text-justify">
             Use the career stage road-map below to find relevant content
             including the MARS Pod's original content and our curated lists of
             resources and tools across a wide range of categories.
@@ -16,8 +16,10 @@
         </v-col>
       </v-row>
       <v-row id="undergrad">
-        <v-col cols="8" offset="2">
-          <v-timeline>
+        <v-col cols="12">
+          <v-timeline
+            :dense="$vuetify.breakpoint.smAndDown"
+          >
             <v-timeline-item
               color="accent"
               icon="fas fa-book-reader"
@@ -70,7 +72,7 @@
               large
             >
               <v-card flat class="my-4" id="pi">
-                <v-card-title> Early Career Researchers </v-card-title>
+                <v-card-title> Early Career </v-card-title>
                 <v-chip
                   v-for="(chip, index) in chips.ECR"
                   :key="index"
@@ -91,7 +93,7 @@
             >
               <v-card flat class="my-4 pb-14">
                 <v-card-title class="h3">
-                  Principal Investigators
+                  PIs
                 </v-card-title>
                 <v-chip
                   v-for="(chip, index) in chips.PI"
@@ -119,6 +121,14 @@ export default {
     return {
       chips,
     };
+  },
+  computed: {
+    smAndDown() {
+      return this.$vuetify.breakpoint.smAndDown
+    },
+    mobile() {
+      return this.$vuetify.breakpoint.mobile
+    },
   },
 };
 </script>
