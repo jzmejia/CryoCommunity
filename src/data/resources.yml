@@ -52,7 +52,7 @@ teaching:
     - name: How to be an anti-racist educator
       url: https://www.ascd.org/el/articles/how-to-be-an-antiracist-educator
       description: by Dena Simmons
-    - name: CIRTL Network resources for inclusiive teaching
+    - name: CIRTL Network resources for inclusive teaching
       url: https://www.cirtl.net/resources/topics/60
       description: by the CITRL Network
     - name: Remote Academia 2020
@@ -110,7 +110,7 @@ professionalDev:
 community:
   - Polar:
     - name: Ice & Snow Graduate Student Community
-      url: https://join.slack.com/t/cryograds/shared_invite/zt-prwk5a4g-5C_OKWbvbU3syPtNokw5GQ
+      url: https://cryograds.slack.com
       description: A slack workspace for graduate students in the cryospheric sciences.
     - name: Earth Science Women's Network Discussion Group
       url: https://www.facebook.com/groups/ESWNDiscussionGroup
@@ -233,7 +233,7 @@ community:
       url: https://theiagd.org/
       description: International Association for Geoscience Diversity
     - name: WGC
-      url: http://www.nabg-us.org/
+      url: https://www.wgcanada.org
       description: Women Geoscientists in Canada
     - name: NSBE
       url: https://www.nsbe.org/Programs/Graduate-School/Explore/Graduate-student-life/Mentoring.aspx#.YIL5B6lKj0o
