@@ -15,8 +15,11 @@ exports.handler = async (event, context) => {
             Authorization: `Bearer ${process.env.GRIDSOME_BEARER_TOKEN}`,
         },
     });
+    console.log(data)
     for (const tweet of data.data) {
-        tweets.push({ ...tweet, ...data.includes.users[0] })
+        let user = data.includes.users[0]        
+        delete user.id
+        tweets.push({ ...tweet, ...user })
     }
     return {
         headers: {

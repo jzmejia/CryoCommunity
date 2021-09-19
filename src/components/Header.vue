@@ -9,15 +9,17 @@
         background: '#ffffffd0 !important',
       }"
     >
-      <!-- <v-app-bar-nav-icon
-        @click="toggle"
-      ></v-app-bar-nav-icon> -->
-      <v-toolbar-title>
-      <!-- <v-btn text href="/" tile> -->
-        <!-- <g-image src="~/assets/snowflakes-white.png" height="40" width="32" class="mr-5"/> -->
+
+      <v-btn text href="/">
+      <v-avatar>
+        <img src="/Cryo_Community_Logo_no_color.png" height="40px">
+      </v-avatar>
+       
+      </v-btn>
+       <v-toolbar-title>
         {{ $static.metadata.siteName }}
-      <!-- </v-btn> -->
       </v-toolbar-title>
+      <!-- </v-btn> -->
 
       <v-spacer></v-spacer>
       <!-- <v-btn icon>

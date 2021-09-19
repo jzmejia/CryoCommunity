@@ -41,7 +41,7 @@
         </p>
         <div class="overline mt-10">Contact us</div>
         <p>If you are interested in this project follow us on twitter <a href="https://twitter.com/cryocommunity">@cryocommunity</a> and bookmark this site. 
-        If you are interested in collaborating, have additonal resources to add, or if there is a correction that needs to be made, send us an email at <span>cryocommunity@gmail.com</span></p>
+        If you are interested in collaborating, have additonal resources to add, or if there is a correction that needs to be made, send us an email at <span>cryospherecommunity@gmail.com</span></p>
         </v-col>
      <v-col cols="12 secondary--text text-h1 mr-6 pt-10" align-self="end">
         our team

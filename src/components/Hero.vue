@@ -6,9 +6,21 @@
   >
     <v-row align="center" justify="center">
       <v-col>
-        <h1 class="h1 font-weight-bold text-center black--text">{{heroData.hero.heroTitle}}</h1>
-        <h5 class="text-center font-weight-light black--text line-height mt-0 tb-5">
-          {{heroData.hero.heroSubtitle}}</h5>
+        <div 
+        class="my-8 font-weight-regular text-center black--text"
+        :class="{
+          'text-h3': smAndDown,
+          'text-h1': !smAndDown
+        }"
+        >{{heroData.hero.heroTitle}}</div>
+        <div 
+        class="text-center black--text line-height mt-0 tb-5"
+        :class="{
+          'text-h5': !smAndDown,
+          'text-subtitle-1': smAndDown
+        }"
+        >
+          {{heroData.hero.heroSubtitle}}</div>
           <br/>
           <v-row>
             <v-col
@@ -23,7 +35,7 @@
               small
               rounded
               color=#61b9f7
-              class="mx-2 black--text"
+              class="ma-2 black--text"
               min-width="100px"
               :to="button.link"
             >{{button.name}}</v-btn>
@@ -43,5 +55,14 @@ export default {
       heroData
     };
   },
+  computed: {
+    smAndDown() {
+      return this.$vuetify.breakpoint.smAndDown
+    },
+    mobile() {
+      return this.$vuetify.breakpoint.mobile
+    },
+  }
 };
 </script>
+
