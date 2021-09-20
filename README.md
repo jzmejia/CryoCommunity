@@ -1,7 +1,12 @@
 
-![CryoCollective Logo](/static/Cryo_Community_Logo.png)
+# CryoCommunity website
 
- cryocommunity.org website built using [Gridsome](http://gridsome.org), [Vue.js](http://vuejs.org), and [Vuetify.js](http://vuetifyjs.com).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/720aeb1c-f3a8-419f-b08e-8cb6ff7d940b/deploy-status)](https://app.netlify.com/sites/cryocommunity/deploys)
+
+<img src="/src/assets/cc_logo_horizontal_color.png" width="400">
+
+
+ http://cryocommunity.org website built using [Gridsome](http://gridsome.org), [Vue.js](http://vuejs.org), and [Vuetify.js](http://vuetifyjs.com).
 
 ### Contributors
 <a href="https://github.com/jzmejia/cryocommunity/graphs/contributors">
