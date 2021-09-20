@@ -1,5 +1,5 @@
 <template>
-  <v-app class="overflow-hidden">
+  <v-app>
     <Header />
     <v-main>
       <Hero />

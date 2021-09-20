@@ -4,9 +4,9 @@
     <v-container>
       <v-row class="mt-10">
         <v-col cols="8" offset="2">
-          <h4 class="text-center accent--text">
+          <div class="text-h4 mb-4 text-center accent--text">
             Browse the CryoCommunity Directory
-          </h4>
+          </div>
           <p class="body-1 text-justify">
             Use the career stage road-map below to find relevant content
             including the MARS Pod's original content and our curated lists of

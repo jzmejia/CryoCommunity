@@ -31,14 +31,13 @@
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
-            <v-btn color="black" v-if="$vuetify.breakpoint.mobile" icon>
+      <v-btn v-if="$vuetify.breakpoint.smAndDown" color="black" icon>
         <v-icon @click="toggle">fa-bars</v-icon>
       </v-btn>
       <v-toolbar-items v-else>
         <v-btn
           v-for="(item, index) in items"
           :key="index"
-          exact
           text
           class="transparent"
           exact-active-class="primary--text"
@@ -48,25 +47,21 @@
       </v-toolbar-items>
     </v-app-bar>
     <v-navigation-drawer
-      app
-      v-if="$vuetify.breakpoint.mobile"
+      v-if="$vuetify.breakpoint.smAndDown"
       v-model="collapse"
-      :mini-variant="mini"
+      app
+      right
     >
       <v-list-item>
         <v-list-item-avatar>
-          <!-- <g-image src="~/Cryo_Community_Logo_no_color.png"></g-image> -->
           <v-img
             contain
-            srcset="/Cryo_Community_Logo_no_color.png"
+            src="/Cryo_Community_Logo_no_color.png"
             height="35px"
           />
         </v-list-item-avatar>
         {{ $static.metadata.siteName }}
 
-        <!-- <v-btn icon @click.stop="mini = !mini">
-          <v-icon>fa-chevron-left</v-icon>
-        </v-btn> -->
       </v-list-item>
 
       <v-divider></v-divider>

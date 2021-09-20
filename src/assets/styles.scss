@@ -6,6 +6,14 @@
 @import url('https://fonts.googleapis.com/css?family=Hind:400|Tajawal:400');
 
 /* DEFINING OUR COLOR THEME AND COLOR VARIATIONS */
+$body-font-family: 'Hind', sans-serif;
+$headings: (
+    'h1': (
+        'font-family': 'Poppins', sans-serif;
+    )
+)
+
+
 
 //  PRIMARY
 $glacier50:  #e2f2fd;
@@ -37,15 +45,13 @@ $primary: #008ee8;
 $secondary: #b9ddfc;
 $accent: #ff9703;
 $error: #FF5252;
+$error2: #720d5d;
 $info: #2196F3;
 $success: #4CAF50;
 $warning: #FFC107;
+$other: #e30425;
 
-html {
-    font-size: 100%;
-}
 
-/*16px*/
 
 body {
     background: white;

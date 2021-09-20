@@ -15,7 +15,7 @@ exports.handler = async (event, context) => {
             Authorization: `Bearer ${process.env.GRIDSOME_BEARER_TOKEN}`,
         },
     });
-    console.log(data)
+
     for (const tweet of data.data) {
         let user = data.includes.users[0]        
         delete user.id

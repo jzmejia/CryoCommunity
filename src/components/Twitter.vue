@@ -61,7 +61,7 @@ export default {
   }),
   async mounted() {
     let url = "/.netlify/functions/twitter";
-    let baseURL = "https://" + window.location.hostname;
+    let baseURL = "https://cryocommunity.org";
 
     if (process.env.NODE_ENV === "development") {
       baseURL = "http://192.168.1.156:9999";
