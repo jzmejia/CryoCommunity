@@ -6,7 +6,9 @@
 <img src="/src/assets/cc_logo_horizontal_color.png" width="400">
 
 
- http://cryocommunity.org website built using [Gridsome](http://gridsome.org), [Vue.js](http://vuejs.org), and [Vuetify.js](http://vuetifyjs.com).
+ http://cryocommunity.org website built with
+ [gridsome](http://gridsome.org), 
+ [vuejs](http://vuejs.org), [vuetify](http://vuetifyjs.com).
 
 ### Contributors
 <a href="https://github.com/jzmejia/cryocommunity/graphs/contributors">
@@ -22,23 +24,6 @@
 
 
 
- ## Deployment
-Deployed via Netlify at http://cryocommunity.org 
-
- # Credits
- [J. Mejia](http://github.com/jzmejia)  
- [M. Lummus](https://github.com/mlummus)
 
 
 
-
-
-
-
-<!-- primary:    #005AE0,   
-secondary:  #0093F5,  
-accent:     #FF600A,   
-error:      #FF5252,  
-info:       #2196F3,  
-success:    #4CAF50,  
-warning:    #FFC107   -->
