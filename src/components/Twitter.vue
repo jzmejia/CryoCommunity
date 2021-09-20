@@ -1,6 +1,6 @@
 <template>
-  <v-col cols="4">
-    <v-card color="#b9ddfc" light v-for="tweet in tweets" :key="tweet.id" class="my-1">
+  <v-col cols="12" lg="4" offset-lg="2" style="max-height: 500px;" class="overflow-auto">
+    <v-card color="#b9ddfc" light v-for="tweet in tweets" :key="tweet.id" class="my-2">
       <v-card-text>
         <svg
           viewBox="0 0 15 15"

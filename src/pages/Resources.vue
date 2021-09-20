@@ -2,7 +2,7 @@
   <Layout>
     <v-container>
       <v-row>
-        <v-col cols="10">
+        <v-col cols="12" lg="10">
           <h2>Glaciology Resource Map</h2>
           <p class="subtitle-2">
             Developed by the MARS Glaciology URGE Pod and adapted from the
@@ -14,7 +14,7 @@
           </p>
         </v-col>
         <v-col cols="12">
-          <p class="body-1 text-justify">
+          <p class="body-1">
             This resource map is designed to provide general information and
             resources outside of any one University or Institution. In addition
             to providing links to existing resources and programs, we also
@@ -25,46 +25,69 @@
         </v-col>
 
         <v-col cols="12" id="teaching">
-          <v-card-title>Teaching</v-card-title>
+          <v-card-title class="text-h4">Teaching</v-card-title>
           <v-row>
-          <v-col cols="12" md="6">
-            <resource obj="teaching"></resource>
-          </v-col>
-          <v-col cols="12" md="6">
-            <v-card rounded="lg" flat>
-              <v-img contain src="/illustrated_fig_barnett.png" height="500">
-              <v-card-actions>
-              <v-btn text bottom x-small href="https://twitter.com/CodyTBarnett">illustrated by Cody Barnett</v-btn></v-card-actions>
-            </v-img>
-            </v-card>
-          </v-col>
+            <v-col cols="12" md="6">
+              <resource obj="teaching"></resource>
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              :order="$vuetify.breakpoint.mobile ? 'first' : ''"
+            >
+              <v-card rounded="lg" elevation="1" class="fill-height">
+                <v-img
+                  contain
+                  src="/illustrated_fig_barnett.png"
+                  :height="$vuetify.breakpoint.mobile ? 300 : 400"
+                >
+                </v-img>
+                <v-btn
+                  text
+                  color="primary"
+                  absolute
+                  tile
+                  right
+                  top
+                  x-small
+                  href="https://twitter.com/CodyTBarnett"
+                  >illustrated by Cody Barnett</v-btn
+                >
+              </v-card>
+            </v-col>
           </v-row>
         </v-col>
 
         <v-col cols="12" id="fieldwork">
-          <v-card-title>Fieldwork</v-card-title>
+          <v-card-title class="text-h4">Fieldwork</v-card-title>
           <v-row>
-          <v-col cols="12" md="6">
-            <v-card rounded="lg" flat>
-              <v-img src="\ropeteam.jpg" height="500"></v-img>
-            </v-card>
-          </v-col>
-          <v-col cols="12" md="6">
-            <resource obj="fieldwork"></resource>
-          </v-col>
+            <v-col cols="12" md="6">
+              <v-card rounded="lg" class="fill-height">
+                <v-img src="\ropeteam.jpg" height="100%"></v-img>
+              </v-card>
+            </v-col>
+            <v-col cols="12" md="6">
+              <resource obj="fieldwork"></resource>
+            </v-col>
           </v-row>
         </v-col>
 
         <v-col cols="12" id="community">
-          <v-card-title>Community</v-card-title>
+          <v-card-title class="text-h4">Community</v-card-title>
           <v-row>
-          <v-col cols="12" md="6"> <resource obj="community"></resource></v-col>
-          <v-col cols="12" md="6">
-            <v-card rounded="lg" flat>
-            <v-img constrain src="/networking-01.png" height="400"></v-img></v-card>
-          </v-col>
+            <v-col cols="12" md="6">
+              <resource obj="community"></resource
+            ></v-col>
+            <v-col
+              cols="12"
+              md="6"
+              :order="$vuetify.breakpoint.mobile ? 'first' : ''"
+            >
+              <v-card tile flat>
+                <v-img contain src="/networking-01.png"></v-img
+              ></v-card>
+            </v-col>
           </v-row>
-          
         </v-col>
       </v-row>
     </v-container>

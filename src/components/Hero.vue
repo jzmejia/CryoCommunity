@@ -1,47 +1,41 @@
 <template>
   <v-parallax
-  :src="heroData.hero.heroImgSrc"
-  height="1000"
-   
+    v-if="$route.path == '/'"
+    :src="heroData.hero.heroImgSrc"
+    style="height: 100vh"
   >
     <v-row align="center" justify="center">
-      <v-col>
-        <div 
-        class="my-8 font-weight-regular text-center black--text"
-        :class="{
-          'text-h3': smAndDown,
-          'text-h1': !smAndDown
-        }"
-        >{{heroData.hero.heroTitle}}</div>
-        <div 
-        class="text-center black--text line-height mt-0 tb-5"
-        :class="{
-          'text-h5': !smAndDown,
-          'text-subtitle-1': smAndDown
-        }"
+      <v-col cols="12" align="center" align-self="end">
+        <div
+          class="mb-8 font-weight-medium black--text"
+          :class="{
+            'text-h3': mdAndDown,
+            'text-h1': !mdAndDown,
+          }"
         >
-          {{heroData.hero.heroSubtitle}}</div>
-          <br/>
-          <v-row>
-            <v-col
-              cols="12"
-              align-self="center"
-            >
-            <div class="text-center">
-            <v-btn
-              v-for="(button, index) in heroData.buttons"
-              :key="index"
-              elevation="1"
-              small
-              rounded
-              color=#61b9f7
-              class="ma-2 black--text"
-              min-width="100px"
-              :to="button.link"
-            >{{button.name}}</v-btn>
-            </div>
-            </v-col>
-          </v-row>
+          {{ heroData.hero.heroTitle }}
+        </div>
+        <div
+          class="black--text line-height tb-5"
+          :class="{
+            'text-h5': !mdAndDown,
+            'text-h6': mdAndDown,
+          }"
+        >
+          {{ heroData.hero.heroSubtitle }}
+        </div>
+      </v-col>
+      <v-col align-self="start" align="center">
+          <v-btn
+            v-for="(button, index) in heroData.buttons"
+            :key="index"
+            small
+            rounded
+            class="mx-2"
+            color="#61b9f7"
+            :to="button.link"
+            >{{ button.name }}</v-btn
+          >
       </v-col>
     </v-row>
   </v-parallax>
@@ -52,17 +46,18 @@ import heroData from "~/data/hero.yml";
 export default {
   data() {
     return {
-      heroData
+      heroData,
     };
   },
   computed: {
-    smAndDown() {
-      return this.$vuetify.breakpoint.smAndDown
+    mdAndDown() {
+      return this.$vuetify.breakpoint.mdAndDown;
     },
     mobile() {
-      return this.$vuetify.breakpoint.mobile
+      return this.$vuetify.breakpoint.mobile;
     },
-  }
+  },
 };
 </script>
+
 

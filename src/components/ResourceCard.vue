@@ -1,6 +1,6 @@
 <template>
-  <v-card rounded="lg" height="500">
-    <v-tabs v-model="tab">
+  <v-card rounded="lg">
+    <v-tabs v-model="tab" show-arrows grow>
       <template v-for="item in resource">
         <v-tab v-for="(links, key) in item" :key="key" :href="`#${key}`" exact>
           {{ key }}
@@ -8,7 +8,7 @@
       </template>
     </v-tabs>
 
-    <v-tabs-items v-model="tab" style="max-height: 450px; overflow-y: auto;">
+    <v-tabs-items v-model="tab" style="max-height: 400px; overflow-y: auto">
       <template v-for="item in resource">
         <v-tab-item v-for="(links, key) in item" :key="key" :value="`${key}`">
           <v-list-item
@@ -22,7 +22,7 @@
               <v-list-item-title
                 ><span class="mr-4">
                   {{ link.name }}
-                  </span>
+                </span>
                 <v-chip
                   v-for="(tag, tagId) in link.tags"
                   :key="tagId"
@@ -52,7 +52,7 @@ export default {
   props: ["obj"],
   data() {
     return {
-      tab: ""
+      tab: "",
     };
   },
   computed: {

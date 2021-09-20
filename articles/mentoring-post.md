@@ -37,6 +37,8 @@ Mentors serve many different purposes and the purpose can even evolve over time.
 * Model professional responsibility
 * Support mental health and well-being
 
+
+
  Have a written shared expectations document where you write down the unwritten rules of the relationship. Good communication is key for successful mentoring relationships and a big part of this is establishing shared expectations that document what the advisor can expect from the advisee and what vice versa.  This can involve things that are simple as establishing how often to meet, how to communicate (email? phone? Morse Code? carrier-pigeon?), how long to wait for a response. [See here] (https://docs.google.com/document/d/1bQgO-VPfSVXUW3PYsrmW4B5CWBeNaz1O/edit?usp=sharing&ouid=103882217726560507397&rtpof=true&sd=true) for a template of a mentor-mentee shared expectations document developed by the University of Michigan.
 
 ##### Here are some examples of helpful written resources:

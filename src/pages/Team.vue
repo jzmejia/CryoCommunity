@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <v-container fluid>
+    <v-container>
       <h3>Our Team</h3>
       <v-row>
         <v-col

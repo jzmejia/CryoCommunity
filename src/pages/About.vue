@@ -1,16 +1,12 @@
 
 <template>
   <Layout>
+    <v-container>
     <v-row class="mt-14">
       <v-col cols="12" class="secondary--text text-h1 mr-6" align-self="end">
         about
       </v-col>
-      <v-col 
-      :cols="12"
-      :xs="12"
-      :md="5"
-      >
-
+      <v-col cols="12" xs="12" md="5">
         <g-link
           to="/team"
           class="secondary--text text-h2 font-weight-thin text-decoration-none"
@@ -19,17 +15,19 @@
         </g-link>
         <div class="my-3">
           <g-link
-          to="/contact"
-          class="secondary--text text-h2 font-weight-thin text-decoration-none"
-        >
-          contact
-        </g-link>
+            to="/contact"
+            class="
+              secondary--text
+              text-h2
+              font-weight-thin
+              text-decoration-none
+            "
+          >
+            contact
+          </g-link>
         </div>
       </v-col>
-      <v-col 
-      :cols="11"
-      :md="6"
-      >
+      <v-col cols="12" md="6">
         <div class="overline">who we are</div>
         <p class="text-justify body-1">
           CryoCommunity is the product of the
@@ -42,7 +40,7 @@
           generate, collate, and distribute best practices across a suite of
           academic processes and institution types.
         </p>
-      
+
         <div class="overline pt-4">our mission</div>
         <p class="text-justify body-1">
           The purpose of CryoCommunity is to build and foster a more just,
@@ -53,7 +51,7 @@
           advocate for the changes needed to create an equitable and inclusive
           culture.
         </p>
-      
+
         <div class="overline pt-4">our vision</div>
         <p class="text-justify body-1">
           Our vision is for cryocommunity.org to as a hub for JEDI resources in
@@ -111,9 +109,11 @@
           our team</g-link
         >
       </v-col>
-
+      <v-col>
       <teamCard></teamCard>
+      </v-col>
     </v-row>
+    </v-container>
   </Layout>
 </template>
 <script>

@@ -1,12 +1,9 @@
 <template>
   <v-app class="overflow-hidden">
     <Header />
-    <Hero v-if="isHome" />
-
     <v-main>
-      <v-container>
+      <Hero />
       <slot />
-      </v-container>
     </v-main>
     <Footer />
   </v-app>
@@ -25,7 +22,7 @@ export default {
   },
   computed: {
     isHome() {
-      return this.$route.path === "/";
+      return this.$route.name === "home";
     },
   },
 };
