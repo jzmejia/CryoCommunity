@@ -58,7 +58,7 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <Twitter />
+        <!-- <Twitter /> -->
       </v-row>
     </v-container>
   </Layout>
