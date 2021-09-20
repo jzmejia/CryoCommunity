@@ -31,8 +31,8 @@
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
-      <v-btn v-if="$vuetify.breakpoint.smAndDown" color="black" icon>
-        <v-icon @click="toggle">fa-bars</v-icon>
+      <v-btn v-if="$vuetify.breakpoint.smAndDown" @click="collapse = true" color="black" icon>
+        <v-icon>fa-bars</v-icon>
       </v-btn>
       <v-toolbar-items v-else>
         <v-btn
@@ -47,9 +47,10 @@
       </v-toolbar-items>
     </v-app-bar>
     <v-navigation-drawer
+      app
       v-if="$vuetify.breakpoint.smAndDown"
       v-model="collapse"
-      app
+      
       right
     >
       <v-list-item>
@@ -98,7 +99,6 @@ query {
 export default {
   data() {
     return {
-      tab: 0,
       collapse: false,
       items: [
         { title: "Home", path: "/" },
