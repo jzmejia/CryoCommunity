@@ -1,48 +1,48 @@
 Undergraduate:
   - tag: Applications
-    path: "/articles/grad-app"
+    path: "/articles/grad-app-post"
   - tag: Fieldwork Prep
-    path: "/articles/fieldwork-prep"
+    path: "/articles/fieldwork-prep-post"
   - tag: Networking
     path: "/resources#community"
   - tag: Mentoring
-    path: "/articles/mentoring"
+    path: "/articles/mentoring-post"
 Graduate:
   - tag: Applications
-    path: "/articles/grad-app"
+    path: "/articles/grad-app-post"
   - tag: Fieldwork Prep
-    path: "/articles/safety-plan"
+    path: "/articles/safety-post"
   - tag: Safety Plan
-    path: "/articles/safety-plan"
+    path: "/articles/safety-post"
   - tag: Labwork
-    path: "/articles/fieldwork-prep"
+    path: "/articles/fieldwork-prep-post"
   - tag: Networking
     path: "/resources#community"
   - tag: Mentorship
-    path: "/articles/mentoring"
+    path: "/articles/mentoring-post"
 ECR:
   - tag: Fieldwork Prep
-    path: "/articles/fieldwork-prep"
+    path: "/articles/fieldwork-prep-post"
   - tag: Safety Plan
-    path: "/articles/safety-plan"
+    path: "/articles/safety-post"
   - tag: Labwork
-    path: "/articles/fieldwork-prep"
+    path: "/articles/fieldwork-prep-post"
   - tag: Teaching
     path:  "/resources#teaching"
   - tag: Networking
     path: "/resources#community"
   - tag: Mentoring
-    path: "/articles/mentoring"
+    path: "/articles/mentoring-post"
 PI:
   - tag: Field Safety Plan
-    path: "/articles/safety-plan"
+    path: "/articles/safety-post"
   - tag: Building a Lab
-    path: "/articles/safety-plan"
+    path: "/articles/safety-post"
   - tag: Teaching
     path: "/resources#teaching"
   - tag: Networking
     path: "/resources#community"
   - tag: Mentoring
-    path: "/articles/mentoring"
+    path: "/articles/mentoring-post"
 
 
