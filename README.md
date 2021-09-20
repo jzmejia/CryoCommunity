@@ -1,5 +1,5 @@
 
-![CryoCollective Logo](/src/assets/cryo-logo.png)
+![CryoCollective Logo](/static/Cryo_Community_Logo.png)
 
  cryocommunity.org website built using [Gridsome](http://gridsome.org), [Vue.js](http://vuejs.org), and [Vuetify.js](http://vuetifyjs.com).
 
@@ -18,7 +18,7 @@
 
 
  ## Deployment
- cryocommunity is not yet deployed. We will be deploying the site in September 2021 with Netlify. 
+Deployed via Netlify at http://cryocommunity.org 
 
  # Credits
  [J. Mejia](http://github.com/jzmejia)  
