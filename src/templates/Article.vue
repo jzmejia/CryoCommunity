@@ -3,8 +3,7 @@
     <v-container :class="{ 'px-0': $vuetify.breakpoint.mobile }">
       <v-card :flat="$vuetify.breakpoint.mobile" tile>
         <v-img
-          height="450px"
-          position="left"
+          height="450"
           :src="$page.article.preview_image"
           :alt="$page.article.alt"
         >
@@ -26,20 +25,26 @@
           </span>
         </v-card-subtitle>
         <v-divider class="grey lighten-3" />
+
         <v-card-text>
           <ArticleContent :content="$page.article.content" />
         </v-card-text>
-        <v-card-actions class="pa-0">
-          <v-tabs show-arrows color="accent" grow>
-            <v-tab
-              v-for="(item, index) in $page.article.documents"
-              :key="index"
-              :href="item.url"
-            >
-              {{ item.name }}
-            </v-tab>
-          </v-tabs>
-        </v-card-actions>
+        <v-row class="mb-8">
+          <v-col
+            cols="12"
+            md="6"
+            class="ml-4"
+          >
+            <resource :resource="docs" ></resource>
+          </v-col>
+          <v-col
+            cols="12"
+            md="6"
+            class="ml-4"
+          >
+            <resource v-if="$page.article.resource" :obj="$page.article.resource"></resource> 
+          </v-col>
+        </v-row>
       </v-card>
     </v-container>
   </Layout>
@@ -56,10 +61,11 @@ query Article ($path: String!) {
     timeToRead
     content
     tags
-    documents {name, url}
+    documents { guides {name, url, description}}
     excerpt
     published
     preview_image
+    resource
     alt
   }
 }
@@ -67,12 +73,28 @@ query Article ($path: String!) {
 
 <script>
 import ArticleContent from "@/components/ArticleContent";
+import Resource from "~/components/ResourceCard";
 
 export default {
   components: {
     ArticleContent,
+    Resource,
+  },
+  data() {
+    return {
+
+    };
+  },
+  computed: {
+    docs() {
+      console.log(this.$page.article.documents)
+      return this.$page.article.documents;
+    },
   },
 };
 </script>
 
-<style scoped></style>
+
+
+
+

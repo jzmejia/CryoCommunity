@@ -270,6 +270,9 @@ community:
     - name: Out to Innovate
       url: https://www.noglstp.org/
       description: An organization with a mission to empower LGBTQ+ individuals in STEM by providing education, advocacy, professional development, networking, and peer support.
+    - name: lgbtqia+ physicists
+      url: http://lgbtphysicists.org/
+      description: Serving sexual and gender minorities in physics
     - name: The Arctic Council
       url: https://arctic-council.org/
       twitter: ArcticCouncil

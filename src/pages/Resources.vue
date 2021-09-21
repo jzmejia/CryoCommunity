@@ -28,14 +28,14 @@
           <v-card-title class="text-h4">Teaching</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
-              <resource obj="teaching"></resource>
+              <resource :resource="teaching"></resource>
             </v-col>
             <v-col
               cols="12"
               md="6"
               :order="$vuetify.breakpoint.mobile ? 'first' : ''"
             >
-              <v-card rounded="lg" elevation="1" class="fill-height">
+              <v-card flat rounded="lg" class="fill-height d-flex align-center justify-center">
                 <v-img
                   contain
                   src="/illustrated_fig_barnett.png"
@@ -62,12 +62,12 @@
           <v-card-title class="text-h4">Fieldwork</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
-              <v-card rounded="lg" class="fill-height">
+              <v-card flat rounded="lg" class="fill-height">
                 <v-img src="\ropeteam.jpg" height="100%"></v-img>
               </v-card>
             </v-col>
             <v-col cols="12" md="6">
-              <resource obj="fieldwork"></resource>
+              <resource :resource="fieldwork"></resource>
             </v-col>
           </v-row>
         </v-col>
@@ -76,15 +76,15 @@
           <v-card-title class="text-h4">Community</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
-              <resource obj="community"></resource
+              <resource :resource="community"></resource
             ></v-col>
             <v-col
               cols="12"
               md="6"
               :order="$vuetify.breakpoint.mobile ? 'first' : ''"
             >
-              <v-card tile flat>
-                <v-img contain src="/networking-01.png"></v-img
+              <v-card tile flat class="fill-height d-flex align-center justify-center">
+                <v-img src="/networking-01.png" :height="$vuetify.breakpoint.mobile ? 300 : 400"></v-img
               ></v-card>
             </v-col>
           </v-row>

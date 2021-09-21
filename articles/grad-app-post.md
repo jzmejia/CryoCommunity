@@ -12,8 +12,6 @@ tags:
     - Applications
     - Admissions
 documents:
-    - name:
-      url: 
 ---
 
 ## **The Graduate School Application Station**

@@ -11,8 +11,6 @@ tags:
     - Fieldwork
     - Lab
 documents:
-    - name: test
-      url: "https://google.com"
 alt: description for screen reader
 ---
 ### Let's get started

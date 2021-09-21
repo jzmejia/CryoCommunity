@@ -46,19 +46,19 @@
 </template>
 
 <script>
-import resources from "~/data/resources.yml";
+// import resources from "~/data/resources.yml";
 
 export default {
-  props: ["obj"],
+  props: ["resource", ],
   data() {
     return {
       tab: "",
     };
   },
   computed: {
-    resource() {
-      return resources[this.obj];
-    },
+    // resource() {
+    //   return this.obj;
+    // },
   },
 };
 </script>
