@@ -45,19 +45,19 @@
 export default {
   data: () => ({
     valid: true,
-    name: process.env.NODE_ENV ? "Jessica Mejia" : "",
+    name: "",
     nameRules: [
       (v) => !!v || "Name is required",
       (v) => (v && v.length <= 30) || "Name must be less than 10 characters",
       (v) => (v && v.length > 2) || "Name must be greater than 2 characters",
     ],
-    email: process.env.NODE_ENV ? "jzmejia990@gmail.com" : "",
+    email: "",
     emailRules: [
       (v) => !!v || "E-mail is required",
       (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
     ],
     messageRules: [(v) => !!v || "Name is required",],
-    message: process.env.NODE_ENV ? "Test Message" : "",
+    message: "",
   }),
   metaInfo: {
     title: "About us",
