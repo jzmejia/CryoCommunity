@@ -25,12 +25,12 @@
           </span>
         </v-card-subtitle>
         <v-divider class="grey lighten-3" />
-
         <v-card-text>
           <ArticleContent :content="$page.article.content" />
         </v-card-text>
         <v-row class="mb-8">
           <v-col
+            v-if="docs.length" 
             cols="12"
             md="6"
             class="ml-4"
@@ -42,7 +42,7 @@
             md="6"
             class="ml-4"
           >
-            <resource v-if="$page.article.resource" :obj="$page.article.resource"></resource> 
+            <resource :resource="resources[$page.article.resource]"></resource> 
           </v-col>
         </v-row>
       </v-card>
@@ -74,6 +74,7 @@ query Article ($path: String!) {
 <script>
 import ArticleContent from "@/components/ArticleContent";
 import Resource from "~/components/ResourceCard";
+import resources from "~/data/resources.yml";
 
 export default {
   components: {
@@ -82,13 +83,15 @@ export default {
   },
   data() {
     return {
-
+      resources
     };
   },
   computed: {
     docs() {
-      console.log(this.$page.article.documents)
-      return this.$page.article.documents;
+      return this.$page.article.documents.map((item) => item);
+    },
+    fieldwork() {
+      return this.resources.fieldwork;
     },
   },
 };

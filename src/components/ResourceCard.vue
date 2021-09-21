@@ -1,16 +1,17 @@
 <template>
   <v-card rounded="lg">
     <v-tabs v-model="tab" show-arrows grow>
-      <template v-for="item in resource">
-        <v-tab v-for="(links, key) in item" :key="key" :href="`#${key}`" exact>
+      <template v-for="(item, index) in resource">
+
+        <v-tab v-for="(links, key) in item" :key="`${key}-${index}`" :href="`#${key}`" exact>
           {{ key }}
         </v-tab>
       </template>
     </v-tabs>
 
     <v-tabs-items v-model="tab" style="max-height: 400px; overflow-y: auto">
-      <template v-for="item in resource">
-        <v-tab-item v-for="(links, key) in item" :key="key" :value="`${key}`">
+      <template v-for="(item,index) in resource">
+        <v-tab-item v-for="(links, key) in item" :key="`${key}-${index}`" :value="`${key}`">
           <v-list-item
             exact
             v-for="(link, linkId) in links"

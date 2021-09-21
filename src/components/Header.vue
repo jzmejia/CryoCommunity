@@ -32,7 +32,7 @@
 
       <v-spacer></v-spacer>
       <v-btn v-if="$vuetify.breakpoint.smAndDown" @click="collapse = true" color="black" icon>
-        <v-icon>fa-bars</v-icon>
+        <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M0 5.5h15m-15-4h15m-15 8h15m-15 4h15" stroke="currentColor"></path></svg>
       </v-btn>
       <v-toolbar-items v-else>
         <v-btn

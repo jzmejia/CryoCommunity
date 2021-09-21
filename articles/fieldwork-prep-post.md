@@ -11,7 +11,6 @@ tags:
     - Fieldwork
     - Grad
     - ECR
-documents: 
 resource: fieldwork
 alt: person in pink coat and cold weather gear drilling into a snowy ice surface with blue skies overhead.
 
