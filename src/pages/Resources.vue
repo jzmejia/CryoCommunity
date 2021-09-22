@@ -6,7 +6,7 @@
           <h2>Glaciology Resource Map</h2>
           <p class="subtitle-2">
             Developed by the MARS Glaciology URGE Pod and adapted from the
-            "Sample Phd Mentoring Plan" developed by Dr. Vashan Wright (WOHI)
+            "Sample Phd Mentoring Plan" developed by Dr. Vashan Wright (WHOI)
             and Dr. Karin Block (CUNY)
             <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
               >CC BY-NC-SA 4.0</a
