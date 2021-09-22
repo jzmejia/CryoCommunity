@@ -2,7 +2,7 @@
   <Layout>
     <v-container>
       <v-row>
-        <v-col>
+        <v-col cols="12">
           <v-row class="grey lighten-5 my-2" align="center">
             <v-col cols="6">
               <v-img
@@ -18,7 +18,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" md="6">
+        <v-col cols="12" lg="6" md="6">
           <v-card
             class="mx-sm-auto"
             v-for="item in $page.articles.edges"
@@ -58,7 +58,6 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <!-- <Twitter /> -->
       </v-row>
     </v-container>
   </Layout>
@@ -85,11 +84,7 @@
 </page-query>
 
 <script>
-import Twitter from "~/components/Twitter";
 export default {
-  components: {
-    Twitter,
-  },
 };
 </script>
 

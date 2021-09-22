@@ -1,44 +1,68 @@
 <template>
   <v-footer>
-    <v-container>
-      <v-row class="mt-5">
-        <v-col cols="12" class="text-right caption my-0 py-0 mt-8 align-center">
-          <span class="text-md-h4 text-sm-h5 font-weight-light"
-            >join the community</span
+    <v-container :fluid="smAndDown">
+      <v-row>
+        <!-- <v-col cols="12" lg="6">Newsletter</v-col> -->
+        <v-col cols="12" lg="8" class="ml-auto">
+          <v-form
+            ref="form"
+            v-model="valid"
+            method="POST"
+            name="newsletter"
+            netlify
           >
-          <!-- <div class="mt-4"><email-bar /></div> -->
-          <div class="my-2">
-            <g-link to="/contact">
-              <svg
-                viewBox="0 0 15 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                width="15"
-                height="15"
+            <v-text-field
+              prepend-inner-icon="fa-envelope"
+              solo
+              flat
+              type="email"
+              label="Email"
+              suffix="JOIN THE COMMUNITY"
+              rounded
+              outlined
+              v-model="email"
+              name="name"
+              :rules="emailRules"
+              autocomplete="off"
+              color="blue accent-3"
+              class="text-h5"
+            ></v-text-field>
+          </v-form>
+        </v-col>
+        <!-- <v-col cols="auto"><div class="text-h5">join the community</div></v-col> -->
+        <!-- <v-btn icon color="blue" to="/contact">
+                <svg
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                >
+                  <path
+                    d="M.5 4.5l7 4 7-4m-13-3h12a1 1 0 011 1v10a1 1 0 01-1 1h-12a1 1 0 01-1-1v-10a1 1 0 011-1z"
+                    stroke="currentColor"
+                  ></path>
+                </svg>
+              </v-btn>
+              <v-btn color="blue" icon href="https://twitter.com/CryoCommunity">
+                <svg
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                >
+                  <path
+                    d="M14.977 1.467a.5.5 0 00-.87-.301 2.559 2.559 0 01-1.226.763A3.441 3.441 0 0010.526 1a3.539 3.539 0 00-3.537 3.541v.44C3.998 4.75 2.4 2.477 1.967 1.325a.5.5 0 00-.916-.048C.004 3.373-.157 5.407.604 7.139 1.27 8.656 2.61 9.864 4.51 10.665 3.647 11.276 2.194 12 .5 12a.5.5 0 00-.278.916C1.847 14 3.55 14 5.132 14h.048c4.861 0 8.8-3.946 8.8-8.812v-.479c.363-.37.646-.747.82-1.236.193-.546.232-1.178.177-2.006z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </v-btn>
+              <v-btn
+                icon
+                color="blue"
+                href="https://github.com/jzmejia/CryoCommunity"
               >
-                <path
-                  d="M.5 4.5l7 4 7-4m-13-3h12a1 1 0 011 1v10a1 1 0 01-1 1h-12a1 1 0 01-1-1v-10a1 1 0 011-1z"
-                  stroke="currentColor"
-                ></path>
-              </svg>
-            </g-link><span class="mx-8">
-            <a href="https://twitter.com/CryoCommunity">
-              <svg
-                viewBox="0 0 15 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                width="15"
-                height="15"
-              >
-                <path
-                  d="M14.977 1.467a.5.5 0 00-.87-.301 2.559 2.559 0 01-1.226.763A3.441 3.441 0 0010.526 1a3.539 3.539 0 00-3.537 3.541v.44C3.998 4.75 2.4 2.477 1.967 1.325a.5.5 0 00-.916-.048C.004 3.373-.157 5.407.604 7.139 1.27 8.656 2.61 9.864 4.51 10.665 3.647 11.276 2.194 12 .5 12a.5.5 0 00-.278.916C1.847 14 3.55 14 5.132 14h.048c4.861 0 8.8-3.946 8.8-8.812v-.479c.363-.37.646-.747.82-1.236.193-.546.232-1.178.177-2.006z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </a>
-            </span>
-            
-              <a href="https://github.com/jzmejia/CryoCommunity">
                 <svg
                   viewBox="0 0 15 15"
                   fill="none"
@@ -51,76 +75,98 @@
                     fill="currentColor"
                   ></path>
                 </svg>
-              </a>
-              <span class="ml-8 mr-5">
-                <g-link to="/about">
-                <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M7 4.5V5h1v-.5H7zm1-.01v-.5H7v.5h1zM8 11V7H7v4h1zm0-6.5v-.01H7v.01h1zM6 8h1.5V7H6v1zm0 3h3v-1H6v1zM7.5 1A6.5 6.5 0 0114 7.5h1A7.5 7.5 0 007.5 0v1zM1 7.5A6.5 6.5 0 017.5 1V0A7.5 7.5 0 000 7.5h1zM7.5 14A6.5 6.5 0 011 7.5H0A7.5 7.5 0 007.5 15v-1zm0 1A7.5 7.5 0 0015 7.5h-1A6.5 6.5 0 017.5 14v1z" fill="currentColor"></path></svg>
-                </g-link>
-              </span>
-          </div>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col sm="6" md="3">
-          <!-- <div class=" overline">SITE MAP</div> -->
-          <!-- <v-divider></v-divider> -->
-          <!-- <v-subheader>Site map</v-subheader> -->
-          <div v-for="(link, index) in sitemap" :key="index">
-            <v-btn text :small="smAndDown" plain :to="link.path"
-              >{{ link.title }}
-            </v-btn>
-          </div>
-        </v-col>
-        <v-col sm="6" md="3" class="ml-n6 mr-6">
-          <!-- <span class="overline">career stage</span> -->
-          <!-- <v-divider></v-divider> -->
-          <div v-for="(link, index) in featured" :key="index">
-            <v-btn text plain :small="smAndDown" :to="link.path"
-              >{{ link.title }}
-            </v-btn>
-          </div>
-        </v-col>
-        <v-col m="6" md="3">
-          <!-- <span class="overline ml-3 font-weight-medium"></span> -->
-          <div v-for="(link, index) in other" :key="index">
-            <v-btn text plain :small="smAndDown" :href="link.path"
-              >{{ link.title }}
-            </v-btn>
-          </div>
-        </v-col>
-        <v-col class="caption my-0 py-0 mt-8 d-flex align-center" cols="12">
-          <svg
-            viewBox="0 0 15 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15"
-          >
-            <path
-              d="M10.146 10.146l-.353.354.707.707.354-.353-.708-.708zM13.5 7.5l.354.354.353-.354-.353-.354-.354.354zm-2.646-3.354l-.354-.353-.707.707.353.354.708-.708zm-6.708 6.708l.354.353.707-.707-.353-.354-.708.708zM1.5 7.5l-.354-.354-.353.354.353.354L1.5 7.5zm3.354-2.646l.353-.354-.707-.707-.354.353.708.708zm6 6l3-3-.708-.708-3 3 .708.708zm3-3.708l-3-3-.708.708 3 3 .708-.708zm-9 3l-3-3-.708.708 3 3 .708-.708zm-3-2.292l3-3-.708-.708-3 3 .708.708zm6.153-6.436l-2 12 .986.164 2-12-.986-.164z"
-              fill="currentColor"
-            ></path>
-          </svg>
-          <span class="ml-1"> with </span>
-          <svg
-            viewBox="0 0 15 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15"
-          >
-            <path
-              d="M6.5 5.5l1 1 1-1a1.414 1.414 0 112 2l-3 3-3-3a1.414 1.414 0 112-2z"
-              stroke="currentColor"
-            ></path>
-          </svg>
-          by <a class="mx-1" href="https://github.com/jzmejia/">J. Mejia</a> and
-          <a class="mx-1" href="https://twitter.com/LummusMalisse">M. Lummus</a>
-        </v-col>
+              </v-btn> -->
 
-        <v-col cols="12" class="caption mt-0 pt-0 ml-1 mb-4">
-          &copy; {{ new Date().getFullYear() }}
-          {{ $static.metadata.siteName }}
+        <!-- <g-link to="/about">
+              <v-btn color="blue" icon>
+                <svg
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                >
+                  <path
+                    d="M7 4.5V5h1v-.5H7zm1-.01v-.5H7v.5h1zM8 11V7H7v4h1zm0-6.5v-.01H7v.01h1zM6 8h1.5V7H6v1zm0 3h3v-1H6v1zM7.5 1A6.5 6.5 0 0114 7.5h1A7.5 7.5 0 007.5 0v1zM1 7.5A6.5 6.5 0 017.5 1V0A7.5 7.5 0 000 7.5h1zM7.5 14A6.5 6.5 0 011 7.5H0A7.5 7.5 0 007.5 15v-1zm0 1A7.5 7.5 0 0015 7.5h-1A6.5 6.5 0 017.5 14v1z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </v-btn>
+              </g-link> -->
+      </v-row>
+
+      <v-row>
+        <v-col cols="12" lg="8">
+          <v-row dense>
+            <v-col cols="auto" lg="4" md="2">
+              <div v-for="(link, index) in sitemap" :key="index">
+                <v-btn plain :x-small="smAndDown" :to="link.path"
+                  >{{ link.title }}
+                </v-btn>
+              </div>
+            </v-col>
+            <v-col cols="auto" lg="4" md="2">
+              <div v-for="(link, index) in featured" :key="index">
+                <v-btn plain :x-small="smAndDown" :to="link.path"
+                  >{{ link.title }}
+                </v-btn>
+              </div>
+            </v-col>
+
+            <v-col cols="auto" lg="4" md="2">
+              <div v-for="(link, index) in other" :key="index">
+                <v-btn plain :x-small="smAndDown" :href="link.path"
+                  >{{ link.title }}
+                </v-btn>
+              </div>
+            </v-col>
+
+            <v-col class="caption my-0 py-0 mt-8 d-flex align-center" cols="12">
+              <svg
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+              >
+                <path
+                  d="M10.146 10.146l-.353.354.707.707.354-.353-.708-.708zM13.5 7.5l.354.354.353-.354-.353-.354-.354.354zm-2.646-3.354l-.354-.353-.707.707.353.354.708-.708zm-6.708 6.708l.354.353.707-.707-.353-.354-.708.708zM1.5 7.5l-.354-.354-.353.354.353.354L1.5 7.5zm3.354-2.646l.353-.354-.707-.707-.354.353.708.708zm6 6l3-3-.708-.708-3 3 .708.708zm3-3.708l-3-3-.708.708 3 3 .708-.708zm-9 3l-3-3-.708.708 3 3 .708-.708zm-3-2.292l3-3-.708-.708-3 3 .708.708zm6.153-6.436l-2 12 .986.164 2-12-.986-.164z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <span class="ml-1"> with </span>
+              <svg
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+              >
+                <path
+                  d="M6.5 5.5l1 1 1-1a1.414 1.414 0 112 2l-3 3-3-3a1.414 1.414 0 112-2z"
+                  stroke="currentColor"
+                ></path>
+              </svg>
+              by
+              <a class="mx-1" href="https://github.com/jzmejia/">J. Mejia</a>
+              and
+              <a class="mx-1" href="https://twitter.com/LummusMalisse"
+                >M. Lummus</a
+              >
+            </v-col>
+
+            <v-col cols="12" class="caption mt-0 pt-0 ml-1 mb-4">
+              &copy; {{ new Date().getFullYear() }}
+              {{ $static.metadata.siteName }}
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col cols="12" lg="4" :order="smAndDown ? 'first' : ''">
+          <v-row>
+            <v-col cols="12" style="max-height: 325px;" class="overflow-auto">
+              <Twitter />
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-container>
@@ -137,12 +183,20 @@ query {
 
 <script>
 import EmailBar from "./EmailBar.vue";
+import Twitter from "./Twitter";
 
 export default {
   components: {
     EmailBar,
+    Twitter,
   },
   data: () => ({
+    valid: true,
+    email: "",
+    emailRules: [
+      (v) => !!v || "E-mail is required",
+      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+    ],
     icons: [
       {
         icon: "fab fa-twitter",
@@ -178,4 +232,3 @@ export default {
   },
 };
 </script>
-
