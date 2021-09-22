@@ -95,25 +95,15 @@ export default {
     handleSubmit() {
       if (!this.$refs.form.validate()) return;
 
-      // fetch("/", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      //   body: this.encode({
-      //     "form-name": "contact",
-      //     ...this.formData,
-      //   }),
-      // })
-      //   .then(() => this.$router.push("/success"))
-      //   .catch((error) => console.error(error));
-
       const config = {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
       };
       const data = new URLSearchParams();
       data.append("form-name", "contact");
-      data.append("name", this.name);
-      data.append("email", this.email);
-      data.append("message", this.message);
+      data.append("name", this.formData.name);
+      data.append("email", this.formData.email);
+      data.append("message", this.formData.message);
+
       axios
         .post(
           "/",
