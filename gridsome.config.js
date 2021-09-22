@@ -2,6 +2,7 @@
 
 module.exports = {
   siteName: 'CryoCommunity',
+  siteUrl:"https://cryocommunity.org/",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
