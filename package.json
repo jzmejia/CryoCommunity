@@ -13,6 +13,7 @@
     "axios": "^0.21.4",
     "gridsome": "^0.7.23",
     "twitter-text": "^3.1.0",
+    "query-string": "^7.0.1",
     "vuetify": "^2.5.8"
   },
   "devDependencies": {

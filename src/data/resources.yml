@@ -28,6 +28,10 @@ teaching:
       url: https://krischer.github.io/seismo_live_build/tree/index.html
       description: Jupyter notebooks for seismology
       tags: [Jupyter]
+    - name: Glacier and Ice Sheet Dynamics (EAS 4803/8803) at Georgia Tech
+      url: https://github.com/aarobel/GlaciologyClass
+      description: The github repository includes slides, notes and code demonstrations. - Alex Robel and Winnie Chu
+      tags: [Jupyter, Python, MATLAB, github]
   - Modules:
     - name: Antarctic Ice Sheet-past and present
       url: http://www.iceocean.org/educational-products.html
@@ -124,6 +128,12 @@ community:
       url: https://www.polarimpactnetwork.org
       twitter: PolarImpact
       description: An inclusive network of racial & ethnic minorities and allies in the polar research community.
+    - name: Minoritized Genders in the Cryosphere Slack Channel
+      url: https://join.slack.com/t/cryowomen/shared_invite/zt-w7dpmekx-aknn5VYFdxTiiq6fqtmlow
+      description: email cryospherecommunity@gmail.com or jzmejia@buffalo.edu for an invite link
+    - name: Women of Color Slack Channel
+      url:
+      descirption: Contact Onjalé (onjale.scott@gmail.com) for invite link
     - name: International Glaciological Society
       url: https://www.igsoc.org/
       description: The IGS was founded in 1936 to provide a focus for individuals interested in practical and scientific aspects of snow and ice.
@@ -226,12 +236,20 @@ community:
     - name: SOLESS
       url: https://ciresdiversity.colorado.edu/soless
       description: Society of Latinx/Hispanics in Earth & Space Sciences
+    - name: MAES
+      url: https://mymaes.org/
+      description: Society of Mexican American Engineers and Scientists
     - name: GSA
       url: https://www.geosociety.org/
       description: Geological Society of America
     - name: IAGD
       url: https://theiagd.org/
       description: International Association for Geoscience Diversity
+    - name: National Consortium for Graduate Degrees for Minorities in Engineering and Science
+      url: https://www.gemfellowship.org/
+      description:
+    - name: International Association for Geoscience Diversity (IAGD)
+      url: https://theiagd.org/
     - name: WGC
       url: https://www.wgcanada.org
       description: Women Geoscientists in Canada
@@ -252,6 +270,15 @@ community:
       twitter:
       description: 
   - More:
+    - name: Academics for Black Survival and Wellness
+      url: https://www.academics4blacklives.com/about
+      description: Guided by a Black feminist frame, we hope to foster accountability and growth for non-Black people and enhance healing and wellness for Black people.
+    - name: The Geoscience Alliance
+      url: https://geosciencealliance.org
+      description: Broadening participation of Native Americans in the Geosciences
+    - name: HBCU Geoscience working group
+      url: 	https://serc.carleton.edu/integrate/about/hbcu_working_group.html
+      descirption: 
     - name: Queer and in STEM
       url: https://queerinstem.org/
       description:
@@ -280,6 +307,22 @@ community:
     - name: Kick-starting scientific collaborations remotely
       url: https://www.nceas.ucsb.edu/news/kick-starting-scientific-collaborations-remotely
       description: by J. Lowndes, C. Kappel, & J. Brun
+undergrad:
+  - Internships:
+    - name: Woods Hole Partnership Education Program (PEP)
+      url: https://www.woodsholediversity.org/pep/
+      description:
+    - name: Significant Opportunities in Atmospheric Research and Science (SOARS)
+      url: https://soars.ucar.edu/
+      description: 
+    - name: Stanord SURGE program
+      url: https://oma.stanford.edu/surge
+      description: 
+  - Scholarships:
+    - name: J. David Lowell Field Camp Scholarship
+      url: https://rock.geosociety.org/eo/moreInformation.asp?program=scholar
+      description: $2,000 to attend the field camp of your chooice. 
+
 fieldwork:
   - Guides:
     - name: Safety and Belonging in the field 
