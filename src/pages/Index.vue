@@ -18,7 +18,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" md="6">
+        <v-col cols="12" md="5">
           <v-card
             class="mx-sm-auto"
             v-for="item in $page.articles.edges"
