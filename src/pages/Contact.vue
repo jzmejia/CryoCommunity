@@ -13,13 +13,13 @@
         </v-card-subtitle>
         <v-card-text>
           <v-form
-            ref="form"
-            v-model="valid"
+            name="contact"
             data-netlify="true"
-            data-netlify-recaptcha="true"
             data-netlify-honeypot="bot-field"
             @submit.prevent="handleSubmit"
           >
+          <!--             action="/success/"
+            method="post" -->
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
               <label> Don’t fill this out: <input name="bot-field" /> </label>
@@ -51,7 +51,7 @@
               label="Message"
               required
             ></v-textarea>
-            <v-btn type="submit" :disabled="!valid" color="success">
+            <v-btn type="submit" :loading="loading" color="success">
               Submit
             </v-btn>
           </v-form>
@@ -63,10 +63,12 @@
 
 <script>
 import axios from "axios";
+import qs from "query-string";
 export default {
   data: () => ({
     valid: true,
     formData: {},
+    loading: false,
     name: "",
     nameRules: [
       (v) => !!v || "Name is required",
@@ -93,25 +95,27 @@ export default {
         .join("&");
     },
     handleSubmit() {
-      if (!this.$refs.form.validate()) return;
+      this.loading = true;
 
-      const config = {
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      // if (!this.$refs.form.validate()) return;
+
+      let params = {
+        "form-name": "contact",
+        ...this.formData,
       };
-      const data = new URLSearchParams();
-      data.append("form-name", "contact");
-      data.append("name", this.formData.name);
-      data.append("email", this.formData.email);
-      data.append("message", this.formData.message);
+      const headers = { "Content-Type": "application/x-www-form-urlencoded" };
 
-      axios
-        .post(
-          "/",
-          data,
-          config
-        )
+      const data = qs.stringify(params);
+
+      axios({
+        method: "POST",
+        headers,
+        data,
+        url: "/",
+      })
         .then(() => this.$router.push("/success"))
         .catch((error) => {
+          this.loading = false;
           console.log(error.toJSON());
         });
     },
