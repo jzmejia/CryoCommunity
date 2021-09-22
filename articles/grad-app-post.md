@@ -11,7 +11,6 @@ tags:
     - Grad
     - Applications
     - Admissions
-documents:
 ---
 
 ## **The Graduate School Application Station**
@@ -51,3 +50,8 @@ You did it! The final step is setting a work schedule, sticking to it, and actua
  
 ## Check it out for yourself!
 Please check out the [Graduate School Application Station] (https://geogradapp.com/) for the full breakdown of the process as well as resources and links. Be aware that these are loose recommendations, thoughts, and opinions of two students who recently went through the application process. It is possible that things have changed since it was written. Always check with your advisor, and do what is best for you.
+
+## Bridge Programs
+Bridge programs offer underrepresented students the opportunity to attend institutions that will help you continue your education in graduate programs. 
+The [AGU Bridge Program](https://www.agu.org/bridge-program) allows students to apply to many universities using a single free form. Students will also recieve a free AGU membership with access to grants, scholarships, and mentoring. The [Bridge to the Ph.D. Program in STEM](https://bridgetophd.facultydiversity.columbia.edu) is a program designed to increase the participation of students from underrepresented groups in Ph.D. programs. The program aims to help students strengthen their graduate school applications and to prepare for the transition into Ph.D. programs.
+
