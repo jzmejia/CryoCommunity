@@ -84,8 +84,7 @@
 </page-query>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style></style>
