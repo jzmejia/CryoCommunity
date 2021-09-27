@@ -161,12 +161,8 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" lg="4" :order="smAndDown ? 'first' : ''">
-          <v-row>
-            <v-col cols="12" style="max-height: 325px;" class="overflow-auto">
-              <Twitter />
-            </v-col>
-          </v-row>
+        <v-col cols="12" lg="4" :order="smAndDown ? 'first' : ''" style="max-height: 325px;" class="overflow-auto">
+          <Twitter />
         </v-col>
       </v-row>
     </v-container>
@@ -182,12 +178,12 @@ query {
 </static-query>
 
 <script>
-import EmailBar from "./EmailBar.vue";
+// import EmailBar from "./EmailBar.vue";
 import Twitter from "@/components/Twitter";
 
 export default {
   components: {
-    EmailBar,
+    // EmailBar,
     Twitter,
   },
   data: () => ({

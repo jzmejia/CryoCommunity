@@ -10,15 +10,21 @@
     "@gridsome/remark-prismjs": "^0.2.0",
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.3",
+    "@gridsome/transformer-yaml": "^0.2.1",
     "axios": "^0.21.4",
     "gridsome": "^0.7.23",
-    "twitter-text": "^3.1.0",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "netlify-cms": "^2.10.164",
     "query-string": "^7.0.1",
+    "twitter-text": "^3.1.0",
+    "twitter-widgets": "^2.0.0",
+    "vue-tweet-embed": "^2.4.0",
     "vuetify": "^2.5.8"
   },
   "devDependencies": {
     "deepmerge": "^4.2.2",
     "fibers": "^5.0.0",
+    "js-yaml": "^4.1.0",
     "sass": "~1.32",
     "sass-loader": "7.3.1",
     "vuetify-loader": "^1.7.3"
