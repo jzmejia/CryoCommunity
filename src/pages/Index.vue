@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="12">
-          <v-row class="grey lighten-5 my-2" align="center">
+          <v-row class="grey lighten-5 py-16 my-4" justify="center" align="center">
             <v-col cols="6">
               <v-img
                 src="/Cryo_Community_Logo_no_color.png"
@@ -11,10 +11,18 @@
                 max-height="150"
               ></v-img>
             </v-col>
-            <v-col cols="6">
-              The purpose of CryoCommunity is to build and foster a more just,
+            <v-col cols="12" lg="6" class="align-self-start">
+              <!-- The purpose of CryoCommunity is to build and foster a more just,
               equitable, diverse, and inclusive community and culture within the
-              cryospheric sciences.
+              cryospheric sciences. -->
+              CryoCommunity is the product of the MARS pod's (Midwest And Random
+              Stragglers glaciology) participation in URGEGeosciences in Spring
+              2021. Members of our URGE pod represent many different
+              institutions and we seek to involve the broader cryospheric
+              community in positive change. We started this website to generate,
+              collate, and distribute best practices across a suite of academic
+              processes and institution types.
+              <g-link text to="/about">read more</g-link>
             </v-col>
           </v-row>
         </v-col>
@@ -84,7 +92,11 @@
 </page-query>
 
 <script>
-export default {};
+// import Hero from "@/components/Hero";
+export default {
+  components:{
+    // Hero
+  }
+};
 </script>
 
-<style></style>

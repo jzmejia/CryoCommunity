@@ -1,10 +1,12 @@
 <template>
   <Layout>
     <v-container>
-      <h1 class="text-h1 secondary--text my-8">Our Team</h1>
       <v-row>
+        <v-col cols="12">
+          <div class="text-lg-h2 text-h3 secondary--text">Our Team</div>
+        </v-col>
         <v-col
-          v-for="(person, index) in teamData.teamInfo"
+          v-for="(person, index) in teamData"
           :key="index"
           :cols="12"
           :lg="3"
@@ -12,23 +14,25 @@
           :sm="6"
           :xs="12"
         >
-          <v-hover v-slot="{ hover }">
+          <v-hover v-slot="{ hover }" close-delay="250">
             <v-card
+              v-intersect="{
+                handler: onIntersect,
+                options: {
+                  threshold: [0, 0.5, 1.0],
+                },
+              }"
               rounded="lg"
-              class="pt-4"
-              flat
+              :elevation="isIntersecting[index] && smAndDown ? 2 : 0"
+              :id="index"
               color="grey lighten-4"
               :class="{ 'on-hover': hover }"
+              class="transition-fast-in-fast-out pt-4 fill-height"
             >
-              <v-fade-transition
-                ><v-btn plain x-small absolute bottom right v-if="hover">{{
-                  person.pronouns
-                }}</v-btn></v-fade-transition
-              >
               <v-img
-                :src="require(`~/assets/avatars/${person.avatar}`)"
+                :src="person.avatar.src"
                 :alt="person.alt"
-                max-height="150"
+                height="125"
                 contain
               >
                 <template v-slot:placeholder>
@@ -40,14 +44,31 @@
                   </v-row>
                 </template>
               </v-img>
-              <v-card-title v-text="person.name"></v-card-title>
-              <v-card-subtitle v-text="person.affil"></v-card-subtitle>
+              <v-card-title v-text="person.name" />
+              <v-card-subtitle v-text="person.affil" />
               <v-card-actions>
-                <v-btn icon :href="person.website"
+                <v-btn icon :href="person.website">
+                  <svg
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
                   >
-                  <!-- <v-icon small>fa-link</v-icon> -->
-                  <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M4.5 6.5L1.328 9.672a2.828 2.828 0 104 4L8.5 10.5m2-2l3.172-3.172a2.829 2.829 0 00-4-4L6.5 4.5m-2 6l6-6" stroke="currentColor"></path></svg>
-                  </v-btn
+                    <path
+                      d="M4.5 6.5L1.328 9.672a2.828 2.828 0 104 4L8.5 10.5m2-2l3.172-3.172a2.829 2.829 0 00-4-4L6.5 4.5m-2 6l6-6"
+                      stroke="currentColor"
+                    ></path>
+                  </svg>
+                </v-btn>
+                <v-spacer />
+                <v-slide-x-transition
+                  ><v-btn
+                    v-if="smAndDown ? isIntersecting[index] : hover"
+                    plain
+                    small
+                    >{{ person.pronouns }}</v-btn
+                  ></v-slide-x-transition
                 >
               </v-card-actions>
             </v-card>
@@ -58,14 +79,52 @@
   </Layout>
 </template>
 
-<script>
-import teamData from "~/data/team.yml";
+<page-query>
+query {
+  team: allTeam {
+    edges {
+      node {
+        data {
+          name
+          pronouns
+          email
+          title
+          avatar (quality: 100)
+          affil
+          twitter
+          website
+          alt
+        }
+      }
+    }
+  }
+}
+</page-query>
 
+<script>
 export default {
   data() {
     return {
-      teamData,
+      isIntersecting: {},
     };
+  },
+  computed: {
+    smAndDown() {
+      return this.$vuetify.breakpoint.smAndDown;
+    },
+    teamData() {
+      return this.$page.team.edges[0].node.data;
+    },
+  },
+  methods: {
+    onIntersect(entries, observer) {
+      // this.isIntersecting[entries[0].target.id] = entries[0].isIntersecting;
+      this.$set(
+        this.isIntersecting,
+        entries[0].target.id,
+        entries[0].intersectionRatio >= 1
+      );
+    },
   },
 };
 </script>

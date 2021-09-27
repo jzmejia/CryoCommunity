@@ -1,24 +1,18 @@
 <template>
-  <v-app>
-    <Header />
-    <v-main>
-      <Hero />
+  <div>
+    <!-- <Hero/> -->
+    <!-- <v-fade-transition mode="out-in"> -->
       <slot />
-    </v-main>
-    <Footer />
-  </v-app>
+    <!-- </v-fade-transition> -->
+  </div>
 </template>
 
 <script>
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Footer from "../components/Footer";
+// import Hero from "../components/Hero";
 
 export default {
   components: {
-    Header,
-    Hero,
-    Footer,
+    // Hero,
   },
   computed: {
     isHome() {
@@ -28,5 +22,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+#app {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
 </style>

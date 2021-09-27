@@ -1,21 +1,20 @@
-import Vuetify from 'vuetify/lib/framework';
-import 'vuetify/dist/vuetify.min.css';
+import Vuetify from "vuetify/lib/framework";
+import "vuetify/dist/vuetify.min.css";
 import DefaultLayout from "~/layouts/Default.vue";
 // import "~/assets/styles.scss"
 
 export default function(Vue, { appOptions, head }) {
+  // head.link.push({
+  //   rel: "stylesheet",
+  //   href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+  // });
   head.link.push({
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/icon?family=Material+Icons"
+    href: "https://use.fontawesome.com/releases/v5.10.2/css/all.css",
   });
-  head.link.push({
-    rel: "stylesheet",
-    href: "https://use.fontawesome.com/releases/v5.10.2/css/all.css"
-  });
-
   const opts = {
     icons: {
-      iconfont: "fa"
+      iconfont: "fa",
     },
     theme: {
       themes: {
@@ -26,11 +25,10 @@ export default function(Vue, { appOptions, head }) {
           error: "#FF5252",
           info: "#2196F3",
           success: "#4CAF50",
-          warning: "#FFC107"
-        }
-      }
-    }
-
+          warning: "#FFC107",
+        },
+      },
+    },
   };
   Vue.use(Vuetify);
 

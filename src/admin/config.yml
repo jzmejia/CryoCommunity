@@ -1,0 +1,45 @@
+backend:
+  name: github
+  branch: main
+  repo: jzmejia/CryoCommunity
+
+media_folder: "/uploads"
+public_folder: "/uploads"
+
+publish_mode: editorial_workflow
+
+show_preview_links: true
+collections:
+  - name: "articles"
+    label: "Article"
+    folder: "articles"
+    create: true
+    slug: "{{filename}}"
+    extension: 'md'
+    fields:
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Published", name: "published", widget: "boolean"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Preview Image", name: "preview_image", widget: "image"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        field: {label: Name, name: name, widget: string }
+      - label: "Documents"
+        name: "documents"
+        widget: "list"
+        fields: 
+          - {label: Name, name: name, widget: string }
+          - label: "Url"
+            name: "url"
+            choose_url: true
+            widget: "file"
+            media_library:
+                config:
+                  multiple: true
+          - {label: Description, name: description, widget: text }
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Body", name: "body", widget: "markdown"}

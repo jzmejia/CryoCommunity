@@ -1,101 +1,132 @@
 <template>
   <span>
-    <template v-for="(tweet, index) in tweets">
+    <!-- <template v-for="(tweet, index) in tweets.tweets">
       <v-lazy
         :key="index"
         v-model="tweet.isActive"
         :options="{
-          threshold: 0.25,
+          threshold: 0.5,
         }"
-        min-height="175"
         class="mb-2"
+        min-height="175"
         transition="slide-y-reverse-transition"
       >
-        <v-card rounded="lg" outlined>
-          <v-list-item>
-            <v-list-item-avatar left>
-              <v-img
-                :aspect-ratio="16 / 9"
-                :src="tweet.profile_image_url"
-              ></v-img>
-            </v-list-item-avatar>
+        <v-hover v-slot="{ hover }">
+          <v-card
+            flat
+            :color="hover ? 'grey lighten-3' : 'transparent'"
+            rounded="lg"
+            :href="`https://twitter.com/moulinology/status/${tweet.id}`"
+          >
+            <v-toolbar flat color="transparent">
+              <v-list-item>
+                <v-list-item-avatar left size="32">
+                  <v-img
+                    :src="
+                      tweets.users.find(
+                        (item) => item.id === tweet['author_id']
+                      ).profile_image_url
+                    "
+                  ></v-img>
+                </v-list-item-avatar>
 
-            <v-list-item-content>
-              <v-list-item-title>{{ tweet.name }}</v-list-item-title>
-              <v-list-item-subtitle class="caption"
-                >@{{ tweet.username }}</v-list-item-subtitle
-              >
-            </v-list-item-content>
-            <v-list-item-icon>
+                <v-list-item-content>
+                  <v-list-item-title
+                    class="font-weight-black text-subtitle-2"
+                    >{{
+                      tweets.users.find(
+                        (item) => item.id === tweet["author_id"]
+                      ).name
+                    }}</v-list-item-title
+                  >
+                  <v-list-item-subtitle class="caption"
+                    >@{{
+                      tweets.users.find(
+                        (item) => item.id === tweet["author_id"]
+                      ).username
+                    }}</v-list-item-subtitle
+                  >
+                </v-list-item-content>
+              </v-list-item>
               <svg
-                viewBox="0 0 15 15"
-                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                width="15"
-                height="15"
+                width="16"
+                height="16"
+                fill="currentColor"
+                :class="hover ? 'blue--text' : 'grey--text'"
+                class="bi bi-twitter"
+                viewBox="0 0 16 16"
               >
                 <path
-                  d="M14.478 1.5l.5-.033a.5.5 0 00-.871-.301l.371.334zm-.498 2.959a.5.5 0 10-1 0h1zm-6.49.082h-.5.5zm0 .959h.5-.5zm-6.99 7V12a.5.5 0 00-.278.916L.5 12.5zm.998-11l.469-.175a.5.5 0 00-.916-.048l.447.223zm3.994 9l.354.353a.5.5 0 00-.195-.827l-.159.474zm7.224-8.027l-.37.336.18.199.265-.04-.075-.495zm1.264-.94c.051.778.003 1.25-.123 1.606-.122.345-.336.629-.723 1l.692.722c.438-.42.776-.832.974-1.388.193-.546.232-1.178.177-2.006l-.998.066zm0 3.654V4.46h-1v.728h1zm-6.99-.646V5.5h1v-.959h-1zm0 .959V6h1v-.5h-1zM10.525 1a3.539 3.539 0 00-3.537 3.541h1A2.539 2.539 0 0110.526 2V1zm2.454 4.187C12.98 9.503 9.487 13 5.18 13v1c4.86 0 8.8-3.946 8.8-8.813h-1zM1.03 1.675C1.574 3.127 3.614 6 7.49 6V5C4.174 5 2.421 2.54 1.966 1.325l-.937.35zm.021-.398C.004 3.373-.157 5.407.604 7.139c.759 1.727 2.392 3.055 4.73 3.835l.317-.948c-2.155-.72-3.518-1.892-4.132-3.29-.612-1.393-.523-3.11.427-5.013l-.895-.446zm4.087 8.87C4.536 10.75 2.726 12 .5 12v1c2.566 0 4.617-1.416 5.346-2.147l-.708-.706zm7.949-8.009A3.445 3.445 0 0010.526 1v1c.721 0 1.37.311 1.82.809l.74-.671zm-.296.83a3.513 3.513 0 002.06-1.134l-.744-.668a2.514 2.514 0 01-1.466.813l.15.989zM.222 12.916C1.863 14.01 3.583 14 5.18 14v-1c-1.63 0-3.048-.011-4.402-.916l-.556.832z"
-                  fill="currentColor"
-                ></path>
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                />
               </svg>
-            </v-list-item-icon>
-          </v-list-item>
+            </v-toolbar>
 
-          <v-card-text>
-            <v-row
-              ><v-col cols="12"><span v-html="tweet.text"></span> </v-col>
-            </v-row>
-          </v-card-text>
-          <!-- <v-card-text>
-        <div v-for="media in tweet.media" :key="media.media_key">
-          <video
-            v-if="media.type == 'video'"
-            controls
-            :src="media.preview_url"
-          ></video>
-        </div>
-      </v-card-text> -->
-          <v-card-actions>
-            <!-- <v-btn plain :ripple="false">
-          <v-icon left> fa-comment</v-icon
-          ><span>{{ tweet.public_metrics.reply_count }}</span></v-btn
-        >
-        <v-btn plain :ripple="false">
-          <v-icon left> fa-share </v-icon
-          ><span>{{ tweet.public_metrics.retweet_count }}</span></v-btn
-        >
-        <v-btn plain :ripple="false">
-          <v-icon left> fa-heart </v-icon
-          ><span>{{ tweet.public_metrics.like_count }}</span></v-btn
-        > -->
-            <v-spacer />
-            {{ tweet.created_at }}
-          </v-card-actions>
-        </v-card>
+            <v-card-text>
+              <v-row
+                ><v-col cols="10" offset="2"
+                  ><div
+                    class="text-body-2 text--primary"
+                    v-html="tweet.text"
+                  ></div>
+                </v-col>
+              </v-row>
+            </v-card-text>
+            <v-card-text class="caption">
+              <v-row>
+                <v-col cols="3" offset="1">
+                </v-col>
+                <v-col cols="auto" class="ml-auto">
+                  <span>{{ tweet.created_at }}</span>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-hover>
       </v-lazy>
-    </template>
+    </template> -->
+    <!-- <a
+      class="twitter-timeline"
+      data-chrome="nofooter noborders noheader transparent noscrollbar"
+      href="https://twitter.com/CryoCommunity?ref_src=twsrc%5Etfw"
+    ></a> -->
+    <Timeline
+      id="cryocommunity"
+      sourceType="profile"
+      :options="{
+        dnt: true,
+        chrome: 'nofooter noborders noheader transparent noscrollbar',
+      }"
+    />
   </span>
 </template>
-
 <script>
-import axios from "axios";
+// import axios from "axios";
+import { Timeline } from "vue-tweet-embed";
 export default {
   name: "Twitter",
+  components: {
+    Timeline,
+  },
   data: () => ({
     tweets: [],
   }),
-  async mounted() {
-    const { data } = await axios.get("/.netlify/functions/twitter");
-    this.tweets = data;
-  },
-  methods: {
-    urlify(text) {
-      var urlRegex = /(https?:\/\/[^\s]+)/g;
-      return text.replace(urlRegex, (url) => {
-        return '<a href="' + url + '">' + url + "</a>";
-      });
-    },
-  },
+  // metaInfo: {
+  //   title: "About us",
+  //   meta: [{ name: "twitter:dnt", content: "on" }],
+  //   script: [
+  //     {
+  //       async: true,
+  //       rel: "script",
+  //       src: "https://platform.twitter.com/widgets.js",
+  //       charset: "utf-8",
+  //     },
+  //   ],
+  // },
+  // async mounted() {
+  //   const { data } = await axios.get("/.netlify/functions/twitter");
+  //   this.tweets = data;
+  // },
 };
 </script>
