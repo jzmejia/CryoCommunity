@@ -18,6 +18,7 @@
           :key="item.node.id"
         >
           <v-hover v-slot="{ hover }">
+            <!-- <v-fade-transition mode="in-out"> -->
             <v-responsive
               flat
               class="transition-swing fill-height rounded-lg"
@@ -85,7 +86,7 @@
                     :key="index"
                   >
                     <template v-slot:activator="{ on, attrs }">
-                      <v-chip small v-bind="attrs" v-on="on" :to="tag.path"
+                      <v-chip :color="dark ?'grey darken-4':'grey lighten-4'" small v-bind="attrs" v-on="on" :to="tag.path"
                         ><v-icon x-small left>fa-hashtag</v-icon
                         >{{ tag.title }}</v-chip
                       >
@@ -111,15 +112,15 @@
                 <v-card-text v-text="item.node.excerpt"> </v-card-text>
               </g-link>
             </v-responsive>
+            <!-- </v-fade-transition> -->
           </v-hover>
         </v-col>
         <v-col cols="12">
           <Pager
-            exact
-            tag="li"
-            linkClass="v-pagination__item text--primary secondary elevation-1 v-btn--outlined v-btn mx-1"
+            linkClass="v-pagination__item primary v-btn"
+            actic
             :info="$page.articles.pageInfo"
-          />
+          ></Pager>
         </v-col>
       </v-row>
     </v-container>
@@ -129,6 +130,7 @@
 <page-query>
 query AllArticle ($page: Int) {
 	articles: allArticle ( perPage: 6, page: $page, filter: { published: { eq: true }}) @paginate {
+    totalCount
     pageInfo {
       totalPages
       currentPage
@@ -160,8 +162,12 @@ import { Pager } from "gridsome";
 
 export default {
   name: "Projects",
+  data: () => ({ }),
   components: {
     Pager,
+  },
+  metaInfo: {
+    title: "Projects",
   },
   computed: {
     smAndDown() {

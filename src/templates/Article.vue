@@ -2,7 +2,7 @@
   <Layout>
     <v-responsive class="mb-8">
       <v-row justify="center">
-        <v-col cols="12" lg="6" md="8">
+        <v-col cols="12" lg="6">
           <v-card
             :style="{
               backdropFilter: 'blur(1px)',
@@ -16,24 +16,19 @@
             >
               {{ $page.article.title }}
             </v-card-title>
-            <v-card-subtitle class="text-capitalize text-lg-subtitle-1 text-h6">
+            <v-card-subtitle class="text-capitalize text-h6 pb-0">
               {{ $page.article.subtitle }}
-            </v-card-subtitle>
-            <v-card-subtitle class="pt-0 pb-2">
-              <v-divider />
             </v-card-subtitle>
             <v-card-subtitle class="py-0">
               <v-chip-group column>
                 <template v-for="(tag, index) in $page.article.tags">
                   <v-tooltip
-                    transition="scroll-y-reverse-transition"
-                    content-class="rounded-0 py-0"
+                    transition="slide-y-reverse-transition"
                     bottom
-                    color="black"
                     :key="index"
                   >
                     <template v-slot:activator="{ on, attrs }">
-                      <v-chip small v-bind="attrs" v-on="on" :to="tag.path"
+                      <v-chip :color="dark ?'grey darken-4':'grey lighten-4'" small v-bind="attrs" v-on="on" :to="tag.path"
                         ><v-icon x-small left>fa-hashtag</v-icon
                         >{{ tag.title }}</v-chip
                       >
@@ -50,15 +45,16 @@
           </v-card>
         </v-col>
 
-        <v-col cols="12" lg="8" class="py-0">
-          <v-img
+        <!-- <v-col cols="12" lg="8"> -->
+        <g-image :src="$page.article.preview_image"></g-image>
+        <!-- <v-img
             :lazy-src="$page.article.preview_image.src"
             :height="smAndDown ? 300 : 450"
             position="center"
             :srcset="`${$page.article.preview_image.srcset}`"
             :src="$page.article.preview_image.src"
-          >
-            <!-- <v-card
+          > -->
+        <!-- <v-card
               class="ma-3"
               :style="{
                 backdropFilter: 'blur(1px)',
@@ -76,10 +72,10 @@
                 {{ $page.article.subtitle }}
               </v-card-subtitle>
             </v-card> -->
-          </v-img>
-        </v-col>
+        <!-- </v-img> -->
+        <!-- </v-col> -->
 
-        <v-col cols="12" lg="6">
+        <v-col cols="12" lg="6" class="pt-0">
           <!-- <v-card flat tile> -->
           <!-- <v-card-subtitle class="text--primary">
               {{ $page.article.author }}
@@ -157,7 +153,7 @@ query Article ($path: String!) {
     content
     documents {name, url, description}
     published
-    preview_image (height: 1200, quality:100)
+    preview_image (width: 1100,height:550,quality:100 )
     resource
     tags {
       title
@@ -188,11 +184,14 @@ query Article ($path: String!) {
 </page-query>
 
 <script>
+import ResourceCard from "@/components/ResourceCard";
 export default {
   components: {
-    ResourceCard: () => import("@/components/ResourceCard"),
+    ResourceCard,
   },
-  data: () => ({}),
+  metaInfo: {
+    title: "Article" ,
+  },
   computed: {
     resources() {
       return this.$page.resources.edges[0].node.data;

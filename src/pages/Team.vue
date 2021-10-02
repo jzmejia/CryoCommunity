@@ -114,6 +114,9 @@ export default {
       isIntersecting: {},
     };
   },
+  metaInfo: {
+    title: 'Team',
+  },
   computed: {
     dark() {
       return this.$vuetify.theme.dark;

@@ -1,5 +1,5 @@
 <template>
-  <v-parallax :src="require('/static/ice.jpg')" style="height: 100vh;">
+  <v-parallax src="/ice.jpg" style="height: 100vh;">
     <v-row justify="center">
       <v-col cols="12" align-self="end" align="center">
         <div
@@ -48,9 +48,7 @@ query {
 </static-query>
 <script>
 export default {
-  data() {
-    return {};
-  },
+  name: "Hero",
   computed: {
     heroData() {
       return this.$static.hero.edges[0].node;

@@ -23,7 +23,11 @@
 <script>
 export default {
   name: "Success",
+  metaInfo: {
+    title: 'Success',
+  },
 };
+
 </script>
 
 <style></style>
