@@ -1,65 +1,62 @@
 <template>
-  <v-card rounded="lg">
+  <v-card rounded="lg" class="fill-height" flat outlined>
     <v-tabs v-model="tab" show-arrows grow>
-      <template v-for="(item, index) in resource">
-
-        <v-tab v-for="(links, key) in item" :key="`${key}-${index}`" :href="`#${key}`" exact>
-          {{ key }}
-        </v-tab>
-      </template>
+      <v-tab v-for="(item, index) in tabs" :key="index">
+        {{ item.title }}
+      </v-tab>
     </v-tabs>
-
-    <v-tabs-items v-model="tab" style="max-height: 400px; overflow-y: auto">
-      <template v-for="(item,index) in resource">
-        <v-tab-item v-for="(links, key) in item" :key="`${key}-${index}`" :value="`${key}`">
-          <v-list-item
-            exact
-            v-for="(link, linkId) in links"
-            :key="linkId"
-            :href="link.url"
-            target="_default"
-          >
-            <v-list-item-content>
-              <v-list-item-title
-                ><span class="mr-4">
-                  {{ link.name }}
-                </span>
+    <v-tabs-items v-model="tab" style="max-height: 400px; overflow-y: auto;">
+      <v-tab-item v-for="(item, index) in tabs" :key="index">
+        <v-list-item
+          v-for="(link, linkId) in item.resources"
+          :key="linkId"
+          :href="link.url"
+          target="_default"
+        >
+          <v-list-item-content>
+            <v-list-item-title
+              ><span class="mr-4">
+                {{ link.name }}
+              </span>
+              <v-chip-group column>
                 <v-chip
                   v-for="(tag, tagId) in link.tags"
                   :key="tagId"
-                  color="accent"
+                  color="primary"
+                  :outlined="dark"
                   x-small
                   link
                   class="mx-1"
                 >
-                  #{{ tag }}</v-chip
+                  <v-icon left size="8">fa-hashtag</v-icon>{{ tag }}</v-chip
                 >
-              </v-list-item-title>
-              <v-list-item-subtitle class="text-wrap">{{
-                link.description
-              }}</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-tab-item>
-      </template>
+              </v-chip-group>
+            </v-list-item-title>
+            <v-list-item-subtitle class="text-wrap">{{
+              link.description
+            }}</v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+      </v-tab-item>
     </v-tabs-items>
   </v-card>
 </template>
 
 <script>
-// import resources from "~/data/resources.yml";
-
 export default {
-  props: ["resource", ],
+  props: ["resource"],
   data() {
     return {
       tab: "",
     };
   },
   computed: {
-    // resource() {
-    //   return this.obj;
-    // },
+    dark() {
+      return this.$vuetify.theme.dark;
+    },
+    tabs() {
+      return this.resource.items;
+    },
   },
 };
 </script>

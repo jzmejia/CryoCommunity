@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <div>
     <!-- <template v-for="(tweet, index) in tweets.tweets">
       <v-lazy
         :key="index"
@@ -86,44 +86,52 @@
         </v-hover>
       </v-lazy>
     </template> -->
-    <!-- <a
+
+    <a
       class="twitter-timeline"
-      data-chrome="nofooter noborders noheader transparent noscrollbar"
+      data-chrome="nofooter noborders noheader noscrollbar"
       href="https://twitter.com/CryoCommunity?ref_src=twsrc%5Etfw"
-    ></a> -->
-    <Timeline
+    ></a>
+
+
+    <!-- <TwitterTimeline
       id="cryocommunity"
       sourceType="profile"
       :options="{
         dnt: true,
-        chrome: 'nofooter noborders noheader transparent noscrollbar',
+        theme: 'light',
+        chrome: 'nofooter noborders noheader noscrollbar transparent',
       }"
-    />
-  </span>
+    >
+    </TwitterTimeline> -->
+  </div>
 </template>
 <script>
 // import axios from "axios";
 import { Timeline } from "vue-tweet-embed";
 export default {
   name: "Twitter",
+  props: ["theme"],
   components: {
-    Timeline,
+    TwitterTimeline: Timeline,
   },
   data: () => ({
     tweets: [],
   }),
-  // metaInfo: {
-  //   title: "About us",
-  //   meta: [{ name: "twitter:dnt", content: "on" }],
-  //   script: [
-  //     {
-  //       async: true,
-  //       rel: "script",
-  //       src: "https://platform.twitter.com/widgets.js",
-  //       charset: "utf-8",
-  //     },
-  //   ],
-  // },
+  computed: {
+  },
+  metaInfo: {
+    title: "About us",
+    meta: [{ name: "twitter:dnt", content: "on", }],
+    script: [
+      {
+        async: true,
+        rel: "script",
+        src: "https://platform.twitter.com/widgets.js",
+        charset: "utf-8",
+      },
+    ],
+  },
   // async mounted() {
   //   const { data } = await axios.get("/.netlify/functions/twitter");
   //   this.tweets = data;

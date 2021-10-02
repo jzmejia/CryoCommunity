@@ -4,34 +4,34 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
+const VuetifyLoaderPlugin = require("vuetify-loader/lib/plugin");
 
+const fs = require("fs");
+const yaml = require("js-yaml");
 
-// const fs = require('fs');
-// const yaml = require('js-yaml');
-
-// const fileContents = fs.readFileSync('./src/data/Team.yml', 'utf8');
-// const Team = yaml.load(fileContents);
-
+const fileContents = fs.readFileSync("./src/data/resources.yml", "utf8");
+const resources = yaml.load(fileContents);
 
 module.exports = (api) => {
   api.chainWebpack((config, { isServer }) => {
-    config.plugin('vuetify-loader').use(VuetifyLoaderPlugin);
+    config.plugin("vuetify-loader").use(VuetifyLoaderPlugin);
   });
-  
-  api.loadSource(({ addCollection}) => {
 
-    // const collection = addCollection({
-    //   typeName: 'Team'
-    // })
+  api.loadSource(({ addCollection }) => {
+    const collection = addCollection({
+      typeName: "Resources",
+    });
 
-    // for (const person of Team.teamInfo) {
-    //   collection.addNode(person);
-    // }
-
-  })
+    resources.map((item) => {
+      item.items.map((obj) => {
+        obj.resources.map((n) => {
+          collection.addNode(n);
+        });
+      });
+    });
+  });
 
   // api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
+  // Use the Pages API here: https://gridsome.org/docs/pages-api/
   // })
-}
+};

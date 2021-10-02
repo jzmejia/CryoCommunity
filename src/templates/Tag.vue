@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1 class="text-center d-flex justify-center align-center">
-      <v-icon left large color="deep-orange accent-3">fa-hashtag</v-icon
+      <v-icon left color="deep-orange accent-3">fa-hashtag</v-icon
       >{{ $page.tag.title }}
     </h1>
     <v-container>
@@ -11,26 +11,30 @@
           lg="4"
           v-for="item in $page.tag.belongsTo.edges"
           :key="item.node.id"
-          class="d-flex child-flex"
         >
           <v-hover v-slot="{ hover }">
             <v-responsive
-              :class="hover ? 'elevation-4' : 'elevation-2'"
-              class="transition-fast-in-fast-out rounded-lg"
-              style="cursor: pointer;"
+              flat
+              class="transition-swing fill-height rounded-lg"
+              :style="{ cursor: 'pointer' }"
+              :class="{
+                'grey lighten-5': !dark,
+                'grey darken-4': dark,
+                'elevation-6': hover,
+                'elevation-1': !hover,
+              }"
             >
               <g-link
                 class="text-decoration-none text--primary"
                 :to="item.node.path"
               >
                 <v-img
+                  :srcset="`${item.node.preview_image.srcset}`"
                   :src="item.node.preview_image"
                   :lazy-src="item.node.preview_image.src"
-                  :srcset="`${item.node.preview_image.src}`"
-                  :aspect-ratio="16 / 9"
-                  class="grey lighten-5"
-                  rounded="lg"
-                  eager
+                  height="250"
+                  class="rounded-t-lg"
+                  transition="fade-transition"
                 >
                   <template v-slot:placeholder>
                     <v-row
@@ -54,7 +58,7 @@
                     :style="{
                       backdropFilter: 'blur(2px)',
                     }"
-                    color="#ffffffd0"
+                    :color="dark ? '#272727d0' : '#ffffffd0'"
                   >
                     <v-card-title
                       class="font-weight-thin primary--text text-break"
@@ -80,8 +84,9 @@
                 </v-list-item>
               </g-link>
               <v-card-subtitle class="text-subtitle-1 py-0">
-                <template v-for="(tag, index) in item.node.tags">
+                <v-chip-group column active-class="deep-orange white--text">
                   <v-tooltip
+                    v-for="(tag, index) in item.node.tags"
                     transition="fade-transition"
                     content-class="py-1 px-2"
                     bottom
@@ -90,22 +95,20 @@
                   >
                     <template v-slot:activator="{ on, attrs }">
                       <v-chip
-                        class="mr-1"
-                        color="deep-orange accent-3"
                         small
-                        dark
-                        label
                         v-bind="attrs"
                         v-on="on"
                         :to="tag.path"
-                        ><v-icon left>fa-hashtag</v-icon>{{ tag.title }}</v-chip
+                        ><v-icon x-small left>fa-hashtag</v-icon
+                        >{{ tag.title }}</v-chip
                       >
                     </template>
+
                     <span class="pa-0 caption"
                       >View more on {{ tag.title }}</span
                     >
                   </v-tooltip>
-                </template>
+                </v-chip-group>
               </v-card-subtitle>
 
               <g-link
@@ -208,7 +211,7 @@ query ($id: ID!) {
                 path
             }
             published
-            preview_image (quality: 90)
+            preview_image (quality: 100)
             date (format: "DD.MM.YY")
             excerpt
           }
@@ -218,3 +221,14 @@ query ($id: ID!) {
   }
 }
 </page-query>
+
+<script>
+export default {
+  name: "tags",
+  computed: {
+    dark() {
+      return this.$vuetify.theme.dark;
+    },
+  },
+};
+</script>

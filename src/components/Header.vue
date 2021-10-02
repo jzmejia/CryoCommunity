@@ -1,95 +1,175 @@
 <template>
-  <span>
+  <div>
     <v-app-bar
       app
       dense
-      elevate-on-scroll
       :style="{
         backdropFilter: 'blur(2px) !important',
       }"
-      color="#ffffffd0"
+      :color="dark ? '#121212d0' : '#ffffffd0'"
+      elevate-on-scroll
     >
       <g-link
         to="/"
         class="
-            d-flex
-            justify-center
-            align-center
             text-decoration-none
             text--primary
             text-h5
+             font-weight-black
+             rounded-0
           "
       >
-        <v-img
-          class="mr-2"
-          src="/Cryo_Community_Logo_no_color.png"
-          width="30"
-          contain
-        />
+        <v-app-bar-nav-icon>
+          <v-img
+              :src="
+                dark
+                  ? '/cryocommunity_logo_dark.png'
+                  : '/cryocommunity_logo_light.png'
+              "
+            height="35"
+            contain
+          />
+        </v-app-bar-nav-icon>
 
         {{ $static.metadata.siteName }}
       </g-link>
 
       <v-spacer></v-spacer>
+      <v-btn icon :ripple="false" @click="toggleTheme" class="text-h3">
+        <!-- <v-icon
+            :key="`icon-${isDark}`"
+            v-text="isDark ? 'fa-sun' : 'fa-moon'"
+            :color="isDark ? 'amber accent-3' : 'black'"
+          ></v-icon> -->
+        <svg
+          v-if="dark"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-moon"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg
+          v-else
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-sun"
+        >
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </v-btn>
       <v-app-bar-nav-icon
         v-if="$vuetify.breakpoint.mobile"
         @click="collapse = true"
       ></v-app-bar-nav-icon>
-      <v-toolbar-items v-else>
+
+      <v-btn-toggle group active-class="primary--text" v-else>
         <v-btn
           v-for="(item, index) in items"
           :key="index"
           text
-          exact-active-class="black white--text"
+          tile
+          depressed
+          small
           :to="item.path"
           >{{ item.title }}
         </v-btn>
-      </v-toolbar-items>
+      </v-btn-toggle>
     </v-app-bar>
 
     <v-navigation-drawer
       v-model="collapse"
       app
       right
+      clipped
       temporary
+      floating
+      :width="smAndDown ? '100vw' : ''"
+      :color="dark ? 'black' : ''"
     >
-      <v-list-item>
-        <v-list-item-avatar>
-          <v-img
-            contain
-            src="/Cryo_Community_Logo_no_color.png"
-            height="35px"
-          />
-        </v-list-item-avatar>
-        {{ $static.metadata.siteName }}
-      </v-list-item>
-      <v-divider></v-divider>
+      <v-toolbar dense flat :color="dark ? 'black' : ''">
+        <g-link
+          to="/"
+          class="
+            text-decoration-none
+            text--primary
+            text-h5
+            font-weight-black
+          "
+        >
+          <v-app-bar-nav-icon>
+            <v-img
+              :lazy-src="
+                dark
+                  ? '/cryocommunity_logo_dark.png'
+                  : '/cryocommunity_logo_light.png'
+              "
+              :src="
+                dark
+                  ? '/cryocommunity_logo_dark.png'
+                  : '/cryocommunity_logo_light.png'
+              "
+              
+              
+              height="35"
+              contain
+            />
+          </v-app-bar-nav-icon>
+          {{ $static.metadata.siteName }}
+        </g-link>
+        <v-spacer />
+        <v-btn icon large>
+          <v-icon @click="collapse = false">fa-times</v-icon>
+        </v-btn>
+      </v-toolbar>
       <v-list tile subheader>
         <v-list-item-group active-class="primary--text">
           <v-list-item
             v-for="(item, index) in items"
             :key="index"
-            exact
             :to="item.path"
           >
-            <!-- <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon> -->
-
             <v-list-item-content>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
+              <v-list-item-title class="text-h3 font-weight-black"
+                >{{ item.title }}
+              </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-  </span>
+  </div>
 </template>
 
 <static-query>
 query {
   metadata {
     siteName
+  }
+  pages: allPage {
+    path
   }
 }
 </static-query>
@@ -98,6 +178,7 @@ query {
 export default {
   data() {
     return {
+      isDark: false,
       collapse: false,
       items: [
         { title: "Home", path: "/" },
@@ -110,10 +191,67 @@ export default {
       mini: false,
     };
   },
+  computed: {
+    dark() {
+      return this.$vuetify.theme.dark;
+    },
+    smAndDown() {
+      return this.$vuetify.breakpoint.smAndDown;
+    },
+  },
+  mounted() {
+    const body = document.getElementsByTagName("body")[0];
+    if (localStorage.getItem("dark")) {
+      const theme = JSON.parse(localStorage.getItem("dark"));
+      // window
+      //   .matchMedia("(prefers-color-scheme: dark)")
+      //   .addEventListener("change", (e) => {
+      if (theme) {
+        this.isDark = theme;
+        body.className = "darkTheme";
+        this.$vuetify.theme.dark = true;
+      } else {
+        this.isDark = theme;
+        body.className = "lightTheme";
+        this.$vuetify.theme.dark = false;
+      }
+      // });
+    } else {
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (e) => {
+          if (e.matches) {
+            this.isDark = true;
+            body.className = "darkTheme";
+            this.$vuetify.theme.dark = true;
+          } else {
+            this.isDark = false;
+            body.className = "lightTheme";
+            this.$vuetify.theme.dark = false;
+          }
+        });
+    }
+  },
   methods: {
+    toggleTheme() {
+      const body = document.getElementsByTagName("body")[0];
+      this.isDark = !this.isDark;
+      body.className = this.isDark ? "darkTheme" : "lightTheme";
+      localStorage.setItem("dark", this.isDark);
+      this.$vuetify.theme.dark = this.isDark;
+    },
     toggle() {
       this.collapse = !this.collapse;
     },
   },
 };
 </script>
+
+<style>
+.darkTheme {
+  background-color: #000000 !important;
+}
+.lightTheme {
+  background-color: #ffffff !important;
+}
+</style>
