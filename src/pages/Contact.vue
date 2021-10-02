@@ -117,6 +117,9 @@ export default {
   metaInfo: {
     title: "Contact",
   },
+  metaInfo: {
+    title: 'Contact',
+  },
   computed: {
     smAndDown() {
       return this.$vuetify.breakpoint.smAndDown;

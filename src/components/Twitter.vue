@@ -87,23 +87,23 @@
       </v-lazy>
     </template> -->
 
-    <a
+    <!-- <a
       class="twitter-timeline"
       data-chrome="nofooter noborders noheader noscrollbar"
       href="https://twitter.com/CryoCommunity?ref_src=twsrc%5Etfw"
-    ></a>
+    ></a> -->
 
 
-    <!-- <TwitterTimeline
+    <TwitterTimeline
       id="cryocommunity"
       sourceType="profile"
       :options="{
         dnt: true,
         theme: 'light',
-        chrome: 'nofooter noborders noheader noscrollbar transparent',
+        chrome: 'nofooter noborders noheader noscrollbar',
       }"
     >
-    </TwitterTimeline> -->
+    </TwitterTimeline>
   </div>
 </template>
 <script>
@@ -111,27 +111,12 @@
 import { Timeline } from "vue-tweet-embed";
 export default {
   name: "Twitter",
-  props: ["theme"],
   components: {
     TwitterTimeline: Timeline,
   },
   data: () => ({
     tweets: [],
   }),
-  computed: {
-  },
-  metaInfo: {
-    title: "About us",
-    meta: [{ name: "twitter:dnt", content: "on", }],
-    script: [
-      {
-        async: true,
-        rel: "script",
-        src: "https://platform.twitter.com/widgets.js",
-        charset: "utf-8",
-      },
-    ],
-  },
   // async mounted() {
   //   const { data } = await axios.get("/.netlify/functions/twitter");
   //   this.tweets = data;

@@ -84,7 +84,7 @@
                 </v-list-item>
               </g-link>
               <v-card-subtitle class="text-subtitle-1 py-0">
-                <v-chip-group column active-class="deep-orange white--text">
+                <v-chip-group column active-class="deep-orange--text">
                   <v-tooltip
                     v-for="(tag, index) in item.node.tags"
                     transition="fade-transition"
@@ -94,11 +94,7 @@
                     :key="index"
                   >
                     <template v-slot:activator="{ on, attrs }">
-                      <v-chip
-                        small
-                        v-bind="attrs"
-                        v-on="on"
-                        :to="tag.path"
+                      <v-chip :color="dark ?'grey darken-4':'grey lighten-4'" small v-bind="attrs" v-on="on" :to="tag.path"
                         ><v-icon x-small left>fa-hashtag</v-icon
                         >{{ tag.title }}</v-chip
                       >
@@ -194,10 +190,15 @@
 </template>
 
 <page-query>
-query ($id: ID!) {
+query ($id: ID!,$page: Int) {
   tag(id: $id) {
     title
-    belongsTo {
+    belongsTo( perPage: 3, page: $page ) @paginate  {
+      totalCount
+      pageInfo {
+        totalPages
+        currentPage
+      }
       edges {
         node {
           ... on Article {
@@ -224,7 +225,7 @@ query ($id: ID!) {
 
 <script>
 export default {
-  name: "tags",
+  name: "Tags",
   computed: {
     dark() {
       return this.$vuetify.theme.dark;

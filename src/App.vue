@@ -2,10 +2,14 @@
   <v-app>
     <Header />
     <v-main>
-      <Hero v-if="$route.path === '/'" />
-      <v-fade-transition hide-on-leave>
-        <router-view />
-      </v-fade-transition>
+      <transition name="fade">
+      <Hero v-if="$route.name == 'home'" />
+      </transition>
+      <!-- <v-fade-transition hide-on-leave leave-absolute> -->
+        <transition name="fade">
+          <router-view />
+        </transition>
+      <!-- </v-fade-transition> -->
     </v-main>
     <Footer />
   </v-app>
@@ -14,12 +18,18 @@
 <script>
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
+
 export default {
   name: "App",
   components: {
     Header,
     Hero,
-    Footer: () => import("@/components/Footer"),
+    Footer,
+  },
+  metaInfo: {
+    title: 'Loading',
+    titleTemplate: '%s | CryoCommunity'
   },
 };
 </script>
@@ -33,42 +43,29 @@ export default {
 }
 .view-enter-active,
 .view-leave-active {
-  opacity: 0;
-  transition: opacity 0.3s;
+  
+  transition: opacity 0.3s ease-in-out;
 }
 .view-enter-active {
+  opacity: 0;
   transition-delay: 0.3s;
 }
-.view-enter {
-  opacity: 0;
-}
-.view-enter-to {
+
+.view-leave,.view-enter-to {
   opacity: 1;
 }
-.view-leave {
-  opacity: 1;
-}
-.view-leave-to {
+.view-leave-to,.view-enter {
   opacity: 0;
 }
-.fade-enter-active,
-.fade-leave-active {
-  /* -webkit-opacity: 0; */
-  opacity: 0;
-  /* -webkit-transition: opacity 0.25s; */
-  transition: opacity 0.3s ease;
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .25s;
 }
 
 .fade-enter-active {
-  /* -webkit-opacity: 0; */
-  opacity: 0;
-  /* -webkit-transition-delay: 0.25s; */
-  transition-delay: 0.3s;
+  transition-delay: .25s;
 }
 
-.fade-enter,
-.fade-leave-active {
-  -webkit-opacity: 0;
-  opacity: 0;
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
 </style>

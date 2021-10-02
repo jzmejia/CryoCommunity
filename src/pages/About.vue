@@ -109,8 +109,8 @@
 <script>
 export default {
   name: "About",
-  data() {
-    return {};
+  metaInfo: {
+    title: 'About',
   },
   computed: {
     dark() {

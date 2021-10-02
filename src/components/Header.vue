@@ -15,25 +15,26 @@
             text-decoration-none
             text--primary
             text-h5
-             font-weight-black
-             rounded-0
+            font-weight-black
           "
       >
-        <v-app-bar-nav-icon>
-          <v-img
-            :src="
-              dark
-                ? '/cryocommunity_logo_dark.png'
-                : '/cryocommunity_logo_light.png'
-            "
-            height="35"
-            contain
+      <v-avatar left rounded width="32" height="35">
+          <g-image
+            v-if="dark"
+            src="~/assets/cryocommunity_logo_dark.png"
+            fit="inside"
+            quality="100"
           />
-        </v-app-bar-nav-icon>
+          <g-image
+            v-else
+            src="~/assets/cryocommunity_logo_light.png"
+            fit="inside"
+            quality="100"
+          />
+      </v-avatar>
         {{ $static.metadata.siteName }}
       </g-link>
       <v-spacer></v-spacer>
-      <v-toolbar-items>
         <v-btn icon @click="toggleTheme" class="text-h3">
           <svg
             v-if="dark"
@@ -74,22 +75,22 @@
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
         </v-btn>
-      </v-toolbar-items>
       <v-app-bar-nav-icon
         v-if="$vuetify.breakpoint.smAndDown"
         @click="collapse = true"
       ></v-app-bar-nav-icon>
-      <v-toolbar-items v-else>
+      <v-btn-toggle group dense v-else>
         <v-btn
           v-for="(item, index) in items"
           :key="index"
           :to="item.path"
-          text
+          exact
+          small
           active-class="primary--text"
           depressed
           >{{ item.title }}
         </v-btn>
-      </v-toolbar-items>
+      </v-btn-toggle>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -111,23 +112,21 @@
             font-weight-black
           "
         >
-          <v-app-bar-nav-icon>
-            <v-img
-              :lazy-src="
-                dark
-                  ? '/cryocommunity_logo_dark.png'
-                  : '/cryocommunity_logo_light.png'
-              "
-              :src="
-                dark
-                  ? '/cryocommunity_logo_dark.png'
-                  : '/cryocommunity_logo_light.png'
-              "
-              height="35"
-              contain
-            />
-          </v-app-bar-nav-icon>
-          {{ $static.metadata.siteName }}
+      <v-avatar left rounded width="32" height="35">
+          <g-image
+            v-if="dark"
+            src="~/assets/cryocommunity_logo_dark.png"
+            fit="inside"
+            quality="100"
+          />
+          <g-image
+            v-else
+            src="~/assets/cryocommunity_logo_light.png"
+            fit="inside"
+            quality="100"
+          />
+      </v-avatar>
+        {{ $static.metadata.siteName }}
         </g-link>
         <v-spacer />
         <v-btn icon large @click="collapse = false">
@@ -194,9 +193,6 @@ export default {
     const body = document.getElementsByTagName("body")[0];
     if (localStorage.getItem("dark")) {
       const theme = JSON.parse(localStorage.getItem("dark"));
-      // window
-      //   .matchMedia("(prefers-color-scheme: dark)")
-      //   .addEventListener("change", (e) => {
       if (theme) {
         this.isDark = theme;
         body.className = "darkTheme";
@@ -206,7 +202,6 @@ export default {
         body.className = "lightTheme";
         this.$vuetify.theme.dark = false;
       }
-      // });
     } else {
       window
         .matchMedia("(prefers-color-scheme: dark)")

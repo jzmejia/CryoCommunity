@@ -152,6 +152,9 @@ export default {
       chips,
     };
   },
+  metaInfo: {
+    title: 'Career',
+  },
   computed: {
     smAndDown() {
       return this.$vuetify.breakpoint.smAndDown;

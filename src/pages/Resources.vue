@@ -36,7 +36,7 @@
           <v-card-title class="text-h4">Teaching</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
-              <resource :resource="teaching"></resource>
+              <ResourceCard :resource="teaching"/>
             </v-col>
             <v-col
               cols="12"
@@ -74,7 +74,7 @@
               ></v-img>
             </v-col>
             <v-col cols="12" md="6">
-              <resource :resource="fieldwork"></resource>
+              <ResourceCard :resource="fieldwork"/>
             </v-col>
           </v-row>
         </v-col>
@@ -82,8 +82,7 @@
           <v-card-title class="text-h4">Community</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
-              <resource :resource="community"></resource
-            ></v-col>
+              <ResourceCard :resource="community"/></v-col>
             <v-col
               cols="12"
               md="6"
@@ -129,15 +128,20 @@ query {
 </page-query>
 
 <script>
+import ResourceCard from "@/components/ResourceCard";
+import Search from "@/components/Search";
 export default {
   components: {
-    Resource: () => import("@/components/ResourceCard"),
-    Search: () => import("@/components/Search"),
+    ResourceCard,
+    Search
   },
   data() {
     return {
       tab: "",
     };
+  },
+  metaInfo: {
+    title: 'Resources',
   },
   computed: {
     dark() {
