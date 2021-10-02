@@ -1,8 +1,7 @@
 <template>
-  <ArticleLayout>
+  <Layout>
     <v-responsive class="mb-8">
       <v-row justify="center">
-        
         <v-col cols="12" lg="6" md="8">
           <v-card
             :style="{
@@ -143,7 +142,7 @@
       </h1>
       <ResourceCard :resource="docs"></ResourceCard>
     </v-container>
-  </ArticleLayout>
+  </Layout>
 </template>
 
 <page-query>

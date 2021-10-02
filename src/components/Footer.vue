@@ -1,5 +1,5 @@
 <template>
-  <v-footer dark :color="dark ? '#212121':'#121212'">
+  <v-footer dark>
     <v-container :fluid="smAndDown">
       <v-row>
         <!-- <v-col cols="12" lg="6">Newsletter</v-col> -->

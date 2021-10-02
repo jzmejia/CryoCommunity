@@ -1,5 +1,5 @@
 <template>
-  <HomeLayout>
+  <Layout>
     <v-container>
       <v-row>
         <v-col cols="12">
@@ -43,61 +43,59 @@
           v-for="item in $page.articles.edges"
           :key="item.node.id"
         >
-        <v-slide-y-transition>
-          <g-link
-            class="text-decoration-none text--primary"
-            :to="item.node.path"
-          >
-            <v-responsive
-              class="fill-height rounded-lg"
-              :class="{
-                'grey lighten-5': !dark,
-                'grey darken-4': dark,
-              }"
+          <v-slide-y-transition>
+            <g-link
+              class="text-decoration-none text--primary"
+              :to="item.node.path"
             >
-              <v-img
-                height="200"
-                :src="item.node.preview_image"
-                class="rounded-t-lg"
+              <v-responsive
+                class="fill-height rounded-lg"
+                :class="{
+                  'grey lighten-5': !dark,
+                  'grey darken-4': dark,
+                }"
               >
-                <v-btn
-                  depressed
-                  tile
-                  class="rounded-lg"
-                  absolute
-                  bottom
-                  left
-                  :style="{
-                    backdropFilter: 'blur(2px) !important',
-                  }"
-                  :color="dark ? '#272727d0' : '#ffffffd0'"
+                <v-img
+                  height="200"
+                  :src="item.node.preview_image"
+                  class="rounded-t-lg"
                 >
-                  {{ item.node.title }}
-                </v-btn>
-              </v-img>
-
-              <v-card-subtitle>
-                {{ item.node.author }}
-                <v-spacer />
-                <span class="text--disabled"
-                  >{{ item.node.date }} · {{ item.node.timeToRead }} min
-                  read</span
-                >
-              </v-card-subtitle>
-
-              <v-card-actions>
-                <v-btn text color="orange" :to="item.node.path"
-                  >Keep Reading</v-btn
-                >
-              </v-card-actions>
-            </v-responsive>
-          </g-link>
-        </v-slide-y-transition>
+                  <v-btn
+                    depressed
+                    tile
+                    class="rounded-lg"
+                    absolute
+                    bottom
+                    left
+                    :style="{
+                      backdropFilter: 'blur(2px) !important',
+                    }"
+                    :color="dark ? '#272727d0' : '#ffffffd0'"
+                  >
+                    {{ item.node.title }}
+                  </v-btn>
+                </v-img>
+                <v-card-subtitle>
+                  {{ item.node.author }}
+                  <v-spacer />
+                  <span class="text--disabled"
+                    >{{ item.node.date }} · {{ item.node.timeToRead }} min
+                    read</span
+                  >
+                </v-card-subtitle>
+                <v-card-actions>
+                  <v-btn text color="orange" :to="item.node.path"
+                    >Read More</v-btn
+                  >
+                </v-card-actions>
+              </v-responsive>
+            </g-link>
+          </v-slide-y-transition>
         </v-col>
         <v-col cols="12"><v-btn to="/projects">view more</v-btn></v-col>
       </v-row>
     </v-container>
-  </HomeLayout>
+  </Layout>
 </template>
 
 <page-query>

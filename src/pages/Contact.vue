@@ -1,90 +1,94 @@
 <template>
   <Layout>
-    <v-row justify="center">
-      <v-col cols="12" lg="7">
-        <div
-          class="text-h2 primary--text font-weight-black"
-          :class="{ 'text-center': smAndDown }"
-        >
-          Contact Us
-        </div>
+    <v-container>
+      <v-row justify="center">
+        <v-col cols="12" lg="7">
+          <div
+            class="text-h2 primary--text font-weight-black"
+            :class="{ 'text-center': smAndDown }"
+          >
+            Contact Us
+          </div>
 
-        <!-- </v-col>
+          <!-- </v-col>
     <v-col cols="12" lg="6"> -->
-        <!-- <div class="text-lg-h2 text-h3">Contact Us</div> -->
-        <div class="text-h6" :class="{ 'text-center': smAndDown }">
-          Send us a message
-          <!-- or an email to -->
-        </div>
-        <!-- <g-link
+          <!-- <div class="text-lg-h2 text-h3">Contact Us</div> -->
+          <div class="text-h6" :class="{ 'text-center': smAndDown }">
+            Send us a message
+            <!-- or an email to -->
+          </div>
+          <!-- <g-link
           class="text-decoration-none indigo--text text--accent-4"
           href="mailto:cryospherecommunity@gmail.com"
           >cryospherecommunity@gmail.com</g-link
         > -->
-      </v-col>
+        </v-col>
 
-      <v-col cols="12" lg="7">
-        <v-responsive :rounded="smAndDown ? '0' : 'lg'" flat>
-          <v-card-text class="pa-0" :class="{ 'pa-0': smAndDown }">
-            <v-form
-              name="contact"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              @submit.prevent="handleSubmit"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <p hidden>
-                <label>Don’t fill this out: <input name="bot-field" /> </label>
-              </p>
-              <v-text-field
-                outlined
-                v-model="formData.name"
-                name="name"
-                :rules="nameRules"
-                label="Name"
-                required
-                class="rounded-0"
-                color="primary"
-                autocomplete="off"
-              ></v-text-field>
-
-              <v-text-field
-                outlined
-                v-model="formData.email"
-                name="email"
-                :rules="emailRules"
-                label="E-mail"
-                required
-                class="rounded-0"
-                color="primary"
-                autocomplete="off"
-              ></v-text-field>
-
-              <v-textarea
-                outlined
-                rows="6"
-                v-model="formData.message"
-                name="message"
-                :rules="messageRules"
-                label="Message"
-                class="rounded-0"
-                color="primary"
-                required
-              ></v-textarea>
-              <v-btn
-                type="submit"
-                :loading="loading"
-                tile
-                color="primary"
-                depressed
+        <v-col cols="12" lg="7">
+          <v-responsive :rounded="smAndDown ? '0' : 'lg'" flat>
+            <v-card-text class="pa-0" :class="{ 'pa-0': smAndDown }">
+              <v-form
+                name="contact"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                @submit.prevent="handleSubmit"
               >
-                send
-              </v-btn>
-            </v-form>
-          </v-card-text>
-        </v-responsive>
-      </v-col>
-    </v-row>
+                <input type="hidden" name="form-name" value="contact" />
+                <p hidden>
+                  <label
+                    >Don’t fill this out: <input name="bot-field" />
+                  </label>
+                </p>
+                <v-text-field
+                  outlined
+                  v-model="formData.name"
+                  name="name"
+                  :rules="nameRules"
+                  label="Name"
+                  required
+                  class="rounded-0"
+                  color="primary"
+                  autocomplete="off"
+                ></v-text-field>
+
+                <v-text-field
+                  outlined
+                  v-model="formData.email"
+                  name="email"
+                  :rules="emailRules"
+                  label="E-mail"
+                  required
+                  class="rounded-0"
+                  color="primary"
+                  autocomplete="off"
+                ></v-text-field>
+
+                <v-textarea
+                  outlined
+                  rows="6"
+                  v-model="formData.message"
+                  name="message"
+                  :rules="messageRules"
+                  label="Message"
+                  class="rounded-0"
+                  color="primary"
+                  required
+                ></v-textarea>
+                <v-btn
+                  type="submit"
+                  :loading="loading"
+                  tile
+                  color="primary"
+                  depressed
+                >
+                  send
+                </v-btn>
+              </v-form>
+            </v-card-text>
+          </v-responsive>
+        </v-col>
+      </v-row>
+    </v-container>
   </Layout>
 </template>
 
