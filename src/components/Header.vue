@@ -81,11 +81,11 @@
         </svg>
       </v-btn>
       <v-app-bar-nav-icon
-        v-if="$vuetify.breakpoint.mobile"
+        v-if="$vuetify.breakpoint.smAndDown"
         @click="collapse = true"
       ></v-app-bar-nav-icon>
 
-      <v-btn-toggle group active-class="primary--text" v-else>
+      <v-btn-toggle v-model="toggle_exclusive" mandatory group active-class="primary--text" v-else>
         <v-btn
           v-for="(item, index) in items"
           :key="index"
@@ -178,6 +178,7 @@ query {
 export default {
   data() {
     return {
+      toggle_exclusive: undefined,
       isDark: false,
       collapse: false,
       items: [
