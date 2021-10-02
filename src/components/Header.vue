@@ -21,11 +21,11 @@
       >
         <v-app-bar-nav-icon>
           <v-img
-              :src="
-                dark
-                  ? '/cryocommunity_logo_dark.png'
-                  : '/cryocommunity_logo_light.png'
-              "
+            :src="
+              dark
+                ? '/cryocommunity_logo_dark.png'
+                : '/cryocommunity_logo_light.png'
+            "
             height="35"
             contain
           />
@@ -35,6 +35,7 @@
       </g-link>
 
       <v-spacer></v-spacer>
+      <v-toolbar-items>
       <v-btn icon :ripple="false" @click="toggleTheme" class="text-h3">
         <!-- <v-icon
             :key="`icon-${isDark}`"
@@ -80,23 +81,23 @@
           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
         </svg>
       </v-btn>
+      </v-toolbar-items>
       <v-app-bar-nav-icon
         v-if="$vuetify.breakpoint.smAndDown"
         @click="collapse = true"
       ></v-app-bar-nav-icon>
-
-      <v-btn-toggle v-model="toggle_exclusive" mandatory group active-class="primary--text" v-else>
+      <v-toolbar-items v-else>
         <v-btn
           v-for="(item, index) in items"
           :key="index"
+          :to="item.path"
           text
           tile
           depressed
           small
-          :to="item.path"
           >{{ item.title }}
         </v-btn>
-      </v-btn-toggle>
+      </v-toolbar-items>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -131,8 +132,6 @@
                   ? '/cryocommunity_logo_dark.png'
                   : '/cryocommunity_logo_light.png'
               "
-              
-              
               height="35"
               contain
             />
@@ -140,8 +139,8 @@
           {{ $static.metadata.siteName }}
         </g-link>
         <v-spacer />
-        <v-btn icon large>
-          <v-icon @click="collapse = false">fa-times</v-icon>
+        <v-btn icon large @click="collapse = false">
+          <v-icon>fa-times</v-icon>
         </v-btn>
       </v-toolbar>
       <v-list tile subheader>
@@ -178,7 +177,7 @@ query {
 export default {
   data() {
     return {
-      toggle_exclusive: undefined,
+      toggle_exclusive: 0,
       isDark: false,
       collapse: false,
       items: [
