@@ -1,50 +1,65 @@
 <template>
-  <v-parallax :src="heroData.hero.heroImgSrc" style="height: 100vh;">
-    <v-row align="center" justify="center">
-      <v-col cols="12" align="center" align-self="end">
+  <v-parallax :src="require('/static/ice.jpg')" style="height: 100vh;">
+    <v-row justify="center">
+      <v-col cols="12" align-self="end" align="center">
         <div
-          class="mb-8 font-weight-medium black--text"
-          :class="{
-            'text-h3': mdAndDown,
-            'text-h1': !mdAndDown,
-          }"
+          class="mb-2  text-lg-h1 text-h3 font-weight-medium black--text"
         >
           {{ heroData.hero.heroTitle }}
         </div>
-        <div
-          class="black--text line-height tb-5"
-          :class="{
-            'text-h5': !mdAndDown,
-            'text-h6': mdAndDown,
-          }"
-        >
+        <div class="text-lg-h5 text-h6 black--text">
           {{ heroData.hero.heroSubtitle }}
         </div>
-      </v-col>
-      <v-col cols="auto" class="mx-auto" align-self="start" align="center">
-        <v-chip-group column>
-          <template v-for="(button, index) in heroData.buttons">
-            <v-chip :key="index" color="#61b9f7" :to="button.link">{{
-              button.name
-            }}</v-chip>
-          </template>
-        </v-chip-group>
+        </v-col>
+      <v-col cols="auto" align-self="start" align="start">
+        <v-row>
+          <v-col v-for="(button, index) in heroData.buttons" :key="index">
+            <v-btn
+              rounded
+              color="primary"
+              :to="button.link"
+              >{{ button.name }}</v-btn
+            >
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-parallax>
 </template>
 
+<static-query>
+query {
+  hero: allHero {
+    edges {
+      node {
+        hero {
+          heroImgSrc (quality: 100)
+          heroTitle
+          heroSubtitle
+        }
+        buttons {
+          name
+          link
+        }
+      }
+    }
+  }
+}
+</static-query>
 <script>
-import heroData from "@/data/hero.yml";
 export default {
   data() {
-    return {
-      heroData,
-    };
+    return {};
   },
   computed: {
+    heroData() {
+      return this.$static.hero.edges[0].node;
+    },
     mdAndDown() {
       return this.$vuetify.breakpoint.mdAndDown;
+    },
+    smAndDown() {
+      return this.$vuetify.breakpoint.smAndDown;
     },
     mobile() {
       return this.$vuetify.breakpoint.mobile;

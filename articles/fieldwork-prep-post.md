@@ -24,14 +24,14 @@ A number of specialized training would be relevant depending on the specific wor
 
 ## Courses
 Recommended training courses will vary by the specific conditions associated with your project. Here are a list of some common courses that may be useful:
+
 - Crevasse rescue
 - Glacier travel
 - Ski mountaineering
-- Avalanche safety and rescue  
+- Avalanche safety and rescue
 - Bear safety 
 - Wilderness First-aid
 - Wilderness First Responder
-
 
 It is important to know that you **do not** need to have extensive outdoor experience in order to be successful in the field. Fieldwork and everything that goes into it is a learned skill that can be acquired by anyone given the right resources and support. PI's should consider including funding in project budgets to support students in acquiring all of the skills needed for your project.
 

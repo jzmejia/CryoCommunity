@@ -1,5 +1,5 @@
 <template>
-  <v-footer>
+  <v-footer dark :color="dark ? '#212121':'#121212'">
     <v-container :fluid="smAndDown">
       <v-row>
         <!-- <v-col cols="12" lg="6">Newsletter</v-col> -->
@@ -97,30 +97,25 @@
       </v-row>
 
       <v-row>
-        <v-col cols="12" lg="8">
-          <v-row dense>
-            <v-col cols="auto" lg="4" md="2">
-              <div v-for="(link, index) in sitemap" :key="index">
-                <v-btn plain :x-small="smAndDown" :to="link.path"
+        <v-col cols="12" lg="8" md="12" sm="12">
+          <v-row>
+            <v-col
+              v-for="(key, index) in footerMenu"
+              cols="auto"
+              lg="4"
+              md="2"
+              sm="6"
+              xs="6"
+              :key="index"
+            >
+              <div v-for="(link, idx) in key" :key="idx">
+                <v-btn plain :x-small="smAndDown" :to="link.path" class="caption"
                   >{{ link.title }}
                 </v-btn>
               </div>
             </v-col>
-            <v-col cols="auto" lg="4" md="2">
-              <div v-for="(link, index) in featured" :key="index">
-                <v-btn plain :x-small="smAndDown" :to="link.path"
-                  >{{ link.title }}
-                </v-btn>
-              </div>
-            </v-col>
-
-            <v-col cols="auto" lg="4" md="2">
-              <div v-for="(link, index) in other" :key="index">
-                <v-btn plain :x-small="smAndDown" :href="link.path"
-                  >{{ link.title }}
-                </v-btn>
-              </div>
-            </v-col>
+          </v-row>
+          <v-row>
             <v-col class="caption my-0 py-0 mt-8 d-flex align-center" cols="12">
               <svg
                 viewBox="0 0 15 15"
@@ -161,8 +156,14 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" lg="4" :order="smAndDown ? 'first' : ''" style="max-height: 325px;" class="overflow-auto">
-          <Twitter />
+        <v-col
+          cols="12"
+          lg="4"
+          :order="smAndDown ? 'first' : ''"
+          style="max-height: 325px;"
+          class="overflow-auto"
+        >
+          <Twitter/>
         </v-col>
       </v-row>
     </v-container>
@@ -178,13 +179,10 @@ query {
 </static-query>
 
 <script>
-// import EmailBar from "./EmailBar.vue";
-import Twitter from "@/components/Twitter";
 
 export default {
   components: {
-    // EmailBar,
-    Twitter,
+    Twitter: ()=> import("@/components/Twitter"),
   },
   data: () => ({
     valid: true,
@@ -199,31 +197,36 @@ export default {
         link: "https://twitter.com/cryocommunity?s=21",
       },
     ],
-    sitemap: [
-      { title: "Home", path: "/" },
-      { title: "About", path: "/about" },
-      { title: "Team", path: "/team" },
-      { title: "Projects", path: "/projects" },
-      { title: "Resources", path: "/resources" },
-      { title: "Contact", path: "/contact" },
-    ],
-    featured: [
-      { title: "career stage", path: "/career" },
-      { title: "undergraduates", path: "/career#undergrad" },
-      { title: "graduate students", path: "/career#grad" },
-      { title: "early career", path: "/career#ecr" },
-      { title: "pi's", path: "/career#pi" },
-    ],
-    other: [
-      { title: "Geo Grad App", path: "http://geogradapp.com" },
-      { title: "CryoSciListen", path: "https://cryoscilisten.weebly.com" },
-      // { title: "Best Practices", path: "https://"+window.location.hostname+"/projects" },
-      { title: "URGE", path: "https://urgeoscience.org/" },
-    ],
+    footerMenu: {
+      sitemap: [
+        { title: "Home", path: "/" },
+        { title: "About", path: "/about" },
+        { title: "Team", path: "/team" },
+        { title: "Projects", path: "/projects" },
+        { title: "Resources", path: "/resources" },
+        { title: "Contact", path: "/contact" },
+      ],
+      featured: [
+        { title: "career stage", path: "/career" },
+        { title: "undergraduates", path: "/career#undergrad" },
+        { title: "graduate students", path: "/career#grad" },
+        { title: "early career", path: "/career#ecr" },
+        { title: "pi's", path: "/career#pi" },
+      ],
+      other: [
+        { title: "Geo Grad App", path: "http://geogradapp.com" },
+        { title: "CryoSciListen", path: "https://cryoscilisten.weebly.com" },
+        // { title: "Best Practices", path: "https://"+window.location.hostname+"/projects" },
+        { title: "URGE", path: "https://urgeoscience.org/" },
+      ],
+    },
   }),
   computed: {
     smAndDown() {
       return this.$vuetify.breakpoint.smAndDown;
+    },
+    dark() {
+      return this.$vuetify.theme.dark;
     },
   },
 };
