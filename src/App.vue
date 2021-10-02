@@ -3,13 +3,11 @@
     <Header />
     <v-main>
       <transition name="fade">
-      <Hero v-if="$route.name == 'home'" />
+        <Hero v-if="$route.name === 'home'" />
       </transition>
-      <!-- <v-fade-transition hide-on-leave leave-absolute> -->
-        <transition name="fade">
-          <router-view />
-        </transition>
-      <!-- </v-fade-transition> -->
+      <transition name="fade">
+        <router-view />
+      </transition>
     </v-main>
     <Footer />
   </v-app>
@@ -19,7 +17,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
-
 export default {
   name: "App",
   components: {
@@ -28,8 +25,8 @@ export default {
     Footer,
   },
   metaInfo: {
-    title: 'Loading',
-    titleTemplate: '%s | CryoCommunity'
+    title: "Loading",
+    titleTemplate: "%s | CryoCommunity",
   },
 };
 </script>
@@ -43,7 +40,6 @@ export default {
 }
 .view-enter-active,
 .view-leave-active {
-  
   transition: opacity 0.3s ease-in-out;
 }
 .view-enter-active {
@@ -51,21 +47,25 @@ export default {
   transition-delay: 0.3s;
 }
 
-.view-leave,.view-enter-to {
+.view-leave,
+.view-enter-to {
   opacity: 1;
 }
-.view-leave-to,.view-enter {
+.view-leave-to,
+.view-enter {
   opacity: 0;
 }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .25s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease-in-out;
 }
 
 .fade-enter-active {
-  transition-delay: .25s;
+  transition-delay: 0.25s;
 }
 
-.fade-enter, .fade-leave-active {
-  opacity: 0
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>

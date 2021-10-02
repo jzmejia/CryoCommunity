@@ -1,5 +1,6 @@
 // project configuration and plugin options
 module.exports = {
+  chainWebpack: config => config.mode('development'),
   siteName: "CryoCommunity",
   siteDescription: "fostering inclusivity within the cryospheric sciences",
   siteUrl: "https://cryocommunity.org/",

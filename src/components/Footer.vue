@@ -97,7 +97,7 @@
       </v-row>
 
       <v-row>
-        <v-col cols="12" lg="8" md="12" sm="12">
+        <v-col cols="12" lg="8" md="8" sm="12">
           <v-row>
             <v-col
               v-for="(key, index) in footerMenu"
@@ -159,6 +159,7 @@
         <v-col
           cols="12"
           lg="4"
+          md="4"
           :order="smAndDown ? 'first' : ''"
           style="max-height: 325px;"
           class="overflow-auto"

@@ -1,5 +1,5 @@
 <template>
-  <v-parallax src="/ice.jpg" style="height: 100vh;">
+  <v-parallax :src="require('~/assets/ice.jpg')" style="height: 100vh;">
     <v-row justify="center">
       <v-col cols="12" align-self="end" align="center">
         <div
