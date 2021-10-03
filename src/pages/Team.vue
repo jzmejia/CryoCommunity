@@ -11,7 +11,7 @@
           </div>
         </v-col>
         <v-col
-          v-for="(person, index) in teamData"
+          v-for="(person, index) in team"
           :key="index"
           :cols="12"
           :lg="3"
@@ -124,7 +124,7 @@ export default {
     smAndDown() {
       return this.$vuetify.breakpoint.smAndDown;
     },
-    teamData() {
+    team() {
       return this.$page.team.edges[0].node.data;
     },
   },

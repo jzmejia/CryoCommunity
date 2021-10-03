@@ -1,5 +1,5 @@
 <template>
-  <v-parallax :src="require('~/assets/ice.jpg')" style="height: 100vh;">
+  <v-parallax src="/ice.jpg" style="height:100vh;">
     <v-row justify="center">
       <v-col cols="12" align-self="end" align="center">
         <div
@@ -18,6 +18,7 @@
               rounded
               color="primary"
               :to="button.link"
+              exact
               >{{ button.name }}</v-btn
             >
           </v-col>
@@ -33,7 +34,7 @@ query {
     edges {
       node {
         hero {
-          heroImgSrc (quality: 100)
+          heroImgSrc (height: 1000, quality: 100)
           heroTitle
           heroSubtitle
         }

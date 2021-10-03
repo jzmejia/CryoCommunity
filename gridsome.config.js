@@ -1,10 +1,9 @@
 // project configuration and plugin options
 module.exports = {
-  chainWebpack: config => config.mode('development'),
   siteName: "CryoCommunity",
   siteDescription: "fostering inclusivity within the cryospheric sciences",
   siteUrl: "https://cryocommunity.org/",
-  icon: './src/favicon/apple-touch-icon.png',
+  icon: './src/assets/favicon/apple-touch-icon.png',
   templates: {
     Article: "/projects/:title",
     Tag: "/tag/:id",

@@ -2,12 +2,12 @@
   <v-app>
     <Header />
     <v-main>
-      <transition name="fade">
-        <Hero v-if="$route.name === 'home'" />
-      </transition>
-      <transition name="fade">
+      <v-fade-transition mode="out-in">
+        <Hero v-if="$route.path === '/'" />
+      </v-fade-transition>
+      <v-fade-transition mode="out-in">
         <router-view />
-      </transition>
+      </v-fade-transition>
     </v-main>
     <Footer />
   </v-app>
@@ -32,36 +32,13 @@ export default {
 </script>
 
 <style>
-.darkTheme {
-  background-color: #000000 !important;
-}
-.lightTheme {
-  background-color: #ffffff !important;
-}
-.view-enter-active,
-.view-leave-active {
-  transition: opacity 0.3s ease-in-out;
-}
-.view-enter-active {
-  opacity: 0;
-  transition-delay: 0.3s;
-}
-
-.view-leave,
-.view-enter-to {
-  opacity: 1;
-}
-.view-leave-to,
-.view-enter {
-  opacity: 0;
-}
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.25s ease-in-out;
+  transition: opacity 250ms;
 }
 
 .fade-enter-active {
-  transition-delay: 0.25s;
+  transition-delay: 250ms;
 }
 
 .fade-enter,
