@@ -1,33 +1,7 @@
 <template>
-  <v-footer dark>
+  <v-footer>
     <v-container :fluid="smAndDown">
       <v-row>
-        <!-- <v-col cols="12" lg="6">Newsletter</v-col> -->
-        <!-- <v-col cols="12" lg="8" class="ml-auto">
-          <v-form
-            ref="form"
-            v-model="valid"
-            method="POST"
-            name="newsletter"
-            netlify
-          >
-            <v-text-field
-              prepend-inner-icon="fa-envelope"
-              solo
-              flat
-              type="email"
-              label="Email"
-              suffix="JOIN THE COMMUNITY"
-              rounded
-              outlined
-              v-model="email"
-              name="name"
-              :rules="emailRules"
-              autocomplete="off"
-              color="blue accent-3"
-            ></v-text-field>
-          </v-form>
-        </v-col> -->
         <v-col cols="auto" class="ml-auto text-right"
           ><div class="text-h5">join the community</div>
           <v-btn icon color="blue" to="/contact">
@@ -109,7 +83,11 @@
               :key="index"
             >
               <div v-for="(link, idx) in key" :key="idx">
-                <v-btn plain :x-small="smAndDown" :to="link.path" class="caption"
+                <v-btn
+                  plain
+                  :x-small="smAndDown"
+                  :to="link.path"
+                  class="caption"
                   >{{ link.title }}
                 </v-btn>
               </div>
@@ -164,7 +142,7 @@
           style="max-height: 325px;"
           class="overflow-auto"
         >
-          <Twitter/>
+          <Twitter />
         </v-col>
       </v-row>
     </v-container>
@@ -180,10 +158,9 @@ query {
 </static-query>
 
 <script>
-
 export default {
   components: {
-    Twitter: ()=> import("@/components/Twitter"),
+    Twitter: () => import("@/components/Twitter"),
   },
   data: () => ({
     valid: true,
