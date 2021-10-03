@@ -78,14 +78,13 @@
         v-if="$vuetify.breakpoint.smAndDown"
         @click="collapse = true"
       ></v-app-bar-nav-icon>
-      <v-btn-toggle group dense v-else>
+      <v-btn-toggle group dense v-else active-class="primary--text">
         <v-btn
           v-for="(item, index) in items"
           :key="index"
           :to="item.path"
           exact
           small
-          active-class="primary--text"
           depressed
           >{{ item.title }}
         </v-btn>
