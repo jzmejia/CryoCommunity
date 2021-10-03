@@ -1,48 +1,48 @@
 Undergraduate:
   - tag: Applications
-    path: "/articles/grad-app-post"
+    path: "/projects/applying-to-graduate-school-in-the-geosciences/"
   - tag: Fieldwork Prep
-    path: "/articles/fieldwork-prep-post"
+    path: "/projects/preparing-for-fieldwork/"
   - tag: Networking
     path: "/resources#community"
   - tag: Mentoring
-    path: "/articles/mentoring-post"
+    path: "/projects/mentoring-best-practices/"
 Graduate:
   - tag: Applications
-    path: "/articles/grad-app-post"
+    path: "/projects/applying-to-graduate-school-in-the-geosciences/"
   - tag: Fieldwork Prep
-    path: "/articles/safety-post"
+    path: "/projects/developing-a-safety-plan/"
   - tag: Safety Plan
-    path: "/articles/safety-post"
+    path: "/projects/developing-a-safety-plan/"
   - tag: Labwork
-    path: "/articles/fieldwork-prep-post"
+    path: "/projects/preparing-for-fieldwork/"
   - tag: Networking
     path: "/resources#community"
   - tag: Mentorship
-    path: "/articles/mentoring-post"
+    path: "/projects/mentoring-best-practices/"
 ECR:
   - tag: Fieldwork Prep
-    path: "/articles/fieldwork-prep-post"
+    path: "/projects/preparing-for-fieldwork/"
   - tag: Safety Plan
-    path: "/articles/safety-post"
+    path: "/projects/developing-a-safety-plan/"
   - tag: Labwork
-    path: "/articles/fieldwork-prep-post"
+    path: "/projects/preparing-for-fieldwork/"
   - tag: Teaching
     path:  "/resources#teaching"
   - tag: Networking
     path: "/resources#community"
   - tag: Mentoring
-    path: "/articles/mentoring-post"
+    path: "/projects/mentoring-best-practices/"
 PI:
   - tag: Field Safety Plan
-    path: "/articles/safety-post"
+    path: "/projects/developing-a-safety-plan/"
   - tag: Building a Lab
-    path: "/articles/safety-post"
+    path: "/projects/developing-a-safety-plan/"
   - tag: Teaching
     path: "/resources#teaching"
   - tag: Networking
     path: "/resources#community"
   - tag: Mentoring
-    path: "/articles/mentoring-post"
+    path: "/projects/mentoring-best-practices/"
 
 
