@@ -66,7 +66,7 @@
               v-for="(key, index) in footerMenu"
               cols="auto"
               lg="4"
-              md="2"
+              md="4"
               sm="6"
               xs="6"
               :key="index"
