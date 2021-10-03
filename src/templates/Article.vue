@@ -28,7 +28,12 @@
                     :key="index"
                   >
                     <template v-slot:activator="{ on, attrs }">
-                      <v-chip :color="dark ?'grey darken-4':'grey lighten-4'" small v-bind="attrs" v-on="on" :to="tag.path"
+                      <v-chip
+                        :color="dark ? 'grey darken-4' : 'grey lighten-4'"
+                        small
+                        v-bind="attrs"
+                        v-on="on"
+                        :to="tag.path"
                         ><v-icon x-small left>fa-hashtag</v-icon
                         >{{ tag.title }}</v-chip
                       >
@@ -46,7 +51,7 @@
         </v-col>
 
         <!-- <v-col cols="12" lg="8"> -->
-        <g-image :src="$page.article.preview_image"></g-image>
+        <g-image :src="$page.article.preview_image" />
         <!-- <v-img
             :lazy-src="$page.article.preview_image.src"
             :height="smAndDown ? 300 : 450"
@@ -190,7 +195,7 @@ export default {
     ResourceCard,
   },
   metaInfo: {
-    title: "Article" ,
+    title: "Article",
   },
   computed: {
     resources() {

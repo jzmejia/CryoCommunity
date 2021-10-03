@@ -18,7 +18,6 @@
           :key="item.node.id"
         >
           <v-hover v-slot="{ hover }">
-            <!-- <v-fade-transition mode="in-out"> -->
             <v-responsive
               flat
               class="transition-swing fill-height rounded-lg"
@@ -112,7 +111,6 @@
                 <v-card-text v-text="item.node.excerpt"> </v-card-text>
               </g-link>
             </v-responsive>
-            <!-- </v-fade-transition> -->
           </v-hover>
         </v-col>
         <v-col cols="12">

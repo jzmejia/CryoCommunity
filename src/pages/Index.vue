@@ -5,28 +5,18 @@
         <v-col cols="12" class="my-16">
           <v-row justify="space-around" align="center">
             <v-col cols="auto">
-              <!-- <g-image
-                v-if="dark"
-                src="~/assets/cryocommunity_logo_dark.png"
-                width="225"
-                quality="100"
-                fit="inside"
-              ></g-image> -->
-              <!-- <g-image
-                src="~/assets/cryocommunity_logo_light.png"
-                width="225"
-                quality="100"
-                fit="inside"
-              ></g-image> -->
               <v-img
-                :src="dark ? '/cryocommunity_logo_dark.png':'/cryocommunity_logo_light.png'"
+                :src="
+                  dark
+                    ? '/cryocommunity_logo_dark.png'
+                    : '/cryocommunity_logo_light.png'
+                "
                 width="225"
                 contain
               />
             </v-col>
             <v-col cols="12" lg="6">
               <v-card-text class="text--primary">
-                {{ $route.name === "home" }}
                 <!-- The purpose of CryoCommunity is to build and foster a more just,
               equitable, diverse, and inclusive community and culture within the
               cryospheric sciences. -->
@@ -50,7 +40,107 @@
           v-for="item in $page.articles.edges"
           :key="item.node.id"
         >
-          <g-link
+          <v-hover v-slot="{ hover }">
+            <v-responsive
+              flat
+              class="transition-swing fill-height rounded-lg"
+              :style="{ cursor: 'pointer' }"
+              :class="{
+                'grey lighten-5': !dark,
+                'grey darken-4': dark,
+                'elevation-6': hover,
+                'elevation-1': !hover,
+              }"
+            >
+              <g-link
+                class="text-decoration-none text--primary"
+                :to="item.node.path"
+              >
+                <v-img
+                  :lazy-src="item.node.preview_image.src"
+                  :src="item.node.preview_image.src"
+                  height="250"
+                  class="rounded-t-lg"
+                  transition="fade-transition"
+                >
+                  <template v-slot:placeholder>
+                    <v-row
+                      class="fill-height ma-0"
+                      align="center"
+                      justify="center"
+                    >
+                      <v-progress-circular
+                        indeterminate
+                        color="primary"
+                        size="45"
+                      ></v-progress-circular>
+                    </v-row>
+                  </template>
+                  <v-card
+                    style="position: absolute; bottom: 0; left:0; right:0;"
+                    :style="{
+                      backdropFilter: hover ? '' : 'blur(2px) !important',
+                    }"
+                    flat
+                    rounded="0"
+                    class="d-flex flex-column justify-end ma-2 rounded-lg"
+                    :color="dark ? '#272727d0' : '#ffffffd0'"
+                  >
+                    <v-card-title
+                      class="text--primary text-break font-weight-bold"
+                    >
+                      {{ item.node.title }}
+                    </v-card-title>
+                    <v-card-subtitle class="text-capitalize text-body-2">{{
+                      item.node.subtitle
+                    }}</v-card-subtitle>
+                  </v-card>
+                </v-img>
+              </g-link>
+              <v-card-text class="py-0">
+                <v-chip-group column active-class="primary--text">
+                  <v-tooltip
+                    v-for="(tag, index) in item.node.tags"
+                    transition="fade-transition"
+                    content-class="rounded-0"
+                    bottom
+                    color="black"
+                    :key="index"
+                  >
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-chip
+                        :color="dark ? 'grey darken-4' : 'grey lighten-4'"
+                        small
+                        v-bind="attrs"
+                        v-on="on"
+                        :to="tag.path"
+                        ><v-icon x-small left>fa-hashtag</v-icon
+                        >{{ tag.title }}</v-chip
+                      >
+                    </template>
+                    <span>View more on {{ tag.title }}</span>
+                  </v-tooltip>
+                </v-chip-group>
+              </v-card-text>
+              <g-link
+                class="text-decoration-none  text--primary"
+                :to="item.node.path"
+              >
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-list-item-subtitle class="text-wrap">{{
+                      item.node.author
+                    }}</v-list-item-subtitle>
+                  </v-list-item-content>
+                  <v-list-item-action>
+                    <v-list-item-action-text>{{ item.node.date }}</v-list-item-action-text>
+                  </v-list-item-action>
+                </v-list-item>
+                <v-card-text v-text="item.node.excerpt"> </v-card-text>
+              </g-link>
+            </v-responsive>
+          </v-hover>
+          <!-- <g-link
             class="text-decoration-none text--primary"
             :to="item.node.path"
           >
@@ -95,7 +185,7 @@
                 >
               </v-card-actions>
             </v-responsive>
-          </g-link>
+          </g-link> -->
         </v-col>
         <v-col cols="12"><v-btn to="/projects">view more</v-btn></v-col>
       </v-row>
@@ -110,13 +200,18 @@
         node {
           id
           path
-          date (format: "MMM D, YYYY")
-          preview_image (width: 1100, height: 250, quality: 100)
           title
-          published
+          subtitle
           author
-          timeToRead
+          published
+          preview_image (width: 700, height: 250, quality: 100)
+          date (format: "DD.MM.YY")
           excerpt
+          timeToRead
+          tags {
+            title
+            path
+          }
         }
       }
     }
