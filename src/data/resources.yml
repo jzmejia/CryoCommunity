@@ -28,11 +28,36 @@
           url: https://github.com/aarobel/GlaciologyClass
           description: The github repository includes slides, notes and code demonstrations. - Alex Robel and Winnie Chu
           tags: [Jupyter, Python, MATLAB, github]
+        - name: OpenGeology
+          url: https://opengeology.org
+          descriptiion: Free open educational resources for the geosciences
+        - name: Reading for students
+          url: https://www.ipcc.ch/srocc/
+          description: IPCC Special Reporot on the Ocean and Cryosphere in a Changing Climate
+        - name: Open Global Glacier Model Jupyter Notebook Collection
+          url: https://oggm.org/oggm-edu-notebooks/welcome.html
+          description: Flowline models, surface mass balance, graphics, water resources, and more.
+          tags: [Jupyter]
     - title: Modules
       resources:
         - name: Antarctic Ice Sheet-past and present
           url: http://www.iceocean.org/educational-products.html
           description: An educational module for high-school and introductory-college students focused on changes in the Antarctic Ice Sheet from 20,000 years ago to the present.
+        - name: Virtual Field Experience-Glaciers
+          url: https://opengeology.org/historicalgeology/virtual-field-experiences-vfes/vfe-glaciers/
+          description: Glaciers, glacial sediments, and glacial geomorphology virtual field experience
+        - name: Antarctic Glaciers
+          url: http://www.antarcticglaciers.org/students-3/
+          description: Glaciers and Glaciation in Antarctica and beyond
+        - name: Course Materials from the International Summer School in Glaciology
+          url: https://glaciers.gi.alaska.edu/content/course-material
+          description: Reading, course notes, exercises, and course materials
+        - name: Open Global Glacier Model
+          url: https://edu.oggm.org/en/latest/
+          description: Tools and materials for instructors who want to teach about glaciers
+        - name: Steal this (updated) syllabus for Scientific Writing
+          url: https://scientistseessquirrel.wordpress.com/2020/05/26/steal-this-updated-syllabus-for-scientific-writing/
+          description: a syllabus for a scientific writing course
     - title: Tools
       resources:
         - name: ABC-classroom
@@ -64,6 +89,14 @@
         - name: Creating Inclusive Virtual Spaces
           url: https://serc.carleton.edu/advancegeo/resources/virtual.html
           description: by Olivia Lopez, University of Wisconsin-Madison
+    - title: Best Practices
+      resources:
+        - name: Ten simple rules for building an antiracist lab
+          url: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008210
+          description: by V. Bala Chaudhary and Asmeret Asefaw Berhe
+        - name: Recommendations for Best Practices for Promoting a Safe, Educational, and Inclusive Atmosphere when Off-campus with Trainees
+          url: https://eas.gatech.edu/sites/default/files/documents/GT_EAS%20Field%20Guidance%20and%20Resources.pdf
+          description: Georgia Tech School of Earth and Atmospheric Sciences
 # - tab: coreWorkResources
 #   items:
 #     - title: Code of conduct
@@ -341,6 +374,22 @@
         - name: J. David Lowell Field Camp Scholarship
           url: https://rock.geosociety.org/eo/moreInformation.asp?program=scholar
           description: $2,000 to attend the field camp of your chooice. 
+- tab: funding
+  items:
+    - title: Guides
+      resources:
+        - name: THE NSF GRFP - Advice from a panel of awardees
+          url: https://futurerockdoc.com/blog/2020/6/19/the-nsf-grfp-advice-from-a-panel-of-awardees
+          description: Advice for applying for the NSF Graduate Research Fellowship Program
+        - name: GSA Graduate Student Research Grants - Advice from a panel of awardees
+          url: https://futurerockdoc.com/blog/2021/1/11/gsa-graduate-student-research-grants-advice-from-a-panel-of-awardees
+          description: Awards up to $2,500 for students enrolled in the USA, Canada, Mexico, and Central America.
+    - title: Graduate Students
+      resources:
+        - name: Graduate Research Fellowship Program
+          url:
+          description: 3 years of tuition and stipend for US citizen and perminant resident graduatee students.
+
 - tab: fieldwork
   items:
     - title: Guides
@@ -369,6 +418,9 @@
         - name: A Black Introvert’s Guide to Conflict and Alpine Climbing
           url: https://www.melaninbasecamp.com/trip-reports/2019/8/31/10-things-i-hate-about-you-a-black-introverts-guide-to-conflict-and-alpine-climbing
           description: by R. Ross
+        - name: Hoow to Pee in the Woods and Other Field Hacks
+          url: https://futurerockdoc.com/blog/2020/6/27/how-to-pee-in-the-woods-and-other-field-camp-hacks
+          description: Tips from future rock doc
     - title: Planning And Leadership
       resources:
         - name: MARS pod Field Safety Plan 
