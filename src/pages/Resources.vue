@@ -30,6 +30,7 @@
             at your home institution as well as providing example resources
             (e.g. mentoring contract, field supply lists).
           </p>
+          <p>This page is a work in progress, check out this <a href="https://docs.google.com/document/d/1kesGrmHSOH-esxfD-lIRAkckS_QfcLaWq40p8_HdJZw/edit?usp=sharing">pdf</a> for more resources or feel free to contact us to suggest more resoures we can add. </p>
           <Search />
         </v-col>
         <v-col cols="12" id="teaching">
