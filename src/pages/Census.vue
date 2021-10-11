@@ -2,7 +2,7 @@
   <Layout>
     <v-responsive class="mb-8">
       <v-row>
-        <v-col cols="12" md="10" offset-md="2" class="mt-12 mb-6">
+        <v-col cols="10" offset="1" offset-lg="2" class="mt-12 mb-6">
           <div class="text-md-h3 text-h4 font-weight-black text-break mt-12">
             A Census for the Science Workforce
           </div>
@@ -12,7 +12,7 @@
         </v-col></v-row
       >
       <v-row>
-        <v-col cols="12" md="6" lg="5" offset-md="2" class="">
+        <v-col cols="10" md="6" lg="5" offset="1" offset-lg="2" class="">
           <div>
             <div class="text-h5 text-md-h4 font-weight-bold mb-1">
               Introduction
@@ -83,7 +83,8 @@
               as how equitably these resources are distributed. Further,
               anonymized data would be made available to social scientists at
               large as well as the Diversity and Inclusion/Equal Opportunity
-              offices and program managers, thus linking how we assess syst
+              offices and program managers, thus linking how we assess systemic
+              inequalities with those who are empowered to correct them.
             </p>
             <p>
               The list of researcher resources may include, for example,
@@ -109,8 +110,9 @@
               Identify and Amplify Community Builders
             </div>
             <p>
-              As a part of the data collection effort in Part 1, we suggest
-              providing a space in the questionnaire for students/early career
+              As a part of the data collection effort in Part 1: Quantifying
+              equitable resource distribution, we suggest providing a space in
+              the questionnaire for graduate students and early career
               researchers to identify organizations and members of the
               researcher’s scientific community who have contributed to their
               success (potentially ancillary to their immediate supervisors).
@@ -124,30 +126,35 @@
               gender and race) are currently performing unpaid labor for the
               community at large.
             </p>
-            <v-card-text align="right" class="pr-6">
+            <v-card-text align="Left" class="pr-6">
               <div>Signed, The Cryosphere Community</div></v-card-text
             >
           </div>
         </v-col>
-        <v-col cols="6" md="3" class="mx-4 mx-md-0 mt-12">
-          
-       
+        <v-col cols="6" md="4" lg="3" class="mx-4 mx-md-0 mt-12">
           <ShareButtons />
           <v-divider />
           <div class="text-caption my-4">
-            If you would like to discuss expanding this letter for your own
-            sub-discipline, please contact tbd.
+            Please feel free to share, adapt, and ammend this document for other
+            STEM disciplines and organizations. If you would like to discuss
+            expanding this letter for your own sub-discipline, please email <a href="mailto: stemcensus@gmail.com">stemcensus@gmail.com</a>.
+          </div>
+          <v-divider />
+          <div class="text-caption my-4">
+          If you would like to suggest edits to to the STEM Census for the cryospheric sciences, please let us know your ideas by emailing <a href="mailto: stemcensus@gmail.com">stemcensus@gmail.com</a>
           </div>
           <v-divider />
           <div class="my-4">
             <SignatureForm />
           </div>
         </v-col>
-        <v-col cols="12" md="2" offset-md="2">
-          <SignatureForm />
-        </v-col>
-        <v-col cols="12" md="3" class="ml-8">
+      </v-row>
+      <v-row>
+        <v-col cols="10" offset="1" md="3" offset-md="2">
           <SignatureResults />
+        </v-col>
+        <v-col cols="10" offset="1" md="3">
+          <SignatureForm />
         </v-col>
       </v-row>
     </v-responsive>
