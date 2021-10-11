@@ -10,44 +10,51 @@
     <p hidden>
       <label>Don’t fill this out: <input name="bot-field" /> </label>
     </p>
-    <v-text-field
-      
-      v-model="formData.name"
-      name="name"
-      :rules="nameRules"
-      label="Name"
-      required
-      class="rounded-2"
-      color="primary"
-      autocomplete="off"
-    ></v-text-field>
-
-    <v-text-field
-      
-      v-model="formData.email"
-      name="email"
-      :rules="emailRules"
-      label="E-mail"
-      required
-      class="rounded-2"
-      color="primary"
-      autocomplete="off"
-    ></v-text-field>
-
-    <v-textarea
-      
-      rows="1"
-      v-model="formData.affil"
-      name="affiliation"
-      :rules="messageRules"
-      label="Affiliation"
-      class="rounded-2"
-      color="primary"
-    ></v-textarea>
-    <div data-netlify-recaptcha="true"></div>
-    <v-btn type="submit" :loading="loading" color="primary" depressed>
-      add your signature
-    </v-btn>
+    <v-card outlined>
+      <v-card-actions>
+        <v-text-field
+          v-model="formData.name"
+          name="name"
+          :rules="nameRules"
+          label="Name"
+          required
+          class="rounded-2"
+          color="primary"
+          autocomplete="off"
+        ></v-text-field>
+      </v-card-actions>
+      <v-card-actions>
+        <v-text-field
+          v-model="formData.email"
+          name="email"
+          :rules="emailRules"
+          label="E-mail"
+          required
+          class="rounded-2"
+          color="primary"
+          autocomplete="off"
+        ></v-text-field>
+      </v-card-actions>
+      <v-card-actions>
+        <v-textarea
+          rows="1"
+          v-model="formData.affil"
+          name="affiliation"
+          :rules="messageRules"
+          label="Affiliation"
+          class="rounded-2"
+          color="primary"
+        ></v-textarea>
+      </v-card-actions>
+      <v-card-actions>
+        <div data-netlify-recaptcha="true"></div>
+      </v-card-actions>
+      <v-card-actions>
+        <v-btn type="submit" :loading="loading" color="primary" depressed block>
+          add your signature
+        </v-btn>
+      </v-card-actions>
+    </v-card>
   </v-form>
 </template>
 
@@ -76,7 +83,7 @@ export default {
     title: "Signature",
   },
   metaInfo: {
-    title: 'Signature',
+    title: "Signature",
   },
   computed: {
     smAndDown() {
