@@ -11,42 +11,42 @@
       <label>Don’t fill this out: <input name="bot-field" /> </label>
     </p>
     <v-text-field
-      outlined
+      
       v-model="formData.name"
       name="name"
       :rules="nameRules"
       label="Name"
       required
-      class="rounded-0"
+      class="rounded-2"
       color="primary"
       autocomplete="off"
     ></v-text-field>
 
     <v-text-field
-      outlined
+      
       v-model="formData.email"
       name="email"
       :rules="emailRules"
       label="E-mail"
       required
-      class="rounded-0"
+      class="rounded-2"
       color="primary"
       autocomplete="off"
     ></v-text-field>
 
     <v-textarea
-      outlined
-      rows="6"
+      
+      rows="1"
       v-model="formData.affil"
       name="affiliation"
       :rules="messageRules"
       label="Affiliation"
-      class="rounded-0"
+      class="rounded-2"
       color="primary"
     ></v-textarea>
     <div data-netlify-recaptcha="true"></div>
-    <v-btn type="submit" :loading="loading" tile color="primary" depressed>
-      send
+    <v-btn type="submit" :loading="loading" color="primary" depressed>
+      add your signature
     </v-btn>
   </v-form>
 </template>

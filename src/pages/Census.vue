@@ -141,20 +141,45 @@
           </v-card-text>
         </v-col>
         <v-col cols="6" md="2" class="mx-4 mx-md-0">
-          <a
+          <v-btn
+            color="blue"
+            icon
             href="https://twitter.com/share?ref_src=twsrc%5Etfw"
             class="twitter-share-button"
             data-via="cryocommunity"
             data-hashtags="STEMcensus"
             data-dnt="true"
             data-show-count="false"
-            >Tweet</a
           >
+            <svg
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+            >
+              <path
+                d="M14.977 1.467a.5.5 0 00-.87-.301 2.559 2.559 0 01-1.226.763A3.441 3.441 0 0010.526 1a3.539 3.539 0 00-3.537 3.541v.44C3.998 4.75 2.4 2.477 1.967 1.325a.5.5 0 00-.916-.048C.004 3.373-.157 5.407.604 7.139 1.27 8.656 2.61 9.864 4.51 10.665 3.647 11.276 2.194 12 .5 12a.5.5 0 00-.278.916C1.847 14 3.55 14 5.132 14h.048c4.861 0 8.8-3.946 8.8-8.812v-.479c.363-.37.646-.747.82-1.236.193-.546.232-1.178.177-2.006z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </v-btn>
+
           <v-divider />
           <div class="text-caption my-4">
             If you would like to discuss expanding this letter for your own
             sub-discipline, please contact tbd.
           </div>
+          <v-divider />
+          <div class="my-4">
+            <SignatureForm />
+          </div>
+        </v-col>
+        <v-col cols="12" md="2" offset-md="2">
+          <SignatureForm />
+        </v-col>
+        <v-col cols="12" md="3" class="ml-8">
+          <SignatureResults />
         </v-col>
       </v-row>
     </v-responsive>
@@ -165,10 +190,13 @@
 
 <script>
 import SignatureForm from "~/components/SignatureForm";
+import SignatureResults from "~/components/SignatureResults";
+
 export default {
   name: "Census",
   components: {
     SignatureForm,
+    SignatureResults,
   },
   metaInfo: {
     title: "Census",
