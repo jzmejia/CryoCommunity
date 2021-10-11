@@ -58,6 +58,9 @@
         - name: Steal this (updated) syllabus for Scientific Writing
           url: https://scientistseessquirrel.wordpress.com/2020/05/26/steal-this-updated-syllabus-for-scientific-writing/
           description: a syllabus for a scientific writing course
+        - name: PROMICE
+          url: https://promice.org/greenland-ice-sheet/
+          description: Greenland Ice Sheet mass balance and weather station data.
     - title: Tools
       resources:
         - name: ABC-classroom
@@ -97,55 +100,55 @@
         - name: Recommendations for Best Practices for Promoting a Safe, Educational, and Inclusive Atmosphere when Off-campus with Trainees
           url: https://eas.gatech.edu/sites/default/files/documents/GT_EAS%20Field%20Guidance%20and%20Resources.pdf
           description: Georgia Tech School of Earth and Atmospheric Sciences
-# - tab: coreWorkResources
-#   items:
-#     - title: Code of conduct
-#       resources:
-#         - Examples:
-#           - name: ADVANCEGeoo Partnership
-#             url: https://serc.carleton.edu/advancegeo/resources/codes_conduct.html
-#           - name: Open-source Communities
-#             url: https://www.contributor-covenant.org
-#           - name: NSF Polar
-#             url: https://www.nsf.gov/geo/opp/documents/policy/polar_coc.pdf
-#           - name: American Geophysical Union
-#             url: https://www.sciencemag.org/news/2017/09/scientific-society-defines-sexual-harassment-scientific-misconduct
-#           - name: Online meetings
-#             url: https://ethicsandequitycenter.org/wp-content/uploads/2020/04/Inclusive_Remote_Meetings_Best_Practices.pdf
-#         - Reporting Policy:
-#           - name: Cryosci.Listen
-#             url: https://cryoscilisten.weebly.com/
-#             description: a space for anonymous feedback on the health of the cryospheric science community. (e.g., cryosphere-wide ombudsman). Post-conference survey and post-fieldwork survey. Resources in development (as of 2021 Apr 30).
-#           - name: (SAHPR) Program
-#             url: https://www.nsf.gov/news/news_summ.jsp?cntn_id=302518&org=OPP
-#             description: U.S. Antarctic Program’s Sexual Assault/Harassment Prevention and Response Program
-#           - name: AGU Resources
-#             url: https://www.agu.org/Learn-About-AGU/About-AGU/Ethics/SafeAGU
-#             description:
-#         - Mental Health Resources:
-#           - description: Most colleges and universities have free or very affordable counseling services at the on-campus health center. Counselling (even if it is on campus) is always confidential. 
+- tab: coreWorkResources
+  items:
+    - title: Code of conduct
+      resources:
+        - Examples:
+          - name: ADVANCEGeoo Partnership
+            url: https://serc.carleton.edu/advancegeo/resources/codes_conduct.html
+          - name: Open-source Communities
+            url: https://www.contributor-covenant.org
+          - name: NSF Polar
+            url: https://www.nsf.gov/geo/opp/documents/policy/polar_coc.pdf
+          - name: American Geophysical Union
+            url: https://www.sciencemag.org/news/2017/09/scientific-society-defines-sexual-harassment-scientific-misconduct
+          - name: Online meetings
+            url: https://ethicsandequitycenter.org/wp-content/uploads/2020/04/Inclusive_Remote_Meetings_Best_Practices.pdf
+        - Reporting Policy:
+          - name: Cryosci.Listen
+            url: https://cryoscilisten.weebly.com/
+            description: a space for anonymous feedback on the health of the cryospheric science community. (e.g., cryosphere-wide ombudsman). Post-conference survey and post-fieldwork survey. Resources in development (as of 2021 Apr 30).
+          - name: (SAHPR) Program
+            url: https://www.nsf.gov/news/news_summ.jsp?cntn_id=302518&org=OPP
+            description: U.S. Antarctic Program’s Sexual Assault/Harassment Prevention and Response Program
+          - name: AGU Resources
+            url: https://www.agu.org/Learn-About-AGU/About-AGU/Ethics/SafeAGU
+            description:
+        - Mental Health Resources:
+          - description: Most colleges and universities have free or very affordable counseling services at the on-campus health center. Counselling (even if it is on campus) is always confidential. 
 - tab: professionalDev
   items:
-    # - title: Media
-    #   resources:
-    #     - name:
-    #       url:
-    #       description:
-    # - title: Writing
-    #   resources:
-    #     - name:
-    #       url:
-    #       description:
-    # - title: Presentations
-    #   resources:
-    #     - name:
-    #       url:
-    #       description:
-    # - title: Programming, Modelling, and Data Analysis
-    #   resources:
-    #     - name:
-    #       url:
-    #       description:
+    - title: Media
+      resources:
+        - name:
+          url:
+          description:
+    - title: Writing
+      resources:
+        - name:
+          url:
+          description:
+    - title: Presentations
+      resources:
+        - name:
+          url:
+          description:
+    - title: Programming, Modelling, and Data Analysis
+      resources:
+        - name:
+          url:
+          description:
     - title: Data Management
       resources:
         - name: CARE
@@ -179,6 +182,9 @@
         - name: Women of Color Slack Channel
           url:
           description: Contact Onjalé (onjale.scott@gmail.com) for invite link
+        - name: Midwest And Random Straggelers Glaciology
+          url: https://join.slack.com/t/mgm-m2u3801/shared_invite/zt-wxvjkg8w-nKVIqdBPWMc78QFOh8rYYQ
+          description: Zoom meetings every other Friday! Contact us for invite to the slack channel.
         - name: International Glaciological Society
           url: https://www.igsoc.org/
           description: The IGS was founded in 1936 to provide a focus for individuals interested in practical and scientific aspects of snow and ice.
@@ -389,6 +395,14 @@
         - name: Graduate Research Fellowship Program
           url:
           description: 3 years of tuition and stipend for US citizen and perminant resident graduatee students.
+- tab: applications
+  items:
+    - title: Jobs
+      resources:
+        - name: Becoming a Federal Scientist-A Guide to Applying for Jobs, Internships, and Fellowships
+          url: https://www.ucsusa.org/resources/federal-science-jobs?fbclid=IwAR1UHlSPvSZv4EDr62JdECRzpVd4uextWWCroUh4f_iag7VmttKw86jCeWo
+          description: Toolkit to help navigate the process of applying for government jobs.
+          tags: [ECR]
 
 - tab: fieldwork
   items:
@@ -467,3 +481,30 @@
         - name: A Complete Guide to Used Outdoor Gear Stores
           url: https://alwaystheadventure.com/sustainability/used-gear-stores#NorthCarolina=
           description:  bt Always the Adventure
+- tab: placeNames
+  items:
+    - title: Greenland
+      resources:
+        - name: Getting Greenland’s glaciers right – a new dataset of all official Greenlandic glacier names
+          url: https://tc.copernicus.org/preprints/9/1593/2015/tcd-9-1593-2015.pdf
+          description: Official names of Greenlandic Glaciers
+        - name: Greenland glacier name data set
+          url: https://figshare.com/articles/dataset/GreenlandGlacierNames_GGNv01/1449148
+          description: GIS and csv files of glacier names and coordinates
+        - name: Martha Greenlandic Language Pronunciation
+          url: https://oqaasileriffik.gl/en/langtech/martha/
+          description: Text-to-speech system
+        - name: Endangered Languages Project-Kalaallisut
+          url: https://www.endangeredlanguages.com/lang/8689
+          description: Language information
+    - title: Alaska
+      resources:
+        - name: Ahtna Place Names
+          url: https://uafanlc.alaska.edu/GIS/Ahtna/Ahtna%20Section%20Maps/pdfs/03%20ahtnapn2008pp37-156.pdf
+          description:
+    - title: General
+      resources:
+        - name: Native Land
+          url: https://native-land.ca
+          description: Interactive map of tribal lands with teaching resources
+    

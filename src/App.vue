@@ -32,6 +32,17 @@ export default {
 </script>
 
 <style>
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+}
+/* body {
+  font-family: "Hind", sans-serif;
+} */
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 250ms;

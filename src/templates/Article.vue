@@ -50,77 +50,10 @@
           </v-card>
         </v-col>
 
-        <!-- <v-col cols="12" lg="8"> -->
         <g-image :src="$page.article.preview_image" />
-        <!-- <v-img
-            :lazy-src="$page.article.preview_image.src"
-            :height="smAndDown ? 300 : 450"
-            position="center"
-            :srcset="`${$page.article.preview_image.srcset}`"
-            :src="$page.article.preview_image.src"
-          > -->
-        <!-- <v-card
-              class="ma-3"
-              :style="{
-                backdropFilter: 'blur(1px)',
-              }"
-              flat
-              rounded="lg"
-              :color="dark ? '#222222d0' : '#ffffffd0'"
-            >
-              <v-card-title class="text-lg-h4 font-weight-bold text-break">
-                {{ $page.article.title }}
-              </v-card-title>
-              <v-card-subtitle
-                class="text-capitalize text-lg-subtitle-1 text-subtitle-2 font-weight-thin"
-              >
-                {{ $page.article.subtitle }}
-              </v-card-subtitle>
-            </v-card> -->
-        <!-- </v-img> -->
-        <!-- </v-col> -->
-
+       
         <v-col cols="12" lg="6" class="pt-0">
-          <!-- <v-card flat tile> -->
-          <!-- <v-card-subtitle class="text--primary">
-              {{ $page.article.author }}
 
-              <div class="grey--text text--lighten-1">
-                {{ $page.article.date }}
-                · {{ $page.article.timeToRead }} min read
-              </div> -->
-
-          <!-- <v-chip-group column active-class="primary--text">
-                <template v-for="(tag, index) in $page.article.tags">
-                  <v-tooltip
-                    transition="fade-transition"
-                    content-class="py-1 px-2"
-                    bottom
-                    color="black"
-                    :key="index"
-                  >
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-chip
-                        small
-                        label
-                        dark
-                        color="black"
-                        class="rounded-0"
-                        v-bind="attrs"
-                        v-on="on"
-                        :to="tag.path"
-                        ><v-icon left>fa-hashtag</v-icon>{{ tag.title }}</v-chip
-                      >
-                    </template>
-                    <span class="pa-0 caption"
-                      >View more on {{ tag.title }}</span
-                    >
-                  </v-tooltip>
-                </template>
-              </v-chip-group> -->
-          <!-- </v-card-subtitle> -->
-          <!-- <v-divider class="mb-4" /> -->
-          <!-- <ArticleContent :content="$page.article.content" /> -->
           <v-card-text>
             <div
               class="text--primary article-text"
@@ -239,6 +172,7 @@ export default {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  font-family: "Hind", sans-serif;
 }
 </style>
 

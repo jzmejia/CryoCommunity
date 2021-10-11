@@ -4,24 +4,19 @@
       <v-row>
         <v-col cols="12">
           <div
-            class="text-h2 primary--text font-weight-black"
+            class="text-h2 font-weight-black mt-lg-12 mb-md-4"
             :class="{ 'text-center': smAndDown }"
           >
             Resources
           </div>
-        </v-col>
-        <v-col cols="12">
-          <h3>Glaciology Resource Map</h3>
-          <p class="subtitle-2">
+          <div class="subtitle-2 font-weight-bold mb-6">
             Developed by the MARS Glaciology URGE Pod and adapted from the
             "Sample Phd Mentoring Plan" developed by Dr. Vashan Wright (WHOI)
             and Dr. Karin Block (CUNY)
             <g-link href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
               >CC BY-NC-SA 4.0</g-link
             >.
-          </p>
-        </v-col>
-        <v-col cols="12">
+          </div>
           <p>
             This resource map is designed to provide general information and
             resources outside of any one University or Institution. In addition
@@ -98,6 +93,22 @@
             </v-col>
           </v-row>
         </v-col>
+        <v-col cols="12" id="placeNames">
+          <v-card-title class="text-h4">Glacier Names</v-card-title>
+          <v-row>
+            <v-col cols="12" md="6">
+              <v-img
+                class="rounded-lg"
+                src="https://i.ibb.co/LZn5vHG/Airdevronsix-Icefalls.jpg"
+                :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
+                
+              ></v-img>
+            </v-col>
+            <v-col cols="12" md="6">
+              <ResourceCard :resource="placeNames"/>
+            </v-col>
+          </v-row>
+        </v-col>
       </v-row>
     </v-container>
   </Layout>
@@ -162,6 +173,15 @@ export default {
     },
     community() {
       return this.resources.find((item) => item.tab === "community");
+    },
+    placeNames() {
+      return this.resources.find((item) => item.tab === "placeNames");
+    },
+    professionalDev() {
+      return this.resources.find((item) => item.tab === "professionalDev");
+    },
+    coreWork() {
+      return this.resources.find((item) => item.tab === "coreWorkResources");
     },
   },
 };
