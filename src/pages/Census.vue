@@ -1,6 +1,11 @@
 <template>
   <Layout>
     <v-responsive class="mb-8">
+      <template v-if="successMessage">
+        <v-alert v-model="alert" tile dense color="yellow" dismissible>
+          {{ successMessage }}
+        </v-alert>
+      </template>
       <v-row>
         <v-col cols="10" offset="1" offset-lg="2" class="mt-12 mb-6">
           <div class="text-md-h3 text-h4 font-weight-black text-break mt-12">
@@ -137,15 +142,18 @@
           <div class="text-caption my-4">
             Please feel free to share, adapt, and ammend this document for other
             STEM disciplines and organizations. If you would like to discuss
-            expanding this letter for your own sub-discipline, please email <a href="mailto: stemcensus@gmail.com">stemcensus@gmail.com</a>.
+            expanding this letter for your own sub-discipline, please email
+            <a href="mailto: stemcensus@gmail.com">stemcensus@gmail.com</a>.
           </div>
           <v-divider />
           <div class="text-caption my-4">
-          If you would like to suggest edits to to the STEM Census for the cryospheric sciences, please let us know your ideas by emailing <a href="mailto: stemcensus@gmail.com">stemcensus@gmail.com</a>
+            If you would like to suggest edits to to the STEM Census for the
+            cryospheric sciences, please let us know your ideas by emailing
+            <a href="mailto: stemcensus@gmail.com">stemcensus@gmail.com</a>
           </div>
           <v-divider />
           <div class="my-4">
-            <SignatureForm />
+            <div class="sticky_form"><SignatureForm /></div>
           </div>
         </v-col>
       </v-row>
@@ -154,7 +162,7 @@
           <SignatureResults />
         </v-col>
         <v-col cols="10" offset="1" md="3">
-          <SignatureForm />
+          <SignatureForm class="sticky_form" />
         </v-col>
       </v-row>
     </v-responsive>
@@ -170,6 +178,9 @@ import ShareButtons from "~/components/ShareButtons";
 
 export default {
   name: "Census",
+  data: () => ({
+    alert: true,
+  }),
   components: {
     SignatureForm,
     SignatureResults,
@@ -179,6 +190,9 @@ export default {
     title: "Census",
   },
   computed: {
+    successMessage() {
+      return this.$route.params.message;
+    },
     dark() {
       return this.$vuetify.theme.dark;
     },
@@ -190,3 +204,10 @@ export default {
 </script>
 
 
+<style scoped>
+.sticky_form {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 70px !important;
+}
+</style>
