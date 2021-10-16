@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <v-responsive class="mb-8">
+    <v-container class="mb-8">
       <template v-if="successMessage">
-        <v-alert v-model="alert" tile dense color="yellow" dismissible>
-          {{ successMessage }}
+        <v-alert tile dense color="yellow" dismissible>
+          You have successfully signed up!
         </v-alert>
       </template>
       <v-row>
@@ -14,9 +14,7 @@
           <div class="text-capitalize text-h5 grey--text">
             Towards Building New Pipelines In STEM
           </div>
-        </v-col></v-row
-      >
-      <v-row>
+        </v-col>
         <v-col cols="10" md="6" lg="5" offset="1" offset-lg="2" class="">
           <div>
             <div class="text-h5 text-md-h4 font-weight-bold mb-1">
@@ -153,19 +151,16 @@
           </div>
           <v-divider />
           <div class="my-4">
+            <!-- <SignatureResults /> -->
             <div class="sticky_form"><SignatureForm /></div>
           </div>
         </v-col>
-      </v-row>
-      <v-row>
+
         <v-col cols="10" offset="1" md="3" offset-md="2">
           <SignatureResults />
         </v-col>
-        <v-col cols="10" offset="1" md="3">
-          <SignatureForm class="sticky_form" />
-        </v-col>
       </v-row>
-    </v-responsive>
+    </v-container>
   </Layout>
 </template>
 
@@ -179,7 +174,6 @@ import ShareButtons from "~/components/ShareButtons";
 export default {
   name: "Census",
   data: () => ({
-    alert: true,
   }),
   components: {
     SignatureForm,
@@ -191,7 +185,7 @@ export default {
   },
   computed: {
     successMessage() {
-      return this.$route.params.message;
+      return this.$route.query.success;
     },
     dark() {
       return this.$vuetify.theme.dark;

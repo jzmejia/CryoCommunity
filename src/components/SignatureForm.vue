@@ -97,7 +97,9 @@ export default {
         data,
         url: "/",
       })
-        .then(() => this.$router.push({path: '/census' , params: { message: 'You have successfully signed up!' }}))
+        .then(() =>
+          this.$router.push({path:"/census", query: { success: true }})
+        )
         .catch((error) => {
           this.loading = false;
           console.log(error.toJSON());
