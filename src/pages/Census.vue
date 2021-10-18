@@ -6,8 +6,8 @@
           You have successfully signed up!
         </v-alert>
       </template>
-      <v-row>
-        <v-col cols="10" offset="1" offset-lg="2" class="mt-12 mb-6">
+      <v-row justify="center">
+        <v-col cols="12" lg="9" class="mt-12 mb-6">
           <div class="text-md-h3 text-h4 font-weight-black text-break mt-12">
             A Census for the Science Workforce
           </div>
@@ -15,7 +15,7 @@
             Towards Building New Pipelines In STEM
           </div>
         </v-col>
-        <v-col cols="10" md="6" lg="5" offset="1" offset-lg="2" class="">
+        <v-col cols="12" md="8" lg="6" class="pr-md-10 pr-4">
           <div>
             <div class="text-h5 text-md-h4 font-weight-bold mb-1">
               Introduction
@@ -149,16 +149,16 @@
             cryospheric sciences, please let us know your ideas by emailing
             <a href="mailto: stemcensus@gmail.com">stemcensus@gmail.com</a>
           </div>
-          <v-divider />
-          <div class="my-4">
+          <!-- <v-divider /> -->
+
+<SignatureResults />
+          <!-- <div class="my-4"> -->
             <!-- <SignatureResults /> -->
             <div class="sticky_form"><SignatureForm /></div>
-          </div>
+          <!-- </div> -->
         </v-col>
 
-        <v-col cols="10" offset="1" md="3" offset-md="2">
-          <SignatureResults />
-        </v-col>
+   
       </v-row>
     </v-container>
   </Layout>
