@@ -129,11 +129,11 @@
               gender and race) are currently performing unpaid labor for the
               community at large.
             </p>
-            <v-card-text align="Left" class="pr-6">
-              <div>Signed, The Cryosphere Community</div></v-card-text
-            >
+            <v-card-text align="Left" class="text--subtitle-2 d-flex align-center pr-6">
+              <div>Signed, The Cryosphere Community</div>
+              <SignatureCount :count="count" :signatures="signatures" />
+            </v-card-text>
           </div>
-      
         </v-col>
         <v-col cols="12" sm="6" md="4" lg="3" class="mx-4 mx-md-0 mt-12">
           <ShareButtons />
@@ -151,15 +151,18 @@
             <a href="mailto: stemcensus@gmail.com">stemcensus@gmail.com</a>
           </div>
           <v-divider />
-<div class="mt-4">
-<SignatureResults /></div>
+
+          <!-- <div class="mt-4">
+            
+            <SignatureResults :signatures="signatures"/>
+          </div> -->
           <!-- <div class="my-4"> -->
-            <!-- <SignatureResults /> -->
-            <div class="sticky_form"><SignatureForm /></div>
+          <!-- <SignatureResults /> -->
+          <div class="sticky_form">
+            <SignatureResults :signatures="signatures" /><SignatureForm />
+          </div>
           <!-- </div> -->
         </v-col>
-
-   
       </v-row>
     </v-container>
   </Layout>
@@ -168,20 +171,23 @@
 
 
 <script>
+import axios from "axios";
 import SignatureForm from "~/components/SignatureForm";
 import SignatureResults from "~/components/SignatureResults";
-import SignatureCount from "~/components/SignatureCount";
 import ShareButtons from "~/components/ShareButtons";
-
 
 export default {
   name: "Census",
   data: () => ({
+    signatures: [],
+    count: "null",
+    access_token: process.env.GRIDSOME_NETLIFY_PERSONAL_ACCESS_TOKEN,
+    form_id: process.env.GRIDSOME_NETLIFY_CENSUS_FORM_ID,
   }),
   components: {
     SignatureForm,
     SignatureResults,
-    SignatureCount,
+    SignatureCount: () => import("~/components/SignatureCount"),
     ShareButtons,
   },
   metaInfo: {
@@ -196,6 +202,27 @@ export default {
     },
     smAndDown() {
       return this.$vuetify.breakpoint.smAndDown;
+    },
+  },
+  async mounted() {
+    await this.getFormResults();
+  },
+  methods: {
+    async getFormResults() {
+      const { data } = await axios.get(
+        `https://api.netlify.com/api/v1/forms/${this.form_id}/submissions`,
+        {
+          headers: {
+            Authorization: "Bearer " + this.access_token,
+          },
+        }
+      );
+      this.signatures = data.map((item) => ({
+        name: item.data.name,
+        email: item.data.email,
+        affiliation: item.data.affiliation,
+      }));
+      this.count = this.signatures.length;
     },
   },
 };

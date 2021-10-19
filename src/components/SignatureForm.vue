@@ -13,7 +13,6 @@
         <p hidden>
           <label>Don’t fill this out: <input name="bot-field" /> </label>
         </p>
-        <v-list>
           <v-text-field
             v-model="formData.name"
             name="name"
@@ -43,7 +42,6 @@
             class="rounded-2"
             color="primary"
           ></v-text-field>
-        </v-list>
         <!-- <div data-netlify-recaptcha="true"></div> -->
 
         <v-btn type="submit" :loading="loading" color="primary" depressed block>

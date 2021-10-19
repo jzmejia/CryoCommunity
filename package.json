@@ -22,6 +22,7 @@
     "remark-heading-gap": "^5.0.0",
     "twitter-text": "^3.1.0",
     "twitter-widgets": "^2.0.0",
+    "vue-clipboard2": "^0.3.3",
     "vue-dynamic-marquee": "^0.1.7",
     "vue-tweet-embed": "^2.4.0",
     "vuetify": "^2.5.8"

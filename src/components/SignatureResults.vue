@@ -53,19 +53,12 @@
 </template>
 
 <script>
-import axios from "axios";
-import DynamicMarquee from "vue-dynamic-marquee";
 export default {
   name: "SignatureResults",
+  props: ["signatures"],
   data: () => ({
     isPaused: false,
-    signatures: [],
-    access_token: process.env.GRIDSOME_NETLIFY_PERSONAL_ACCESS_TOKEN,
-    form_id: process.env.GRIDSOME_NETLIFY_CENSUS_FORM_ID,
   }),
-  components: {
-    DynamicMarquee,
-  },
   computed: {
     dark() {
       return this.$vuetify.theme.dark;
@@ -75,25 +68,9 @@ export default {
     },
   },
   mounted() {
-    this.getFormResults();
+    this.shuffle(this.signatures);
   },
   methods: {
-    async getFormResults() {
-      const { data } = await axios.get(
-        `https://api.netlify.com/api/v1/forms/${this.form_id}/submissions`,
-        {
-          headers: {
-            Authorization: "Bearer " + this.access_token,
-          },
-        }
-      );
-      this.signatures = data.map((item) => ({
-        name: item.data.name,
-        email: item.data.email,
-        affiliation: item.data.affiliation,
-      }));
-      this.shuffle(this.signatures);
-    },
     shuffle(array) {
       let currentIndex = array.length,
         randomIndex;

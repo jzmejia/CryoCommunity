@@ -1,6 +1,10 @@
 import Vuetify from "vuetify/lib/framework";
 import "vuetify/dist/vuetify.min.css";
 import DefaultLayout from "~/layouts/Default.vue";
+
+import VueClipboard from 'vue-clipboard2'
+
+
 export default function(Vue, { appOptions, head }) {
   head.link.push({
     rel: "stylesheet",
@@ -37,7 +41,10 @@ export default function(Vue, { appOptions, head }) {
     },
   };
 
+  Vue.use(VueClipboard)
   Vue.use(Vuetify);
   appOptions.vuetify = new Vuetify(opts);
+
+  
   Vue.component("Layout", DefaultLayout);
 }

@@ -1,9 +1,11 @@
 <template>
   <span>
+    <!-- twitter -->
     <v-btn
       color="primary"
       icon
       href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+      data-url="https://cryocommunity.org/census/"
       data-via="cryocommunity"
       data-hashtags="STEMcensus"
       data-show-count="false"
@@ -21,11 +23,12 @@
         ></path>
       </svg>
     </v-btn>
-    
-    <v-btn 
-    icon 
-    color="primary" 
-    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcryocommunity.org%2Fcensus&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"
+    <!-- facebook -->
+    <v-btn
+      icon
+      color="primary"
+      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcryocommunity.org%2Fcensus&amp;src=sdkpreparse"
+      class="fb-xfbml-parse-ignore"
     >
       <svg
         viewBox="0 0 15 15"
@@ -40,6 +43,7 @@
         ></path>
       </svg>
     </v-btn>
+    <!-- linkedin -->
     <v-btn icon color="primary">
       <svg
         viewBox="0 0 15 15"
@@ -54,8 +58,27 @@
         ></path>
       </svg>
     </v-btn>
-    <v-btn icon color="primary">
-      <svg
+    <!-- copy link to page  -->
+    <v-btn
+      icon
+      color="primary"
+      v-clipboard:copy="censusUrl"
+      v-clipboard:success="onCopy"
+      v-clipboard:error="onError"
+    >
+              <svg
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+          >
+            <path
+              d="M11 1.5h2.5v12a1 1 0 01-1 1h-10a1 1 0 01-1-1v-12H4m.5-1h6v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z"
+              stroke="currentColor"
+            ></path>
+          </svg>
+      <!-- <svg
         viewBox="0 0 15 15"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -66,28 +89,37 @@
           d="M4.5 6.5L1.328 9.672a2.828 2.828 0 104 4L8.5 10.5m2-2l3.172-3.172a2.829 2.829 0 00-4-4L6.5 4.5m-2 6l6-6"
           stroke="currentColor"
         ></path>
-      </svg>
+      </svg> -->
     </v-btn>
+
+    <!-- send to contact page -->
     <v-tooltip top>
-        <template v-slot:activator="{on, attrs }">
-            <v-btn 
-            icon 
-            color="primary"
-            v-on="on"
-            v-bind="attrs"
-            href="/contact"
-            >
-                <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M.5 9.5l-.354-.354L0 9.293V9.5h.5zm9-9l.354-.354a.5.5 0 00-.708 0L9.5.5zm5 5l.354.354a.5.5 0 000-.708L14.5 5.5zm-9 9v.5h.207l.147-.146L5.5 14.5zm-5 0H0a.5.5 0 00.5.5v-.5zm.354-4.646l9-9-.708-.708-9 9 .708.708zm8.292-9l5 5 .708-.708-5-5-.708.708zm5 4.292l-9 9 .708.708 9-9-.708-.708zM5.5 14h-5v1h5v-1zm-4.5.5v-5H0v5h1zM6.146 3.854l5 5 .708-.708-5-5-.708.708zM8 15h7v-1H8v1z" fill="currentColor"></path></svg>
-                </v-btn>
-                </template>
-                <span>Suggest Edits</span>
-               
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn icon color="primary" v-on="on" v-bind="attrs" href="/contact">
+          <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M.5 9.5l-.354-.354L0 9.293V9.5h.5zm9-9l.354-.354a.5.5 0 00-.708 0L9.5.5zm5 5l.354.354a.5.5 0 000-.708L14.5 5.5zm-9 9v.5h.207l.147-.146L5.5 14.5zm-5 0H0a.5.5 0 00.5.5v-.5zm.354-4.646l9-9-.708-.708-9 9 .708.708zm8.292-9l5 5 .708-.708-5-5-.708.708zm5 4.292l-9 9 .708.708 9-9-.708-.708zM5.5 14h-5v1h5v-1zm-4.5.5v-5H0v5h1zM6.146 3.854l5 5 .708-.708-5-5-.708.708zM8 15h7v-1H8v1z" fill="currentColor"></path></svg>
+        </v-btn>
+      </template>
+      <span>Suggest Edits</span>
     </v-tooltip>
   </span>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      censusUrl: "https://cryocommunity.org/census",
+    };
+  },
+  methods: {
+    onCopy: function (e) {
+      alert("You just copied: " + e.text);
+    },
+    onError: function (e) {
+      alert("Failed to copy texts");
+    },
+  },
+};
 </script>
 
 <style>
