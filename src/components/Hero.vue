@@ -1,26 +1,20 @@
 <template>
-  <v-parallax src="/ice.jpg" style="height:100vh;">
+  <v-parallax src="/ice.jpg" style="height: 100vh">
     <v-row justify="center">
       <v-col cols="12" align-self="end" align="center">
-        <div
-          class="mb-2  text-lg-h1 text-h3 font-weight-medium black--text"
-        >
+        <div class="mb-2 text-lg-h1 text-h3 font-weight-medium black--text">
           {{ heroData.hero.heroTitle }}
         </div>
         <div class="text-lg-h5 text-h6 black--text">
           {{ heroData.hero.heroSubtitle }}
         </div>
-        </v-col>
+      </v-col>
       <v-col cols="auto" align-self="start" align="start">
         <v-row>
           <v-col v-for="(button, index) in heroData.buttons" :key="index">
-            <v-btn
-              rounded
-              color="primary"
-              :to="button.link"
-              exact
-              >{{ button.name }}</v-btn
-            >
+            <v-btn rounded color="primary" :to="button.link" exact>{{
+              button.name
+            }}</v-btn>
           </v-col>
         </v-row>
       </v-col>

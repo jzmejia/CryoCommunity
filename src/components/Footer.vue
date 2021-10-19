@@ -169,6 +169,7 @@ export default {
         { title: "Home", path: "/" },
         { title: "About", path: "/about" },
         { title: "Team", path: "/team" },
+        { title: "STEM Census", path: "/census" },
         { title: "Projects", path: "/projects" },
         { title: "Resources", path: "/resources" },
         { title: "Contact", path: "/contact" },

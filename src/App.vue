@@ -3,6 +3,9 @@
     <Header />
     <v-main>
       <v-fade-transition mode="out-in">
+      <Banner v-if="$route.path === '/'" />
+      </v-fade-transition>
+      <v-fade-transition mode="out-in">
         <Hero v-if="$route.path === '/'" />
       </v-fade-transition>
       <v-fade-transition mode="out-in">
@@ -16,12 +19,14 @@
 <script>
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Banner from "@/components/NewContentBanner";
 import Footer from "@/components/Footer";
 export default {
   name: "App",
   components: {
     Header,
     Hero,
+    Banner,
     Footer,
   },
   metaInfo: {

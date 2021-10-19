@@ -77,7 +77,7 @@
                     </v-row>
                   </template>
                   <v-card
-                    style="position: absolute; bottom: 0; left:0; right:0;"
+                    style="position: absolute; bottom: 0; left: 0; right: 0"
                     :style="{
                       backdropFilter: hover ? '' : 'blur(2px) !important',
                     }"
@@ -123,7 +123,7 @@
                 </v-chip-group>
               </v-card-text>
               <g-link
-                class="text-decoration-none  text--primary"
+                class="text-decoration-none text--primary"
                 :to="item.node.path"
               >
                 <v-list-item>
@@ -133,7 +133,9 @@
                     }}</v-list-item-subtitle>
                   </v-list-item-content>
                   <v-list-item-action>
-                    <v-list-item-action-text>{{ item.node.date }}</v-list-item-action-text>
+                    <v-list-item-action-text>{{
+                      item.node.date
+                    }}</v-list-item-action-text>
                   </v-list-item-action>
                 </v-list-item>
                 <v-card-text v-text="item.node.excerpt"> </v-card-text>
