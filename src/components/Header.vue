@@ -171,7 +171,7 @@ export default {
         { title: "Home", path: "/" },
         { title: "Our Team", path: "/team/" },
         { title: "About", path: "/about/" },
-        // { title: "Stem Census", path: "/census/"},
+        { title: "Stem Census", path: "/census/"},
         { title: "Projects", path: "/projects/" },
         { title: "Resources", path: "/resources/" },
         { title: "Contact", path: "/contact/" },

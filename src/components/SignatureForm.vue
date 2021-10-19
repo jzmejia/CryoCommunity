@@ -1,5 +1,5 @@
 <template>
-  <v-card outlined>
+  <v-card flat>
     <v-card-text>
       <v-form
         name="signature"
@@ -13,38 +13,37 @@
         <p hidden>
           <label>Don’t fill this out: <input name="bot-field" /> </label>
         </p>
+        <v-list>
+          <v-text-field
+            v-model="formData.name"
+            name="name"
+            :rules="nameRules"
+            label="Name"
+            required
+            color="primary"
+            autocomplete="off"
+          ></v-text-field>
 
-        <v-text-field
-          v-model="formData.name"
-          name="name"
-          :rules="nameRules"
-          label="Name"
-          required
-          class="rounded-2"
-          color="primary"
-          autocomplete="off"
-        ></v-text-field>
+          <v-text-field
+            v-model="formData.email"
+            name="email"
+            :rules="emailRules"
+            label="E-mail"
+            required
+            hint="Your e-mail will not be displayed"
+            color="primary"
+            autocomplete="off"
+          ></v-text-field>
 
-        <v-text-field
-          v-model="formData.email"
-          name="email"
-          :rules="emailRules"
-          label="E-mail"
-          required
-          class="rounded-2"
-          color="primary"
-          autocomplete="off"
-        ></v-text-field>
-
-        <v-text-field
-          v-model="formData.affiliation"
-          name="affiliation"
-          :rules="affilRules"
-          label="Affiliation"
-          class="rounded-2"
-          color="primary"
-        ></v-text-field>
-
+          <v-text-field
+            v-model="formData.affiliation"
+            name="affiliation"
+            :rules="affilRules"
+            label="Affiliation"
+            class="rounded-2"
+            color="primary"
+          ></v-text-field>
+        </v-list>
         <!-- <div data-netlify-recaptcha="true"></div> -->
 
         <v-btn type="submit" :loading="loading" color="primary" depressed block>
@@ -98,7 +97,10 @@ export default {
         url: "/",
       })
         .then(() =>
-          this.$router.push({path:"/census", query: { success: true }})
+          this.$router.push({
+            path: "/signature-success",
+            query: { success: true },
+          })
         )
         .catch((error) => {
           this.loading = false;

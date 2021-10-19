@@ -127,36 +127,36 @@
             description:
         - Mental Health Resources:
           - description: Most colleges and universities have free or very affordable counseling services at the on-campus health center. Counselling (even if it is on campus) is always confidential. 
-- tab: professionalDev
-  items:
-    - title: Media
-      resources:
-        - name:
-          url:
-          description:
-    - title: Writing
-      resources:
-        - name:
-          url:
-          description:
-    - title: Presentations
-      resources:
-        - name:
-          url:
-          description:
-    - title: Programming, Modelling, and Data Analysis
-      resources:
-        - name:
-          url:
-          description:
-    - title: Data Management
-      resources:
-        - name: CARE
-          url: https://www.gida-global.org/care
-          description: Principles for Indigenous data governance
-        - name: FAIR
-          url: https://www.go-fair.org/fair-principles/
-          description: Guiding principles for scientific data management and stewardship.
+# - tab: professionalDev
+#   items:
+#     - title: Media
+#       resources:
+#         - name:
+#           url:
+#           description:
+#     - title: Writing
+#       resources:
+#         - name:
+#           url:
+#           description:
+#     - title: Presentations
+#       resources:
+#         - name:
+#           url:
+#           description:
+#     - title: Programming, Modelling, and Data Analysis
+#       resources:
+#         - name:
+#           url:
+#           description:
+#     - title: Data Management
+#       resources:
+#         - name: CARE
+#           url: https://www.gida-global.org/care
+#           description: Principles for Indigenous data governance
+#         - name: FAIR
+#           url: https://www.go-fair.org/fair-principles/
+#           description: Guiding principles for scientific data management and stewardship.
 - tab: community
   items:
     - title: Polar
@@ -221,7 +221,7 @@
           url: http://www.genderisnotplanb.com/
           twitter: PlanArctic
           description: Gender is not plan B in the arctic. Plan A. serves as a digital storytelling platform, showcasing the personal and professional stories of women who live and work in, as well as engage with the Arctic. It also seeks to highlight and promote the inclusion of broader gender perspectives in all aspects of northern life and policy. 
-    - title: Outdoor Orgs
+    - title: Outdoor
       resources:
         - name: Melanin Base Camp
           url: https://www.melaninbasecamp.com/
@@ -235,7 +235,7 @@
         - name: Brown Girls Climb
           url: https://www.browngirlsclimb.com
           description: accessible and affordable climbing memberships for women and femmes of color climbers
-    - title: Professional Orgs
+    - title: Professional
       resources:
         - name: GeoLatinas
           url: https://geolatinas.weebly.com/

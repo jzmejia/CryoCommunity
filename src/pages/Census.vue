@@ -1,18 +1,18 @@
 <template>
   <Layout>
-    <v-container class="mb-8">
+    <v-container>
       <template v-if="successMessage">
         <v-alert tile dense color="yellow" dismissible>
           You have successfully signed up!
         </v-alert>
       </template>
       <v-row justify="center">
-        <v-col cols="12" lg="9" class="mt-12 mb-6">
+        <v-col cols="12" lg="9" class="mt-6 mt-md-12 mb-6">
           <div class="text-md-h3 text-h4 font-weight-black text-break mt-12">
             A Census for the Science Workforce
           </div>
           <div class="text-capitalize text-h5 grey--text">
-            Towards Building New Pipelines In STEM
+            Towards Building Braided Rivers in STEM
           </div>
         </v-col>
         <v-col cols="12" md="8" lg="6" class="pr-md-10 pr-4">
@@ -133,8 +133,9 @@
               <div>Signed, The Cryosphere Community</div></v-card-text
             >
           </div>
+      
         </v-col>
-        <v-col cols="6" md="4" lg="3" class="mx-4 mx-md-0 mt-12">
+        <v-col cols="12" sm="6" md="4" lg="3" class="mx-4 mx-md-0 mt-12">
           <ShareButtons />
           <v-divider />
           <div class="text-caption my-4">
@@ -149,9 +150,9 @@
             cryospheric sciences, please let us know your ideas by emailing
             <a href="mailto: stemcensus@gmail.com">stemcensus@gmail.com</a>
           </div>
-          <!-- <v-divider /> -->
-
-<SignatureResults />
+          <v-divider />
+<div class="mt-4">
+<SignatureResults /></div>
           <!-- <div class="my-4"> -->
             <!-- <SignatureResults /> -->
             <div class="sticky_form"><SignatureForm /></div>
@@ -169,7 +170,9 @@
 <script>
 import SignatureForm from "~/components/SignatureForm";
 import SignatureResults from "~/components/SignatureResults";
+import SignatureCount from "~/components/SignatureCount";
 import ShareButtons from "~/components/ShareButtons";
+
 
 export default {
   name: "Census",
@@ -178,6 +181,7 @@ export default {
   components: {
     SignatureForm,
     SignatureResults,
+    SignatureCount,
     ShareButtons,
   },
   metaInfo: {

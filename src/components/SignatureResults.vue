@@ -1,22 +1,6 @@
 <template>
   <div>
-    <!-- <v-system-bar dense flat lights-out>
-      <v-spacer />
-      <svg
-        v-if="signatures.length > 0"
-        viewBox="0 0 15 15"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        width="18"
-        height="18"
-      >
-        <path
-          d="M10.5 14.49v.5h.5v-.5h-.5zm-10 0H0v.5h.5v-.5zm14 .01v.5h.5v-.5h-.5zM8 3.498a2.499 2.499 0 01-2.5 2.498v1C7.433 6.996 9 5.43 9 3.498H8zM5.5 5.996A2.499 2.499 0 013 3.498H2a3.499 3.499 0 003.5 3.498v-1zM3 3.498A2.499 2.499 0 015.5 1V0A3.499 3.499 0 002 3.498h1zM5.5 1A2.5 2.5 0 018 3.498h1A3.499 3.499 0 005.5 0v1zm5 12.99H.5v1h10v-1zm-9.5.5v-1.996H0v1.996h1zm2.5-4.496h4v-1h-4v1zm6.5 2.5v1.996h1v-1.997h-1zm-2.5-2.5a2.5 2.5 0 012.5 2.5h1a3.5 3.5 0 00-3.5-3.5v1zm-6.5 2.5a2.5 2.5 0 012.5-2.5v-1a3.5 3.5 0 00-3.5 3.5h1zM14 13v1.5h1V13h-1zm.5 1H12v1h2.5v-1zM12 11a2 2 0 012 2h1a3 3 0 00-3-3v1zm-.5-3A1.5 1.5 0 0110 6.5H9A2.5 2.5 0 0011.5 9V8zM13 6.5A1.5 1.5 0 0111.5 8v1A2.5 2.5 0 0014 6.5h-1zM11.5 5A1.5 1.5 0 0113 6.5h1A2.5 2.5 0 0011.5 4v1zm0-1A2.5 2.5 0 009 6.5h1A1.5 1.5 0 0111.5 5V4z"
-          fill="currentColor"
-        ></path>
-      </svg>
-      <span class="ml-2 text-h6">{{ signatures.length }}</span>
-    </v-system-bar> -->
+    
     <v-list
       v-if="signatures.length > 0"
       :class="dark ? 'dark-marquee-list dark-container':'marquee-list light-container'"
@@ -216,7 +200,7 @@ export default {
   pointer-events: none;
   width: 100%;
   height: 2em;
-  background-image: linear-gradient(180deg, #121212, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(180deg, #121212, rgba(0, 0, 0, 0));
 }
 
 .dark-marquee-list:after,
