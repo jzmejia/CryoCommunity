@@ -2,11 +2,9 @@
   <v-app>
     <Header />
     <v-main>
-      <v-fade-transition mode="out-in">
-      <Banner v-if="$route.path === '/'" />
-      </v-fade-transition>
-      <v-fade-transition mode="out-in">
-        <Hero v-if="$route.path === '/'" />
+      <v-fade-transition mode="out-in" group>
+        <Banner key="1" v-if="$route.path === '/'" />
+        <Hero key="2" v-if="$route.path === '/'" />
       </v-fade-transition>
       <v-fade-transition mode="out-in">
         <router-view />
@@ -19,14 +17,13 @@
 <script>
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Banner from "@/components/NewContentBanner";
 import Footer from "@/components/Footer";
 export default {
   name: "App",
   components: {
     Header,
     Hero,
-    Banner,
+    Banner: () => import("@/components/Banner"),
     Footer,
   },
   metaInfo: {

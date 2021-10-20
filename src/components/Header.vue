@@ -8,6 +8,7 @@
       }"
       :color="dark ? '#121212d0' : '#ffffffd0'"
       elevate-on-scroll
+
     >
       <g-link
         to="/"

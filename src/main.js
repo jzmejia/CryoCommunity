@@ -3,6 +3,7 @@ import "vuetify/dist/vuetify.min.css";
 import DefaultLayout from "~/layouts/Default.vue";
 
 import VueClipboard from 'vue-clipboard2'
+import DynamicMarquee from 'vue-dynamic-marquee';
 
 
 export default function(Vue, { appOptions, head }) {
@@ -42,9 +43,12 @@ export default function(Vue, { appOptions, head }) {
   };
 
   Vue.use(VueClipboard)
+  
   Vue.use(Vuetify);
+  
   appOptions.vuetify = new Vuetify(opts);
 
+  Vue.component('dynamic-marquee', DynamicMarquee);
   
   Vue.component("Layout", DefaultLayout);
 }
