@@ -1,14 +1,12 @@
 <template>
   <Layout>
     <v-container>
-      <template v-if="successMessage">
-        <v-alert tile dense color="yellow" dismissible>
+        <v-alert v-if="successMessage" tile dense color="yellow" dismissible>
           You have successfully signed up!
         </v-alert>
-      </template>
       <v-row justify="center">
-        <v-col cols="12" lg="9" class="mt-6 mt-md-12 mb-6">
-          <div class="text-md-h3 text-h4 font-weight-black text-break mt-12">
+        <v-col cols="12" lg="9" class="mb-6">
+          <div class="text-md-h3 text-h4 font-weight-black text-break">
             A Census for the Science Workforce
           </div>
           <div class="text-capitalize text-h5 grey--text">
@@ -129,13 +127,14 @@
               gender and race) are currently performing unpaid labor for the
               community at large.
             </p>
-            <v-card-text align="Left" class="text--subtitle-2 d-flex align-center pr-6">
-              <div>Signed, The Cryosphere Community</div>
-              <SignatureCount :count="count" :signatures="signatures" />
+            <v-card-text class="text--subtitle-2 d-flex align-center">
+              Signed, The Cryosphere Community
+              <SignatureCount class="ml-2" :count="count" :signatures="signatures" />
             </v-card-text>
           </div>
         </v-col>
-        <v-col cols="12" sm="6" md="4" lg="3" class="mx-4 mx-md-0 mt-12">
+
+        <v-col cols="12" sm="6" md="4" lg="3" class="mx-4 mx-md-0">
           <ShareButtons />
           <v-divider />
           <div class="text-caption my-4">
@@ -151,17 +150,10 @@
             <a href="mailto: stemcensus@gmail.com">stemcensus@gmail.com</a>
           </div>
           <v-divider />
-
-          <!-- <div class="mt-4">
-            
-            <SignatureResults :signatures="signatures"/>
-          </div> -->
-          <!-- <div class="my-4"> -->
-          <!-- <SignatureResults /> -->
           <div class="sticky_form">
-            <SignatureResults :signatures="signatures" /><SignatureForm />
+            <SignatureResults :signatures="signatures" />
+            <SignatureForm />
           </div>
-          <!-- </div> -->
         </v-col>
       </v-row>
     </v-container>
@@ -233,6 +225,6 @@ export default {
 .sticky_form {
   position: -webkit-sticky !important;
   position: sticky !important;
-  top: 70px !important;
+  top: 50px !important;
 }
 </style>
