@@ -1,8 +1,9 @@
 <template>
-  <v-parallax src="/ice.jpg" height="1000" style="height: 100vh;">
+  <v-parallax src="/ice.jpg" height="1000" style="height: 100vh">
     <v-row justify="center">
       <v-col cols="12" align-self="end" align="center">
-        <div class="mb-2 text-lg-h1 text-h3 font-weight-medium black--text">
+        <v-img :src="heroData.hero.heroLogo" height="70" contain class="mb-4" />
+        <div class="mb-2 text-lg-h2 text-h3 font-weight-medium black--text">
           {{ heroData.hero.heroTitle }}
         </div>
         <div class="text-lg-h5 text-h6 black--text">
@@ -11,10 +12,16 @@
       </v-col>
       <v-col cols="auto" align-self="start" align="start">
         <v-row>
+          <v-col>
+            <v-btn color="primary" to="/career/" exact>
+              <v-icon left>fa-search</v-icon>
+              career stage
+            </v-btn>
+          </v-col>
           <v-col v-for="(button, index) in heroData.buttons" :key="index">
-            <v-btn rounded color="primary" :to="button.link" exact>{{
-              button.name
-            }}</v-btn>
+            <v-btn color="primary" :to="button.link" exact>
+              {{ button.name }}
+            </v-btn>
           </v-col>
         </v-row>
       </v-col>
@@ -35,6 +42,7 @@ query {
         buttons {
           name
           link
+          icon
         }
       }
     }

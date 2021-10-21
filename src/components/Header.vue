@@ -15,7 +15,8 @@
         class="
             text-decoration-none
             text--primary
-            text-h5
+            text-h6
+            text-lg-h5
             font-weight-black
           "
         exact
