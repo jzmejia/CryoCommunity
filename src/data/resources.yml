@@ -227,11 +227,6 @@
         - name: International Glaciology Society's Global Seminar Series
           url: https://www.igsoc.org/igswebinar/
           description: weekly via zoom
-#     - title: Programming, Modelling, and Data Analysis
-#       resources:
-#         - name:
-#           url:
-#           description:
     - title: Data Management
       resources:
         - name: CARE
@@ -559,17 +554,6 @@
           description: AGU Helping sow the seeds of innovative SciComm
 - tab: applications
   items:
-    - title: Graduate School
-      resources:
-        - name: Applying to Graduate School in the Geosciences
-          url: http://cryocommunity.org/projects/applying-to-graduate-school-in-the-geosciences
-          description: CryoCommunity article detailing the graduate school application process
-        - name: Graduate School Application Station
-          url: https://geogradapp.com
-          description: Tips and Graduate Application Timeline
-        - name:
-          url:
-          description:
     - title: Letters of Recommendations
       resources:
         - name: Cheat sheet for how to avoid racial bias in letters of reference writing
@@ -599,6 +583,14 @@
         - name: Race- and Gender-Based Differences in Descriptions of Applicants in the Letters of Recommendation for Orthopaedic Surgery Residency
           url: https://pubmed.ncbi.nlm.nih.gov/32803104/
           description: Powers, A., et al., 2020
+    - title: Graduate School
+      resources:
+        - name: Applying to Graduate School in the Geosciences
+          url: http://cryocommunity.org/projects/applying-to-graduate-school-in-the-geosciences
+          description: CryoCommunity article detailing the graduate school application process
+        - name: Graduate School Application Station
+          url: https://geogradapp.com
+          description: Tips and Graduate Application Timeline
     - title: Jobs
       resources:
         - name: Becoming a Federal Scientist-A Guide to Applying for Jobs, Internships, and Fellowships
