@@ -30,7 +30,7 @@
           tags: [Jupyter, Python, MATLAB, github]
         - name: OpenGeology
           url: https://opengeology.org
-          descriptiion: Free open educational resources for the geosciences
+          description: Free open educational resources for the geosciences
         - name: Reading for students
           url: https://www.ipcc.ch/srocc/
           description: IPCC Special Reporot on the Ocean and Cryosphere in a Changing Climate
@@ -229,12 +229,51 @@
         - name: Outdoor Afro
           url: https://outdoorafro.com/
           description:  A network that celebrates and inspires Black connections and leadership in nature. Leadership networks are nationwide in 42 cities. Participation and leadership opportunities (plus leadership training)
+        - name: Diversify Outdoors
+          url: diversifyoutdoors.com
+          description: A coalition of social media influencers who share the goal of promoting diversity in outdoor spacers where people of color, LGBTQIA+, and other diverse identities have historically been underrepresented.
         - name: Indigenous Women Hike
           url: http://www.project562.com/blog/hiking-the-nueuemue-poyo-an-act-of-love-by-indigenous-women/
           description:
+        - name: Native Women's Wilderness 
+          url: https://www.nativewomenswilderness.org
+          description: Created to bring Native women together to share our stories, support each other, and learn from one another as we endeavor to explore and celebrate the wilderness and our native lands.
+        - name: Indigenous Womxn Climb
+          url: https://www.indigenouswomxnclimb.com
+          description: is a virtual and Land-based volunteer community dedicated to self-determination and representation of Indigenous Womxn/non-binary and Two-Spirit climbers in the outdoors.
+        - name: LatinXhikers
+          url: http://www.latinxhikers.org
+          description: A grassroots initative dedicated to breaking down barriers in the outdoors by creating access, providing representation, & empowering community
         - name: Brown Girls Climb
           url: https://www.browngirlsclimb.com
           description: accessible and affordable climbing memberships for women and femmes of color climbers
+        - name: List of LGBTQ+ outdoors leaders and organizations
+          url: https://www.montana.edu/communitydevelopment/rainbows/OutdoorLeaders.pdf
+          description:
+        - name: Map of LGBTQ+ outdoors meetup groups
+          url: https://gis.tws.org/LGBTQ/local-perspective-master/index.html
+          description: Find local LGBTQ+ and ally outdoor groups in the US and Canada
+        - name: Outdoor Asian
+          url: https://www.outdoorasian.com
+          description: Creating a community of Asian & Pacific Islanders in the outdoors
+        - name: Fat Girls Hiking
+          url: https://fatgirlshiking.com
+          description: a fat activism, body liberation & outdoor community
+        - name: Brothers of Climbing
+          url: http://boccrew.com
+          description:
+        - name: GirlTrek
+          url: https://www.girltrek.org
+          description: In the footsteps of a civil rights legacy, GirlTrek is a national health movement that activates thousands of Black women to be change makers in their lives and communities — through walking.
+        - name: Get Out Stay Out/Vamos Afuera
+          url: http://vamosafuera.org
+          description: a grassroots, Central Coast nonprofit, that invites Indigenous Migrant youth to run, play, and discover themselves in the natural environment.
+        - name: Flash Foxy
+          url: https://www.flashfoxy.com
+          description: A celebration of, and resource for, women and genderqueer climbers. 
+        - name: Black Girls Do Bike 
+          url: https://www.blackgirlsdobike.org
+          description: Our interest is in growing and supporting a community of women of color who share a passion for cycling.
     - title: Professional
       resources:
         - name: GeoLatinas
@@ -397,6 +436,46 @@
           description: 3 years of tuition and stipend for US citizen and perminant resident graduatee students.
 - tab: applications
   items:
+    - title: Graduate School
+      resources:
+        - name: Applying to Graduate School in the Geosciences
+          url: http://cryocommunity.org/projects/applying-to-graduate-school-in-the-geosciences
+          description: CryoCommunity article detailing the graduate school application process
+        - name: Graduate School Application Station
+          url: https://geogradapp.com
+          description: Tips and Graduate Application Timeline
+        - name:
+          url:
+          description:
+    - title: Letters of Recommendations
+      resources:
+        - name: Cheat sheet for how to avoid racial bias in letters of reference writing
+          url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/03/avoiding-racial-bias-in-reference-writing.pdf
+          description: A list of common traps rooted in unconscious bias
+        - name: Avoiding gender bias in reference writing
+          url: https://drive.google.com/file/d/1Adtm0sGb6fiCTQGC8E7CadhUlk-Jyns8/view
+          description: Tips for recommendation writiers with word substitutions
+        - name: Avoiding Unintended Gender Bias in Letters of Recommendation
+          url: https://drive.google.com/file/d/1ism2mLJPUPHRcKyjT7ZcTmFS3XIB-Y0_/view
+          description: 2-page overview by the National Center for Women & Information Technology
+        - name: The Right Words for the Job, How Gendered Language Affects the Workplace
+          url: https://medium.com/women-in-product/genderwords-b0be0cc8251f
+          description: by D. Liu
+        - name: Gender bias calculator
+          url: https://www.tomforth.co.uk/genderbias/
+          description: A tool to check your letter of recommendation for gendered language
+        - name: Gender differences in recommendation letters for postdoctoral fellowships in geoscience
+          url: https://www.nature.com/articles/ngeo2819
+          description: Dutt et al., 2016. Nature Geoscience.
+        - name: Raising Doubt in Letters of Recommendation for Academia; Gender Differences and Their Impact
+          url: https://www.researchgate.net/profile/Virginia-Valian/publication/324782644_Raising_Doubt_in_Letters_of_Recommendation_for_Academia_Gender_Differences_and_Their_Impact/links/5b14712f0f7e9b498108e465/Raising-Doubt-in-Letters-of-Recommendation-for-Academia-Gender-Differences-and-Their-Impact.pdf
+          description: Madera, J. et al., 2018
+        - name: A Lingustic Comparison of Letters of Recommendation for Male and Female Chemistry and Biochemistry Job Applicants
+          url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2572075/
+          description: Schmader, T., Whitehead, J. & Wysocki, V. H. (2007)
+        - name: Race- and Gender-Based Differences in Descriptions of Applicants in the Letters of Recommendation for Orthopaedic Surgery Residency
+          url: https://pubmed.ncbi.nlm.nih.gov/32803104/
+          description: Powers, A., et al., 2020
     - title: Jobs
       resources:
         - name: Becoming a Federal Scientist-A Guide to Applying for Jobs, Internships, and Fellowships
@@ -507,3 +586,18 @@
           url: https://native-land.ca
           description: Interactive map of tribal lands with teaching resources
     
+- tab: LGBTQIA+
+  items:
+    - title: Jobs
+      resources:
+        - name: LGBTQIA+ Outdoor/Environmental Job Seekers and Job posting broad
+          url: https://docs.google.com/spreadsheets/d/1GOdfg97K2MbCff00sIn3QqlMAu8gpeJl4Nx3iwuDqNw/edit?usp=sharing
+          description: A public google sheet to hire from or add your name to for potential hiring!
+    - title: Community
+      resources:
+        - name: LGBTQ Outdoor //www.nsf.gov/news/news_summ.jsp?cntn_id=302518&org=OPP
+          url: https://www.lgbtqoutdoorsummit.com
+          description: Dedicated to the representation and inclusion of the LGBTQ community OUTside.
+        - name: LGBTQ+ Adventurers, In Their Own Words
+          url: https://www.rei.com/blog/camp/lgbtq-outdoor-adventurers
+          description: by A. Parris
