@@ -107,7 +107,6 @@
   items:
     - title: Code of conduct
       resources:
-        - Examples:
           - name: ADVANCEGeoo Partnership
             url: https://serc.carleton.edu/advancegeo/resources/codes_conduct.html
           - name: Open-source Communities
@@ -118,7 +117,11 @@
             url: https://www.sciencemag.org/news/2017/09/scientific-society-defines-sexual-harassment-scientific-misconduct
           - name: Online meetings
             url: https://ethicsandequitycenter.org/wp-content/uploads/2020/04/Inclusive_Remote_Meetings_Best_Practices.pdf
-        - Reporting Policy:
+          - name: Faculty Accountability for Culturally Inclusive Pedagogy and Curricula
+            url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/04/Faculty-Accountability-for-Culturally-Inclusive-Pedagogy-and-Curricula.pdf
+            description: Quaye, S. J., and Harper, S. R.  
+    - title: Reporting Policy
+      resources:
           - name: Cryosci.Listen
             url: https://cryoscilisten.weebly.com/
             description: a space for anonymous feedback on the health of the cryospheric science community. (e.g., cryosphere-wide ombudsman). Post-conference survey and post-fieldwork survey. Resources in development (as of 2021 Apr 30).
@@ -128,8 +131,38 @@
           - name: AGU Resources
             url: https://www.agu.org/Learn-About-AGU/About-AGU/Ethics/SafeAGU
             description:
-        - Mental Health Resources:
-          - description: Most colleges and universities have free or very affordable counseling services at the on-campus health center. Counselling (even if it is on campus) is always confidential. 
+          - name: When It Comes to Sexual Harassment, Academia Is Fundamentally Broken
+            url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/01/500WomenScientist_SexualHarassmentAcademia-1.pdf
+            description: Why everyone should read the National Academies’ sexual harassment report
+    - title: Mental Health
+      resources:
+        - name: National Grad Crisis Line  1-877-472-3457
+          url: https://gradresources.org/crisis/
+          description: The National Grad Crisis Line helps graduate students reach free, confidential telephone counseling, crisis intervention, suicide prevention, and information and referral services provided by specially-trained call-takers.
+        - name: Grad Resources
+          url: https://gradresources.org
+          description: Grad Resources offers services that address their personal, emotional and spiritual needs, providing online materials, meaningful connections, engaging speakers, and supportive faith-based communities that enable graduate students to flourish personally and professionally.
+        - name: Resources on Campus
+          description: Most colleges and universities have free or very affordable counseling services at the on-campus health center. Counselling (even if it is on campus) is always confidential. 
+        - name: Mental Health in Grad School
+          url: https://www.gograd.org/resources/grad-student-mental-health/
+          description: Recognizing, Understanding & Overcoming Mental Health Issues in Grad School
+    - title: Mentoring 
+      resources:
+        - name: Find a Mentor
+          url: https://gradresources.org/mentoring/
+          description:  Grad Resources offers online mentoring opportunities. If you are new to graduate school, this is a chance to learn from others in your field or one similar to yours about the challenges ahead and how to navigate them.
+    - title: More
+      resources: 
+        - name: Surviving the Doctorate and Thriving as Faculty-Latina Junior Faculty Reflecting on Their Doctoral Studies Experiences
+          url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/04/Surviving-the-Doctorate-and-Thriving-as-Faculty-Latina-Junior-Faculty-Reflecting-on-Their-Doctoral-Studies-Experiences.pdf
+          description: by Juan Carlos González
+        - name: Surviving Academic Karens While Black
+          url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/04/Surviving-Academic-Karens-While-Black.pdf
+          description: 
+        - name: “Am I going crazy?!” A Critical Race Analysis of Doctoral Education
+          url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/04/Am-I-going-crazy_A-Critical-Race-Analysis-of-Doctoral-Education.pdf
+          description: Ryan Evely Gildersleeve , Natasha N. Croom & Philip L. Vasquez (2011)
 - tab: professionalDev
   items:
     - title: Media
@@ -227,11 +260,6 @@
         - name: International Glaciology Society's Global Seminar Series
           url: https://www.igsoc.org/igswebinar/
           description: weekly via zoom
-#     - title: Programming, Modelling, and Data Analysis
-#       resources:
-#         - name:
-#           url:
-#           description:
     - title: Data Management
       resources:
         - name: CARE
@@ -559,17 +587,6 @@
           description: AGU Helping sow the seeds of innovative SciComm
 - tab: applications
   items:
-    - title: Graduate School
-      resources:
-        - name: Applying to Graduate School in the Geosciences
-          url: http://cryocommunity.org/projects/applying-to-graduate-school-in-the-geosciences
-          description: CryoCommunity article detailing the graduate school application process
-        - name: Graduate School Application Station
-          url: https://geogradapp.com
-          description: Tips and Graduate Application Timeline
-        - name:
-          url:
-          description:
     - title: Letters of Recommendations
       resources:
         - name: Cheat sheet for how to avoid racial bias in letters of reference writing
@@ -599,6 +616,14 @@
         - name: Race- and Gender-Based Differences in Descriptions of Applicants in the Letters of Recommendation for Orthopaedic Surgery Residency
           url: https://pubmed.ncbi.nlm.nih.gov/32803104/
           description: Powers, A., et al., 2020
+    - title: Graduate School
+      resources:
+        - name: Applying to Graduate School in the Geosciences
+          url: http://cryocommunity.org/projects/applying-to-graduate-school-in-the-geosciences
+          description: CryoCommunity article detailing the graduate school application process
+        - name: Graduate School Application Station
+          url: https://geogradapp.com
+          description: Tips and Graduate Application Timeline
     - title: Jobs
       resources:
         - name: Becoming a Federal Scientist-A Guide to Applying for Jobs, Internships, and Fellowships

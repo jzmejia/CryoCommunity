@@ -123,7 +123,11 @@
             <v-col cols="12" md="6">
               <ResourceCard :resource="applications" />
             </v-col>
-            <v-col cols="12" md="6">
+            <v-col
+              cols="12"
+              md="6"
+              :order="$vuetify.breakpoint.mobile ? 'first' : ''"
+            >
               <v-img
                 class="rounded-lg"
                 src="/newjob.png"
@@ -153,7 +157,11 @@
             <v-col cols="12" md="6">
               <ResourceCard :resource="fieldworkOpp" />
             </v-col>
-            <v-col cols="12" md="6">
+            <v-col
+              cols="12"
+              md="6"
+              :order="$vuetify.breakpoint.mobile ? 'first' : ''"
+            >
               <v-img
                 class="rounded-lg"
                 src="https://images.squarespace-cdn.com/content/v1/506e663fe4b04973cff68e47/1544217516954-59Z3YU9FTHSDZLZ4VU63/DSC02468+take2crop-crop2-BillyArmstrong.jpg?format=2500w"
@@ -168,12 +176,31 @@
             <v-col cols="12" md="6">
               <v-img
                 class="rounded-lg"
-                src="/womanCoding.png"
+                src="/recording.png"
                 :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
               ></v-img>
             </v-col>
             <v-col cols="12" md="6">
               <ResourceCard :resource="professionalDev" />
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col cols="12" id="coreWork">
+          <v-card-title class="text-h4">Core Work Resources</v-card-title>
+          <v-row>
+            <v-col cols="12" md="6">
+              <ResourceCard :resource="coreWork" />
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              :order="$vuetify.breakpoint.mobile ? 'first' : ''"
+            >
+              <v-img
+                class="rounded-lg"
+                src="/reading.png"
+                :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
+              ></v-img>
             </v-col>
           </v-row>
         </v-col>
