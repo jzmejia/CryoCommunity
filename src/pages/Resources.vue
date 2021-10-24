@@ -25,14 +25,22 @@
             at your home institution as well as providing example resources
             (e.g. mentoring contract, field supply lists).
           </p>
-          <p>This page is a work in progress, check out this <a href="https://docs.google.com/document/d/1kesGrmHSOH-esxfD-lIRAkckS_QfcLaWq40p8_HdJZw/edit?usp=sharing">pdf</a> for more resources or feel free to contact us to suggest more resoures we can add. </p>
+          <p>
+            This page is a work in progress, check out this
+            <a
+              href="https://docs.google.com/document/d/1kesGrmHSOH-esxfD-lIRAkckS_QfcLaWq40p8_HdJZw/edit?usp=sharing"
+              >pdf</a
+            >
+            for more resources or feel free to contact us to suggest more
+            resoures we can add.
+          </p>
           <Search />
         </v-col>
         <v-col cols="12" id="teaching">
           <v-card-title class="text-h4">Teaching</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
-              <ResourceCard :resource="teaching"/>
+              <ResourceCard :resource="teaching" />
             </v-col>
             <v-col
               cols="12"
@@ -70,7 +78,7 @@
               ></v-img>
             </v-col>
             <v-col cols="12" md="6">
-              <ResourceCard :resource="fieldwork"/>
+              <ResourceCard :resource="fieldwork" />
             </v-col>
           </v-row>
         </v-col>
@@ -78,7 +86,8 @@
           <v-card-title class="text-h4">Community</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
-              <ResourceCard :resource="community"/></v-col>
+              <ResourceCard :resource="community"
+            /></v-col>
             <v-col
               cols="12"
               md="6"
@@ -101,27 +110,71 @@
                 class="rounded-lg"
                 src="https://i.ibb.co/LZn5vHG/Airdevronsix-Icefalls.jpg"
                 :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
-                
               ></v-img>
             </v-col>
             <v-col cols="12" md="6">
-              <ResourceCard :resource="placeNames"/>
+              <ResourceCard :resource="placeNames" />
             </v-col>
           </v-row>
         </v-col>
         <v-col cols="12" id="apps">
-          <v-card-title class="text-h4">Applications and Hiring</v-card-title>
+          <v-card-title class="text-h4">Applications & Hiring</v-card-title>
           <v-row>
-          <v-col cols="12" md="6">
-            <ResourceCard :resource="applications"/>
-          </v-col>
-          <v-col cols="12" md="6">
-          <v-img
+            <v-col cols="12" md="6">
+              <ResourceCard :resource="applications" />
+            </v-col>
+            <v-col cols="12" md="6">
+              <v-img
                 class="rounded-lg"
                 src="/newjob.png"
                 :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
               ></v-img>
-          </v-col>
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col cols="12" id="funding">
+          <v-card-title class="text-h4">Funding Opportunities</v-card-title>
+          <v-row>
+            <v-col cols="12" md="6">
+              <v-img
+                class="rounded-lg"
+                src="/funding.png"
+                :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
+              ></v-img>
+            </v-col>
+            <v-col cols="12" md="6">
+              <ResourceCard :resource="funding" />
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col cols="12" id="fieldworkOpps">
+          <v-card-title class="text-h4">Fieldwork Opportunities</v-card-title>
+          <v-row>
+            <v-col cols="12" md="6">
+              <ResourceCard :resource="fieldworkOpp" />
+            </v-col>
+            <v-col cols="12" md="6">
+              <v-img
+                class="rounded-lg"
+                src="https://images.squarespace-cdn.com/content/v1/506e663fe4b04973cff68e47/1544217516954-59Z3YU9FTHSDZLZ4VU63/DSC02468+take2crop-crop2-BillyArmstrong.jpg?format=2500w"
+                :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
+              ></v-img>
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col cols="12" id="professionalDev">
+          <v-card-title class="text-h4">Professional Development</v-card-title>
+          <v-row>
+            <v-col cols="12" md="6">
+              <v-img
+                class="rounded-lg"
+                src="/womanCoding.png"
+                :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
+              ></v-img>
+            </v-col>
+            <v-col cols="12" md="6">
+              <ResourceCard :resource="professionalDev" />
+            </v-col>
           </v-row>
         </v-col>
       </v-row>
@@ -160,7 +213,7 @@ import Search from "@/components/Search";
 export default {
   components: {
     ResourceCard,
-    Search
+    Search,
   },
   data() {
     return {
@@ -168,7 +221,7 @@ export default {
     };
   },
   metaInfo: {
-    title: 'Resources',
+    title: "Resources",
   },
   computed: {
     dark() {
@@ -199,7 +252,15 @@ export default {
       return this.resources.find((item) => item.tab === "coreWorkResources");
     },
     applications() {
-      return this.resources.find((item) => item.tab == "applications");
+      return this.resources.find((item) => item.tab === "applications");
+    },
+    funding() {
+      return this.resources.find((item) => item.tab === "funding");
+    },
+    fieldworkOpp() {
+      return this.resources.find(
+        (item) => item.tab === "fieldworkOpportunities"
+      );
     },
   },
 };
