@@ -75,6 +75,9 @@
           url: https://nbgrader.readthedocs.io/en/stable/
           description: Jupyter tool that allows creating and grading assignments in a Jupyter notebook.
           tags: [Jupyter]
+        - name: The Measure of Things
+          url: https://themeasureofthings.com/
+          description: A search engine for finding comparative or relative measurements of physical quantities
     - title: Reading
       resources:
         - name: Diversity & Inclusive Teaching
@@ -127,36 +130,116 @@
             description:
         - Mental Health Resources:
           - description: Most colleges and universities have free or very affordable counseling services at the on-campus health center. Counselling (even if it is on campus) is always confidential. 
-# - tab: professionalDev
-#   items:
-#     - title: Media
-#       resources:
-#         - name:
-#           url:
-#           description:
-#     - title: Writing
-#       resources:
-#         - name:
-#           url:
-#           description:
-#     - title: Presentations
-#       resources:
-#         - name:
-#           url:
-#           description:
+- tab: professionalDev
+  items:
+    - title: Media
+      resources:
+        - name: AAAS Communicating Science Workshop
+          url: https://www.aaas.org/programs/communicating-science
+          description: workshops and seminars for scientists and engineers who wish to develop their public engagement and science communication skills
+        - name: AGU List of Resources
+          url: https://www.agu.org/Share-and-Advocate/Share/#3
+          description: AGU's currated list of media resources for scientists
+        - name: How to craft an elevator pitch of your research
+          url: https://www.agu.org/Share-and-Advocate/Share/News-media/Elevator-pitch
+          description: Tips for crafting your pitch
+        - name: Tips for working with the media
+          url: https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_37438_S2_Working_with_the_Media.pdf
+          description: A master guide for working with members of the press, from tips for interviews to establishing long-term relationships
+        - name: Tips for interviews
+          url: https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_38394_S2_Tips_for_science_interview.pdf
+          description: Quick tips to make your next media interview a success
+        - name: Voices for Science
+          url: https://www.agu.org/Share-and-Advocate/Share/Sharing-science-network/Voices-for-science
+          description: An AGU program that trains scientists in two communications tracks (1) science policy and (2) media or community outreach.
+        - name: Creating Inclusive Virtual Spaces
+          url: https://serc.carleton.edu/advancegeo/resources/virtual.html
+          description: by AdvanceGeo
+        - name: AGU's Sharing Science Program 
+          url: https://www.agu.org/Share-and-Advocate/Share
+          description: Science communication, policy, and professional development virtual workshops
+        - name: SciComm via Social Media
+          url: https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_38394_S2_SocialMedia_Toolkit_Long.pdf
+          description: A guide to choosing the best social media channels to share your science. 
+        - name: How to create a media kit
+          url: https://www.melaninbasecamp.com/trip-reports/2020/02/21/bipoc-outdoor-industry-freelancer-guide
+          description: BIPOC freelancer outdoor industry guide
+        - name: AGU Toolkit for Authors
+          url: https://www.agu.org/-/media/Files/AGU_Toolkit-for-authors.pdf
+          description: Improving the impact of your science
+        - name: Kudos
+          url: https://www.growkudos.com/about
+          description: tools and guidance to help you maximize readership and citations for your work.
+        - name: Including a plain language summary for your publications
+          url: https://www.agu.org/Share-and-Advocate/Share/Community/Plain-language-summary
+          description:
+        - name: Tip
+          url:
+          description: after your paper is published, notify the journal’s press office, or your university’s press office or library.
+    - title: Writing
+      resources:
+        - name: Equity in Author Order
+          url: https://civiclaboratory.nl/2016/05/23/equity-in-author-order/
+          description:
+        - name: NSF Proposal & Award Pollicies and Producedure Guide
+          url: https://www.nsf.gov/pubs/policydocs/pappg20_1/index.jsp
+          description:
+        - name: Budgeting for field safety supplies and training
+          url: https://www.ucop.edu/safety-and-loss-prevention/_files/field-research-safety/budgeting-for-field-safety-signed.pdf
+          description:
+        - name: Writing Science 
+          url: https://pyramidbooks.indielite.org/book/9780199760244
+          description: How to write papers that get cited and proposals that get funded
+        - name: Line by Line
+          url: https://pyramidbooks.indielite.org/book/9780395393918
+          description: How to edit your own writing
+        - name: Five common writing mistakes new scientists make
+          url: https://contemplativemammoth.com/2018/08/21/five-common-writing-mistakes-new-scientists-make/
+          description: by J. Gill
+        - name: What Hollywood can teach researchers about scientific storytelling
+          url: https://www.nature.com/articles/d41586-020-01731-9
+          description: by J. Ettinger
+        - name: 11 steps to structuring a science paper editors will take seriously
+          url: https://www.elsevier.com/connect/11-steps-to-structuring-a-science-paper-editors-will-take-seriously
+          description: by A. Borja
+        - name: 10 simple rules for structuring papers
+          url: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005619
+          description:  by B. Mensh and K. Kording
+        - name: Avoiding the official style 
+          url: https://clauswilke.com/blog/2015/08/26/avoiding-the-official-style/
+          description: by C. Wilke
+        - name: The Measure of Things
+          url: https://themeasureofthings.com/
+          description: A search engine for finding comparative or relative measurements of physical quantities
+    - title: Presentations
+      resources:
+        - name: How to ask for an Honorarium
+          url: https://www.melaninbasecamp.com/trip-reports/2020/02/21/bipoc-outdoor-industry-freelancer-guide
+          description:
+    - title: Presentation Opportunties
+      resources:
+        - name: (MARS) Midwest and Random Stragglers Glaciology Group—weekly
+          url: http://cryocommunity.org/contact
+          description: contact us at cryocommunity to join the slack group
+        - name: Northwest Glaciologists
+          url: https://glaciers.gi.alaska.edu/events/northwest/
+          descrition: annual conferences
+        - name: International Glaciology Society's Global Seminar Series
+          url: https://www.igsoc.org/igswebinar/
+          description: weekly via zoom
 #     - title: Programming, Modelling, and Data Analysis
 #       resources:
 #         - name:
 #           url:
 #           description:
-#     - title: Data Management
-#       resources:
-#         - name: CARE
-#           url: https://www.gida-global.org/care
-#           description: Principles for Indigenous data governance
-#         - name: FAIR
-#           url: https://www.go-fair.org/fair-principles/
-#           description: Guiding principles for scientific data management and stewardship.
+    - title: Data Management
+      resources:
+        - name: CARE
+          url: https://www.gida-global.org/care
+          description: Principles for Indigenous data governance
+        - name: FAIR
+          url: https://www.go-fair.org/fair-principles/
+          description: Guiding principles for scientific data management and stewardship.
 - tab: community
   items:
     - title: Polar
@@ -401,24 +484,6 @@
         - name: Kick-starting scientific collaborations remotely
           url: https://www.nceas.ucsb.edu/news/kick-starting-scientific-collaborations-remotely
           description: by J. Lowndes, C. Kappel, & J. Brun
-- tab: undergrad
-  items:
-    - title: Internships
-      resources:
-        - name: Woods Hole Partnership Education Program (PEP)
-          url: https://www.woodsholediversity.org/pep/
-          description:
-        - name: Significant Opportunities in Atmospheric Research and Science (SOARS)
-          url: https://soars.ucar.edu/
-          description: 
-        - name: Stanord SURGE program
-          url: https://oma.stanford.edu/surge
-          description: 
-    - title: Scholarships
-      resources:
-        - name: J. David Lowell Field Camp Scholarship
-          url: https://rock.geosociety.org/eo/moreInformation.asp?program=scholar
-          description: $2,000 to attend the field camp of your chooice. 
 - tab: funding
   items:
     - title: Guides
@@ -429,11 +494,69 @@
         - name: GSA Graduate Student Research Grants - Advice from a panel of awardees
           url: https://futurerockdoc.com/blog/2021/1/11/gsa-graduate-student-research-grants-advice-from-a-panel-of-awardees
           description: Awards up to $2,500 for students enrolled in the USA, Canada, Mexico, and Central America.
+    - title: Undergraduate
+      resources:
+        - name: Adobe Research Women-in-Technology Scholarship
+          url: https://research.adobe.com/scholarship/
+          description: Undergraduate or Masters students at North American Universities—$10,000
+          tags: ["$10,000"]
+        - name: Association for Women Geoscientists Minority Scholarship
+          url: http://awg.org/Awards
+          description: Black, Hispanic, or Native American, female, full-time students pursuing an undergraduate degree in geoscience—$6,000 
+          tags: ["$6,000"]
+        - name: Expanding Representation in Geosciences (ERG) Scholarship
+          url: https://www.geosociety.org/GSA/About/awards/GSA/Awards/erg.aspx
+          description: for Undergraduates
+          tags: ["$1,500"]
+        - name: J. David Lowell Field Camp Scholarship
+          url: https://rock.geosociety.org/eo/moreInformation.asp?program=scholar
+          description: $2,000 to attend the field camp of your chooice. 
+          tags: ["$2,000"]
+        - name: Woods Hole Partnership Education Program (PEP)
+          url: https://www.woodsholediversity.org/pep/
+          description:
+          tags: ["internship"]
+        - name: Significant Opportunities in Atmospheric Research and Science (SOARS)
+          url: https://soars.ucar.edu/
+          description: 
+          tags: ["internship"]
+        - name: Stanord SURGE program
+          url: https://oma.stanford.edu/surge
+          description: 
+          tags: ["internship"]
+        - name: AGU's Mass Media Fellowship
+          url: https://www.agu.org/Stay-Informed/Stay-Informed/Mass-Media-Fellowship
+          description: AGU sponsors university students in the AAAS Mass Media Fellowship program, a 10-week summer internship at a traditional or online media outlet.
+          tags: ["$7,000"]
     - title: Graduate Students
       resources:
-        - name: Graduate Research Fellowship Program
-          url:
+        - name: NSF Graduate Research Fellowship Program (GRFP)
+          url: https://www.nsfgrfp.org/
           description: 3 years of tuition and stipend for US citizen and perminant resident graduatee students.
+        - name: NASA Internships and Fellowships 
+          url: https://www.nasa.gov/stem/fellowships-scholarships/index.html
+          description: annual
+        - name: The John Hunter Excellence in Plotting Competition 
+          url: https://www.scipy2020.scipy.org/plotting-contest
+          description: annual
+          tags: ["$1,000","$750","$500"]
+        - name: AGU's Mass Media Fellowship
+          url: https://www.agu.org/Stay-Informed/Stay-Informed/Mass-Media-Fellowship
+          description: AGU sponsors university students in the AAAS Mass Media Fellowship program, a 10-week summer internship at a traditional or online media outlet.
+          tags: ["$7,000"]
+    - title: Post-Doctoral & Early Career
+      resources:
+        - name: NSF's Office of Polar Programs (OPP)
+          url: https://www.nsf.gov/funding/pgm_list.jsp?org=OPP
+          description: list of active funding opportunties for Polar programs
+        - name: NASA Internships and Fellowships
+          url: https://www.nasa.gov/stem/fellowships-scholarships/index.html
+          description: annual
+    - title: General
+      resources:
+        - name: Sharing Science Grants for Science Communication & Outreach 
+          url: https://forms.agu.org/sharing-science-grants/
+          description: AGU Helping sow the seeds of innovative SciComm
 - tab: applications
   items:
     - title: Graduate School
@@ -585,7 +708,6 @@
         - name: Native Land
           url: https://native-land.ca
           description: Interactive map of tribal lands with teaching resources
-    
 - tab: LGBTQIA+
   items:
     - title: Jobs
@@ -601,3 +723,18 @@
         - name: LGBTQ+ Adventurers, In Their Own Words
           url: https://www.rei.com/blog/camp/lgbtq-outdoor-adventurers
           description: by A. Parris
+- tab: fieldworkOpportunities
+  items: 
+    - title: Graduate Students
+      resources:
+        - name: International Summer School in Glaciology
+          url: https://glaciers.gi.alaska.edu/courses/summerschool
+          description: Bi-annual, 2 week long program held in June in McCarthy, AK. Applications due in January of program year. Open to graduate students worldwide (MSc or PhD). Most costs are covered and travel grants are available.
+        - name: The University Centre in Svalbard (UNIS)
+          url: https://www.unis.no
+          description: For undergraduates and graduate students with a wide range of course offerings
+    - title: Undergraduates
+      resources:
+        - name: Juneau Icefield Research Program (JIRP)
+          url: https://juneauicefield.org
+          description: annual, variable lengths over summer (June-August). Undergrad & Grad student participants (for college credit), with opportunties for faculty, reserchers, and staff
