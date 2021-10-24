@@ -15,7 +15,7 @@
         >
           <v-list-item-content>
             <v-list-item-title
-              ><span class="mr-4">
+              ><span class="mr-4 text-wrap">
                 {{ link.name }}
               </span>
               <v-chip-group column>

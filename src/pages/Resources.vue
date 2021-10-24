@@ -109,6 +109,21 @@
             </v-col>
           </v-row>
         </v-col>
+        <v-col cols="12" id="apps">
+          <v-card-title class="text-h4">Applications and Hiring</v-card-title>
+          <v-row>
+          <v-col cols="12" md="6">
+            <ResourceCard :resource="applications"/>
+          </v-col>
+          <v-col cols="12" md="6">
+          <v-img
+                class="rounded-lg"
+                src="/newjob.png"
+                :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
+              ></v-img>
+          </v-col>
+          </v-row>
+        </v-col>
       </v-row>
     </v-container>
   </Layout>
@@ -182,6 +197,9 @@ export default {
     },
     coreWork() {
       return this.resources.find((item) => item.tab === "coreWorkResources");
+    },
+    applications() {
+      return this.resources.find((item) => item.tab == "applications");
     },
   },
 };

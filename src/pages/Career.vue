@@ -4,12 +4,12 @@
       <v-row justify="center">
         <v-col cols="12" lg="8">
           <div
-            class="text-h4 my-4 font-weight-black text-wrap primary--text"
+            class="text-h4 my-4 font-weight-black text-wrapn d-flex justify-center"
             :class="{ 'text-center': smAndDown }"
           >
             CryoCommunity Directory
           </div>
-          <p class="text-h6">
+          <p class="text-body-1">
             Use the career stage road-map below to find relevant content
             including the MARS Pod's original content and our curated lists of
             resources and tools across a wide range of categories.
@@ -42,6 +42,7 @@
                       v-for="(chip, index) in chips.Undergraduate"
                       :key="index"
                       color="orange"
+                      dark
                       :to="chip.path"
                       >{{ chip.tag }}
                     </v-chip>
@@ -73,6 +74,7 @@
                       v-for="(chip, index) in chips.Graduate"
                       :key="index"
                       color="orange"
+                      dark
                       :to="chip.path"
                       >{{ chip.tag }}
                     </v-chip>
@@ -106,6 +108,7 @@
                       :key="index"
                       color="orange"
                       :to="chip.path"
+                      dark
                       >{{ chip.tag }}
                     </v-chip>
                   </v-chip-group>
@@ -129,6 +132,7 @@
                       v-for="(chip, index) in chips.PI"
                       :key="index"
                       color="orange"
+                      dark
                       :to="chip.path"
                       >{{ chip.tag }}
                     </v-chip>
