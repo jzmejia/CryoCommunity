@@ -102,7 +102,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" id="placeNames">
+        <v-col cols="12">
           <v-card-title class="text-h5 text-md-h4">Glacier Names</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
@@ -117,7 +117,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" id="apps">
+        <v-col cols="12">
           <v-card-title class="text-h5 text-md-h4 text-wrap">Applications and Hiring</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
@@ -136,7 +136,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" id="funding">
+        <v-col cols="12">
           <v-card-title class="text-h5 text-md-h4 text-wrap">Funding Opportunities</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
@@ -170,7 +170,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" id="professionalDev">
+        <v-col cols="12">
           <v-card-title class="text-h5 text-md-h4 text-wrap">Professional Development</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
@@ -185,7 +185,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" id="coreWork">
+        <v-col cols="12">
           <v-card-title class="text-h5 text-md-h4 text-wrap">Core Work Resources</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
