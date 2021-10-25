@@ -4,8 +4,8 @@
       <v-row>
         <v-col cols="12">
           <div
-            class="text-h2 font-weight-black mt-lg-12 mb-md-4"
-            :class="{ 'text-center': smAndDown }"
+            class="text-h3 text-md-h2 font-weight-black mt-lg-12 mb-md-4"
+            
           >
             Resources
           </div>
@@ -37,7 +37,7 @@
           <Search />
         </v-col>
         <v-col cols="12" id="teaching">
-          <v-card-title class="text-h4">Teaching</v-card-title>
+          <v-card-title class="text-h5 text-md-h4">Teaching</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
               <ResourceCard :resource="teaching" />
@@ -68,7 +68,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" id="fieldwork">
-          <v-card-title class="text-h4">Fieldwork</v-card-title>
+          <v-card-title class="text-h5 text-md-h4">Fieldwork</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
               <v-img
@@ -83,7 +83,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" id="community">
-          <v-card-title class="text-h4">Community</v-card-title>
+          <v-card-title class="text-h5 text-md-h4">Community</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
               <ResourceCard :resource="community"
@@ -103,7 +103,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" id="placeNames">
-          <v-card-title class="text-h4">Glacier Names</v-card-title>
+          <v-card-title class="text-h5 text-md-h4">Glacier Names</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
               <v-img
@@ -118,7 +118,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" id="apps">
-          <v-card-title class="text-h4">Applications & Hiring</v-card-title>
+          <v-card-title class="text-h5 text-md-h4 text-wrap">Applications and Hiring</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
               <ResourceCard :resource="applications" />
@@ -137,7 +137,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" id="funding">
-          <v-card-title class="text-h4">Funding Opportunities</v-card-title>
+          <v-card-title class="text-h5 text-md-h4 text-wrap">Funding Opportunities</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
               <v-img
@@ -152,7 +152,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" id="fieldworkOpps">
-          <v-card-title class="text-h4">Fieldwork Opportunities</v-card-title>
+          <v-card-title class="text-h5 text-md-h4 text-wrap">Fieldwork Opportunities</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
               <ResourceCard :resource="fieldworkOpp" />
@@ -171,7 +171,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" id="professionalDev">
-          <v-card-title class="text-h4">Professional Development</v-card-title>
+          <v-card-title class="text-h5 text-md-h4 text-wrap">Professional Development</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
               <v-img
@@ -186,7 +186,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" id="coreWork">
-          <v-card-title class="text-h4">Core Work Resources</v-card-title>
+          <v-card-title class="text-h5 text-md-h4 text-wrap">Core Work Resources</v-card-title>
           <v-row>
             <v-col cols="12" md="6">
               <ResourceCard :resource="coreWork" />
