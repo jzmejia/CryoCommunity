@@ -18,7 +18,7 @@ alt: illustration of a person in pink blazer with short brown hair giving a pres
 
 ## Accessible Figures
 
-Data visualization has many important elements but your choice of colors can make or break your final figure. It is important to choose a perceptually uniform color palette and to consider multiple types of color blindness. Below are some resources for generating color blind safe color palettes. 
+Data visualization has many important elements but your choice of colors can make or break your final figure. It is important to choose a perceptually uniform color palette and to consider multiple types of color blindness. Below are some resources for generating color blind safe color palettes.
 
 - [ColorBrewer](https://colorbrewer2.org/) is a great resource for generating color palettes that are more accessible. You have the option to select how many color classes you need, and “colorblind safe” hues.
 - [Color Blindness Simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/): This site will show you what your image looks like for different types of color blindness.
@@ -49,12 +49,14 @@ Below are suggestions on what font, text size, line spacing and more.
 <img src="https://lh3.googleusercontent.com/XN6ATtQ7Q_NxH5Eb_ZMiAZI6Wh61nClqWKHyx10vhIly8lzEOKmswVEAxjQOzldyCJ_q5W6dTznM0fn5wS8ArPzhpDq4vfhUxnOz=w1064-v0" width="758"/>
 
 #### Font Choice
+
 - Recommended: [Sans-serif](https://en.wikipedia.org/wiki/Sans-serif) fonts such as Arial, Gill Sans, Helvetica, and Verdana
 - Alternative: [Slab serif](https://en.wikipedia.org/wiki/Slab_serif) fonts such as Rockwell and Courier can be used for headings
 - Try to use no more than two different fonts for a poster or presentation. One font can be used for titles and the other font for all subtitles, labels, and text.
 - Consider using all caps for one word labels, captial letters are easier to read from far away.
 
 #### Font Size
+
 What is a **Point**?
 <div style="text-align: center"> 1 point = 1/72 inch  </div>
 This means that text written using a 72-point font will print to be 1 inch in height and text written using a 12-point font will print to have a 1/6 inch height.
@@ -103,7 +105,7 @@ Be aware of the accessibility of gifs or movies you add (in particular, don’t 
 
 ### Presentation
 
-**Tell a story** by having a clear beginning, middle, and end. Start out by describing the motivation behind your work. *What are the big questions your work is contributing to?* Next detail the knowledge gap before describing your research questions or hypothesis. The audience should know the question you are trying to answer and why it is important before you describe your approach, methods or results. End your talk by answering your research questions and discussing what your results mean and how our understanding of the world has progressed by answering the questions posed in your study. 
+**Tell a story** by having a clear beginning, middle, and end. Start out by describing the motivation behind your work. *What are the big questions your work is contributing to?* Next detail the knowledge gap before describing your research questions or hypothesis. The audience should know the question you are trying to answer and why it is important before you describe your approach, methods or results. End your talk by answering your research questions and discussing what your results mean and how our understanding of the world has progressed by answering the questions posed in your study.
 
 Make sure your language is inclusive (don’t tell stories most won’t follow, don’t use offensive words or terms, make sure any jokes are appropriate and respectful, don’t make light of the dangers of fieldwork)
 
@@ -115,4 +117,4 @@ Time yourself to make sure your talk stays within time limits. If you go over ti
 
 Ensure the question and answer period is accessible (if no microphone is available, repeat the question. You can also make accessible slides (with alt text on images, video and image captions) and a transcript available for download. Including a large QR code on a slide that links to online versions of your presentation can be helpful as well.
 
-We hope you find these tips helpful and good luck on your next presentation! 
+We hope you find these tips helpful and good luck on your next presentation!

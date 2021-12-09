@@ -41,7 +41,7 @@
         - name: Awesome Cryosphere
           url: https://github.com/awesome-cryosphere/cryosphere-links
           description: A prototype of a curated list of awesome data sources, models, tools and organizations related to the Cryosphere and its subspheres.
-          tags: [Python,Jupyter,Awesome]
+          tags: [Python, Jupyter, Awesome]
         - name: Glaciology Land-based
           url: https://github.com/ehultee/glaciology-labs
           description: from Dr. Ultee at Middlebury College. Lab notebooks based on OGGM-Edu resources, developed for GEOL362, Glaciology, at Middlebury College
@@ -789,7 +789,7 @@
           description: The color combinations are readable both by color-vision deficient and color-blind people, and even when printed in black & white.
         - name: ColorCet Color Maps
           url: https://github.com/holoviz/colorcet
-          description:  A collection of perceptually uniform colormaps for use with Python plotting programs.
+          description: A collection of perceptually uniform colormaps for use with Python plotting programs.
         - name: Seaborn Color tutorials
           url: https://seaborn.pydata.org/tutorial/color_palettes.html
           description: General principles for using color in plots.
@@ -798,27 +798,27 @@
           description: An overview of color tools, by Lisa Muth
         - name: Co-designing scientific information for the IPCC special reports
           url: https://medium.com/infodesignlabposts/co-designing-scientific-information-the-key-visualizations-of-the-ipcc-special-report-on-global-1bbf041c72ef
-          description: Visual communication for developing figures for the IPCC 
+          description: Visual communication for developing figures for the IPCC
         - name: Color Map Advice for Scientific Visualization
           url: http://www.kennethmoreland.com/color-advice/
           description: by Kenneth Moreland
         - name: Diverging Color Maps for Scientific Visualization
           url: http://www.kennethmoreland.com/color-maps/
-          description:  Moreland 2009. In Proceedings of the 5th International Symposium on Visual Computing DOI 10.1007/978-3-642-10520-3_9.
+          description: Moreland 2009. In Proceedings of the 5th International Symposium on Visual Computing DOI 10.1007/978-3-642-10520-3_9.
         - name: Why We Use Bad Color Maps and What You Can Do About It
           url: http://www.kennethmoreland.com/color-advice/BadColorMaps.pdf
           description: Moreland 2016. DOI DOI 10.2352/ISSN.2470-1173.2016.16.HVEI-133.
         - name: CET Perceptually Uniform Color Maps
           url: http://peterkovesi.com/projects/colourmaps/
           description: Peter Kovesi from the Centre for Exploration Targeting (CET) provides a collection of perceptually uniform color maps as well as example code used for their generation and analysis.
-    - title: Inclusive Design 
+    - title: Inclusive Design
       resources:
         - name: Inclusive Design For Accessible Presentations
           url: https://www.smashingmagazine.com/2018/11/inclusive-design-accessible-presentations/
           description: by Allison Ravenhall. When you prepare for your next presentation, use these tips on how to tweak your slides and your talk so that everyone gets the most out of it.
     - title: Videos & Visualizations
       resources:
-        - name: NASA's Scientific Visualization Studio 
+        - name: NASA's Scientific Visualization Studio
           url: https://svs.gsfc.nasa.gov/
           description: Search the entire SVS library for visualizations and videos
         - name: Greenland Ice Mass Loss 2002-2021
