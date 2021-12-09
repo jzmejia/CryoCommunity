@@ -54,7 +54,7 @@
                     </v-row>
                   </template>
                   <v-card
-                    style="position: absolute; bottom: 0; left:0; right:0;"
+                    style="position: absolute; bottom: 0; left: 0; right: 0"
                     :style="{
                       backdropFilter: hover ? '' : 'blur(2px) !important',
                     }"
@@ -85,7 +85,12 @@
                     :key="index"
                   >
                     <template v-slot:activator="{ on, attrs }">
-                      <v-chip :color="dark ?'grey darken-4':'grey lighten-4'" small v-bind="attrs" v-on="on" :to="tag.path"
+                      <v-chip
+                        :color="dark ? 'grey darken-4' : 'grey lighten-4'"
+                        small
+                        v-bind="attrs"
+                        v-on="on"
+                        :to="tag.path"
                         ><v-icon x-small left>fa-hashtag</v-icon
                         >{{ tag.title }}</v-chip
                       >
@@ -95,7 +100,7 @@
                 </v-chip-group>
               </v-card-text>
               <g-link
-                class="text-decoration-none  text--primary"
+                class="text-decoration-none text--primary"
                 :to="item.node.path"
               >
                 <v-list-item>
@@ -125,6 +130,8 @@
   </Layout>
 </template>
 
+// removed this from preview image to reduce zoom in for cards on project page: (width: 700, height: 250, quality: 100)
+
 <page-query>
 query AllArticle ($page: Int) {
 	articles: allArticle ( perPage: 6, page: $page, filter: { published: { eq: true }}) @paginate {
@@ -141,7 +148,7 @@ query AllArticle ($page: Int) {
         subtitle
         author
         published
-        preview_image (width: 700, height: 250, quality: 100)
+        preview_image 
         date (format: "DD.MM.YY")
         excerpt
         timeToRead
@@ -160,7 +167,7 @@ import { Pager } from "gridsome";
 
 export default {
   name: "Projects",
-  data: () => ({ }),
+  data: () => ({}),
   components: {
     Pager,
   },

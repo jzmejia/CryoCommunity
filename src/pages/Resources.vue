@@ -3,10 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="12">
-          <div
-            class="text-h3 text-md-h2 font-weight-black mt-lg-12 mb-md-4"
-            
-          >
+          <div class="text-h3 text-md-h2 font-weight-black mt-lg-12 mb-md-4">
             Resources
           </div>
           <div class="subtitle-2 font-weight-bold mb-6">
@@ -118,7 +115,9 @@
           </v-row>
         </v-col>
         <v-col cols="12">
-          <v-card-title class="text-h5 text-md-h4 text-wrap">Applications and Hiring</v-card-title>
+          <v-card-title class="text-h5 text-md-h4 text-wrap"
+            >Applications and Hiring</v-card-title
+          >
           <v-row>
             <v-col cols="12" md="6">
               <ResourceCard :resource="applications" />
@@ -137,7 +136,9 @@
           </v-row>
         </v-col>
         <v-col cols="12">
-          <v-card-title class="text-h5 text-md-h4 text-wrap">Funding Opportunities</v-card-title>
+          <v-card-title class="text-h5 text-md-h4 text-wrap"
+            >Funding Opportunities</v-card-title
+          >
           <v-row>
             <v-col cols="12" md="6">
               <v-img
@@ -152,7 +153,9 @@
           </v-row>
         </v-col>
         <v-col cols="12" id="fieldworkOpps">
-          <v-card-title class="text-h5 text-md-h4 text-wrap">Fieldwork Opportunities</v-card-title>
+          <v-card-title class="text-h5 text-md-h4 text-wrap"
+            >Fieldwork Opportunities</v-card-title
+          >
           <v-row>
             <v-col cols="12" md="6">
               <ResourceCard :resource="fieldworkOpp" />
@@ -171,7 +174,9 @@
           </v-row>
         </v-col>
         <v-col cols="12">
-          <v-card-title class="text-h5 text-md-h4 text-wrap">Professional Development</v-card-title>
+          <v-card-title class="text-h5 text-md-h4 text-wrap"
+            >Professional Development</v-card-title
+          >
           <v-row>
             <v-col cols="12" md="6">
               <v-img
@@ -186,7 +191,9 @@
           </v-row>
         </v-col>
         <v-col cols="12">
-          <v-card-title class="text-h5 text-md-h4 text-wrap">Core Work Resources</v-card-title>
+          <v-card-title class="text-h5 text-md-h4 text-wrap"
+            >Core Work Resources</v-card-title
+          >
           <v-row>
             <v-col cols="12" md="6">
               <ResourceCard :resource="coreWork" />
@@ -201,6 +208,23 @@
                 src="/reading.png"
                 :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
               ></v-img>
+            </v-col>
+          </v-row>
+        </v-col>
+       <v-col cols="12">
+          <v-card-title class="text-h5 text-md-h4 text-wrap"
+            >Presentations</v-card-title
+          >
+          <v-row>
+            <v-col cols="12" md="6">
+              <v-img
+                class="rounded-lg"
+                src="/presentation.png"
+                :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
+              ></v-img>
+            </v-col>
+            <v-col cols="12" md="6">
+              <ResourceCard :resource="presentations" />
             </v-col>
           </v-row>
         </v-col>
@@ -285,9 +309,10 @@ export default {
       return this.resources.find((item) => item.tab === "funding");
     },
     fieldworkOpp() {
-      return this.resources.find(
-        (item) => item.tab === "fieldworkOpportunities"
-      );
+      return this.resources.find((item) => item.tab === "fieldworkOpportunities");
+    },
+    presentations() {
+      return this.resources.find((item) => item.tab == "presentations");
     },
   },
 };
