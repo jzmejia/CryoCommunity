@@ -152,27 +152,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col cols="12" id="fieldworkOpps">
-          <v-card-title class="text-h5 text-md-h4 text-wrap"
-            >Fieldwork Opportunities</v-card-title
-          >
-          <v-row>
-            <v-col cols="12" md="6">
-              <ResourceCard :resource="fieldworkOpp" />
-            </v-col>
-            <v-col
-              cols="12"
-              md="6"
-              :order="$vuetify.breakpoint.mobile ? 'first' : ''"
-            >
-              <v-img
-                class="rounded-lg"
-                src="https://images.squarespace-cdn.com/content/v1/506e663fe4b04973cff68e47/1544217516954-59Z3YU9FTHSDZLZ4VU63/DSC02468+take2crop-crop2-BillyArmstrong.jpg?format=2500w"
-                :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
-              ></v-img>
-            </v-col>
-          </v-row>
-        </v-col>
+
         <v-col cols="12">
           <v-card-title class="text-h5 text-md-h4 text-wrap"
             >Professional Development</v-card-title
@@ -307,9 +287,6 @@ export default {
     },
     funding() {
       return this.resources.find((item) => item.tab === "funding");
-    },
-    fieldworkOpp() {
-      return this.resources.find((item) => item.tab === "fieldworkOpportunities");
     },
     presentations() {
       return this.resources.find((item) => item.tab == "presentations");

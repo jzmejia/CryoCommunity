@@ -5,25 +5,19 @@
 
 <img src="/src/assets/cc_logo_horizontal_color.png" width="400">
 
-
  http://cryocommunity.org website built with
- [gridsome](http://gridsome.org), 
+ [gridsome](http://gridsome.org),
  [vuejs](http://vuejs.org), [vuetify](http://vuetifyjs.com).
 
-### Contributors
+## Contributors
+
 <a href="https://github.com/jzmejia/cryocommunity/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=jzmejia/cryocommunity" />
 </a>
 
- ## Requirements
+## Requirements
+
 - gridsome v0.7.17
 - nodejs v14.17.6
 - axios v0.21.4
 - vuetify v2.3.0
-
-
-
-
-
-
-

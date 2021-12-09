@@ -260,7 +260,6 @@
         - name: The Measure of Things
           url: https://themeasureofthings.com/
           description: A search engine for finding comparative or relative measurements of physical quantities
-
     - title: Opportunties
       resources:
         - name: (MARS) Midwest and Random Stragglers Glaciology Group—weekly
@@ -522,7 +521,7 @@
           description: by J. Lowndes, C. Kappel, & J. Brun
 - tab: funding
   items:
-    - title: Guides
+    - title: Advice
       resources:
         - name: THE NSF GRFP - Advice from a panel of awardees
           url: https://futurerockdoc.com/blog/2020/6/19/the-nsf-grfp-advice-from-a-panel-of-awardees
@@ -554,7 +553,6 @@
           tags: ["internship"]
         - name: Significant Opportunities in Atmospheric Research and Science (SOARS)
           url: https://soars.ucar.edu/
-          description:
           tags: ["internship"]
         - name: Stanord SURGE program
           url: https://oma.stanford.edu/surge
@@ -715,6 +713,17 @@
         - name: A Complete Guide to Used Outdoor Gear Stores
           url: https://alwaystheadventure.com/sustainability/used-gear-stores#NorthCarolina=
           description: by Always the Adventure
+    - title: Opportunities
+      resources:
+        - name: International Summer School in Glaciology
+          url: https://glaciers.gi.alaska.edu/courses/summerschool
+          description: Bi-annual, 2 week long program held in June in McCarthy, AK. Applications due in January of program year. Open to graduate students worldwide (MSc or PhD). Most costs are covered and travel grants are available.
+        - name: The University Centre in Svalbard (UNIS)
+          url: https://www.unis.no
+          description: For undergraduates and graduate students with a wide range of course offerings
+        - name: Juneau Icefield Research Program (JIRP)
+          url: https://juneauicefield.org
+          description: annual, variable lengths over summer (June-August). Undergrad & Grad student participants (for college credit), with opportunties for faculty, reserchers, and staff
 - tab: placeNames
   items:
     - title: Greenland
@@ -736,7 +745,7 @@
         - name: Ahtna Place Names
           url: https://uafanlc.alaska.edu/GIS/Ahtna/Ahtna%20Section%20Maps/pdfs/03%20ahtnapn2008pp37-156.pdf
           description: Alaskan place names
-    - title: General
+    - title: Beyond
       resources:
         - name: Native Land
           url: https://native-land.ca
@@ -756,21 +765,6 @@
         - name: LGBTQ+ Adventurers, In Their Own Words
           url: https://www.rei.com/blog/camp/lgbtq-outdoor-adventurers
           description: by A. Parris
-- tab: fieldworkOpportunities
-  items:
-    - title: Graduate Students
-      resources:
-        - name: International Summer School in Glaciology
-          url: https://glaciers.gi.alaska.edu/courses/summerschool
-          description: Bi-annual, 2 week long program held in June in McCarthy, AK. Applications due in January of program year. Open to graduate students worldwide (MSc or PhD). Most costs are covered and travel grants are available.
-        - name: The University Centre in Svalbard (UNIS)
-          url: https://www.unis.no
-          description: For undergraduates and graduate students with a wide range of course offerings
-    - title: Undergraduates
-      resources:
-        - name: Juneau Icefield Research Program (JIRP)
-          url: https://juneauicefield.org
-          description: annual, variable lengths over summer (June-August). Undergrad & Grad student participants (for college credit), with opportunties for faculty, reserchers, and staff
 - tab: presentations
   items:
     - title: Accessible Figures
@@ -836,7 +830,7 @@
         - name: NASA Climate Time Machine
           url: https://climate.nasa.gov/interactives/climate-time-machine
           description: A series of visualizations that show how some of Earth's key climate indicators are changing over time.
-    - title: More
+    - title: Invited
       resources:
         - name: How to ask for an Honorarium
           url: https://www.melaninbasecamp.com/trip-reports/2020/02/21/bipoc-outdoor-industry-freelancer-guide
