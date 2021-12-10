@@ -769,9 +769,9 @@
   items:
     - title: Accessible Figures
       resources:
-        - name: Is your presentation accessible?
-          url: /projects/is-your-presentation-accessibe/
-          description: Cryocommunity article with tips and resources for building an accessible presentation
+        # - name: Is your presentation accessible?
+        #   url: /projects/is-your-presentation-accessibe/
+        #   description: Cryocommunity article with tips and resources for building an accessible presentation
         - name: Color Brewer
           url: https://colorbrewer2.org/
           description: Color palette generator allowing you to select colorblind safe palettes
