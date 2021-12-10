@@ -770,7 +770,7 @@
     - title: Accessible Figures
       resources:
         - name: Is your presentation accessible?
-          url: https://cryocommunity.org/projects/accessible-presentations/
+          url: /projects/is-your-presentation-accessibe/
           description: Cryocommunity article with tips and resources for building an accessible presentation
         - name: Color Brewer
           url: https://colorbrewer2.org/
