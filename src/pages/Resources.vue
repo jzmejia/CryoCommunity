@@ -191,7 +191,7 @@
             </v-col>
           </v-row>
         </v-col>
-       <!-- <v-col cols="12">
+       <v-col cols="12">
           <v-card-title class="text-h5 text-md-h4 text-wrap"
             >Presentations</v-card-title
           >
@@ -207,7 +207,7 @@
               <ResourceCard :resource="presentations" />
             </v-col>
           </v-row>
-        </v-col> -->
+        </v-col>
       </v-row>
     </v-container>
   </Layout>
@@ -288,9 +288,9 @@ export default {
     funding() {
       return this.resources.find((item) => item.tab === "funding");
     },
-    // presentations() {
-    //   return this.resources.find((item) => item.tab == "presentations");
-    // },
+    presentations() {
+      return this.resources.find((item) => item.tab == "presentations");
+    },
   },
 };
 </script>
