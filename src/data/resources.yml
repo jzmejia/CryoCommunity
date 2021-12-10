@@ -222,9 +222,6 @@
         - name: Including a plain language summary for your publications
           url: https://www.agu.org/Share-and-Advocate/Share/Community/Plain-language-summary
           description:
-        - name: Tip
-          url:
-          description: after your paper is published, notify the journal’s press office, or your university’s press office or library.
     - title: Writing
       resources:
         - name: Equity in Author Order
@@ -750,88 +747,18 @@
         - name: Native Land
           url: https://native-land.ca
           description: Interactive map of tribal lands with teaching resources
-- tab: LGBTQIA+
-  items:
-    - title: Jobs
-      resources:
-        - name: LGBTQIA+ Outdoor/Environmental Job Seekers and Job posting broad
-          url: https://docs.google.com/spreadsheets/d/1GOdfg97K2MbCff00sIn3QqlMAu8gpeJl4Nx3iwuDqNw/edit?usp=sharing
-          description: A public google sheet to hire from or add your name to for potential hiring!
-    - title: Community
-      resources:
-        - name: LGBTQ Outdoor //www.nsf.gov/news/news_summ.jsp?cntn_id=302518&org=OPP
-          url: https://www.lgbtqoutdoorsummit.com
-          description: Dedicated to the representation and inclusion of the LGBTQ community OUTside.
-        - name: LGBTQ+ Adventurers, In Their Own Words
-          url: https://www.rei.com/blog/camp/lgbtq-outdoor-adventurers
-          description: by A. Parris
-- tab: presentations
-  items:
-    - title: Accessible Figures
-      resources:
-        # - name: Is your presentation accessible?
-        #   url: /projects/is-your-presentation-accessibe/
-        #   description: Cryocommunity article with tips and resources for building an accessible presentation
-        - name: Color Brewer
-          url: https://colorbrewer2.org/
-          description: Color palette generator allowing you to select colorblind safe palettes
-        - name: Color Blindness Simulator
-          url: https://www.color-blindness.com/coblis-color-blindness-simulator/
-          description: This site will show you what your image looks like for different types of color blindness.
-        - name: Scientific Color Maps
-          url: https://www.fabiocrameri.ch/colourmaps/
-          description: The color combinations are readable both by color-vision deficient and color-blind people, and even when printed in black & white.
-        - name: ColorCet Color Maps
-          url: https://github.com/holoviz/colorcet
-          description: A collection of perceptually uniform colormaps for use with Python plotting programs.
-        - name: Seaborn Color tutorials
-          url: https://seaborn.pydata.org/tutorial/color_palettes.html
-          description: General principles for using color in plots.
-        - name: Your Friendly Guide to Colors in Data Visualisation
-          url: https://blog.datawrapper.de/colorguide/
-          description: An overview of color tools, by Lisa Muth
-        - name: Co-designing scientific information for the IPCC special reports
-          url: https://medium.com/infodesignlabposts/co-designing-scientific-information-the-key-visualizations-of-the-ipcc-special-report-on-global-1bbf041c72ef
-          description: Visual communication for developing figures for the IPCC
-        - name: Color Map Advice for Scientific Visualization
-          url: http://www.kennethmoreland.com/color-advice/
-          description: by Kenneth Moreland
-        - name: Diverging Color Maps for Scientific Visualization
-          url: http://www.kennethmoreland.com/color-maps/
-          description: Moreland 2009. In Proceedings of the 5th International Symposium on Visual Computing DOI 10.1007/978-3-642-10520-3_9.
-        - name: Why We Use Bad Color Maps and What You Can Do About It
-          url: http://www.kennethmoreland.com/color-advice/BadColorMaps.pdf
-          description: Moreland 2016. DOI DOI 10.2352/ISSN.2470-1173.2016.16.HVEI-133.
-        - name: CET Perceptually Uniform Color Maps
-          url: http://peterkovesi.com/projects/colourmaps/
-          description: Peter Kovesi from the Centre for Exploration Targeting (CET) provides a collection of perceptually uniform color maps as well as example code used for their generation and analysis.
-    - title: Inclusive Design
-      resources:
-        - name: Inclusive Design For Accessible Presentations
-          url: https://www.smashingmagazine.com/2018/11/inclusive-design-accessible-presentations/
-          description: by Allison Ravenhall. When you prepare for your next presentation, use these tips on how to tweak your slides and your talk so that everyone gets the most out of it.
-    - title: Videos & Visualizations
-      resources:
-        - name: NASA's Scientific Visualization Studio
-          url: https://svs.gsfc.nasa.gov/
-          description: Search the entire SVS library for visualizations and videos
-        - name: Greenland Ice Mass Loss 2002-2021
-          url: https://svs.gsfc.nasa.gov/31156
-          description: Provided by NASA Hyperwall
-        - name: Antarctic Ice Mass Loss 2002-2020
-          url: https://svs.gsfc.nasa.gov/31158
-          description: Provided by NASA Hyperwall
-        - name: Accelerating Ice Sheet
-          url: https://svs.gsfc.nasa.gov/20111
-          description: Provided by the NASA Conceptual Image Lab
-        - name: Three Simulated Greenland Ice Sheet Response Scenarios, 2008 - 2300
-          url: https://svs.gsfc.nasa.gov/4721
-          description: by Cindy Starr and Provided by the NASA Scientific Visualization Studio.
-        - name: NASA Climate Time Machine
-          url: https://climate.nasa.gov/interactives/climate-time-machine
-          description: A series of visualizations that show how some of Earth's key climate indicators are changing over time.
-    - title: Invited
-      resources:
-        - name: How to ask for an Honorarium
-          url: https://www.melaninbasecamp.com/trip-reports/2020/02/21/bipoc-outdoor-industry-freelancer-guide
-          description:
+# - tab: LGBTQIA+
+#   items:
+#     - title: Jobs
+#       resources:
+#         - name: LGBTQIA+ Outdoor/Environmental Job Seekers and Job posting broad
+#           url: https://docs.google.com/spreadsheets/d/1GOdfg97K2MbCff00sIn3QqlMAu8gpeJl4Nx3iwuDqNw/edit?usp=sharing
+#           description: A public google sheet to hire from or add your name to for potential hiring!
+#     - title: Community
+#       resources:
+#         - name: LGBTQ Outdoor //www.nsf.gov/news/news_summ.jsp?cntn_id=302518&org=OPP
+#           url: https://www.lgbtqoutdoorsummit.com
+#           description: Dedicated to the representation and inclusion of the LGBTQ community OUTside.
+#         - name: LGBTQ+ Adventurers, In Their Own Words
+#           url: https://www.rei.com/blog/camp/lgbtq-outdoor-adventurers
+#           description: by A. Parris
