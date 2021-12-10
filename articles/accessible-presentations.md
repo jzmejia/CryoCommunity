@@ -61,12 +61,12 @@ What is a **Point**?
 <div style="text-align: center"> 1 point = 1/72 inch  </div>
 This means that text written using a 72-point font will print to be 1 inch in height and text written using a 12-point font will print to have a 1/6 inch height.
 
-| <small>printed poster section</small>&nbsp; &nbsp; | <small>minimum</small>                          | <small>ideal</small>     |
-| :-------------------------- | -------------------------------- | ---------: |
-| Title                       | 72 pt <small>(1 inch) </small> &nbsp; &nbsp;| 158 pt |
-| Section Headings            | 42 pt                            | 56 pt     |
-| Body text                   | 24 pt                            | 36 pt     |
-| Captions                    | 18 pt                            | 24 pt     |
+| <small>printed poster section</small>&nbsp; &nbsp; | <small>minimum</small>                       | <small>ideal</small> |
+| :------------------------------------------------- | -------------------------------------------- | -------------------: |
+| Title                                              | 72 pt <small>(1 inch) </small> &nbsp; &nbsp; |               158 pt |
+| Section Headings                                   | 42 pt                                        |                56 pt |
+| Body text                                          | 24 pt                                        |                36 pt |
+| Captions                                           | 18 pt                                        |                24 pt |
 
 ### Text spacing
 

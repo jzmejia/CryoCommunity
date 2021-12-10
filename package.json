@@ -16,8 +16,6 @@
     "gridsome": "^0.7.23",
     "gridsome-plugin-flexsearch": "^2.0.2",
     "gridsome-plugin-gtag": "^0.1.10",
-    "gridsome-plugin-netlify-cms": "^1.0.9",
-    "netlify-cms": "^2.10.164",
     "query-string": "^7.0.1",
     "remark-heading-gap": "^5.0.0",
     "twitter-text": "^3.1.0",

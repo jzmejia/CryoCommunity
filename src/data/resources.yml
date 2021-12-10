@@ -119,7 +119,7 @@
   items:
     - title: Code of conduct
       resources:
-        - name: ADVANCEGeoo Partnership
+        - name: ADVANCEGeo Partnership
           url: https://serc.carleton.edu/advancegeo/resources/codes_conduct.html
         - name: Open-source Communities
           url: https://www.contributor-covenant.org
@@ -158,7 +158,7 @@
           url: https://gradresources.org
           description: Grad Resources offers services that address their personal, emotional and spiritual needs, providing online materials, meaningful connections, engaging speakers, and supportive faith-based communities that enable graduate students to flourish personally and professionally.
         - name: Resources on Campus
-          url:
+          url: 
           description: Most colleges and universities have free or very affordable counseling services at the on-campus health center. Counselling (even if it is on campus) is always confidential.
         - name: Mental Health in Grad School
           url: https://www.gograd.org/resources/grad-student-mental-health/
