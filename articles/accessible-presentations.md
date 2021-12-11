@@ -1,7 +1,7 @@
 ---
 preview_image: "/uploads/on-computer.jpg"
 author: MARS Pod Participants
-title: Is your presentation accessibe
+title: Is your presentation accessibe?
 subtitle: Best practices for creating an accessible talk or poster presentation
 published: true
 date: 2021-12-09T05:00:00Z
