@@ -46,6 +46,7 @@ For **digital poster presentations** ensure you provide alt text and/or descript
 
 Below are suggestions on what font, text size, line spacing and more.
 
+<img src="https://lh3.googleusercontent.com/XN6ATtQ7Q_NxH5Eb_ZMiAZI6Wh61nClqWKHyx10vhIly8lzEOKmswVEAxjQOzldyCJ_q5W6dTznM0fn5wS8ArPzhpDq4vfhUxnOz=w1064-v0" width="758"/>
 
 #### Font Choice
 
@@ -54,7 +55,18 @@ Below are suggestions on what font, text size, line spacing and more.
 - Try to use no more than two different fonts for a poster or presentation. One font can be used for titles and the other font for all subtitles, labels, and text.
 - Consider using all caps for one word labels, captial letters are easier to read from far away.
 
+#### Font Size
 
+What is a **Point**?
+<div style="text-align: center"> 1 point = 1/72 inch  </div>
+This means that text written using a 72-point font will print to be 1 inch in height and text written using a 12-point font will print to have a 1/6 inch height.
+
+| <small>printed poster section</small>&nbsp; &nbsp; | <small>minimum</small>                       | <small>ideal</small> |
+| :------------------------------------------------- | -------------------------------------------- | -------------------: |
+| Title                                              | 72 pt <small>(1 inch) </small> &nbsp; &nbsp; |               158 pt |
+| Section Headings                                   | 42 pt                                        |                56 pt |
+| Body text                                          | 24 pt                                        |                36 pt |
+| Captions                                           | 18 pt                                        |                24 pt | 
 
 ### Text spacing
 
