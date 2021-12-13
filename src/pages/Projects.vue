@@ -68,7 +68,7 @@
                     >
                       {{ item.node.title }}
                     </v-card-title>
-                    <v-card-subtitle class="text-capitalize text-body-2">{{
+                    <v-card-subtitle class="text-body-2">{{
                       item.node.subtitle
                     }}</v-card-subtitle>
                   </v-card>

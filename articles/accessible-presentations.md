@@ -66,7 +66,7 @@ This means that text written using a 72-point font will print to be 1 inch in he
 | Title                                              | 72 pt <small>(1 inch) </small> &nbsp; &nbsp; |               158 pt |
 | Section Headings                                   | 42 pt                                        |                56 pt |
 | Body text                                          | 24 pt                                        |                36 pt |
-| Captions                                           | 18 pt                                        |                24 pt | 
+| Captions                                           | 18 pt                                        |                24 pt |
 
 ### Text spacing
 

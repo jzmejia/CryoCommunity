@@ -71,6 +71,18 @@ module.exports = {
         },
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/**/*.md',
+        route: '/blog/:year/:month/:day/:slug',
+        remark: {
+          plugins: [
+            ['gridsome-plugin-remark-youtube']
+          ]
+        }
+      }
+    },
     // {
     //   use: `gridsome-plugin-netlify-cms`,
     //   options: {
