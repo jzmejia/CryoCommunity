@@ -31,33 +31,30 @@
         - name: OpenGeology
           url: https://opengeology.org
           description: Free open educational resources for the geosciences
-        - name: Reading for students
-          url: https://www.ipcc.ch/srocc/
-          description: IPCC Special Reporot on the Ocean and Cryosphere in a Changing Climate
         - name: Open Global Glacier Model Jupyter Notebook Collection
           url: https://oggm.org/oggm-edu-notebooks/welcome.html
           description: Flowline models, surface mass balance, graphics, water resources, and more.
-          tags: [Jupyter]
+          tags: [Jupyter, Python]
         - name: Awesome Cryosphere
           url: https://github.com/awesome-cryosphere/cryosphere-links
           description: A prototype of a curated list of awesome data sources, models, tools and organizations related to the Cryosphere and its subspheres.
           tags: [Python, Jupyter, Awesome]
-        - name: Glaciology Land-based
-          url: https://github.com/ehultee/glaciology-labs
-          description: from Dr. Ultee at Middlebury College. Lab notebooks based on OGGM-Edu resources, developed for GEOL362, Glaciology, at Middlebury College
-          tags: [Jupyter, Python, Binder]
         - name: Open Global Glacier Model course implementation
           url: https://github.com/ehultee/oggm_course_implementation
           description: Documentation for the use of OGGM-Edu materials in an upper-level undergraduate course by Dr. Lizz Ultee, including  problem sets with solutions.
-          tags: [Jupyter, GitHub, OGGM]
+          tags: [Jupyter, GitHub, OGGM-Edu]
         - name: Lab notebooks based on Open Global Glacier Model (OGGM) resources
           url: https://github.com/ehultee/glaciology-labs
           description: Lab notebooks based on OGGM-Edu resources, developed for GEOL362, Glaciology, at Middlebury College by Dr. Lizz Ultee
-          tags: [Jupyter, GitHub, Binder]
-        - name: Cdec-glaciologica
+          tags: [Jupyter, GitHub, Binder, OGGM-Edu]
+        - name: CdeC-glaciologica
           url: https://github.com/ehultee/CdeC-glaciologia
-          description: Cuadernos Jupyter que usaba el club "Glaciología y recursos hídricos" de Clubes de Ciencia Perú 2019. Desde 1 sept 2020, este repo se está desarrollando para el aprendizaje asíncrono. Para ver los cuadernos de 2019, por favor consulte la versión 1.0.0.
-          tags: [Jupyter, Python, Español, Binder]
+          description: Cuadernos Jupyter que usaba el club "Glaciología y recursos hídricos" de Clubes de Ciencia Perú 2019.
+          tags: [Jupyter, Python, Español, Binder, OGGM-Edu]
+        - name: Snowball Earth demo
+          url: https://github.com/ehultee/snowball-demo
+          description: Class demonstration of Climlab for a Snowball Earth case study by Dr. Lizz Ultee
+          tags: [Jupyter, Python, Climlab, GitHub]
     - title: Modules
       resources:
         - name: Antarctic Ice Sheet-past and present
@@ -115,6 +112,9 @@
         - name: Creating Inclusive Virtual Spaces
           url: https://serc.carleton.edu/advancegeo/resources/virtual.html
           description: by Olivia Lopez, University of Wisconsin-Madison
+        - name: IPCC Special Report
+          url: https://www.ipcc.ch/srocc/
+          description: on the ocean and cryosphere in a changing climate
     - title: Best Practices
       resources:
         - name: Ten simple rules for building an antiracist lab
@@ -150,13 +150,13 @@
           description: a space for anonymous feedback on the health of the cryospheric science community. (e.g., cryosphere-wide ombudsman). Post-conference survey and post-fieldwork survey. Resources in development (as of 2021 Apr 30).
         - name: (SAHPR) Program
           url: https://www.nsf.gov/news/news_summ.jsp?cntn_id=302518&org=OPP
-          description: U.S. Antarctic Program’s Sexual Assault/Harassment Prevention and Response Program
+          description: U.S. Antarctic Program Sexual Assault/Harassment Prevention and Response Program
         - name: AGU Resources
           url: https://www.agu.org/Learn-About-AGU/About-AGU/Ethics/SafeAGU
           description:
         - name: When It Comes to Sexual Harassment, Academia Is Fundamentally Broken
           url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/01/500WomenScientist_SexualHarassmentAcademia-1.pdf
-          description: Why everyone should read the National Academies’ sexual harassment report
+          description: Why everyone should read the National Academies sexual harassment report
     - title: Mental Health
       resources:
         - name: National Grad Crisis Line call 1-877-472-3457
@@ -166,7 +166,7 @@
           url: https://gradresources.org
           description: Grad Resources offers services that address their personal, emotional and spiritual needs, providing online materials, meaningful connections, engaging speakers, and supportive faith-based communities that enable graduate students to flourish personally and professionally.
         - name: Resources on Campus
-          url: 
+          url:
           description: Most colleges and universities have free or very affordable counseling services at the on-campus health center. Counselling (even if it is on campus) is always confidential.
         - name: Mental Health in Grad School
           url: https://www.gograd.org/resources/grad-student-mental-health/
@@ -176,7 +176,7 @@
         - name: Find a Mentor
           url: https://gradresources.org/mentoring/
           description: Grad Resources offers online mentoring opportunities. If you are new to graduate school, this is a chance to learn from others in your field or one similar to yours about the challenges ahead and how to navigate them.
-    - title: More
+    - title: Surviving academia
       resources:
         - name: Surviving the Doctorate and Thriving as Faculty-Latina Junior Faculty Reflecting on Their Doctoral Studies Experiences
           url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/04/Surviving-the-Doctorate-and-Thriving-as-Faculty-Latina-Junior-Faculty-Reflecting-on-Their-Doctoral-Studies-Experiences.pdf
@@ -357,7 +357,7 @@
           url: https://outdoorafro.com/
           description: A network that celebrates and inspires Black connections and leadership in nature. Leadership networks are nationwide in 42 cities. Participation and leadership opportunities (plus leadership training)
         - name: Diversify Outdoors
-          url: diversifyoutdoors.com
+          url: https://diversifyoutdoors.com
           description: A coalition of social media influencers who share the goal of promoting diversity in outdoor spacers where people of color, LGBTQIA+, and other diverse identities have historically been underrepresented.
         - name: Indigenous Women Hike
           url: http://www.project562.com/blog/hiking-the-nueuemue-poyo-an-act-of-love-by-indigenous-women/
@@ -479,11 +479,9 @@
       resources:
         - name: Black in Science Communication
           url: https://twitter.com/blackinscicomm?s=21
-          twitter: BlackInSciComm
           description: Building scientists and sharing science in service to our communities and beyond.
         - name: Dr. Raven the Science Maven
           url: https://www.scimaven.com
-          twitter: ravenscimaven
           description: Raven Baxter, Ph.D., aka Dr. Raven the Science Maven, is an internationally acclaimed American educator and molecular biologist known for effortlessly merging science with pop culture. Using her magnetic personality, she challenges the status quo to prove that science communicators aren’t all one and the same.
     - title: More
       resources:
@@ -585,7 +583,7 @@
           tags: ["$7,000"]
     - title: Post-Doctoral & Early Career
       resources:
-        - name: NSF's Office of Polar Programs (OPP)
+        - name: NSF Office of Polar Programs (OPP)
           url: https://www.nsf.gov/funding/pgm_list.jsp?org=OPP
           description: list of active funding opportunties for Polar programs
         - name: NASA Internships and Fellowships
@@ -598,7 +596,7 @@
           description: AGU Helping sow the seeds of innovative SciComm
 - tab: applications
   items:
-    - title: Letters of Recommendations
+    - title: Letters of Recommendation
       resources:
         - name: Cheat sheet for how to avoid racial bias in letters of reference writing
           url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/03/avoiding-racial-bias-in-reference-writing.pdf
@@ -669,14 +667,14 @@
         - name: A Black Introvert’s Guide to Conflict and Alpine Climbing
           url: https://www.melaninbasecamp.com/trip-reports/2019/8/31/10-things-i-hate-about-you-a-black-introverts-guide-to-conflict-and-alpine-climbing
           description: by R. Ross
-        - name: Hoow to Pee in the Woods and Other Field Hacks
+        - name: How to Pee in the Woods and Other Field Hacks
           url: https://futurerockdoc.com/blog/2020/6/27/how-to-pee-in-the-woods-and-other-field-camp-hacks
           description: Tips from future rock doc
     - title: Planning And Leadership
       resources:
         - name: MARS pod Field Safety Plan
           url: https://drive.google.com/file/d/1FvIhT3j3fuRzFPag05JL0WNx4DdLFgfq/view?usp=sharing
-          description:
+          description: Deliverable developed by the MARS URGE pod.
         - name: 10 steps to protect BIPOC scholars in the field
           url: https://eos.org/opinions/ten-steps-to-protect-bipoc-scholars-in-the-field
           description: by Dr. Hendratta Ali
@@ -686,9 +684,9 @@
         - name: Safe fieldwork strategies for at-risk individuals, their supervisors and institutions
           url: https://www.nature.com/articles/s41559-020-01328-5.pdf
           description: Demery and Pipkin (2021)
-        - name: Six simple steps to make fieldwork more accessible and inclusive
+        - name: 6 simple steps to make fieldwork more accessible and inclusive
           url: https://geoscienceforthefuture.com/six-simple-steps-to-make-fieldwork-more-accessible-and-inclusive/
-          description: by A.Lawrence
+          description: by A. Lawrence
         - name: UC Field Research Safety- Field Operations Safety Manual
           url: https://www.ucop.edu/safety-and-loss-prevention/environmental/program-resources/field-research-safety/index.html
           description:
@@ -700,7 +698,7 @@
           description: UC Berkeley
         - name: 2021 Fieldwork Toolkit Leadership Training Series
           url: https://training.ucr.edu/fieldworkleadership
-          description: UCR
+          description: from UCR
     - title: Gear
       resources:
         - name: AntarticGlaciers
@@ -738,25 +736,23 @@
   items:
     - title: Greenland
       resources:
-        - name: Getting Greenland’s glaciers right – a new dataset of all official Greenlandic glacier names
+        - name: Getting Greenland’s glaciers right, a new dataset of all official Greenlandic glacier names
           url: https://tc.copernicus.org/preprints/9/1593/2015/tcd-9-1593-2015.pdf
           description: Official names of Greenlandic Glaciers
         - name: Greenland glacier name data set
           url: https://figshare.com/articles/dataset/GreenlandGlacierNames_GGNv01/1449148
-          description: GIS and csv files of glacier names and coordinates
+          description: GIS and .csv files of glacier names and coordinates
         - name: Martha Greenlandic Language Pronunciation
           url: https://oqaasileriffik.gl/en/langtech/martha/
           description: Text-to-speech system
         - name: Endangered Languages Project-Kalaallisut
           url: https://www.endangeredlanguages.com/lang/8689
           description: Language information
-    - title: Alaska
+    - title: North America
       resources:
-        - name: Ahtna Place Names
+        - name: Alaska, Ahtna Place Names
           url: https://uafanlc.alaska.edu/GIS/Ahtna/Ahtna%20Section%20Maps/pdfs/03%20ahtnapn2008pp37-156.pdf
           description: Alaskan place names
-    - title: Beyond
-      resources:
         - name: Native Land
           url: https://native-land.ca
           description: Interactive map of tribal lands with teaching resources
@@ -769,7 +765,7 @@
           description: A public google sheet to hire from or add your name to for potential hiring!
     - title: Community
       resources:
-        - name: LGBTQ Outdoor //www.nsf.gov/news/news_summ.jsp?cntn_id=302518&org=OPP
+        - name: LGBTQ Outdoor
           url: https://www.lgbtqoutdoorsummit.com
           description: Dedicated to the representation and inclusion of the LGBTQ community OUTside.
         - name: LGBTQ+ Adventurers, In Their Own Words
@@ -779,9 +775,9 @@
   items:
     - title: Accessible Figures
       resources:
-        # - name: Is your presentation accessible?
-        #   url: /projects/is-your-presentation-accessibe/
-        #   description: Cryocommunity article with tips and resources for building an accessible presentation
+        - name: Is your presentation accessible?
+          url: /projects/is-your-presentation-accessibe/
+          description: Cryocommunity article with tips and resources for building an accessible presentation
         - name: Color Brewer
           url: https://colorbrewer2.org/
           description: Color palette generator allowing you to select colorblind safe palettes
@@ -848,7 +844,7 @@
 - tab: inequity
   items:
     - title: Gender
-      resources: 
+      resources:
         - name: Bridging the crevasse; working toward gender equity in the cryosphere
           url: https://blogs.egu.eu/divisions/cr/2019/03/08/bridging-the-crevasse-working-toward-gender-equity-in-the-cryosphere/
           description: by Elizabeth Case, Violaine Coulon, and Florence Isaacs, March 2019
