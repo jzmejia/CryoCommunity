@@ -46,6 +46,14 @@
           url: https://github.com/ehultee/glaciology-labs
           description: from Dr. Ultee at Middlebury College. Lab notebooks based on OGGM-Edu resources, developed for GEOL362, Glaciology, at Middlebury College
           tags: [Jupyter, Python, Binder]
+        - name: Open Global Glacier Model course implementation
+          url: https://github.com/ehultee/oggm_course_implementation
+          description: Documentation for the use of OGGM-Edu materials in an upper-level undergraduate course by Dr. Lizz Ultee, including  problem sets with solutions.
+          tags: [Jupyter, GitHub, OGGM]
+        - name: Lab notebooks based on Open Global Glacier Model (OGGM) resources
+          url: https://github.com/ehultee/glaciology-labs
+          description: Lab notebooks based on OGGM-Edu resources, developed for GEOL362, Glaciology, at Middlebury College by Dr. Lizz Ultee
+          tags: [Jupyter, GitHub, Binder]
         - name: Cdec-glaciologica
           url: https://github.com/ehultee/CdeC-glaciologia
           description: Cuadernos Jupyter que usaba el club "Glaciología y recursos hídricos" de Clubes de Ciencia Perú 2019. Desde 1 sept 2020, este repo se está desarrollando para el aprendizaje asíncrono. Para ver los cuadernos de 2019, por favor consulte la versión 1.0.0.
@@ -721,6 +729,11 @@
         - name: Juneau Icefield Research Program (JIRP)
           url: https://juneauicefield.org
           description: annual, variable lengths over summer (June-August). Undergrad & Grad student participants (for college credit), with opportunties for faculty, reserchers, and staff
+    - title: Culture
+      resources:
+        - name: Changing the Culture of Fieldwork in the Geosciences
+          url: https://eos.org/features/changing-the-culture-of-fieldwork-in-the-geosciences
+          description: The need to address harassment in field campaigns is growing more urgent. A new workshop provides scientists with a broad set of tools to create more inclusive, safe, and functional field teams.
 - tab: placeNames
   items:
     - title: Greenland
@@ -747,22 +760,21 @@
         - name: Native Land
           url: https://native-land.ca
           description: Interactive map of tribal lands with teaching resources
-# - tab: LGBTQIA+
-#   items:
-#     - title: Jobs
-#       resources:
-#         - name: LGBTQIA+ Outdoor/Environmental Job Seekers and Job posting broad
-#           url: https://docs.google.com/spreadsheets/d/1GOdfg97K2MbCff00sIn3QqlMAu8gpeJl4Nx3iwuDqNw/edit?usp=sharing
-#           description: A public google sheet to hire from or add your name to for potential hiring!
-#     - title: Community
-#       resources:
-#         - name: LGBTQ Outdoor //www.nsf.gov/news/news_summ.jsp?cntn_id=302518&org=OPP
-#           url: https://www.lgbtqoutdoorsummit.com
-#           description: Dedicated to the representation and inclusion of the LGBTQ community OUTside.
-#         - name: LGBTQ+ Adventurers, In Their Own Words
-#           url: https://www.rei.com/blog/camp/lgbtq-outdoor-adventurers
-#           description: by A. Parris
-
+- tab: LGBTQIA+
+  items:
+    - title: Jobs
+      resources:
+        - name: LGBTQIA+ Outdoor/Environmental Job Seekers and Job posting broad
+          url: https://docs.google.com/spreadsheets/d/1GOdfg97K2MbCff00sIn3QqlMAu8gpeJl4Nx3iwuDqNw/edit?usp=sharing
+          description: A public google sheet to hire from or add your name to for potential hiring!
+    - title: Community
+      resources:
+        - name: LGBTQ Outdoor //www.nsf.gov/news/news_summ.jsp?cntn_id=302518&org=OPP
+          url: https://www.lgbtqoutdoorsummit.com
+          description: Dedicated to the representation and inclusion of the LGBTQ community OUTside.
+        - name: LGBTQ+ Adventurers, In Their Own Words
+          url: https://www.rei.com/blog/camp/lgbtq-outdoor-adventurers
+          description: by A. Parris
 - tab: presentations
   items:
     - title: Accessible Figures
@@ -833,3 +845,10 @@
         - name: How to ask for an Honorarium
           url: https://www.melaninbasecamp.com/trip-reports/2020/02/21/bipoc-outdoor-industry-freelancer-guide
           description:
+- tab: inequity
+  items:
+    - title: Gender
+      resources: 
+        - name: Bridging the crevasse; working toward gender equity in the cryosphere
+          url: https://blogs.egu.eu/divisions/cr/2019/03/08/bridging-the-crevasse-working-toward-gender-equity-in-the-cryosphere/
+          description: by Elizabeth Case, Violaine Coulon, and Florence Isaacs, March 2019
