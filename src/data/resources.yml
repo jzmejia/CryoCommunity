@@ -78,6 +78,12 @@
         - name: PROMICE
           url: https://promice.org/greenland-ice-sheet/
           description: Greenland Ice Sheet mass balance and weather station data.
+        - name: Steal this (updated) syllabus for Scientific Writing
+          url: https://scientistseessquirrel.wordpress.com/2020/05/26/steal-this-updated-syllabus-for-scientific-writing/
+          description: Syllabus and course materials for a scientific writing class.
+        - name: Science writing lectures and course materials
+          url: https://www.dropbox.com/s/aiq617idg2nx26p/SIO-Fricker-Science_writing_lectures.zip?dl=0
+          description: from Dr. Helen Fricker
     - title: Tools
       resources:
         - name: ABC-classroom
@@ -143,6 +149,8 @@
         - name: Faculty Accountability for Culturally Inclusive Pedagogy and Curricula
           url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/04/Faculty-Accountability-for-Culturally-Inclusive-Pedagogy-and-Curricula.pdf
           description: Quaye, S. J., and Harper, S. R.
+        - name: Jackson School of Geosciences Workplace Issues
+          url: https://www.jsg.utexas.edu/people/jsg-community/workplace-issues/
     - title: Reporting Policy
       resources:
         - name: Cryosci.Listen
@@ -153,7 +161,7 @@
           description: U.S. Antarctic Program Sexual Assault/Harassment Prevention and Response Program
         - name: AGU Resources
           url: https://www.agu.org/Learn-About-AGU/About-AGU/Ethics/SafeAGU
-          description:
+          description: SafeAGU
         - name: When It Comes to Sexual Harassment, Academia Is Fundamentally Broken
           url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/01/500WomenScientist_SexualHarassmentAcademia-1.pdf
           description: Why everyone should read the National Academies sexual harassment report
@@ -166,7 +174,7 @@
           url: https://gradresources.org
           description: Grad Resources offers services that address their personal, emotional and spiritual needs, providing online materials, meaningful connections, engaging speakers, and supportive faith-based communities that enable graduate students to flourish personally and professionally.
         - name: Resources on Campus
-          url:
+          url: https://www.usnews.com/education/best-colleges/articles/2018-09-21/how-college-students-can-find-mental-health-services-on-campus
           description: Most colleges and universities have free or very affordable counseling services at the on-campus health center. Counselling (even if it is on campus) is always confidential.
         - name: Mental Health in Grad School
           url: https://www.gograd.org/resources/grad-student-mental-health/
@@ -176,6 +184,9 @@
         - name: Find a Mentor
           url: https://gradresources.org/mentoring/
           description: Grad Resources offers online mentoring opportunities. If you are new to graduate school, this is a chance to learn from others in your field or one similar to yours about the challenges ahead and how to navigate them.
+        - name: Creating A Mentoring Philosophy Statement
+          url: https://www.ohsu.edu/sites/default/files/2021-02/Creating%20a%20Mentoring%20Philosophy%20Statement%20How-To.pdf
+          description: OHSU Mentorship Academy Provost Office, Dr. Moreno
     - title: Surviving academia
       resources:
         - name: Surviving the Doctorate and Thriving as Faculty-Latina Junior Faculty Reflecting on Their Doctoral Studies Experiences
@@ -187,6 +198,11 @@
         - name: “Am I going crazy?!” A Critical Race Analysis of Doctoral Education
           url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/04/Am-I-going-crazy_A-Critical-Race-Analysis-of-Doctoral-Education.pdf
           description: Ryan Evely Gildersleeve , Natasha N. Croom & Philip L. Vasquez (2011)
+    - title: Getting Paid
+      resources:
+        - name: Fix The Gap
+          url: https://www.youtube.com/watch?v=jgA_L6zsc2Y
+          description: A Panel Discussion - 500 Women Scientists
 - tab: professionalDev
   items:
     - title: Media
@@ -229,7 +245,6 @@
           description: tools and guidance to help you maximize readership and citations for your work.
         - name: Including a plain language summary for your publications
           url: https://www.agu.org/Share-and-Advocate/Share/Community/Plain-language-summary
-          description:
     - title: Writing
       resources:
         - name: Equity in Author Order
@@ -332,6 +347,11 @@
           twitter: Polar_Research
           tags: [ECR]
           description: Association of Polar Early Career Scientists
+        - name: PSECCO 
+          url: https://t.co/azDRUSt0If
+          twitter: polarsecco
+          tags: [ECR]
+          description: Polar Science Early Career Community Office
         - name: UK Polar Network
           url: https://polarnetwork.org/
           twitter: UKPolarNetwork
@@ -344,6 +364,10 @@
           url: https://womeninthearcticandantarctic.ca/
           twitter: arctic_in
           description: Promoting info sharing, networking & women in Northern, Arctic & Antarctic research & representation
+        - name: ICYS 
+          url: https://pastglobalchanges.org/science/end-aff/icys
+          twitter: ICYSci
+          description: Ice Core Young Scientists
         - name: Plan A.
           url: http://www.genderisnotplanb.com/
           twitter: PlanArctic
@@ -388,7 +412,7 @@
           description: a fat activism, body liberation & outdoor community
         - name: Brothers of Climbing
           url: http://boccrew.com
-          description:
+          description: presented by REI.
         - name: GirlTrek
           url: https://www.girltrek.org
           description: In the footsteps of a civil rights legacy, GirlTrek is a national health movement that activates thousands of Black women to be change makers in their lives and communities — through walking.
@@ -475,14 +499,6 @@
         - name: NSBE
           url: https://www.nsbe.org/Programs/Graduate-School/Explore/Graduate-student-life/Mentoring.aspx#.YIL5B6lKj0o
           description: National Society of Black Engineer
-    - title: Science Comm
-      resources:
-        - name: Black in Science Communication
-          url: https://twitter.com/blackinscicomm?s=21
-          description: Building scientists and sharing science in service to our communities and beyond.
-        - name: Dr. Raven the Science Maven
-          url: https://www.scimaven.com
-          description: Raven Baxter, Ph.D., aka Dr. Raven the Science Maven, is an internationally acclaimed American educator and molecular biologist known for effortlessly merging science with pop culture. Using her magnetic personality, she challenges the status quo to prove that science communicators aren’t all one and the same.
     - title: More
       resources:
         - name: Academics for Black Survival and Wellness
@@ -633,6 +649,14 @@
         - name: Graduate School Application Station
           url: https://geogradapp.com
           description: Tips and Graduate Application Timeline
+    - title: Promotion and Hiring
+      resources:
+        - name: Preparing Future Faculty
+          url: https://github.com/ginnybinny/Preparing-Future-Faculty
+          description: Complation of resources from Dr. Ginny Catania's GEO 291 Course
+        - name: Project MUSE - Faculty Time Allocations and Research Productivity
+          url: https://muse.jhu.edu/article/30080#b31
+          description: Gender, Race, and Family Effects
     - title: Jobs
       resources:
         - name: Becoming a Federal Scientist-A Guide to Applying for Jobs, Internships, and Fellowships
@@ -687,18 +711,24 @@
         - name: 6 simple steps to make fieldwork more accessible and inclusive
           url: https://geoscienceforthefuture.com/six-simple-steps-to-make-fieldwork-more-accessible-and-inclusive/
           description: by A. Lawrence
-        - name: UC Field Research Safety- Field Operations Safety Manual
+        - name: Field Operations Safety Manual
           url: https://www.ucop.edu/safety-and-loss-prevention/environmental/program-resources/field-research-safety/index.html
-          description:
+          description: UC Field Research Safety
         - name: Best Practices for Trip Leaders
           url: https://www.ucop.edu/safety-and-loss-prevention/environmental/program-resources/field-research-safety/chapter-4.html
-          description:
+          description: 
         - name: Example Field Safety Plan
           url: https://ehs.berkeley.edu/field-research#fieldsafetyplan
           description: UC Berkeley
         - name: 2021 Fieldwork Toolkit Leadership Training Series
           url: https://training.ucr.edu/fieldworkleadership
           description: from UCR
+        - name: Barriers to fieldwork in undergraduate geoscience degrees
+          url: https://www.nature.com/articles/s43017-020-0022-5
+          description: Giles et al., (2020) in Nature Reviews Earth & Environment
+        - name: Report of the Workshop to Promote Safety in Field Sciences
+          url: https://zenodo.org/record/5841983#.YppIdC-B1He
+          description: by A. Kelly, and K. Yarincik (2022). The document outlines 52 recommendations targeted at imporoving field science culture change, misconduct acountability, policy, and reporting. 
     - title: Gear
       resources:
         - name: AntarticGlaciers
@@ -811,11 +841,14 @@
         - name: CET Perceptually Uniform Color Maps
           url: http://peterkovesi.com/projects/colourmaps/
           description: Peter Kovesi from the Centre for Exploration Targeting (CET) provides a collection of perceptually uniform color maps as well as example code used for their generation and analysis.
-    - title: Inclusive Design
-      resources:
         - name: Inclusive Design For Accessible Presentations
           url: https://www.smashingmagazine.com/2018/11/inclusive-design-accessible-presentations/
           description: by Allison Ravenhall. When you prepare for your next presentation, use these tips on how to tweak your slides and your talk so that everyone gets the most out of it.
+    - title: Virtual Presentations
+      resources:
+        - name: Mastering the virtual presentation & making the most of an e-lightning poster
+          url: https://connect.agu.org/sharingscience/virtual-learning-modules/skills-for-complete-scientist/virtual-presentation
+          description: A guide from AGU's Sharing Science
     - title: Videos & Visualizations
       resources:
         - name: NASA's Scientific Visualization Studio
@@ -836,6 +869,9 @@
         - name: NASA Climate Time Machine
           url: https://climate.nasa.gov/interactives/climate-time-machine
           description: A series of visualizations that show how some of Earth's key climate indicators are changing over time.
+        - name: Auphonic 
+          url: https://auphonic.com
+          description: Automatic audio post production web service for podcasts, screencasts, and presentations.
     - title: Invited
       resources:
         - name: How to ask for an Honorarium
@@ -848,3 +884,60 @@
         - name: Bridging the crevasse; working toward gender equity in the cryosphere
           url: https://blogs.egu.eu/divisions/cr/2019/03/08/bridging-the-crevasse-working-toward-gender-equity-in-the-cryosphere/
           description: by Elizabeth Case, Violaine Coulon, and Florence Isaacs, March 2019
+- tab: sciCom
+  items: 
+    - title: Guides
+      resources:
+        - name: Cryo Connect
+          url: https://cryoconnect.net
+          twitter: CryoConnect
+          description: a gateway for cryosphere science communication
+        - name: We're (nearly) all untrained at SciComm. So, some resources.
+          url: https://scientistseessquirrel.wordpress.com/2021/10/26/were-nearly-all-untrained-at-scicomm-so-some-resources/
+          description: by Stephen Heard (2021)
+        - name: Using color as a design tool in science presentations
+          url: https://threadreaderapp.com/thread/1531651972776054785.html
+          description: Thread from @IAmSciComm 
+        
+        - name: Sci Comm Toolkits
+          url: https://connect.agu.org/sharingscience/resources/toolkits
+          description: A collection of resources from AGU's Sharing Science
+        - name: Science Vocabulary Dual Meanings
+          url: https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_38394_S2_Watch_Words.pdf
+          description: from AGU's Sharing Science program
+        - name: Storytelling in Science Communcation
+          url: https://connect.agu.org/sharingscience/virtual-learning-modules/storytelling
+          description: Storytelling for the 21st Centruy Scientist from AGU Sharing Science. 
+        - name: Essential Tips and Tools for Communicating Your Science
+          url: https://www.agu.org/Share-and-Advocate/-/media/E0C8C9F83619467EB6D698B63203875A.ashx
+          description: 
+          
+    - title: Blogs
+      resources:
+        - name: Science Borealis
+          url: https://scienceborealis.ca
+          description: Blogging from Canadian Perspectives
+        - name: From the Lab Bench
+          url: http://www.fromthelabbench.com
+          description: Blogging about all things science
+        - name: SIGMA Peru
+          url: https://sigmaperu.wordpress.com/glacier-gifts/
+          description: Societal Impacts of Glacier Melt in the Andes, Peru
+        - name: Regalos Glaciares or Glacier Gifts
+          url: https://sigmaperu.wordpress.com/glacier-gifts/
+          description: An ebook by SIGMA Peru about glacier retreat within the Peruvian Andies 
+    - title: Science Communicators
+      resources: 
+        - name: Black in Science Communication
+          url: https://twitter.com/blackinscicomm?s=21
+          description: Building scientists and sharing science in service to our communities and beyond.
+        - name: Dr. Raven the Science Maven
+          url: https://www.scimaven.com
+          description: Raven Baxter, Ph.D., aka Dr. Raven the Science Maven, is an internationally acclaimed American educator and molecular biologist known for effortlessly merging science with pop culture. Using her magnetic personality, she challenges the status quo to prove that science communicators aren’t all one and the same.
+        - name: Cryotoons!
+          url: https://twitter.com/cryotoons
+          description: Cartoons about glaciers
+        - name: AGU's Sharing Science
+          url: 
+          twitter: AGU_SciComm
+          description:
