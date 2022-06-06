@@ -208,6 +208,27 @@
             </v-col>
           </v-row>
         </v-col>
+        <v-col cols="12">
+          <v-card-title class="text-h5 text-md-h4 text-wrap"
+            >Science Communication</v-card-title
+          >
+          <v-row>
+            <v-col cols="12" md="6">
+              <ResourceCard :resource="scicom" />
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              :order="$vuetify.breakpoint.mobile ? 'first' : ''"
+            >
+              <v-img
+                class="rounded-lg"
+                src="/podcast.png"
+                :height="$vuetify.breakpoint.smAndDown ? 275 : 450"
+              ></v-img>
+            </v-col>
+          </v-row>
+        </v-col>
       </v-row>
     </v-container>
   </Layout>
@@ -290,6 +311,9 @@ export default {
     },
     presentations() {
       return this.resources.find((item) => item.tab == "presentations");
+    },
+    scicom() {
+      return this.resources.find((item) => item.tab === "sciCom") 
     },
   },
 };
