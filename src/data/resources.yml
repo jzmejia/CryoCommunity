@@ -667,33 +667,36 @@
   items:
     - title: Guides
       resources:
-        - name: Safety and Belonging in the field
+        - name: Safety and belonging in the field
           url: https://eartharxiv.org/repository/view/2607/
           description: A Checklist for Educators
-        - name: Tips & Tricks for going to the bathroom and other bodily functions in the field
-          url: https://docs.google.com/document/d/1Ml_3SFCe1jNSeFjK_B_y9m7Ig5_Awa2fbnFE5kRVTew/edit?usp=sharing
-          description: by Dr. Chris Carr
-        - name: Toilet stops in the Field
-          url: https://drive.google.com/file/d/15mLZgZWQvBXQRU_ok7OqnpUmxKObgwAm/view?fbclid=IwAR2l_LPe_Z4YNl0vFLxOzk8_Q-fKb93qaeRcr3_6pGXy61Sv3U-BOkovH_U--
-          description: An educational primer and recommended best practices for field-based teaching.
-        - name: Doing Fieldwork as a Female
-          url: https://jocelynesze.wordpress.com/2017/05/05/doing-fieldwork-as-a-female/
-          description: by J. Sze
-        - name: A Curly Haired Adventurer’s Guide to the Outdoors
+        - name: A curly haired adventurer’s guide to the outdoors
           url: https://www.melaninbasecamp.com/trip-reports/2019/6/9/curly-haired-adventurers-guide-to-the-outdoors
           description: by Nadia Mercado. Tips from 9 contributors with curl types ranging from 3b-4c. Tips cover short and long trips, styles, products, styling under helmets, and more
-        - name: 7 Cold Weather Tips for Staying Warm This Winter
-          url: https://www.melaninbasecamp.com/trip-reports/2021/1/9/new-tips-for-staying-warm-this-winter
-          description: by Favia Dubyk
-        - name: 3 Hiking Tips from an African-American Naturalist
-          url: https://www.melaninbasecamp.com/trip-reports/2020/2/16/african-american-naturalist-iris-hill-3-things-about-hiking
-          description: a conversation with Iris Hill, Conservation Biologist. by D. Williams
-        - name: A Black Introvert’s Guide to Conflict and Alpine Climbing
-          url: https://www.melaninbasecamp.com/trip-reports/2019/8/31/10-things-i-hate-about-you-a-black-introverts-guide-to-conflict-and-alpine-climbing
-          description: by R. Ross
-        - name: How to Pee in the Woods and Other Field Hacks
+        - name: Tips & tricks for going to the bathroom and other bodily functions in the field
+          url: https://docs.google.com/document/d/1Ml_3SFCe1jNSeFjK_B_y9m7Ig5_Awa2fbnFE5kRVTew/edit?usp=sharing
+          description: by Dr. Chris Carr
+        - name: How to pee in the woods and other field hacks
           url: https://futurerockdoc.com/blog/2020/6/27/how-to-pee-in-the-woods-and-other-field-camp-hacks
           description: Tips from future rock doc
+        - name: Menstruation in the field
+          url: https://www.antarcticglaciers.org/2022/09/menstruation-in-the-field/
+          description: Tips and advice for managing menstruation in the field for both people who menstruate and fieldwork leaders
+        - name: Toilet stops in the field
+          url: https://drive.google.com/file/d/15mLZgZWQvBXQRU_ok7OqnpUmxKObgwAm/view?fbclid=IwAR2l_LPe_Z4YNl0vFLxOzk8_Q-fKb93qaeRcr3_6pGXy61Sv3U-BOkovH_U--
+          description: An educational primer and recommended best practices for field-based teaching.
+        - name: Doing fieldwork as a female
+          url: https://jocelynesze.wordpress.com/2017/05/05/doing-fieldwork-as-a-female/
+          description: by J. Sze
+        - name: 7 cold weather tips for staying warm this winter
+          url: https://www.melaninbasecamp.com/trip-reports/2021/1/9/new-tips-for-staying-warm-this-winter
+          description: by Favia Dubyk
+        - name: 3 hiking tips from an African-American naturalist
+          url: https://www.melaninbasecamp.com/trip-reports/2020/2/16/african-american-naturalist-iris-hill-3-things-about-hiking
+          description: a conversation with Iris Hill, Conservation Biologist. by D. Williams
+        - name: A Black introvert’s guide to conflict and alpine climbing
+          url: https://www.melaninbasecamp.com/trip-reports/2019/8/31/10-things-i-hate-about-you-a-black-introverts-guide-to-conflict-and-alpine-climbing
+          description: by R. Ross
     - title: Planning And Leadership
       resources:
         - name: MARS pod Field Safety Plan
@@ -702,7 +705,7 @@
         - name: 10 steps to protect BIPOC scholars in the field
           url: https://eos.org/opinions/ten-steps-to-protect-bipoc-scholars-in-the-field
           description: by Dr. Hendratta Ali
-        - name: Practical Field Guide
+        - name: Practical field guide
           url: https://eu-interact.org/app/uploads/2019/09/INTERACT-Practical-Field-Guide.pdf
           description: by INTERACT, the Internatioinal Network for Terrestrial Research and Monitoring in the Arctic
         - name: Safe fieldwork strategies for at-risk individuals, their supervisors and institutions
@@ -711,10 +714,10 @@
         - name: 6 simple steps to make fieldwork more accessible and inclusive
           url: https://geoscienceforthefuture.com/six-simple-steps-to-make-fieldwork-more-accessible-and-inclusive/
           description: by A. Lawrence
-        - name: Field Operations Safety Manual
+        - name: Field operations safety manual
           url: https://www.ucop.edu/safety-and-loss-prevention/environmental/program-resources/field-research-safety/index.html
           description: UC Field Research Safety
-        - name: Best Practices for Trip Leaders
+        - name: Best practices for trip leaders
           url: https://www.ucop.edu/safety-and-loss-prevention/environmental/program-resources/field-research-safety/chapter-4.html
           description: 
         - name: Example Field Safety Plan
