@@ -542,6 +542,9 @@
   items:
     - title: Advice
       resources:
+        - name: Funding Resources for POCs in STEAM
+          url: https://docs.google.com/spreadsheets/d/1V_pvhqWliwqLhAVcXikxAEuJPD4mwwgl9LEgOnzN-zM/edit?usp=sharing
+          description: Google Sheet put together by Lavontria Miché Aaron with fellowships, money for applications, scholarships, internships, mentoring opportunities
         - name: THE NSF GRFP - Advice from a panel of awardees
           url: https://futurerockdoc.com/blog/2020/6/19/the-nsf-grfp-advice-from-a-panel-of-awardees
           description: Advice for applying for the NSF Graduate Research Fellowship Program
@@ -581,6 +584,9 @@
           url: https://www.agu.org/Stay-Informed/Stay-Informed/Mass-Media-Fellowship
           description: AGU sponsors university students in the AAAS Mass Media Fellowship program, a 10-week summer internship at a traditional or online media outlet.
           tags: ["$7,000"]
+        - name: Research Grants and Scholarships for Undergraduates
+          url: https://futurerockdoc.com/undergraduate-scholarships
+          description: An evolving list put together by FutureRockDoc
     - title: Graduate Students
       resources:
         - name: NSF Graduate Research Fellowship Program (GRFP)
@@ -597,6 +603,9 @@
           url: https://www.agu.org/Stay-Informed/Stay-Informed/Mass-Media-Fellowship
           description: AGU sponsors university students in the AAAS Mass Media Fellowship program, a 10-week summer internship at a traditional or online media outlet.
           tags: ["$7,000"]
+        - name: Graduate student research grant list
+          url: https://futurerockdoc.com/grants-scholarships
+          description: an evolving list put together by FutureRockDoc
     - title: Post-Doctoral & Early Career
       resources:
         - name: NSF Office of Polar Programs (OPP)
@@ -657,8 +666,23 @@
         - name: Project MUSE - Faculty Time Allocations and Research Productivity
           url: https://muse.jhu.edu/article/30080#b31
           description: Gender, Race, and Family Effects
+        - name: Application Materials for Faculty Positions
+          url: https://career.ucsf.edu/gsp/faculty-samples#Understand-the-application-materials
+          description: UCSF collection of sample materials for faculty positions and guidance on how to write your own
+        - name: Writing a Research Plan
+          url: https://www.science.org/content/article/writing-research-plan-rev2
+          description: Science article on how to write a research statement for job applications. 
+        - name: The Effective Diversity Statement
+          url: https://www.insidehighered.com/advice/2016/06/10/how-write-effective-diversity-statement-essay
+          description: Tanya Golash-Boza gives faculty job applicants eight tips for writing a stellar diversity statement that stands out to search committees. 
+        - name: Rubric for Assessing Candidate Contributions to Diversity, Equity, Inclusion, and Belonging
+          url: https://ofew.berkeley.edu/recruitment/contributions-diversity/rubric-assessing-candidate-contributions-diversity-equity
+          description: A sample rubric for assessing DEI contributions from UC Berkeley 
     - title: Jobs
       resources:
+        - name: 2022-2023 Earth and Environmental Science Job List
+          url: https://docs.google.com/spreadsheets/d/16hLirj1RiVkmtAoXCuUSQF78aV9t95toBMf-MuQxrYU/edit?usp=sharing
+          description: A collaborative crowd-sourced list for tenure track faculty, postdoc, non-tenure track, and graduate student position jobs.
         - name: Becoming a Federal Scientist-A Guide to Applying for Jobs, Internships, and Fellowships
           url: https://www.ucsusa.org/resources/federal-science-jobs?fbclid=IwAR1UHlSPvSZv4EDr62JdECRzpVd4uextWWCroUh4f_iag7VmttKw86jCeWo
           description: Toolkit to help navigate the process of applying for government jobs.
@@ -794,8 +818,8 @@
     - title: Jobs
       resources:
         - name: LGBTQIA+ Outdoor/Environmental Job Seekers and Job posting broad
-          url: https://docs.google.com/spreadsheets/d/1GOdfg97K2MbCff00sIn3QqlMAu8gpeJl4Nx3iwuDqNw/edit?usp=sharing
-          description: A public google sheet to hire from or add your name to for potential hiring!
+          url: https://queeroutdoors.net
+          description: Job listing and job seeker boards to connect queer outdoor enthusiasts with job opportunities.
     - title: Community
       resources:
         - name: LGBTQ Outdoor
