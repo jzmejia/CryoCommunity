@@ -203,6 +203,23 @@
         - name: Fix The Gap
           url: https://www.youtube.com/watch?v=jgA_L6zsc2Y
           description: A Panel Discussion - 500 Women Scientists
+    - title: Polar Mailing Lists
+      resources:
+        - name: Cryolist
+          url: https://lists.cryolist.org/mailman/listinfo/cryolist
+        - name: Cryosphere Capsules
+          url: https://iccinet.org/category/cryosphere-capsules/
+        - name: Ice Drilling Program News
+          url: https://mailchi.mp/c5add8c77f8d/us-ice-drilling-program-sign-up-form
+        - name: Polar Education List
+          url: https://www.arcus.org/education/educationlist
+        - name: PSECCO Newsletter
+          url: https://psecco.org/join-psecco-community
+        - name: SCAR News
+          url: https://scar.us7.list-manage.com/subscribe?u=a611f6f7c375923d8563a8821&id=b964133964
+        - name: US-SCAR News
+          url: https://usfca.us10.list-manage.com/subscribe?u=f79d4a34707bcfa2b4d9ac6ed&id=ad381218df
+
 - tab: professionalDev
   items:
     - title: Media
@@ -299,6 +316,11 @@
         - name: FAIR
           url: https://www.go-fair.org/fair-principles/
           description: Guiding principles for scientific data management and stewardship.
+    - title: More
+      resources:
+        - name: Useful Antarctic links
+          url: https://usscar.org/useful-antarctic-links
+          description: A complation of websites useful to Antarctic Scientists.
 - tab: community
   items:
     - title: Polar
@@ -626,6 +648,27 @@
         - name: Sharing Science Grants for Science Communication & Outreach
           url: https://forms.agu.org/sharing-science-grants/
           description: AGU Helping sow the seeds of innovative SciComm
+    - title: U.S. Research Funding and support
+      resources:
+        - name: NSF Office of Polar Programs (OPP)
+          url: https://www.nsf.gov/div/index.jsp?div=OPP
+          description: The Office of Polar Programs promotes creative and innovative scientific research, engineering, and education in and about the polar regions.
+        - name: US Antarctic Program
+          url: https://www.usap.gov/
+          description:  USAP carries forward the Nation's goals of supporting the Antarctic Treaty, fostering cooperative research with other nations, protecting the Antarctic environment, and developing measures to ensure only equitable and wise use of resources.
+        - name: Ice Drilling Program (IDP)
+          url: https://icedrill.org/
+          description: “IDP is an NSF-funded facility. IDP conducts integrated planning for the ice drilling science and technology communities, and provides drilling technology and operational support that enables the community to advance the frontiers of climate and environmental science.
+        - name: NASA
+          url: https://science.nasa.gov/researchers/sara/grant-solicitations
+          description: National Aeronautics and Space Administration. NASA's Science Mission Directorate and ROSES or Research Opportunities in Space and Earth Science
+        - name: NOAA 
+          url: https://cpo.noaa.gov/Funding-Opportunities/
+          description: National Oceanic and Atmospheric Administration, see NOAAs Climate Program Office
+        - name: Polar Geospatial Center (PGC)
+          url: https://www.pgc.umn.edu/
+          description: The Polar Geospatial Center at the University of Minnesota provides geospatial support, mapping, and GIS/remote sensing solutions to researchers and logistics groups in the polar science community.
+
 - tab: applications
   items:
     - title: Letters of Recommendation
@@ -826,6 +869,14 @@
         - name: Native Land
           url: https://native-land.ca
           description: Interactive map of tribal lands with teaching resources
+    - title: Antarctica
+      resources:
+        - name: Antarctic Names
+          url: https://www.usgs.gov/us-board-on-geographic-names/antarctic-names
+          description: Formally recognized names from the U.S. Board on Geographic Names.
+        - name: SCAR Composite Gazetteer of Antarctica
+          url: https://data.aad.gov.au/aadc/gaz/scar/
+          description: “A searchable database of all Antarctic place-names from each country active in Antarctica including the names of features south of 60°S, both terrestrial and undersea or under-ice.
 - tab: LGBTQIA+
   items:
     - title: Jobs
