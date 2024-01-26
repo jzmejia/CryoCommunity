@@ -219,7 +219,6 @@
           url: https://scar.us7.list-manage.com/subscribe?u=a611f6f7c375923d8563a8821&id=b964133964
         - name: US-SCAR News
           url: https://usfca.us10.list-manage.com/subscribe?u=f79d4a34707bcfa2b4d9ac6ed&id=ad381218df
-
 - tab: professionalDev
   items:
     - title: Media
@@ -350,9 +349,6 @@
         - name: Women of Color Slack Channel
           url:
           description: Contact Onjalé (onjale.scott@gmail.com) for invite link
-        - name: Midwest And Random Straggelers Glaciology
-          url: https://join.slack.com/t/mgm-m2u3801/shared_invite/zt-wxvjkg8w-nKVIqdBPWMc78QFOh8rYYQ
-          description: Zoom meetings every other Friday! Contact us for invite to the slack channel.
         - name: International Glaciological Society
           url: https://www.igsoc.org/
           description: The IGS was founded in 1936 to provide a focus for individuals interested in practical and scientific aspects of snow and ice.
@@ -378,6 +374,23 @@
           twitter: polarsecco
           tags: [ECR]
           description: Polar Science Early Career Community Office
+        - name: ARCUS
+          url: https://www.arcus.org
+          description: Arctic Research Consortium of the U.S. 
+        - name: IASSA
+          url: https://iassa.org
+          tags: [Social Science]
+          description: International Arctic Social Sciences Association 
+        - name: IARPC collaborations
+          url: https://www.iarpccollaborations.org/index.html
+          tags: [Policy]
+          description: the Interagency Arctic Research Policy Committee
+        - name: CliC
+          url: https://climate-cryosphere.org
+          description: Climate & Cryosphere, a core project of the World Climate Research Program
+        - name: NNA-CO
+          url: https://nna-co.org
+          description: Navigating the New Arctic Community Office
         - name: UK Polar Network
           url: https://polarnetwork.org/
           twitter: UKPolarNetwork
@@ -401,6 +414,50 @@
         - name: Cryolist
           url: https://lists.cryolist.org/mailman/listinfo/cryolist
           description: CRYOLIST is a semi-moderated electronic mail distribution list intended to communicate information between those studying and with interests in snow, ice, and all things frozen. 
+        - name: International Permafrost Association
+          url: https://www.permafrost.org
+          tags: [Permafrost]
+          description: Promotes research in permafrost and permafrost related fields witin the global scientific and engineering communities
+        - name: USPA
+          url: https://www.uspermafrost.org
+          tags: [Permafrost]
+          description: U.S. Permafrost Association
+        - name: PYRN
+          url: https://www.permafrost.org/group/permafrost-young-researchers-network-pyrn/
+          tags: [permafrost, ECR]
+          description: Permafrost Young Researchers Network
+        - name: Permafrost Carbon Network
+          url: https://permafrostcarbon.org
+          tags: [Permafrost]
+          description: the PCN produces new knowledge through research synthesis to quantify the role of permafrost carbon in driving future climate change.
+        - name: UArctic
+          url: https://www.uarctic.org/about-us/
+          description: the University of the Arctic, a network of universities, colleges, research institutes, and other organizations concerned with education and research in and about the North.
+        - name: SPIN
+          url: https://www.arcus.org/sipn
+          tags: [sea ice]
+          description: Sea Ice Prediction Network
+        - name: SIWO 
+          url: https://www.arcus.org/siwo
+          tags: [sea ice]
+          description: Sea Ice for Walrus Outlook provides weekly reports during the spring sea ice season relevant to walrus in Alaska. 
+        - name: MiH-RCN 
+          url: https://migrationharmony.org
+          description: Migration in Harmony Research Coordination Network
+        - name: ELOKA
+          url: https://eloka-arctic.org
+          description: Exchange for Local Observations and Knowledge of the Arctic
+        - name: NAADSN
+          url: https://www.naadsn.ca
+          tags: [Arctic]
+          description: North American and Arctic Defence and Security Network
+        - name: ABOVE Arctic
+          url: https://above.nasa.gov
+          description: Arctic Boreal Vulnerability Experiment, NASA
+        - name: CryoCloud
+          url: https://cryointhecloud.com
+          description: Cloud computing for cryospheric scientists, join their community or their slack channel!
+        
     - title: Outdoor
       resources:
         - name: Melanin Base Camp
@@ -635,6 +692,9 @@
         - name: Graduate student research grant list
           url: https://futurerockdoc.com/grants-scholarships
           description: an evolving list put together by FutureRockDoc
+        - name: ARCUS Early Career Conference Funding Award
+          url: https://www.arcus.org/programs/early-career-funding
+          description: supports US-based early career researchers and students to participate in meetings and events relevant to Arctic research. Awards cover registration fees, session/abstract submission costs, travel, and other expenses of in-person conference attendance for one US-based conference or event. 
     - title: Post-Doctoral & Early Career
       resources:
         - name: NSF Office of Polar Programs (OPP)
@@ -643,6 +703,9 @@
         - name: NASA Internships and Fellowships
           url: https://www.nasa.gov/stem/fellowships-scholarships/index.html
           description: annual
+        - name: ARCUS Early Career Conference Funding Award
+          url: https://www.arcus.org/programs/early-career-funding
+          description: supports US-based early career researchers and students to participate in meetings and events relevant to Arctic research. Awards cover registration fees, session/abstract submission costs, travel, and other expenses of in-person conference attendance for one US-based conference or event. 
     - title: General
       resources:
         - name: Sharing Science Grants for Science Communication & Outreach
@@ -668,7 +731,6 @@
         - name: Polar Geospatial Center (PGC)
           url: https://www.pgc.umn.edu/
           description: The Polar Geospatial Center at the University of Minnesota provides geospatial support, mapping, and GIS/remote sensing solutions to researchers and logistics groups in the polar science community.
-
 - tab: applications
   items:
     - title: Letters of Recommendation
