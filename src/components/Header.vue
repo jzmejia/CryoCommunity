@@ -171,10 +171,11 @@ export default {
       collapse: false,
       items: [
         { title: "Home", path: "/" },
-        { title: "Our Team", path: "/team/" },
+        // { title: "Our Team", path: "/team/" },
         { title: "About", path: "/about/" },
-        { title: "Stem Census", path: "/census/"},
         { title: "Projects", path: "/projects/" },
+        { title: "VICE Squads", path: "/vice/"},
+        { title: "Stem Census", path: "/census/"},
         { title: "Resources", path: "/resources/" },
         { title: "Contact", path: "/contact/" },
       ],

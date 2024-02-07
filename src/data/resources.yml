@@ -456,8 +456,7 @@
           description: Arctic Boreal Vulnerability Experiment, NASA
         - name: CryoCloud
           url: https://cryointhecloud.com
-          description: Cloud computing for cryospheric scientists, join their community or their slack channel!
-        
+          description: Cloud computing for cryospheric scientists, join their community or their slack channel!    
     - title: Outdoor
       resources:
         - name: Melanin Base Camp
@@ -711,6 +710,9 @@
         - name: Sharing Science Grants for Science Communication & Outreach
           url: https://forms.agu.org/sharing-science-grants/
           description: AGU Helping sow the seeds of innovative SciComm
+        - name: APECS Funding database
+          url: https://www.apecs.is/career-resources/funding-database.html?resetfilters=0&clearordering=0&clearfilters=0
+          description: International and interdisciplinary database of funding resources
     - title: U.S. Research Funding and support
       resources:
         - name: NSF Office of Polar Programs (OPP)

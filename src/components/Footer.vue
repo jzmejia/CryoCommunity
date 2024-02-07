@@ -123,7 +123,7 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col
+        <!-- <v-col
           cols="12"
           lg="4"
           md="4"
@@ -132,7 +132,7 @@
           class="overflow-auto"
         >
           <Twitter />
-        </v-col>
+        </v-col> -->
       </v-row>
     </v-container>
   </v-footer>

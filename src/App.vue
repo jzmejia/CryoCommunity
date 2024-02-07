@@ -23,7 +23,7 @@ export default {
   components: {
     Header,
     Hero,
-    Banner: () => import("@/components/Banner"),
+    // Banner: () => import("@/components/Banner"),
     Footer,
   },
   metaInfo: {
