@@ -153,8 +153,8 @@ import ShareButtons from "~/components/ShareButtons";
         events: [
           {
             name: 'VICE Squad Introduction Meeting',
-            start: '2024-02-16T16:00:00',
-            end: '2024-02-02T17:00:00',
+            start: '2024-02-28T16:00:00',
+            end: '2024-02-28T17:00:00',
             timed: true,
             moreInformation: "",
           },
