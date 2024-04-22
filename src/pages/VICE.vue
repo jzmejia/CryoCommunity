@@ -93,7 +93,7 @@
           </div>
           <v-btn 
             varient="tonal"
-            href="https://join.slack.com/t/vicesquads/shared_invite/zt-2c233592t-NUxEWUxiapmhf38GtbCiEw"
+            href="https://join.slack.com/t/vicesquads/shared_invite/zt-2fo1ysjxx-jgatSVL0knF5TxXAk3x0xg"
           >join us on slack</v-btn>
           <div class="text-caption my-4"/>
           <v-divider />
@@ -155,6 +155,13 @@ import ShareButtons from "~/components/ShareButtons";
             name: 'VICE Squad Introduction Meeting',
             start: '2024-02-28T16:00:00',
             end: '2024-02-28T17:00:00',
+            timed: true,
+            moreInformation: "",
+          },
+          {
+            name: 'VICE Squad General Meeting',
+            start: '2024-04-25T10:00:00',
+            end: '2024-04-25T11:00:00',
             timed: true,
             moreInformation: "",
           },

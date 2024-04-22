@@ -221,6 +221,17 @@
           url: https://usfca.us10.list-manage.com/subscribe?u=f79d4a34707bcfa2b4d9ac6ed&id=ad381218df
 - tab: professionalDev
   items:
+    - title: Events, Workshops, and Webinars
+      resources: 
+        - name: PSECCO Events and workshops
+          url: https://psecco.org/events
+          description: Polar Science Early Career Community Office Professional Development Events and Workshop Series
+        - name: APECS Webinars
+          url: https://www.apecs.is/career-resources/webinar-archive.html
+          description: Arctic Science Seminars
+        - name: APECS Polar and Alpine Events Calendar
+          url: https://www.apecs.is/events/polar-and-alpine-events-calendar.html
+          description: Upcomming Arctic and Polar Science Events
     - title: Media
       resources:
         - name: AAAS Communicating Science Workshop
@@ -958,6 +969,11 @@
           description: by A. Parris
 - tab: presentations
   items:
+    - title: Online Talks
+      resources:
+        - name: Mathematics on Ice
+          url: https://sites.google.com/view/mathematics-on-ice/home?authuser=0
+          description: Meets once a month to discuss mathematical aspects of ice dynamics and bring together the community in an informal online atmosphere.  
     - title: Accessible Figures
       resources:
         - name: Is your presentation accessible?
