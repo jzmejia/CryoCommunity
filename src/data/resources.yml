@@ -55,6 +55,10 @@
           url: https://github.com/ehultee/snowball-demo
           description: Class demonstration of Climlab for a Snowball Earth case study by Dr. Lizz Ultee
           tags: [Jupyter, Python, Climlab, GitHub]
+        - name: PolarToolkit
+          url: https://polartoolkit.rtfd.io/
+          description: Python package for downloading, plotting, and interacting with common polar datasets
+          tags: [Python, Jupyter]
     - title: Modules
       resources:
         - name: Antarctic Ice Sheet-past and present
