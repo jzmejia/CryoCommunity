@@ -13,6 +13,14 @@ tags:
     - Grad
 documents:
 ---
+## An expressed need for a gear sharing space
+
+A need for connection to resources regarding gear sharing, packing lists, and a list of local used gear shops was expressed at the last West Antarctic Ice Sheet meeting (WAIS23) by members of the cryosphere community in attendance. To address this need, I am developing a webpage through CryoCommunity with support from Jessica Meija and Mariama Dryak with the Polar Science Early Career Community Office ([PSECCO][https://psecco.org/]) that will directly connect individuals seeking to borrow gear to those willing to lend gear. Additionally, any region or discipline-specific packing lists for fieldwork are being collected in a separate Google sheet and made available to the community. In April 2024, I presented the preliminary vision for this effort at the Colorado Glaciology Meeting (see below). 
+
+![](/static/gearsharing_poster.png)
+
+The data shared below was collected from anonymous individuals *(n=25)* that volunteered their time to complete a survey regarding gear needs and willingness to share gear. The survey was shared through CryoCommunity and PSECCO social media, cryolist, and the Colorado Glaciology listserv. 
+
 ## CryoCommunity Gear Sharing and Borrowing Interest Survey Results
 
 These summarized survey results will inform next steps in the development of a webpage that will connect individuals seeking to borrow field gear with individuals willing to lend field gear. This shared community space will also include packing lists for region-specific field work, locations of affordable used or repaired gear in cities across the United States, and lists of ProDeal and other discounts afforded to field-going polar scientists.
