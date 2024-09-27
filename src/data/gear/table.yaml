@@ -1,0 +1,41 @@
+headers:
+  - text: "Name"
+    align: start
+    sortable: true
+    divider: true
+    value: "name"
+
+  - text: "URL"
+    align: start
+    sortable: false
+    value: "url"
+  - text: "Status"
+    align: start
+    sortable: false
+    value: "status"
+  - text: "Location"
+    align: start
+    sortable: true
+    value: "location"
+  - text: "Contact"
+    align: start
+    sortable: false
+    value: "contact"
+
+data:
+  - name: "Fairbanks items"
+    url: "https://apple.com"
+    status: status
+    location: Fairbanks, AK
+  - name: "Buffalo items"
+    url: ""
+    status: status
+    location: Buffalo, NY
+  - name: "Tampa items"
+    url: ""
+    status: status
+    location: Tampa, FL
+  - name: "Dallas items"
+    url: ""
+    status: status
+    location: Dallas, TX

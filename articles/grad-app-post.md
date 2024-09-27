@@ -1,5 +1,5 @@
 ---
-preview_image: "/uploads/D24CA937-9C4C-461F-8425-541CF0A3B9F8_1_105_c.jpeg"
+preview_image: "./images/grad-app-post.jpeg"
 author: Malisse Lummus, Asmara Lehrmann, and the MARS Pod Participants
 title: Applying to Graduate School in the Geosciences
 subtitle: 

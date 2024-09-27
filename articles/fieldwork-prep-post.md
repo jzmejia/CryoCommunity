@@ -1,5 +1,5 @@
 ---
-preview_image: "/uploads/celia-drill.jpeg"
+preview_image: "./images/celia-drill.jpeg"
 author: MARS Pod Participants
 title: Preparing for Fieldwork
 subtitle: Resources for remote and cold environments

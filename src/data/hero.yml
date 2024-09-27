@@ -1,10 +1,12 @@
-hero:
-  heroImgSrc: "/static/ice.jpg"
-  heroLogo: "/static/cryocommunity_logo_black-thick_outline.png"
-  heroTitle: CryoCommunity
-  heroSubtitle: fostering inclusivity within the cryospheric sciences
-buttons:
+backgroundImage: "./images/ice.jpg"
+logo: "./images/cryocommunity_logo_light.png"
+title: CryoCommunity
+subtitle: fostering inclusivity within the cryospheric sciences
+links:
+  - name: "Career Stage"
+    url: "/career/"
+    icon: "search"
   - name: About Us
-    link: /about/
-  - name: Recent
-    link: /projects/
+    url: /about/
+  - name: Recent Projects
+    url: /projects/

@@ -1,5 +1,5 @@
 ---
-preview_image: "/uploads/join-us-online.jpg"
+preview_image: "./images/join-us-online.jpg"
 author: J. Mejia
 title: Introducing VICE Squads
 subtitle: Virtual Ice Community Engagement Squads

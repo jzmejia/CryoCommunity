@@ -1,34 +1,50 @@
 <template>
   <v-app>
-    <Header />
-    <v-main>
-      <v-fade-transition mode="out-in" group>
-        <Banner key="1" v-if="$route.path === '/'" />
-        <Hero key="2" v-if="$route.path === '/'" />
-      </v-fade-transition>
-      <v-fade-transition mode="out-in">
-        <router-view />
-      </v-fade-transition>
+    <Header :collapse.sync="collapse" />
+    <NavigationDrawer :collapse.sync="collapse" />
+    <Banner v-if="showBanner" />
+    <v-main style="min-height: 95vh">
+      <router-view />
     </v-main>
     <Footer />
   </v-app>
 </template>
 
+<static-query>
+  query {
+    metadata {
+      bannerStatus
+    }
+  }
+</static-query>
+
 <script>
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
+import Header from "~/components/Header";
+
 export default {
   name: "App",
-  components: {
-    Header,
-    Hero,
-    // Banner: () => import("@/components/Banner"),
-    Footer,
-  },
   metaInfo: {
     title: "Loading",
-    titleTemplate: "%s | CryoCommunity",
+    titleTemplate: "CryoCommunity",
+  },
+  components: {
+    Header,
+    NavigationDrawer: () => import("~/components/NavigationDrawer"),
+    Banner: () => import("~/components/Banner"),
+    Footer: () => import("~/components/Footer"),
+  },
+  data: () => ({
+    collapse: false,
+  }),
+  computed: {
+    showBanner() {
+      return this.$route.path === "/" && this.$static.metadata.bannerStatus;
+    },
+  },
+  watch: {
+    $route(to, from) {
+      this.collapse = false;
+    },
   },
 };
 </script>
@@ -41,21 +57,12 @@ h4,
 h5 {
   font-family: "Poppins", sans-serif;
 }
+
 /* body {
   font-family: "Hind", sans-serif;
 } */
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 250ms;
-}
-
-.fade-enter-active {
-  transition-delay: 250ms;
-}
-
-.fade-enter,
-.fade-leave-active {
-  opacity: 0;
+svg {
+  position: sticky;
 }
 </style>

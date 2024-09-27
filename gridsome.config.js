@@ -1,22 +1,48 @@
 // project configuration and plugin options
+// const VuetifyLoaderPlugin = require("vuetify-loader/lib/plugin");
+
 module.exports = {
   siteName: "CryoCommunity",
   siteDescription: "fostering inclusivity within the cryospheric sciences",
   siteUrl: "https://cryocommunity.org/",
-  icon: './src/assets/favicon/apple-touch-icon.png',
+  icon: "./src/assets/favicon/apple-touch-icon.png",
   templates: {
     Article: "/projects/:title",
     Tag: "/tag/:id",
   },
+  metadata: {
+    // Display an important message below the navbar of the website.
+    // Restart server in dev.
+    bannerStatus: false,
+  },
+  // images: {
+  //   compress: false // disables image compression
+  // },
+
+  // configureWebpack: {
+  //   plugins: [new VuetifyLoaderPlugin()],
+  // },
+
+  chainWebpack: (config) => {
+    const svgRule = config.module.rule("svg");
+    svgRule.uses.clear();
+    svgRule.use("vue-svg-loader").loader("vue-svg-loader");
+  },
   plugins: [
-    {
-      use: "gridsome-plugin-gtag",
-      options: {
-        config: {
-          id: process.env.GOOGLE_ANALYTICS_ID,
-        },
-      },
-    },
+    // {
+    //   use: "gridsome-plugin-htaccess",
+    //   options: {
+    //     textCompression: ["text/html"],
+    //   },
+    // },
+    // {
+    //   use: "gridsome-plugin-gtag",
+    //   options: {
+    //     config: {
+    //       id: process.env.GOOGLE_ANALYTICS_ID,
+    //     },
+    //   },
+    // },
     {
       use: "@gridsome/source-filesystem",
       options: {
@@ -26,6 +52,7 @@ module.exports = {
         remark: {
           externalLinksTarget: "_blank",
           externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+          plugins: [["gridsome-plugin-remark-youtube", { align: "auto" }]],
         },
         refs: {
           tags: {
@@ -59,6 +86,18 @@ module.exports = {
         },
       },
     },
+    // {
+    //   use: "@gridsome/source-filesystem",
+    //   options: {
+    //     path: "src/data/resource/**/*.yml",
+    //     typeName: "Resource",
+    //     resolveAbsolutePaths: true,
+    //     remark: {
+    //       externalLinksTarget: "_blank",
+    //       externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+    //     },
+    //   },
+    // },
     {
       use: "@gridsome/source-filesystem",
       options: {
@@ -71,18 +110,18 @@ module.exports = {
         },
       },
     },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'blog/**/*.md',
-        route: '/blog/:year/:month/:day/:slug',
-        remark: {
-          plugins: [
-            ['gridsome-plugin-remark-youtube']
-          ]
-        }
-      }
-    },
+    // {
+    //   use: '@gridsome/source-filesystem',
+    //   options: {
+    //     path: 'blog/**/*.md',
+    //     route: '/blog/:year/:month/:day/:slug',
+    //     remark: {
+    //       plugins: [
+    //         ['gridsome-plugin-remark-youtube']
+    //       ]
+    //     }
+    //   }
+    // },
     // {
     //   use: `gridsome-plugin-netlify-cms`,
     //   options: {
@@ -104,6 +143,15 @@ module.exports = {
     //   },
     // },
   ],
+
+  // css: {
+  //   loaderOptions: {
+  //     scss: {
+  //       prependData: '@import "./src/style/styles.scss";'
+  //     }
+  //   }
+  // },
+
   transformers: {
     remark: {
       plugins: ["@gridsome/remark-prismjs"],
