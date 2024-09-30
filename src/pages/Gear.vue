@@ -14,13 +14,15 @@
           <p>
             A need for connection to resources regarding gear sharing, packing lists, 
             and a list of local used gear shops.
-            To address this need, we are collaborating with CryoCommunity
-            and Mariama Dryak with the Polar Science Early Career Community 
+            To address this need, CryoCommunity
+            is collaborating with the Polar Science Early Career Community 
             Office <g-link to="https://psecco.org/">PSECCO</g-link> to develop 
             a gear sharing database through that will directly connect individuals 
             seeking to borrow gear to those willing to lend gear. 
-            Additionally, any region or discipline-specific packing lists for fieldwork 
-            are being collected in a separate Google sheet and made available to the community. 
+            Additionally, region or discipline-specific packing lists for fieldwork 
+            are available in a separate Google sheet linked below to increase accessibility in the              Cryosphere community. 
+
+            If you would like to share gear or packing lists, additional links are available below              to contribute to these community resources.
           </p>
           </div>
 
@@ -32,7 +34,7 @@
             varient="elevated"
             rounded="lg"
           >
-            <v-card-title>Request</v-card-title>
+            <v-card-title>Request Gear or Equipment</v-card-title>
             <v-card-subtitle>browse our database of available gear or make a request to the community</v-card-subtitle>
             <v-list-item>
               <v-list-item-content>
@@ -52,7 +54,7 @@
             varient="tonal"
             rounded="lg"
           >
-            <v-card-title>Lend</v-card-title>
+            <v-card-title>Lend Gear or Equipment</v-card-title>
             <v-list-item link lines="two">
               contribute
             </v-list-item>
