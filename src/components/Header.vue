@@ -4,11 +4,10 @@
   }" :color="dark ? '#121212d0' : '#ffffffd0'" flat clipped-right>
     <v-avatar to="/" left rounded height="34" width="30">
       <g-image :src="dark
-        ? '/cryocommunity_logo_dark.png'
-        : '/cryocommunity_logo_light.png'
+        ? logo_dark
+        : logo
         " immediate />
     </v-avatar>
-
     <g-link to="/" class="text-decoration-none text--primary text-h5 font-weight-bold">
       {{ $static.metadata.siteName }}
     </g-link>
@@ -53,11 +52,18 @@ query {
   metadata {
     siteName
   }
-  pages: allPage {
-    path
+  hero: allHero {
+    edges {
+      node {
+        logo
+        logo_dark
+      }
+    }
   }
 }
 </static-query>
+
+
 
 <script>
 export default {
@@ -74,6 +80,7 @@ export default {
   },
   data() {
     return {
+      // logos: {},
       items: [
         { title: "Home", path: "/" },
         // { title: "Our Team", path: "/team/" },
@@ -87,6 +94,12 @@ export default {
     };
   },
   computed: {
+    logo_dark(){
+      return this.$static.hero.edges[0].node.logo_dark
+    },
+    logo(){
+      return this.$static.hero.edges[0].node.logo
+    },
     dark() {
       return this.$vuetify.theme.dark;
     },

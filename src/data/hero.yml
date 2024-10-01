@@ -1,5 +1,6 @@
 backgroundImage: "./images/ice.jpg"
 logo: "./images/cryocommunity_logo_light.png"
+logo_dark: "./images/cryocommunity_logo_dark.png"
 title: CryoCommunity
 subtitle: fostering inclusivity within the cryospheric sciences
 links:

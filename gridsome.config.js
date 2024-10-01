@@ -1,5 +1,5 @@
 // project configuration and plugin options
-// const VuetifyLoaderPlugin = require("vuetify-loader/lib/plugin");
+const VuetifyLoaderPlugin = require("vuetify-loader/lib/plugin");
 
 module.exports = {
   siteName: "CryoCommunity",
@@ -15,15 +15,8 @@ module.exports = {
     // Restart server in dev.
     bannerStatus: false,
   },
-  // images: {
-  //   compress: false // disables image compression
-  // },
-
-  // configureWebpack: {
-  //   plugins: [new VuetifyLoaderPlugin()],
-  // },
-
   chainWebpack: (config) => {
+    config.plugin("vuetify-loader").use(VuetifyLoaderPlugin);
     const svgRule = config.module.rule("svg");
     svgRule.uses.clear();
     svgRule.use("vue-svg-loader").loader("vue-svg-loader");

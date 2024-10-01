@@ -6,8 +6,8 @@
         <v-col cols="12" lg="9" align="center">
           <v-avatar class="mx-auto" rounded height="180" width="160">
             <g-image :src="dark
-                ? './cryocommunity_logo_dark.png'
-                : './cryocommunity_logo_light.png'
+                ? logo_dark
+                : logo
               " />
           </v-avatar>
           <div class="mx-lg-3 px-lg-8 my-8 text-lg-h6 text-center text-h6">
@@ -58,6 +58,12 @@ export default {
     Hero
   },
   computed: {
+    logo_dark(){
+      return this.$page.hero.edges[0].node.logo_dark
+    },
+    logo(){
+      return this.$page.hero.edges[0].node.logo
+    },
     dark() {
       return this.$vuetify.theme.dark;
     },
@@ -67,6 +73,14 @@ export default {
 
 <page-query>
   query AllArticle ($page: Int) {
+      hero: allHero {
+        edges {
+          node {
+            logo
+            logo_dark
+          }
+        }
+      }
       projects: allArticle ( perPage: 2, page: $page, filter: { published: { eq: true }}) @paginate {
         totalCount
         pageInfo {

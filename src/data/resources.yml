@@ -1114,7 +1114,7 @@
 
 
 # - tab: inequity
-#   image: /static/podcast.png
+#   image: ./images/podcast.png
 #   items:
 #     - title: Gender
 #       resources:

@@ -5,7 +5,7 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 // const nodeExternals = require('webpack-node-externals')
-const VuetifyLoaderPlugin = require("vuetify-loader/lib/plugin");
+// const VuetifyLoaderPlugin = require("vuetify-loader/lib/plugin");
 // const fs = require("fs");
 // const yaml = require("js-yaml");
 
@@ -36,9 +36,12 @@ const VuetifyLoaderPlugin = require("vuetify-loader/lib/plugin");
 // };
 
 module.exports = (api) => {
-  api.chainWebpack((config, { isServer }) => {
-    config.plugin("vuetify-loader").use(VuetifyLoaderPlugin);
-  });
+  // api.chainWebpack((config, { isServer }) => {
+  //   config.plugin("vuetify-loader").use(VuetifyLoaderPlugin);
+  //   const svgRule = config.module.rule("svg");
+  //   svgRule.uses.clear();
+  //   svgRule.use("vue-svg-loader").loader("vue-svg-loader");
+  // });
 
   // const options = { ...defaultOptions };
   // api.loadSource(async (actions) => {

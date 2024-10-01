@@ -20,7 +20,7 @@
     <template v-slot:item="{ item }">
       <v-list-item :href="item.url" target="_default">
         <v-list-item-content>
-          <v-list-item-title class="text-wrap text-capitalize font-weight-bold">
+          <v-list-item-title class="text-wrap text-capitalize">
             {{ item.name }}
           </v-list-item-title>
           <v-list-item-subtitle class="text-wrap text-capitalize">
