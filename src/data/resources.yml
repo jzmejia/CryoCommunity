@@ -1,6 +1,6 @@
 - tab: Teaching
   slug: teaching
-  image: ./images/teaching.png
+  image: /teaching.png
   items:
     - title: Content
       resources:
@@ -134,7 +134,7 @@
           description: Georgia Tech School of Earth and Atmospheric Sciences
 - tab: Fieldwork
   slug: fieldwork
-  image: ./images/fieldwork.jpg
+  image: /fieldwork.jpg
   items:
     - title: Guides
       resources:
@@ -241,7 +241,7 @@
           description: The need to address harassment in field campaigns is growing more urgent. A new workshop provides scientists with a broad set of tools to create more inclusive, safe, and functional field teams.
 - tab: Community
   slug: community
-  image: ./images/community.png
+  image: /community.png
   items:
     - title: Polar
       resources:
@@ -546,7 +546,7 @@
           description: by J. Lowndes, C. Kappel, & J. Brun
 - tab: Glacier Names
   slug: glacier-names
-  image: ./images/glacier-names.jpg
+  image: /glacier-names.jpg
   items:
     - title: Greenland
       resources:
@@ -580,7 +580,7 @@
           description: “A searchable database of all Antarctic place-names from each country active in Antarctica including the names of features south of 60°S, both terrestrial and undersea or under-ice.
 - tab: Applications and Hiring
   slug: applications-and-hiring
-  image: ./images/applications-and-hiring.png
+  image: /applications-and-hiring.png
   items:
     - title: Letters of Recommendation
       resources:
@@ -653,7 +653,7 @@
           tags: [ECR]
 - tab: Funding Opportunities
   slug: funding-opportunities
-  image: ./images/funding-opportunities.png
+  image: /funding-opportunities.png
   items:
     - title: Advice
       resources:
@@ -765,7 +765,7 @@
           description: The Polar Geospatial Center at the University of Minnesota provides geospatial support, mapping, and GIS/remote sensing solutions to researchers and logistics groups in the polar science community.
 - tab: Professional Development
   slug: professional-development
-  image: ./images/professional-development.png
+  image: /professional-development.png
   items:
     - title: Events, Workshops, and Webinars
       resources: 
@@ -879,7 +879,7 @@
           description: A complation of websites useful to Antarctic Scientists.
 - tab: Core Work Resources
   slug: core-work-resources
-  image: ./images/core-work-resources.png
+  image: /core-work-resources.png
   items:
     - title: Code of conduct
       resources:
@@ -971,7 +971,7 @@
           url: https://usfca.us10.list-manage.com/subscribe?u=f79d4a34707bcfa2b4d9ac6ed&id=ad381218df
 - tab: Presentations
   slug: presentations
-  image: ./images/presentations.png
+  image: /presentations.png
   items:
     - title: Online Talks
       resources:
@@ -1054,7 +1054,7 @@
           description:
 - tab: Science Communication
   slug: science-communication
-  image: ./images/science-communication.png
+  image: /science-communication.png
   items: 
     - title: Guides
       resources:
@@ -1114,7 +1114,7 @@
 
 
 # - tab: inequity
-#   image: ./images/podcast.png
+#   image: /podcast.png
 #   items:
 #     - title: Gender
 #       resources:

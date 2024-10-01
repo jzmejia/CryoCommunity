@@ -21,7 +21,7 @@
           <v-row>
             <v-col v-for="(key, index) in footerMenu" cols="6" :key="index">
               <div v-for="(link, idx) in key" :key="idx">
-                <g-link :to="link.path" class="caption black--text text-decoration-none text-uppercase"
+                <g-link :to="link.path" class="caption text--primary text-decoration-none text-uppercase"
                   exact-active-class="primary--text">
                   {{ link.title }}
                 </g-link>

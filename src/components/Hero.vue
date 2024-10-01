@@ -1,6 +1,6 @@
 <template>
 
-  <v-parallax :src="hero.backgroundImage.src" height="1000" style="height: 100vh">
+  <v-parallax :src="hero.backgroundImage" height="1000" style="height: 100vh">
     <div class="text-center">
       <v-avatar rounded height="180" width="160">
         <g-image :src="hero.logo" />

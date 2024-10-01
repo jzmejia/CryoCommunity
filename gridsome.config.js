@@ -54,7 +54,7 @@ module.exports = {
       options: {
         path: "src/data/hero.yml",
         typeName: "Hero",
-        resolveAbsolutePaths: true,
+        // resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
           externalLinksRel: ["nofollow", "noopener", "noreferrer"],
@@ -90,7 +90,7 @@ module.exports = {
       options: {
         path: "src/data/resources.yml",
         typeName: "Resource",
-        resolveAbsolutePaths: true,
+        // resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
           externalLinksRel: ["nofollow", "noopener", "noreferrer"],
