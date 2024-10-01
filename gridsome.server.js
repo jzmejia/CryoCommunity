@@ -12,29 +12,28 @@ const VuetifyLoaderPlugin = require("vuetify-loader/lib/plugin");
 // const fileContents = fs.readFileSync("./src/data/resources2.yml", "utf8");
 // const resources = yaml.load(fileContents);
 
-const { readFile, access, ensureDirSync } = require("fs-extra");
-const createImage = require("node-html-to-image");
-const generateHtml = require("./functions/generateHtml");
+// const { readFile, access, ensureDirSync } = require("fs-extra");
+// const createImage = require("node-html-to-image");
+// const generateHtml = require("./functions/generateHtml");
 
-const defaultOptions = {
-  typeName: "Article", // This should be the typeName noted above 📝
-  // 👇🏻 Each background will randomly have one of these colors
-  backgroundColors: [
-    "#0014FF",
-    "#06283D",
-    "#1363DF",
-    "#001D6E",
-    "#2D31FA",
-    "#051367",
-    "#0028FF",
-  ],
+// const defaultOptions = {
+//   typeName: "Article", // This should be the typeName noted above 📝
+//   backgroundColors: [
+//     "#0014FF",
+//     "#06283D",
+//     "#1363DF",
+//     "#001D6E",
+//     "#2D31FA",
+//     "#051367",
+//     "#0028FF",
+//   ],
 
-  imgWidth: 1024, // The width of your cover image
-  imgHeight: 512, // The height of your cover image
-  border: true, // I hard coded this to true in my html
-  domain: "cryocommunity.org", // Edmund includes this in their generated images
-  outputDir: "covers", // Where the cover images should be generated to
-};
+//   imgWidth: 1024, // The width of your cover image
+//   imgHeight: 512, // The height of your cover image
+//   border: true, // I hard coded this to true in my html
+//   domain: "cryocommunity.org", // Edmund includes this in their generated images
+//   outputDir: "covers", // Where the cover images should be generated to
+// };
 
 module.exports = (api) => {
   api.chainWebpack((config, { isServer }) => {
