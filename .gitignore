@@ -11,7 +11,9 @@ yarn-error.log
 yarn.lock
 dist
 functions/
-uploads/
 dist/
 covers/
 .github/
+
+# Local Netlify folder
+.netlify

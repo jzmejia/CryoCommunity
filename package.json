@@ -26,10 +26,11 @@
   "devDependencies": {
     "@mdi/font": "^7.4.47",
     "deepmerge": "^4.3.1",
+    "fibers": "^5.0.3",
     "gridsome-plugin-htaccess": "^0.2.1",
     "js-yaml": "^4.1.0",
-    "sass": "^1.79.2",
-    "sass-loader": "^7.3.1",
+    "sass": "^1.79.4",
+    "sass-loader": "7.3.1",
     "vue-svg-loader": "^0.16.0",
     "vuetify-loader": "^1.9.2",
     "webpack-bundle-analyzer": "^4.10.2",

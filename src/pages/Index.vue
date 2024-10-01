@@ -6,16 +6,16 @@
         <v-col cols="12" lg="9" align="center">
           <v-avatar class="mx-auto" rounded height="180" width="160">
             <g-image :src="dark
-                ? './cryocommunity_logo_dark.avif'
-                : './cryocommunity_logo_light.avif'
+                ? './cryocommunity_logo_dark.png'
+                : './cryocommunity_logo_light.png'
               " />
           </v-avatar>
           <div class="mx-lg-3 px-lg-8 my-8 text-lg-h6 text-center text-h6">
             <!-- <v-img
               :src="
                 dark
-                  ? './cryocommunity_logo_dark.avif'
-                  : './cryocommunity_logo_light.avif'
+                  ? './cryocommunity_logo_dark.png'
+                  : './cryocommunity_logo_light.png'
               "
               width="200"
             /> -->

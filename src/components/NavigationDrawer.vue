@@ -10,8 +10,8 @@
         
         :src="
           dark
-            ? '/cryocommunity_logo_dark.avif'
-            : '/cryocommunity_logo_light.avif'
+            ? '/cryocommunity_logo_dark.png'
+            : '/cryocommunity_logo_light.png'
         "
         immediate
       />

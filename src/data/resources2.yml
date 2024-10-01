@@ -1125,7 +1125,7 @@
           description: The Sharing Science Community is a community of science communication and policy-interested folks.
 
 # - tab: inequity
-#   image: /static/podcast.avif
+#   image: /static/science-communication.png
 #   items:
 #     - title: Gender
 #       resources:
@@ -1133,7 +1133,7 @@
 #           url: https://blogs.egu.eu/divisions/cr/2019/03/08/bridging-the-crevasse-working-toward-gender-equity-in-the-cryosphere/
 #           description: by Elizabeth Case, Violaine Coulon, and Florence Isaacs, March 2019
 # - tab: LGBTQIA+
-#   image: /podcast.avif
+#   image: /science-communication.png
 #   items:
 #     - title: Jobs
 #       resources:
