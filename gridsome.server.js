@@ -36,7 +36,6 @@ const defaultOptions = {
   outputDir: "covers", // Where the cover images should be generated to
 };
 
-
 module.exports = (api) => {
   api.chainWebpack((config, { isServer }) => {
     config.plugin("vuetify-loader").use(VuetifyLoaderPlugin);

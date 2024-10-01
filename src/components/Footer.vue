@@ -2,7 +2,7 @@
   <v-footer class="px-0" :color="dark ? '' : 'grey lighten-5'">
     <v-container>
       <v-row justify="center">
-        <v-col cols="12" lg="3" class="mb-4 text-right" :order="mobile ? 'first' : 'last'">
+        <v-col cols="12" lg="3" class="text-right" :order="mobile ? 'first' : 'last'">
           <div class="text-h6">join the community</div>
           <v-btn icon href="https://twitter.com/CryoCommunity">
             <TwitterIcon aria-hidden />
@@ -18,31 +18,32 @@
           </v-btn>
         </v-col>
         <v-col cols="12" lg="6" md="8" sm="12">
-          <v-row justify="space-between">
+          <v-row>
             <v-col v-for="(key, index) in footerMenu" cols="6" :key="index">
               <div v-for="(link, idx) in key" :key="idx">
-                <g-link class="caption text-decoration-none text-uppercase" :to="link.path">
+                <g-link :to="link.path" class="caption black--text text-decoration-none text-uppercase"
+                  exact-active-class="primary--text">
                   {{ link.title }}
                 </g-link>
               </div>
             </v-col>
-          </v-row>
 
-          <v-row>
-            <v-col class="caption mt-4" cols="auto" lg="8">
-              <div class="d-inline-flex align-center">
-                <CodeIcon />with
-                <HeartIcon class="pink--text" />by
-                <g-link class="mx-1" href="https://github.com/jzmejia/">J. Mejia</g-link>
-                and
-                <g-link class="mx-1" href="https://twitter.com/LummusMalisse">M. Lummus</g-link>
-              </div>
-              <div>
-                &copy; {{ new Date().getFullYear() }} {{ $static.metadata.siteName }}
+            <v-col cols="12">
+              <div class="caption mt-4">
+                <div class="d-flex align-center">
+                  <CodeIcon />with
+                  <HeartIcon class="pink--text" />by
+                  <g-link class="mx-1" href="https://github.com/jzmejia/">J. Mejia</g-link>
+                  and
+                  <g-link class="mx-1" href="https://twitter.com/LummusMalisse">M. Lummus</g-link>
+                </div>
+                <div class="d-flex align-center">
+                  <v-icon x-small class="black--text mr-1">mdi-copyright</v-icon>
+                  {{ new Date().getFullYear() }} {{ $static.metadata.siteName }}
+                </div>
               </div>
             </v-col>
           </v-row>
-
         </v-col>
         <!-- <v-col
           cols="12"
@@ -79,12 +80,6 @@ export default {
     HeartIcon: () => import("~/assets/svgs/heart.svg"),
   },
   data: () => ({
-    valid: true,
-    email: "",
-    emailRules: [
-      (v) => !!v || "E-mail is required",
-      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
-    ],
     icons: [
       {
         icon: "fab fa-twitter",
@@ -95,7 +90,7 @@ export default {
       sitemap: [
         { title: "Home", path: "/" },
         { title: "About", path: "/about" },
-        { title: "Team", path: "/team" },
+        // { title: "Team", path: "/team" },
         { title: "STEM Census", path: "/census" },
         { title: "Projects", path: "/projects" },
         { title: "Resources", path: "/resources" },

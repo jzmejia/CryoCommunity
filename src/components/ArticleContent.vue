@@ -26,11 +26,12 @@ export default {
   margin-inline-end: 0px;
   font-family: "Hind", sans-serif;
 }
-.article-text >>> img {
+
+.article-text>>>img {
   width: 100%;
 }
 
-.article-text >>> h2 {
+.article-text>>>h2 {
   padding-bottom: 1rem;
   text-transform: capitalize;
 }

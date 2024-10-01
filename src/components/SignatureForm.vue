@@ -7,7 +7,6 @@
         data-netlify-honeypot="bot-field"
         @submit.prevent="handleSubmit"
       >
-
         <v-text-field
           v-model="formData.name"
           name="name"
@@ -39,7 +38,7 @@
         ></v-text-field>
         <!-- data-netlify-recaptcha="true" -->
         <!-- <div data-netlify-recaptcha="true"></div> -->
-        
+
         <input type="hidden" name="form-name" value="signature" />
 
         <p hidden>
@@ -72,14 +71,6 @@ export default {
     ],
     affilRules: [(v) => !!v || "Message is required"],
   }),
-  computed: {
-    smAndDown() {
-      return this.$vuetify.breakpoint.smAndDown;
-    },
-    dark() {
-      return this.$vuetify.theme.dark;
-    },
-  },
   methods: {
     handleSubmit() {
       this.loading = true;

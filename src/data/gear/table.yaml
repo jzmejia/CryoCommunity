@@ -4,11 +4,14 @@ headers:
     sortable: true
     divider: true
     value: "name"
-
-  - text: "URL"
+  - text: "Email"
+    align: start
+    sortable: true
+    value: "email"
+  - text: "Institution"
     align: start
     sortable: false
-    value: "url"
+    value: "institution"
   - text: "Status"
     align: start
     sortable: false
@@ -17,10 +20,30 @@ headers:
     align: start
     sortable: true
     value: "location"
-  - text: "Contact"
+
+  - text: "Items Needed"
     align: start
     sortable: false
-    value: "contact"
+    value: "items_needed"
+
+  - text: "Date Start"
+    align: start
+    sortable: false
+    value: "date_end"
+  - text: "Dates End"
+    align: start
+    sortable: false
+    value: "date_end"
+
+  - text: "Size"
+    align: start
+    sortable: false
+    value: "additional_info"
+
+  # - text: "URL"
+  #   align: start
+  #   sortable: false
+  #   value: "url"
 
 data:
   - name: "Fairbanks items"
