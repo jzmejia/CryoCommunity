@@ -30,12 +30,6 @@ module.exports = {
   },
   plugins: [
     // {
-    //   use: "gridsome-plugin-htaccess",
-    //   options: {
-    //     textCompression: ["text/html"],
-    //   },
-    // },
-    // {
     //   use: "gridsome-plugin-gtag",
     //   options: {
     //     config: {
