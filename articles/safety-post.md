@@ -1,5 +1,5 @@
 ---
-preview_image: "/uploads/Dronbreen_sunrise.jpg"
+preview_image: "./images/dronbreen_sunrise.jpg"
 author: MARS Pod Participants
 title: Developing a Safety Plan
 subtitle: for the wide-range of working environments in glaciology

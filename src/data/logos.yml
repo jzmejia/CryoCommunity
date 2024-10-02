@@ -1,4 +1,4 @@
 vice:
-  imgSrc: "/static/ViceSquad_logo_square_color.jpg"
-  logo: "/static/vice.png"
+  imgSrc: "/vice_logo_square_color.jpg"
+  logo: "/vice.png"
   name: Vice Squads

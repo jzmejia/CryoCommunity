@@ -1,5 +1,5 @@
 ---
-preview_image: "/uploads/on-computer.jpg"
+preview_image: "./images/on-computer.jpg"
 author: MARS Pod Participants
 title: Is your presentation accessibe?
 subtitle: Best practices for creating an accessible talk or poster presentation
@@ -46,7 +46,8 @@ For **digital poster presentations** ensure you provide alt text and/or descript
 
 Below are suggestions on what font, text size, line spacing and more.
 
-<img src="https://lh3.googleusercontent.com/XN6ATtQ7Q_NxH5Eb_ZMiAZI6Wh61nClqWKHyx10vhIly8lzEOKmswVEAxjQOzldyCJ_q5W6dTznM0fn5wS8ArPzhpDq4vfhUxnOz=w1064-v0" width="758"/>
+![](https://lh3.googleusercontent.com/XN6ATtQ7Q_NxH5Eb_ZMiAZI6Wh61nClqWKHyx10vhIly8lzEOKmswVEAxjQOzldyCJ_q5W6dTznM0fn5wS8ArPzhpDq4vfhUxnOz=w1064-v0)
+
 
 #### Font Choice
 
