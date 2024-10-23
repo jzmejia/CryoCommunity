@@ -10,7 +10,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/jzmejia/cryocommunity?color=lightblue)
 
 
-<img src="/src/assets/cc_logo_horizontal_color.png" width="400">
+<img src="/src/assets/images/cc_logo_horizontal_color.png" width="400">
 
 ![Twitter URL](https://img.shields.io/twitter/url?label=%40CryoCommunity&style=social&url=https%3A%2F%2Ftwitter.com%2FCryoCommunity)
 

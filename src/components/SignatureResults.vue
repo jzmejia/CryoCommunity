@@ -11,8 +11,8 @@
       reverse
       :class="dark ? 'dark-wrapper' : 'light-wrapper'"
     >
-      <template v-for="(item, index) in shuffledSignatures">
-        <v-list-item :key="index">
+      <!-- <template v-for="(item, idx) in shuffledSignatures" :key="idx"> -->
+        <v-list-item v-for="(item, idx) in shuffledSignatures" :key="idx">
           <v-list-item-icon class="align-self-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,9 +43,9 @@
         <v-divider
           inset
           :class="dark ? 'grey darken-4' : 'grey lighten-5'"
-          :key="`divider-${index}`"
         />
-      </template>
+        <!-- :key="`divider-${idx}`" -->
+      <!-- </template> -->
     </dynamic-marquee>
   </v-list>
 </template>

@@ -27,7 +27,6 @@ export default {
     title: 'Success',
   },
 };
-
 </script>
 
 

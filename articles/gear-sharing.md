@@ -1,5 +1,5 @@
 ---
-preview_image: "/static/ropeteam.jpg"
+preview_image: "./images/ropeteam.jpg"
 author: Marion McKenzie
 title: New Gear Sharing Program
 subtitle:  Interest Survey Results
@@ -15,9 +15,10 @@ documents:
 ---
 ## An expressed need for a gear sharing space
 
+
 A need for connection to resources regarding gear sharing, packing lists, and a list of local used gear shops was expressed at the last West Antarctic Ice Sheet meeting (WAIS23) by members of the cryosphere community in attendance. To address this need, I am developing a webpage through CryoCommunity with support from Jessica Meija and Mariama Dryak with the Polar Science Early Career Community Office [PSECCO](https://psecco.org/) that will directly connect individuals seeking to borrow gear to those willing to lend gear. Additionally, any region or discipline-specific packing lists for fieldwork are being collected in a separate Google sheet and made available to the community. In April 2024, I presented the preliminary vision for this effort at the Colorado Glaciology Meeting (see below).
 
-<!-- ![](/static/gearsharing_poster.jpg) -->
+![Gearsharing Post Image](./images/gearsharing_poster.jpg)
 
 The data shared below was collected from anonymous individuals *(n=25)* that volunteered their time to complete a survey regarding gear needs and willingness to share gear. The survey was shared through CryoCommunity and PSECCO social media, cryolist, and the Colorado Glaciology listserv.
 
@@ -33,7 +34,7 @@ The development of this shared resource is meant to *address a gap in field acce
 
 The word cloud below represents the type of gear survey respondents (n=25) are looking to borrow (n=22) vs. lend (n=20). The majority of respondents indicated the gear they would lend is new, slightly, or well used (94.7%).
 
-![](/static/gearsharing_survey.png)
+![](./images/gearsharing_survey.png)
 
 Borrowers (n=22) would need to use gear for a length of time between 1 week and 1 month (50%), between 1 and 3 months (45.5%), or for more than 3 months (4.5%). Lenders (n=20) are willing to share gear for 1 week to 1 month (4.5%), between 1 and 3 months (40%), for more than 3 months (15%), or noted the length of time for lending would depend on the situation (40%).
 

@@ -1,0 +1,64 @@
+headers:
+  - text: "Name"
+    align: start
+    sortable: true
+    divider: true
+    value: "name"
+  - text: "Email"
+    align: start
+    sortable: true
+    value: "email"
+  - text: "Institution"
+    align: start
+    sortable: false
+    value: "institution"
+  - text: "Status"
+    align: start
+    sortable: false
+    value: "status"
+  - text: "Location"
+    align: start
+    sortable: true
+    value: "location"
+
+  - text: "Items Needed"
+    align: start
+    sortable: false
+    value: "items_needed"
+
+  - text: "Date Start"
+    align: start
+    sortable: false
+    value: "date_end"
+  - text: "Dates End"
+    align: start
+    sortable: false
+    value: "date_end"
+
+  - text: "Size"
+    align: start
+    sortable: false
+    value: "additional_info"
+
+  # - text: "URL"
+  #   align: start
+  #   sortable: false
+  #   value: "url"
+
+data:
+  - name: "Fairbanks items"
+    url: "https://apple.com"
+    status: status
+    location: Fairbanks, AK
+  - name: "Buffalo items"
+    url: ""
+    status: status
+    location: Buffalo, NY
+  - name: "Tampa items"
+    url: ""
+    status: status
+    location: Tampa, FL
+  - name: "Dallas items"
+    url: ""
+    status: status
+    location: Dallas, TX

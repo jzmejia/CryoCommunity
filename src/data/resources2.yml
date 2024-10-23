@@ -1,0 +1,1150 @@
+- tab: Teaching
+  slug: teaching
+  image: /teaching.png
+  items:
+    - title: Content
+      resources:
+        - name: GeoContext
+          url: https://geo-context.github.io
+          description: a social and political context for geoscience education
+        - name: GeoSci
+          url: https://geosci.xyz/
+          description: This site contains open, tutorials and course materials covering topics including data integration, GIS and data intensive science.
+          tags: [Python, R, GIS]
+        - name: EarthPy
+          url: http://earthpy.org
+          description: open-source Python package helping users use spatial data
+          tags: [Python]
+        - name: EarthLab
+          url: https://earthlab.colorado.edu/our-work/teaching-and-learning-earth-data-science
+          description: data-intensive open, reproducible environmental science
+        - name: Earth Data Science
+          url: https://www.earthdatascience.org/
+          description: courses, tutorials, and tools
+          tags: [Python, R]
+        - name: SeismoLive
+          url: https://krischer.github.io/seismo_live_build/tree/index.html
+          description: Jupyter notebooks for seismology
+          tags: [Jupyter]
+        - name: Glacier and Ice Sheet Dynamics (EAS 4803/8803) at Georgia Tech
+          url: https://github.com/aarobel/GlaciologyClass
+          description: The github repository includes slides, notes and code demonstrations. - Alex Robel and Winnie Chu
+          tags: [Jupyter, Python, MATLAB, github]
+        - name: OpenGeology
+          url: https://opengeology.org
+          description: Free open educational resources for the geosciences
+        - name: Open Global Glacier Model Jupyter Notebook Collection
+          url: https://oggm.org/oggm-edu-notebooks/welcome.html
+          description: Flowline models, surface mass balance, graphics, water resources, and more.
+          tags: [Jupyter, Python]
+        - name: Awesome Cryosphere
+          url: https://github.com/awesome-cryosphere/cryosphere-links
+          description: A prototype of a curated list of awesome data sources, models, tools and organizations related to the Cryosphere and its subspheres.
+          tags: [Python, Jupyter, Awesome]
+        - name: Open Global Glacier Model course implementation
+          url: https://github.com/ehultee/oggm_course_implementation
+          description: Documentation for the use of OGGM-Edu materials in an upper-level undergraduate course by Dr. Lizz Ultee, including  problem sets with solutions.
+          tags: [Jupyter, GitHub, OGGM-Edu]
+        - name: Lab notebooks based on Open Global Glacier Model (OGGM) resources
+          url: https://github.com/ehultee/glaciology-labs
+          description: Lab notebooks based on OGGM-Edu resources, developed for GEOL362, Glaciology, at Middlebury College by Dr. Lizz Ultee
+          tags: [Jupyter, GitHub, Binder, OGGM-Edu]
+        - name: CdeC-glaciologica
+          url: https://github.com/ehultee/CdeC-glaciologia
+          description: Cuadernos Jupyter que usaba el club "Glaciología y recursos hídricos" de Clubes de Ciencia Perú 2019.
+          tags: [Jupyter, Python, Español, Binder, OGGM-Edu]
+        - name: Snowball Earth demo
+          url: https://github.com/ehultee/snowball-demo
+          description: Class demonstration of Climlab for a Snowball Earth case study by Dr. Lizz Ultee
+          tags: [Jupyter, Python, Climlab, GitHub]
+        - name: PolarToolkit
+          url: https://polartoolkit.rtfd.io/
+          description: Python package for downloading, plotting, and interacting with common polar datasets
+          tags: [Python, Jupyter]
+    - title: Modules
+      resources:
+        - name: Antarctic Ice Sheet-past and present
+          url: http://www.iceocean.org/educational-products.html
+          description: An educational module for high-school and introductory-college students focused on changes in the Antarctic Ice Sheet from 20,000 years ago to the present.
+        - name: Virtual Field Experience-Glaciers
+          url: https://opengeology.org/historicalgeology/virtual-field-experiences-vfes/vfe-glaciers/
+          description: Glaciers, glacial sediments, and glacial geomorphology virtual field experience
+        - name: Antarctic Glaciers
+          url: http://www.antarcticglaciers.org/students-3/
+          description: Glaciers and Glaciation in Antarctica and beyond
+        - name: Course Materials from the International Summer School in Glaciology
+          url: https://glaciers.gi.alaska.edu/content/course-material
+          description: Reading, course notes, exercises, and course materials
+        - name: Open Global Glacier Model
+          url: https://edu.oggm.org/en/latest/
+          description: Tools and materials for instructors who want to teach about glaciers
+        - name: Steal this (updated) syllabus for Scientific Writing
+          url: https://scientistseessquirrel.wordpress.com/2020/05/26/steal-this-updated-syllabus-for-scientific-writing/
+          description: a syllabus for a scientific writing course
+        - name: PROMICE
+          url: https://promice.org/greenland-ice-sheet/
+          description: Greenland Ice Sheet mass balance and weather station data.
+        - name: Steal this (updated) syllabus for Scientific Writing
+          url: https://scientistseessquirrel.wordpress.com/2020/05/26/steal-this-updated-syllabus-for-scientific-writing/
+          description: Syllabus and course materials for a scientific writing class.
+        - name: Science writing lectures and course materials
+          url: https://www.dropbox.com/s/aiq617idg2nx26p/SIO-Fricker-Science_writing_lectures.zip?dl=0
+          description: from Dr. Helen Fricker
+    - title: Tools
+      resources:
+        - name: ABC-classroom
+          url: https://www.earthdatascience.org/tools/abc-classroom/
+          description: A suite of Python command-line utilities that makes it easier to manage a class using GitHub classroom.
+          tags: [Python]
+        - name: matplotcheck
+          url: https://www.earthdatascience.org/tools/matplotcheck/
+          description: Matplotcheck is a Python package that makes it easier to test plots. It can be used to support autograding Python homework assignments.
+          tags: [Python]
+        - name: nbgrader
+          url: https://nbgrader.readthedocs.io/en/stable/
+          description: Jupyter tool that allows creating and grading assignments in a Jupyter notebook.
+          tags: [Jupyter]
+        - name: The Measure of Things
+          url: https://themeasureofthings.com/
+          description: A search engine for finding comparative or relative measurements of physical quantities
+    - title: Reading
+      resources:
+        - name: Diversity & Inclusive Teaching
+          url: https://crlt.umich.edu/multicultural-teaching/inclusive-teaching-strategies
+          description: by University of Michigan Center for Research on Learning and Teaching
+        - name: How to be an anti-racist educator
+          url: https://www.ascd.org/el/articles/how-to-be-an-antiracist-educator
+          description: by Dena Simmons
+        - name: CIRTL Network resources for inclusive teaching
+          url: https://www.cirtl.net/resources/topics/60
+          description: by the CITRL Network
+        - name: Remote Academia 2020
+          url: https://docs.google.com/document/d/1Ke3r6dAJwGnHQC229X5V7fDRx8fBuvPaEOFy4MeUr3Q/edit
+          description: by Princeton CITP
+        - name: Creating Inclusive Virtual Spaces
+          url: https://serc.carleton.edu/advancegeo/resources/virtual.html
+          description: by Olivia Lopez, University of Wisconsin-Madison
+        - name: IPCC Special Report
+          url: https://www.ipcc.ch/srocc/
+          description: on the ocean and cryosphere in a changing climate
+    - title: Best Practices
+      resources:
+        - name: Ten simple rules for building an antiracist lab
+          url: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008210
+          description: by V. Bala Chaudhary and Asmeret Asefaw Berhe
+        - name: Recommendations for Best Practices for Promoting a Safe, Educational, and Inclusive Atmosphere when Off-campus with Trainees
+          url: https://eas.gatech.edu/sites/default/files/documents/GT_EAS%20Field%20Guidance%20and%20Resources.pdf
+          description: Georgia Tech School of Earth and Atmospheric Sciences
+
+- tab: Fieldwork
+  slug: fieldwork
+  image: /fieldwork.png
+  items:
+    - title: Guides
+      resources:
+        - name: Safety and belonging in the field
+          url: https://eartharxiv.org/repository/view/2607/
+          description: A Checklist for Educators
+        - name: A curly haired adventurer’s guide to the outdoors
+          url: https://www.melaninbasecamp.com/trip-reports/2019/6/9/curly-haired-adventurers-guide-to-the-outdoors
+          description: by Nadia Mercado. Tips from 9 contributors with curl types ranging from 3b-4c. Tips cover short and long trips, styles, products, styling under helmets, and more
+        - name: Tips & tricks for going to the bathroom and other bodily functions in the field
+          url: https://docs.google.com/document/d/1Ml_3SFCe1jNSeFjK_B_y9m7Ig5_Awa2fbnFE5kRVTew/edit?usp=sharing
+          description: by Dr. Chris Carr
+        - name: How to pee in the woods and other field hacks
+          url: https://futurerockdoc.com/blog/2020/6/27/how-to-pee-in-the-woods-and-other-field-camp-hacks
+          description: Tips from future rock doc
+        - name: Menstruation in the field
+          url: https://www.antarcticglaciers.org/2022/09/menstruation-in-the-field/
+          description: Tips and advice for managing menstruation in the field for both people who menstruate and fieldwork leaders
+        - name: Toilet stops in the field
+          url: https://drive.google.com/file/d/15mLZgZWQvBXQRU_ok7OqnpUmxKObgwAm/view?fbclid=IwAR2l_LPe_Z4YNl0vFLxOzk8_Q-fKb93qaeRcr3_6pGXy61Sv3U-BOkovH_U--
+          description: An educational primer and recommended best practices for field-based teaching.
+        - name: Doing fieldwork as a female
+          url: https://jocelynesze.wordpress.com/2017/05/05/doing-fieldwork-as-a-female/
+          description: by J. Sze
+        - name: 7 cold weather tips for staying warm this winter
+          url: https://www.melaninbasecamp.com/trip-reports/2021/1/9/new-tips-for-staying-warm-this-winter
+          description: by Favia Dubyk
+        - name: 3 hiking tips from an African-American naturalist
+          url: https://www.melaninbasecamp.com/trip-reports/2020/2/16/african-american-naturalist-iris-hill-3-things-about-hiking
+          description: a conversation with Iris Hill, Conservation Biologist. by D. Williams
+        - name: A Black introvert’s guide to conflict and alpine climbing
+          url: https://www.melaninbasecamp.com/trip-reports/2019/8/31/10-things-i-hate-about-you-a-black-introverts-guide-to-conflict-and-alpine-climbing
+          description: by R. Ross
+    - title: Planning And Leadership
+      resources:
+        - name: MARS pod Field Safety Plan
+          url: https://drive.google.com/file/d/1FvIhT3j3fuRzFPag05JL0WNx4DdLFgfq/view?usp=sharing
+          description: Deliverable developed by the MARS URGE pod.
+        - name: 10 steps to protect BIPOC scholars in the field
+          url: https://eos.org/opinions/ten-steps-to-protect-bipoc-scholars-in-the-field
+          description: by Dr. Hendratta Ali
+        - name: Practical field guide
+          url: https://eu-interact.org/app/uploads/2019/09/INTERACT-Practical-Field-Guide.pdf
+          description: by INTERACT, the Internatioinal Network for Terrestrial Research and Monitoring in the Arctic
+        - name: Safe fieldwork strategies for at-risk individuals, their supervisors and institutions
+          url: https://www.nature.com/articles/s41559-020-01328-5.pdf
+          description: Demery and Pipkin (2021)
+        - name: 6 simple steps to make fieldwork more accessible and inclusive
+          url: https://geoscienceforthefuture.com/six-simple-steps-to-make-fieldwork-more-accessible-and-inclusive/
+          description: by A. Lawrence
+        - name: Field operations safety manual
+          url: https://www.ucop.edu/safety-and-loss-prevention/environmental/program-resources/field-research-safety/index.html
+          description: UC Field Research Safety
+        - name: Best practices for trip leaders
+          url: https://www.ucop.edu/safety-and-loss-prevention/environmental/program-resources/field-research-safety/chapter-4.html
+          description: 
+        - name: Example Field Safety Plan
+          url: https://ehs.berkeley.edu/field-research#fieldsafetyplan
+          description: UC Berkeley
+        - name: 2021 Fieldwork Toolkit Leadership Training Series
+          url: https://training.ucr.edu/fieldworkleadership
+          description: from UCR
+        - name: Barriers to fieldwork in undergraduate geoscience degrees
+          url: https://www.nature.com/articles/s43017-020-0022-5
+          description: Giles et al., (2020) in Nature Reviews Earth & Environment
+        - name: Report of the Workshop to Promote Safety in Field Sciences
+          url: https://zenodo.org/record/5841983#.YppIdC-B1He
+          description: by A. Kelly, and K. Yarincik (2022). The document outlines 52 recommendations targeted at imporoving field science culture change, misconduct acountability, policy, and reporting. 
+        - name: Strategies to build a positive and inclusive Antarctic field work environment.
+          url: https://www.cambridge.org/core/journals/annals-of-glaciology/article/strategies-to-build-a-positive-and-inclusive-antarctic-field-work-environment/840743FBE62420DFBE889FF69F4913F5?utm_campaign=shareaholic&utm_medium=copy_link&utm_source=bookmark
+          description: M. S. Karplus et al., 2023. Annals of Glaciology
+    - title: Gear
+      resources:
+        - name: AntarticGlaciers
+          url: http://www.antarcticglaciers.org/2013/05/how-to-prepare-for-an-expedition/
+          description: How to enjoy a successful fieldwork expedition
+        - name: The Greenland Ice Sheet's ablation area
+          url: https://docs.google.com/spreadsheets/d/1pndV7wCpn_rtS9ayMouxbZSs_n6jSVgGinuKr_3pM7Y/edit?usp=sharing
+          description: checklist for summer fieldwork, by V. Siegel
+        - name: A Broke Girl’s Guide to Getting Gear, Part I
+          url: https://www.melaninbasecamp.com/trip-reports/2018/1/28/ballin-on-a-budget?rq=Broke%20girl
+          description: by Nadia Mercado
+        - name: A Broke Girl’s Guide to Getting Gear, Part II
+          url: https://www.melaninbasecamp.com/trip-reports/2021/4/1/a-broke-girls-guide-to-getting-gear-part-2
+          description: by Nadia Mercado
+        - name: A Complete Guide to Used Outdoor Gear Stores
+          url: https://alwaystheadventure.com/sustainability/used-gear-stores#NorthCarolina=
+          description: by Always the Adventure
+    - title: Opportunities
+      resources:
+        - name: International Summer School in Glaciology
+          url: https://glaciers.gi.alaska.edu/courses/summerschool
+          description: Bi-annual, 2 week long program held in June in McCarthy, AK. Applications due in January of program year. Open to graduate students worldwide (MSc or PhD). Most costs are covered and travel grants are available.
+        - name: The University Centre in Svalbard (UNIS)
+          url: https://www.unis.no
+          description: For undergraduates and graduate students with a wide range of course offerings
+        - name: Juneau Icefield Research Program (JIRP)
+          url: https://juneauicefield.org
+          description: annual, variable lengths over summer (June-August). Undergrad & Grad student participants (for college credit), with opportunties for faculty, reserchers, and staff
+    - title: Culture
+      resources:
+        - name: Changing the Culture of Fieldwork in the Geosciences
+          url: https://eos.org/features/changing-the-culture-of-fieldwork-in-the-geosciences
+          description: The need to address harassment in field campaigns is growing more urgent. A new workshop provides scientists with a broad set of tools to create more inclusive, safe, and functional field teams.
+
+- tab: Community
+  slug: community
+  image: /community.png
+  items:
+    - title: Polar
+      resources:
+        - name: Ice & Snow Graduate Student Community
+          url: https://spark.adobe.com/page/3cE3p3Ys2p63T/?w=19_406
+          description: A slack workspace for graduate students in the cryospheric sciences.
+        - name: Earth Science Women's Network Discussion Group
+          url: https://www.facebook.com/groups/ESWNDiscussionGroup
+          description: A Facebook discussion group
+        - name: Pride in Polar
+          url: https://thereader.500queerscientists.com/pride-in-polar/
+          twitter: PridePolar
+          description: Pride in Polar Research, established in 2018 to support & bring together marginalized queer professionals in Polar Science. 🏳️‍🌈🐧❄️
+          tags: [LGBTQIA+]
+        - name: Polar Impact. Minorities in Polar Research
+          url: https://www.polarimpactnetwork.org
+          twitter: PolarImpact
+          description: An inclusive network of racial & ethnic minorities and allies in the polar research community.
+        - name: Accessibility in Polar Research
+          url: https://linktr.ee/accesspolar
+          twitter: accesspolar
+          description: A group of disabled researchers promoting accessibility in the polar field through awareness and resource creation 🇦🇶
+        - name: Minoritized Genders in the Cryosphere Slack Channel
+          url: https://join.slack.com/t/cryowomen/shared_invite/zt-w7dpmekx-aknn5VYFdxTiiq6fqtmlow
+          description: email cryospherecommunity@gmail.com or jzmejia@buffalo.edu for an invite link
+        - name: Women of Color Slack Channel
+          url:
+          description: Contact Onjalé (onjale.scott@gmail.com) for invite link
+        - name: International Glaciological Society
+          url: https://www.igsoc.org/
+          description: The IGS was founded in 1936 to provide a focus for individuals interested in practical and scientific aspects of snow and ice.
+        - name: IACS
+          url: https://cryosphericsciences.org/
+          twitter: iacscryo
+          description: International Association of Cryospheric Sciences (IACS). Science of glaciers, sea ice, snow, ice sheets, permafrost, planetary ice, and more.
+        - name: AGU Cryosphere
+          url: https://connect.agu.org/cryosphere/home
+          twitter: AGU_Cryo
+          description: American Geophysical Union - Cryosphere
+        - name: EGU Cryosphere
+          url: https://www.egu.eu/cr/home/
+          twitter: EGU_CR
+          description: Cryospheric Division (CR) of the EGU
+        - name: APECS
+          url: https://www.apecs.is/
+          twitter: Polar_Research
+          tags: [ECR]
+          description: Association of Polar Early Career Scientists
+        - name: PSECCO 
+          url: https://t.co/azDRUSt0If
+          twitter: polarsecco
+          tags: [ECR]
+          description: Polar Science Early Career Community Office
+        - name: ARCUS
+          url: https://www.arcus.org
+          description: Arctic Research Consortium of the U.S. 
+        - name: IASSA
+          url: https://iassa.org
+          tags: [Social Science]
+          description: International Arctic Social Sciences Association 
+        - name: IARPC collaborations
+          url: https://www.iarpccollaborations.org/index.html
+          tags: [Policy]
+          description: the Interagency Arctic Research Policy Committee
+        - name: CliC
+          url: https://climate-cryosphere.org
+          description: Climate & Cryosphere, a core project of the World Climate Research Program
+        - name: NNA-CO
+          url: https://nna-co.org
+          description: Navigating the New Arctic Community Office
+        - name: UK Polar Network
+          url: https://polarnetwork.org/
+          twitter: UKPolarNetwork
+          description: UK branch of APECS, representing early career polar researchers. We run networking, workshops, E&O events.
+        - name: CryoConnect
+          url: https://cryoconnect.net
+          twitter: CryoConnect
+          description: Cryo Connect links experts to others with a professional interest in the cryosphere.
+        - name: Women in the Arctic and Antarctic
+          url: https://womeninthearcticandantarctic.ca/
+          twitter: arctic_in
+          description: Promoting info sharing, networking & women in Northern, Arctic & Antarctic research & representation
+        - name: ICYS 
+          url: https://pastglobalchanges.org/science/end-aff/icys
+          twitter: ICYSci
+          description: Ice Core Young Scientists
+        - name: Plan A.
+          url: http://www.genderisnotplanb.com/
+          twitter: PlanArctic
+          description: Gender is not plan B in the arctic. Plan A. serves as a digital storytelling platform, showcasing the personal and professional stories of women who live and work in, as well as engage with the Arctic. It also seeks to highlight and promote the inclusion of broader gender perspectives in all aspects of northern life and policy.
+        - name: Cryolist
+          url: https://lists.cryolist.org/mailman/listinfo/cryolist
+          description: CRYOLIST is a semi-moderated electronic mail distribution list intended to communicate information between those studying and with interests in snow, ice, and all things frozen. 
+        - name: International Permafrost Association
+          url: https://www.permafrost.org
+          tags: [Permafrost]
+          description: Promotes research in permafrost and permafrost related fields witin the global scientific and engineering communities
+        - name: USPA
+          url: https://www.uspermafrost.org
+          tags: [Permafrost]
+          description: U.S. Permafrost Association
+        - name: PYRN
+          url: https://www.permafrost.org/group/permafrost-young-researchers-network-pyrn/
+          tags: [permafrost, ECR]
+          description: Permafrost Young Researchers Network
+        - name: Permafrost Carbon Network
+          url: https://permafrostcarbon.org
+          tags: [Permafrost]
+          description: the PCN produces new knowledge through research synthesis to quantify the role of permafrost carbon in driving future climate change.
+        - name: UArctic
+          url: https://www.uarctic.org/about-us/
+          description: the University of the Arctic, a network of universities, colleges, research institutes, and other organizations concerned with education and research in and about the North.
+        - name: SPIN
+          url: https://www.arcus.org/sipn
+          tags: [sea ice]
+          description: Sea Ice Prediction Network
+        - name: SIWO 
+          url: https://www.arcus.org/siwo
+          tags: [sea ice]
+          description: Sea Ice for Walrus Outlook provides weekly reports during the spring sea ice season relevant to walrus in Alaska. 
+        - name: MiH-RCN 
+          url: https://migrationharmony.org
+          description: Migration in Harmony Research Coordination Network
+        - name: ELOKA
+          url: https://eloka-arctic.org
+          description: Exchange for Local Observations and Knowledge of the Arctic
+        - name: NAADSN
+          url: https://www.naadsn.ca
+          tags: [Arctic]
+          description: North American and Arctic Defence and Security Network
+        - name: ABOVE Arctic
+          url: https://above.nasa.gov
+          description: Arctic Boreal Vulnerability Experiment, NASA
+        - name: CryoCloud
+          url: https://cryointhecloud.com
+          description: Cloud computing for cryospheric scientists, join their community or their slack channel!    
+    - title: Outdoor
+      resources:
+        - name: Melanin Base Camp
+          url: https://www.melaninbasecamp.com/
+          description: Your home base for diversity in outdoor adventure sports.
+        - name: Outdoor Afro
+          url: https://outdoorafro.com/
+          description: A network that celebrates and inspires Black connections and leadership in nature. Leadership networks are nationwide in 42 cities. Participation and leadership opportunities (plus leadership training)
+        - name: Diversify Outdoors
+          url: https://diversifyoutdoors.com
+          description: A coalition of social media influencers who share the goal of promoting diversity in outdoor spacers where people of color, LGBTQIA+, and other diverse identities have historically been underrepresented.
+        - name: Indigenous Women Hike
+          url: http://www.project562.com/blog/hiking-the-nueuemue-poyo-an-act-of-love-by-indigenous-women/
+          description:
+        - name: Native Women's Wilderness
+          url: https://www.nativewomenswilderness.org
+          description: Created to bring Native women together to share our stories, support each other, and learn from one another as we endeavor to explore and celebrate the wilderness and our native lands.
+        - name: Indigenous Womxn Climb
+          url: https://www.indigenouswomxnclimb.com
+          description: is a virtual and Land-based volunteer community dedicated to self-determination and representation of Indigenous Womxn/non-binary and Two-Spirit climbers in the outdoors.
+        - name: LatinXhikers
+          url: http://www.latinxhikers.org
+          description: A grassroots initative dedicated to breaking down barriers in the outdoors by creating access, providing representation, & empowering community
+        - name: Brown Girls Climb
+          url: https://www.browngirlsclimb.com
+          description: accessible and affordable climbing memberships for women and femmes of color climbers
+        - name: List of LGBTQ+ outdoors leaders and organizations
+          url: https://www.montana.edu/communitydevelopment/rainbows/OutdoorLeaders.pdf
+          description:
+        - name: Map of LGBTQ+ outdoors meetup groups
+          url: https://gis.tws.org/LGBTQ/local-perspective-master/index.html
+          description: Find local LGBTQ+ and ally outdoor groups in the US and Canada
+        - name: Outdoor Asian
+          url: https://www.outdoorasian.com
+          description: Creating a community of Asian & Pacific Islanders in the outdoors
+        - name: Fat Girls Hiking
+          url: https://fatgirlshiking.com
+          description: a fat activism, body liberation & outdoor community
+        - name: Brothers of Climbing
+          url: http://boccrew.com
+          description: presented by REI.
+        - name: GirlTrek
+          url: https://www.girltrek.org
+          description: In the footsteps of a civil rights legacy, GirlTrek is a national health movement that activates thousands of Black women to be change makers in their lives and communities — through walking.
+        - name: Get Out Stay Out/Vamos Afuera
+          url: http://vamosafuera.org
+          description: a grassroots, Central Coast nonprofit, that invites Indigenous Migrant youth to run, play, and discover themselves in the natural environment.
+        - name: Flash Foxy
+          url: https://www.flashfoxy.com
+          description: A celebration of, and resource for, women and genderqueer climbers.
+        - name: Black Girls Do Bike
+          url: https://www.blackgirlsdobike.org
+          description: Our interest is in growing and supporting a community of women of color who share a passion for cycling.
+    - title: Professional
+      resources:
+        - name: GeoLatinas
+          url: https://geolatinas.weebly.com/
+          description: Latinas in Earth and Planetary Sciences
+        - name: SACNAS
+          url: https://www.sacnas.org/
+          description: Society for Advancing Chicanos/Hispanics & Native Americans in Science
+        - name: AISES
+          url: https://www.aises.org/
+          description: American Indian Science and Engineering Society
+        - name: Geoscience Alliance
+          url: https://geosciencealliance.wordpress.com/
+          description: Native Americans in Geoscience
+        - name: AAWG
+          url: http://www.aawg.org
+          description: African Association of Women in Geosciences
+        - name: Black in Geoscience
+          url: https://blackingeoscience.org/
+          twitter: BlkinGeoscience
+          description: To support & amplify Black Geo, Earth & Planetary ScientistsEarth globe americas
+          tags: [BlackInGeoscience, BiGeo, BlackGeoscientist]
+        - name: Black Geoscientists
+          url: https://blackgeoscientists.com/
+          description:
+        - name: Asian Americans & Pacific Islanders in Geosciences
+          url: https://www.aapigeosci.org/
+          twitter: aapigeosci
+          description: AAPIiG is a grassroots organization committed to building a community for AAPIs in geosciences.
+          tags: [AAPI]
+        - name: GAIA
+          url: https://www.gaia-netwerk.nl/home
+          description: Network for Women in Earth Sciences
+        - name: NABGG
+          url: https://www.americangeosciences.org/society/national-association-black-geoscientists
+          description: National Association for Black Geoscientists and Geophysicists
+        - name: NABG
+          url: http://www.nabg-us.org
+          description: National Association of Black Geoscientists
+        - name: SCWIST
+          url: https://scwist.ca/
+          description: Society for Canadian Women in Science and Technology
+        - name: ESWN
+          url: https://eswnonline.org/
+          description: Earth Science Women Network
+        - name: AWG
+          url: https://www.awg.org/
+          description: Association for Women Geoscientists
+        - name: AAAS
+          url: https://www.aaas.org/
+          description: American Association for the Advancement of Science
+        - name: SOLESS
+          url: https://ciresdiversity.colorado.edu/soless
+          description: Society of Latinx/Hispanics in Earth & Space Sciences
+        - name: MAES
+          url: https://mymaes.org/
+          description: Society of Mexican American Engineers and Scientists
+        - name: GSA
+          url: https://www.geosociety.org/
+          description: Geological Society of America
+        - name: IAGD
+          url: https://theiagd.org/
+          description: International Association for Geoscience Diversity
+        - name: National Consortium for Graduate Degrees for Minorities in Engineering and Science
+          url: https://www.gemfellowship.org/
+          description:
+        - name: International Association for Geoscience Diversity (IAGD)
+          url: https://theiagd.org/
+        - name: WGC
+          url: https://www.wgcanada.org
+          description: Women Geoscientists in Canada
+        - name: NSBE
+          url: https://www.nsbe.org/Programs/Graduate-School/Explore/Graduate-student-life/Mentoring.aspx#.YIL5B6lKj0o
+          description: National Society of Black Engineer
+    - title: More
+      resources:
+        - name: Academics for Black Survival and Wellness
+          url: https://www.academics4blacklives.com/about
+          description: Guided by a Black feminist frame, we hope to foster accountability and growth for non-Black people and enhance healing and wellness for Black people.
+        - name: The Geoscience Alliance
+          url: https://geosciencealliance.org
+          description: Broadening participation of Native Americans in the Geosciences
+        - name: HBCU Geoscience working group
+          url: https://serc.carleton.edu/integrate/about/hbcu_working_group.html
+          description:
+        - name: Queer and in STEM
+          url: https://queerinstem.org/
+          description:
+        - name: QTSTEM
+          url: https://www.ioes.ucla.edu/project/queer-and-trans-in-stem/
+          description: Queer and Trans in STEM
+        - name: 500 Women Scientists
+          url: https://500womenscientists.org/
+          description:
+        - name: 500 Queer Scientists
+          url: https://500queerscientists.com/
+          description:
+        - name: oSTEM
+          url: https://www.ostem.org/
+          description: Out in Science, Technology, Engineering, and Mathematics is a professional association for LGBTQ+ people in the STEM community.
+        - name: Out to Innovate
+          url: https://www.noglstp.org/
+          description: An organization with a mission to empower LGBTQ+ individuals in STEM by providing education, advocacy, professional development, networking, and peer support.
+        - name: lgbtqia+ physicists
+          url: http://lgbtphysicists.org/
+          description: Serving sexual and gender minorities in physics
+        - name: The Arctic Council
+          url: https://arctic-council.org/
+          twitter: ArcticCouncil
+          description: The leading intergovernmental forum promoting cooperation in the Arctic. The Arctic Council was established in 1996 to promote cooperation and interaction among Arctic States with the involvement of Arctic Indigenous communities.
+        - name: Kick-starting scientific collaborations remotely
+          url: https://www.nceas.ucsb.edu/news/kick-starting-scientific-collaborations-remotely
+          description: by J. Lowndes, C. Kappel, & J. Brun
+
+- tab: Glacier Names
+  slug: glacier-names
+  image: /glacier-names.jpg
+  items:
+    - title: Greenland
+      resources:
+        - name: Getting Greenland’s glaciers right, a new dataset of all official Greenlandic glacier names
+          url: https://tc.copernicus.org/preprints/9/1593/2015/tcd-9-1593-2015.pdf
+          description: Official names of Greenlandic Glaciers
+        - name: Greenland glacier name data set
+          url: https://figshare.com/articles/dataset/GreenlandGlacierNames_GGNv01/1449148
+          description: GIS and .csv files of glacier names and coordinates
+        - name: Martha Greenlandic Language Pronunciation
+          url: https://oqaasileriffik.gl/en/langtech/martha/
+          description: Text-to-speech system
+        - name: Endangered Languages Project-Kalaallisut
+          url: https://www.endangeredlanguages.com/lang/8689
+          description: Language information
+    - title: North America
+      resources:
+        - name: Alaska, Ahtna Place Names
+          url: https://uafanlc.alaska.edu/GIS/Ahtna/Ahtna%20Section%20Maps/pdfs/03%20ahtnapn2008pp37-156.pdf
+          description: Alaskan place names
+        - name: Native Land
+          url: https://native-land.ca
+          description: Interactive map of tribal lands with teaching resources
+    - title: Antarctica
+      resources:
+        - name: Antarctic Names
+          url: https://www.usgs.gov/us-board-on-geographic-names/antarctic-names
+          description: Formally recognized names from the U.S. Board on Geographic Names.
+        - name: SCAR Composite Gazetteer of Antarctica
+          url: https://data.aad.gov.au/aadc/gaz/scar/
+          description: “A searchable database of all Antarctic place-names from each country active in Antarctica including the names of features south of 60°S, both terrestrial and undersea or under-ice.
+
+- tab: Applications and Hiring
+  slug: applications-and-hiring
+  image: /applications-and-hiring.png
+  items:
+    - title: Letters of Recommendation
+      resources:
+        - name: Cheat sheet for how to avoid racial bias in letters of reference writing
+          url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/03/avoiding-racial-bias-in-reference-writing.pdf
+          description: A list of common traps rooted in unconscious bias
+        - name: Avoiding gender bias in reference writing
+          url: https://drive.google.com/file/d/1Adtm0sGb6fiCTQGC8E7CadhUlk-Jyns8/view
+          description: Tips for recommendation writiers with word substitutions
+        - name: Avoiding Unintended Gender Bias in Letters of Recommendation
+          url: https://drive.google.com/file/d/1ism2mLJPUPHRcKyjT7ZcTmFS3XIB-Y0_/view
+          description: 2-page overview by the National Center for Women & Information Technology
+        - name: The Right Words for the Job, How Gendered Language Affects the Workplace
+          url: https://medium.com/women-in-product/genderwords-b0be0cc8251f
+          description: by D. Liu
+        - name: Gender bias calculator
+          url: https://www.tomforth.co.uk/genderbias/
+          description: A tool to check your letter of recommendation for gendered language
+        - name: Gender differences in recommendation letters for postdoctoral fellowships in geoscience
+          url: https://www.nature.com/articles/ngeo2819
+          description: Dutt et al., 2016. Nature Geoscience.
+        - name: Raising Doubt in Letters of Recommendation for Academia; Gender Differences and Their Impact
+          url: https://www.researchgate.net/profile/Virginia-Valian/publication/324782644_Raising_Doubt_in_Letters_of_Recommendation_for_Academia_Gender_Differences_and_Their_Impact/links/5b14712f0f7e9b498108e465/Raising-Doubt-in-Letters-of-Recommendation-for-Academia-Gender-Differences-and-Their-Impact.pdf
+          description: Madera, J. et al., 2018
+        - name: A Lingustic Comparison of Letters of Recommendation for Male and Female Chemistry and Biochemistry Job Applicants
+          url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2572075/
+          description: Schmader, T., Whitehead, J. & Wysocki, V. H. (2007)
+        - name: Race- and Gender-Based Differences in Descriptions of Applicants in the Letters of Recommendation for Orthopaedic Surgery Residency
+          url: https://pubmed.ncbi.nlm.nih.gov/32803104/
+          description: Powers, A., et al., 2020
+    - title: Graduate School
+      resources:
+        - name: Applying to Graduate School in the Geosciences
+          url: http://cryocommunity.org/projects/applying-to-graduate-school-in-the-geosciences
+          description: CryoCommunity article detailing the graduate school application process
+        - name: Graduate School Application Station
+          url: https://geogradapp.com
+          description: Tips and Graduate Application Timeline
+        - name: Cryolist
+          url: https://lists.cryolist.org/mailman/listinfo/cryolist
+          description: A list serv for all things cryo, great for finding graduate school opportunities, workshops, and other cryo events.
+    - title: Promotion and Hiring
+      resources:
+        - name: Preparing Future Faculty
+          url: https://github.com/ginnybinny/Preparing-Future-Faculty
+          description: Complation of resources from Dr. Ginny Catania's GEO 291 Course
+        - name: Project MUSE - Faculty Time Allocations and Research Productivity
+          url: https://muse.jhu.edu/article/30080#b31
+          description: Gender, Race, and Family Effects
+        - name: Application Materials for Faculty Positions
+          url: https://career.ucsf.edu/gsp/faculty-samples#Understand-the-application-materials
+          description: UCSF collection of sample materials for faculty positions and guidance on how to write your own
+        - name: Writing a Research Plan
+          url: https://www.science.org/content/article/writing-research-plan-rev2
+          description: Science article on how to write a research statement for job applications. 
+        - name: The Effective Diversity Statement
+          url: https://www.insidehighered.com/advice/2016/06/10/how-write-effective-diversity-statement-essay
+          description: Tanya Golash-Boza gives faculty job applicants eight tips for writing a stellar diversity statement that stands out to search committees. 
+        - name: Rubric for Assessing Candidate Contributions to Diversity, Equity, Inclusion, and Belonging
+          url: https://ofew.berkeley.edu/recruitment/contributions-diversity/rubric-assessing-candidate-contributions-diversity-equity
+          description: A sample rubric for assessing DEI contributions from UC Berkeley 
+    - title: Jobs
+      resources:
+        - name: Earth and Environmental Science Job List
+          url: https://eswnonline.org/online/earth-and-environmental-science-jobs/
+          description: A collaborative crowd-sourced list for tenure track faculty, postdoc, non-tenure track, and graduate student position jobs.
+        - name: Becoming a Federal Scientist-A Guide to Applying for Jobs, Internships, and Fellowships
+          url: https://www.ucsusa.org/resources/federal-science-jobs?fbclid=IwAR1UHlSPvSZv4EDr62JdECRzpVd4uextWWCroUh4f_iag7VmttKw86jCeWo
+          description: Toolkit to help navigate the process of applying for government jobs.
+          tags: [ECR]
+
+- tab: Funding Opportunities
+  slug: funding-opportunities
+  image: /funding-opportunities.png
+  items:
+    - title: Advice
+      resources:
+        - name: Funding Resources for POCs in STEAM
+          url: https://docs.google.com/spreadsheets/d/1V_pvhqWliwqLhAVcXikxAEuJPD4mwwgl9LEgOnzN-zM/edit?usp=sharing
+          description: Google Sheet put together by Lavontria Miché Aaron with fellowships, money for applications, scholarships, internships, mentoring opportunities
+        - name: THE NSF GRFP - Advice from a panel of awardees
+          url: https://futurerockdoc.com/blog/2020/6/19/the-nsf-grfp-advice-from-a-panel-of-awardees
+          description: Advice for applying for the NSF Graduate Research Fellowship Program
+        - name: GSA Graduate Student Research Grants - Advice from a panel of awardees
+          url: https://futurerockdoc.com/blog/2021/1/11/gsa-graduate-student-research-grants-advice-from-a-panel-of-awardees
+          description: Awards up to $2,500 for students enrolled in the USA, Canada, Mexico, and Central America.
+    - title: Undergraduate
+      resources:
+        - name: Adobe Research Women-in-Technology Scholarship
+          url: https://research.adobe.com/scholarship/
+          description: Undergraduate or Masters students at North American Universities—$10,000
+          tags: ["$10,000"]
+        - name: Association for Women Geoscientists Minority Scholarship
+          url: http://awg.org/Awards
+          description: Black, Hispanic, or Native American, female, full-time students pursuing an undergraduate degree in geoscience—$6,000
+          tags: ["$6,000"]
+        - name: Expanding Representation in Geosciences (ERG) Scholarship
+          url: https://www.geosociety.org/GSA/About/awards/GSA/Awards/erg.aspx
+          description: for Undergraduates
+          tags: ["$1,500"]
+        - name: J. David Lowell Field Camp Scholarship
+          url: https://rock.geosociety.org/eo/moreInformation.asp?program=scholar
+          description: $2,000 to attend the field camp of your chooice.
+          tags: ["$2,000"]
+        - name: Woods Hole Partnership Education Program (PEP)
+          url: https://www.woodsholediversity.org/pep/
+          description:
+          tags: ["internship"]
+        - name: Significant Opportunities in Atmospheric Research and Science (SOARS)
+          url: https://soars.ucar.edu/
+          tags: ["internship"]
+        - name: Stanord SURGE program
+          url: https://oma.stanford.edu/surge
+          description:
+          tags: ["internship"]
+        - name: AGU's Mass Media Fellowship
+          url: https://www.agu.org/Stay-Informed/Stay-Informed/Mass-Media-Fellowship
+          description: AGU sponsors university students in the AAAS Mass Media Fellowship program, a 10-week summer internship at a traditional or online media outlet.
+          tags: ["$7,000"]
+        - name: Research Grants and Scholarships for Undergraduates
+          url: https://futurerockdoc.com/undergraduate-scholarships
+          description: An evolving list put together by FutureRockDoc
+    - title: Graduate Students
+      resources:
+        - name: NSF Graduate Research Fellowship Program (GRFP)
+          url: https://www.nsfgrfp.org/
+          description: 3 years of tuition and stipend for US citizen and perminant resident graduatee students.
+        - name: NASA Internships and Fellowships
+          url: https://www.nasa.gov/stem/fellowships-scholarships/index.html
+          description: annual
+        - name: The John Hunter Excellence in Plotting Competition
+          url: https://www.scipy2020.scipy.org/plotting-contest
+          description: annual
+          tags: ["$1,000", "$750", "$500"]
+        - name: AGU's Mass Media Fellowship
+          url: https://www.agu.org/Stay-Informed/Stay-Informed/Mass-Media-Fellowship
+          description: AGU sponsors university students in the AAAS Mass Media Fellowship program, a 10-week summer internship at a traditional or online media outlet.
+          tags: ["$7,000"]
+        - name: Graduate student research grant list
+          url: https://futurerockdoc.com/grants-scholarships
+          description: an evolving list put together by FutureRockDoc
+        - name: ARCUS Early Career Conference Funding Award
+          url: https://www.arcus.org/programs/early-career-funding
+          description: supports US-based early career researchers and students to participate in meetings and events relevant to Arctic research. Awards cover registration fees, session/abstract submission costs, travel, and other expenses of in-person conference attendance for one US-based conference or event. 
+    - title: Post-Doctoral & Early Career
+      resources:
+        - name: NSF Office of Polar Programs (OPP)
+          url: https://www.nsf.gov/funding/pgm_list.jsp?org=OPP
+          description: list of active funding opportunties for Polar programs
+        - name: NASA Internships and Fellowships
+          url: https://www.nasa.gov/stem/fellowships-scholarships/index.html
+          description: annual
+        - name: ARCUS Early Career Conference Funding Award
+          url: https://www.arcus.org/programs/early-career-funding
+          description: supports US-based early career researchers and students to participate in meetings and events relevant to Arctic research. Awards cover registration fees, session/abstract submission costs, travel, and other expenses of in-person conference attendance for one US-based conference or event. 
+    - title: General
+      resources:
+        - name: Sharing Science Grants for Science Communication & Outreach
+          url: https://forms.agu.org/sharing-science-grants/
+          description: AGU Helping sow the seeds of innovative SciComm
+        - name: APECS Funding database
+          url: https://www.apecs.is/career-resources/funding-database.html?resetfilters=0&clearordering=0&clearfilters=0
+          description: International and interdisciplinary database of funding resources
+    - title: U.S. Research Funding and support
+      resources:
+        - name: NSF Office of Polar Programs (OPP)
+          url: https://www.nsf.gov/div/index.jsp?div=OPP
+          description: The Office of Polar Programs promotes creative and innovative scientific research, engineering, and education in and about the polar regions.
+        - name: US Antarctic Program
+          url: https://www.usap.gov/
+          description:  USAP carries forward the Nation's goals of supporting the Antarctic Treaty, fostering cooperative research with other nations, protecting the Antarctic environment, and developing measures to ensure only equitable and wise use of resources.
+        - name: Ice Drilling Program (IDP)
+          url: https://icedrill.org/
+          description: “IDP is an NSF-funded facility. IDP conducts integrated planning for the ice drilling science and technology communities, and provides drilling technology and operational support that enables the community to advance the frontiers of climate and environmental science.
+        - name: NASA
+          url: https://science.nasa.gov/researchers/sara/grant-solicitations
+          description: National Aeronautics and Space Administration. NASA's Science Mission Directorate and ROSES or Research Opportunities in Space and Earth Science
+        - name: NOAA 
+          url: https://cpo.noaa.gov/Funding-Opportunities/
+          description: National Oceanic and Atmospheric Administration, see NOAAs Climate Program Office
+        - name: Polar Geospatial Center (PGC)
+          url: https://www.pgc.umn.edu/
+          description: The Polar Geospatial Center at the University of Minnesota provides geospatial support, mapping, and GIS/remote sensing solutions to researchers and logistics groups in the polar science community.
+
+- tab: Professional Development
+  slug: professional-development
+  image: /professional-development.png
+  items:
+    - title: Events, Workshops, and Webinars
+      resources: 
+        - name: PSECCO Events and workshops
+          url: https://psecco.org/events
+          description: Polar Science Early Career Community Office Professional Development Events and Workshop Series
+        - name: APECS Webinars
+          url: https://www.apecs.is/career-resources/webinar-archive.html
+          description: Arctic Science Seminars
+        - name: APECS Polar and Alpine Events Calendar
+          url: https://www.apecs.is/events/polar-and-alpine-events-calendar.html
+          description: Upcomming Arctic and Polar Science Events
+    - title: Media
+      resources:
+        - name: AAAS Communicating Science Workshop
+          url: https://www.aaas.org/programs/communicating-science
+          description: workshops and seminars for scientists and engineers who wish to develop their public engagement and science communication skills
+        - name: AGU List of Resources
+          url: https://www.agu.org/Share-and-Advocate/Share/#3
+          description: AGU's currated list of media resources for scientists
+        - name: How to craft an elevator pitch of your research
+          url: https://www.agu.org/Share-and-Advocate/Share/News-media/Elevator-pitch
+          description: Tips for crafting your pitch
+        - name: Tips for working with the media
+          url: https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_37438_S2_Working_with_the_Media.pdf
+          description: A master guide for working with members of the press, from tips for interviews to establishing long-term relationships
+        - name: Tips for interviews
+          url: https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_38394_S2_Tips_for_science_interview.pdf
+          description: Quick tips to make your next media interview a success
+        - name: Voices for Science
+          url: https://www.agu.org/Share-and-Advocate/Share/Sharing-science-network/Voices-for-science
+          description: An AGU program that trains scientists in two communications tracks (1) science policy and (2) media or community outreach.
+        - name: Creating Inclusive Virtual Spaces
+          url: https://serc.carleton.edu/advancegeo/resources/virtual.html
+          description: by AdvanceGeo
+        - name: AGU's Sharing Science Program
+          url: https://www.agu.org/Share-and-Advocate/Share
+          description: Science communication, policy, and professional development virtual workshops
+        - name: SciComm via Social Media
+          url: https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_38394_S2_SocialMedia_Toolkit_Long.pdf
+          description: A guide to choosing the best social media channels to share your science.
+        - name: How to create a media kit
+          url: https://www.melaninbasecamp.com/trip-reports/2020/02/21/bipoc-outdoor-industry-freelancer-guide
+          description: BIPOC freelancer outdoor industry guide
+        - name: AGU Toolkit for Authors
+          url: https://www.agu.org/-/media/Files/AGU_Toolkit-for-authors.pdf
+          description: Improving the impact of your science
+        - name: Kudos
+          url: https://www.growkudos.com/about
+          description: tools and guidance to help you maximize readership and citations for your work.
+        - name: Including a plain language summary for your publications
+          url: https://www.agu.org/Share-and-Advocate/Share/Community/Plain-language-summary
+    - title: Writing
+      resources:
+        - name: Equity in Author Order
+          url: https://civiclaboratory.nl/2016/05/23/equity-in-author-order/
+          description:
+        - name: NSF Proposal & Award Pollicies and Producedure Guide
+          url: https://www.nsf.gov/pubs/policydocs/pappg20_1/index.jsp
+          description:
+        - name: Budgeting for field safety supplies and training
+          url: https://www.ucop.edu/safety-and-loss-prevention/_files/field-research-safety/budgeting-for-field-safety-signed.pdf
+          description:
+        - name: Writing Science
+          url: https://pyramidbooks.indielite.org/book/9780199760244
+          description: How to write papers that get cited and proposals that get funded
+        - name: Line by Line
+          url: https://pyramidbooks.indielite.org/book/9780395393918
+          description: How to edit your own writing
+        - name: Five common writing mistakes new scientists make
+          url: https://contemplativemammoth.com/2018/08/21/five-common-writing-mistakes-new-scientists-make/
+          description: by J. Gill
+        - name: What Hollywood can teach researchers about scientific storytelling
+          url: https://www.nature.com/articles/d41586-020-01731-9
+          description: by J. Ettinger
+        - name: 11 steps to structuring a science paper editors will take seriously
+          url: https://www.elsevier.com/connect/11-steps-to-structuring-a-science-paper-editors-will-take-seriously
+          description: by A. Borja
+        - name: 10 simple rules for structuring papers
+          url: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005619
+          description: by B. Mensh and K. Kording
+        - name: Avoiding the official style
+          url: https://clauswilke.com/blog/2015/08/26/avoiding-the-official-style/
+          description: by C. Wilke
+        - name: The Measure of Things
+          url: https://themeasureofthings.com/
+          description: A search engine for finding comparative or relative measurements of physical quantities
+    - title: Opportunties
+      resources:
+        - name: (MARS) Midwest and Random Stragglers Glaciology Group—weekly
+          url: http://cryocommunity.org/contact
+          description: contact us at cryocommunity to join the slack group
+        - name: Northwest Glaciologists
+          url: https://glaciers.gi.alaska.edu/events/northwest/
+          description: annual conferences
+        - name: International Glaciology Society's Global Seminar Series
+          url: https://www.igsoc.org/igswebinar/
+          description: weekly via zoom
+    - title: Data Management
+      resources:
+        - name: CARE
+          url: https://www.gida-global.org/care
+          description: Principles for Indigenous data governance
+        - name: FAIR
+          url: https://www.go-fair.org/fair-principles/
+          description: Guiding principles for scientific data management and stewardship.
+    - title: More
+      resources:
+        - name: Useful Antarctic links
+          url: https://usscar.org/useful-antarctic-links
+          description: A complation of websites useful to Antarctic Scientists.
+
+- tab: Core Work Resources
+  slug: core-work-resources
+  image: /core-work-resources.png
+  items:
+    - title: Code of conduct
+      resources:
+        - name: ADVANCEGeo Partnership
+          url: https://serc.carleton.edu/advancegeo/resources/codes_conduct.html
+        - name: Open-source Communities
+          url: https://www.contributor-covenant.org
+        - name: NSF Polar
+          url: https://www.nsf.gov/geo/opp/documents/policy/polar_coc.pdf
+        - name: American Geophysical Union
+          url: https://www.sciencemag.org/news/2017/09/scientific-society-defines-sexual-harassment-scientific-misconduct
+        - name: Online meetings
+          url: https://ethicsandequitycenter.org/wp-content/uploads/2020/04/Inclusive_Remote_Meetings_Best_Practices.pdf
+        - name: Example code of conduct for online meetings
+          url: https://uxgatherings.com/code-of-conduct/
+          description: UXgatherings
+        - name: Faculty Accountability for Culturally Inclusive Pedagogy and Curricula
+          url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/04/Faculty-Accountability-for-Culturally-Inclusive-Pedagogy-and-Curricula.pdf
+          description: Quaye, S. J., and Harper, S. R.
+        - name: Jackson School of Geosciences Workplace Issues
+          url: https://www.jsg.utexas.edu/people/jsg-community/workplace-issues/
+    - title: Reporting Policy
+      resources:
+        - name: Cryosci.Listen
+          url: https://cryoscilisten.weebly.com/
+          description: a space for anonymous feedback on the health of the cryospheric science community. (e.g., cryosphere-wide ombudsman). Post-conference survey and post-fieldwork survey. Resources in development (as of 2021 Apr 30).
+        - name: (SAHPR) Program
+          url: https://www.nsf.gov/news/news_summ.jsp?cntn_id=302518&org=OPP
+          description: U.S. Antarctic Program Sexual Assault/Harassment Prevention and Response Program
+        - name: AGU Resources
+          url: https://www.agu.org/Learn-About-AGU/About-AGU/Ethics/SafeAGU
+          description: SafeAGU
+        - name: When It Comes to Sexual Harassment, Academia Is Fundamentally Broken
+          url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/01/500WomenScientist_SexualHarassmentAcademia-1.pdf
+          description: Why everyone should read the National Academies sexual harassment report
+    - title: Mental Health
+      resources:
+        - name: National Grad Crisis Line call 1-877-472-3457
+          url: https://gradresources.org/crisis/
+          description: The National Grad Crisis Line helps graduate students reach free, confidential telephone counseling, crisis intervention, suicide prevention, and information and referral services provided by specially-trained call-takers.
+        - name: Grad Resources
+          url: https://gradresources.org
+          description: Grad Resources offers services that address their personal, emotional and spiritual needs, providing online materials, meaningful connections, engaging speakers, and supportive faith-based communities that enable graduate students to flourish personally and professionally.
+        - name: Resources on Campus
+          url: https://www.usnews.com/education/best-colleges/articles/2018-09-21/how-college-students-can-find-mental-health-services-on-campus
+          description: Most colleges and universities have free or very affordable counseling services at the on-campus health center. Counselling (even if it is on campus) is always confidential.
+        - name: Mental Health in Grad School
+          url: https://www.gograd.org/resources/grad-student-mental-health/
+          description: Recognizing, Understanding & Overcoming Mental Health Issues in Grad School
+    - title: Mentoring
+      resources:
+        - name: Find a Mentor
+          url: https://gradresources.org/mentoring/
+          description: Grad Resources offers online mentoring opportunities. If you are new to graduate school, this is a chance to learn from others in your field or one similar to yours about the challenges ahead and how to navigate them.
+        - name: Creating A Mentoring Philosophy Statement
+          url: https://www.ohsu.edu/sites/default/files/2021-02/Creating%20a%20Mentoring%20Philosophy%20Statement%20How-To.pdf
+          description: OHSU Mentorship Academy Provost Office, Dr. Moreno
+    - title: Surviving academia
+      resources:
+        - name: Surviving the Doctorate and Thriving as Faculty-Latina Junior Faculty Reflecting on Their Doctoral Studies Experiences
+          url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/04/Surviving-the-Doctorate-and-Thriving-as-Faculty-Latina-Junior-Faculty-Reflecting-on-Their-Doctoral-Studies-Experiences.pdf
+          description: by Juan Carlos González
+        - name: Surviving Academic Karens While Black
+          url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/04/Surviving-Academic-Karens-While-Black.pdf
+          description:
+        - name: “Am I going crazy?!” A Critical Race Analysis of Doctoral Education
+          url: https://urgeoscience.org/wp-content/uploads/sites/33/2021/04/Am-I-going-crazy_A-Critical-Race-Analysis-of-Doctoral-Education.pdf
+          description: Ryan Evely Gildersleeve , Natasha N. Croom & Philip L. Vasquez (2011)
+    - title: Getting Paid
+      resources:
+        - name: Fix The Gap
+          url: https://www.youtube.com/watch?v=jgA_L6zsc2Y
+          description: A Panel Discussion - 500 Women Scientists
+    - title: Polar Mailing Lists
+      resources:
+        - name: Cryolist
+          url: https://lists.cryolist.org/mailman/listinfo/cryolist
+        - name: Cryosphere Capsules
+          url: https://iccinet.org/category/cryosphere-capsules/
+        - name: Ice Drilling Program News
+          url: https://mailchi.mp/c5add8c77f8d/us-ice-drilling-program-sign-up-form
+        - name: Polar Education List
+          url: https://www.arcus.org/education/educationlist
+        - name: PSECCO Newsletter
+          url: https://psecco.org/join-psecco-community
+        - name: SCAR News
+          url: https://scar.us7.list-manage.com/subscribe?u=a611f6f7c375923d8563a8821&id=b964133964
+        - name: US-SCAR News
+          url: https://usfca.us10.list-manage.com/subscribe?u=f79d4a34707bcfa2b4d9ac6ed&id=ad381218df
+
+- tab: Presentations
+  slug: presentations
+  image: /presentations.png
+  items:
+    - title: Online Talks
+      resources:
+        - name: Mathematics on Ice
+          url: https://sites.google.com/view/mathematics-on-ice/home?authuser=0
+          description: Meets once a month to discuss mathematical aspects of ice dynamics and bring together the community in an informal online atmosphere.  
+    - title: Accessible Figures
+      resources:
+        - name: Is your presentation accessible?
+          url: /projects/is-your-presentation-accessibe/
+          description: Cryocommunity article with tips and resources for building an accessible presentation
+        - name: Color Brewer
+          url: https://colorbrewer2.org/
+          description: Color palette generator allowing you to select colorblind safe palettes
+        - name: Color Blindness Simulator
+          url: https://www.color-blindness.com/coblis-color-blindness-simulator/
+          description: This site will show you what your image looks like for different types of color blindness.
+        - name: Scientific Color Maps
+          url: https://www.fabiocrameri.ch/colourmaps/
+          description: The color combinations are readable both by color-vision deficient and color-blind people, and even when printed in black & white.
+        - name: ColorCet Color Maps
+          url: https://github.com/holoviz/colorcet
+          description: A collection of perceptually uniform colormaps for use with Python plotting programs.
+        - name: Seaborn Color tutorials
+          url: https://seaborn.pydata.org/tutorial/color_palettes.html
+          description: General principles for using color in plots.
+        - name: Your Friendly Guide to Colors in Data Visualisation
+          url: https://blog.datawrapper.de/colorguide/
+          description: An overview of color tools, by Lisa Muth
+        - name: Co-designing scientific information for the IPCC special reports
+          url: https://medium.com/infodesignlabposts/co-designing-scientific-information-the-key-visualizations-of-the-ipcc-special-report-on-global-1bbf041c72ef
+          description: Visual communication for developing figures for the IPCC
+        - name: Color Map Advice for Scientific Visualization
+          url: http://www.kennethmoreland.com/color-advice/
+          description: by Kenneth Moreland
+        - name: Diverging Color Maps for Scientific Visualization
+          url: http://www.kennethmoreland.com/color-maps/
+          description: Moreland 2009. In Proceedings of the 5th International Symposium on Visual Computing DOI 10.1007/978-3-642-10520-3_9.
+        - name: Why We Use Bad Color Maps and What You Can Do About It
+          url: http://www.kennethmoreland.com/color-advice/BadColorMaps.pdf
+          description: Moreland 2016. DOI DOI 10.2352/ISSN.2470-1173.2016.16.HVEI-133.
+        - name: CET Perceptually Uniform Color Maps
+          url: http://peterkovesi.com/projects/colourmaps/
+          description: Peter Kovesi from the Centre for Exploration Targeting (CET) provides a collection of perceptually uniform color maps as well as example code used for their generation and analysis.
+        - name: Inclusive Design For Accessible Presentations
+          url: https://www.smashingmagazine.com/2018/11/inclusive-design-accessible-presentations/
+          description: by Allison Ravenhall. When you prepare for your next presentation, use these tips on how to tweak your slides and your talk so that everyone gets the most out of it.
+    - title: Virtual Presentations
+      resources:
+        - name: Mastering the virtual presentation & making the most of an e-lightning poster
+          url: https://connect.agu.org/sharingscience/virtual-learning-modules/skills-for-complete-scientist/virtual-presentation
+          description: A guide from AGU's Sharing Science
+    - title: Videos & Visualizations
+      resources:
+        - name: NASA's Scientific Visualization Studio
+          url: https://svs.gsfc.nasa.gov/
+          description: Search the entire SVS library for visualizations and videos
+        - name: Greenland Ice Mass Loss 2002-2021
+          url: https://svs.gsfc.nasa.gov/31156
+          description: Provided by NASA Hyperwall
+        - name: Antarctic Ice Mass Loss 2002-2020
+          url: https://svs.gsfc.nasa.gov/31158
+          description: Provided by NASA Hyperwall
+        - name: Accelerating Ice Sheet
+          url: https://svs.gsfc.nasa.gov/20111
+          description: Provided by the NASA Conceptual Image Lab
+        - name: Three Simulated Greenland Ice Sheet Response Scenarios, 2008 - 2300
+          url: https://svs.gsfc.nasa.gov/4721
+          description: by Cindy Starr and Provided by the NASA Scientific Visualization Studio.
+        - name: NASA Climate Time Machine
+          url: https://climate.nasa.gov/interactives/climate-time-machine
+          description: A series of visualizations that show how some of Earth's key climate indicators are changing over time.
+        - name: Auphonic 
+          url: https://auphonic.com
+          description: Automatic audio post production web service for podcasts, screencasts, and presentations.
+    - title: Invited
+      resources:
+        - name: How to ask for an Honorarium
+          url: https://www.melaninbasecamp.com/trip-reports/2020/02/21/bipoc-outdoor-industry-freelancer-guide
+          description:
+
+- tab: Science Communication
+  slug: science-communication
+  image: /science-communication.png
+  items: 
+    - title: Guides
+      resources:
+        - name: Cryo Connect
+          url: https://cryoconnect.net
+          twitter: CryoConnect
+          description: a gateway for cryosphere science communication
+        - name: We're (nearly) all untrained at SciComm. So, some resources.
+          url: https://scientistseessquirrel.wordpress.com/2021/10/26/were-nearly-all-untrained-at-scicomm-so-some-resources/
+          description: by Stephen Heard (2021)
+        - name: Using color as a design tool in science presentations
+          url: https://threadreaderapp.com/thread/1531651972776054785.html
+          description: Thread from @IAmSciComm 
+        
+        - name: Sci Comm Toolkits
+          url: https://connect.agu.org/sharingscience/resources/toolkits
+          description: A collection of resources from AGU's Sharing Science
+        - name: Science Vocabulary Dual Meanings
+          url: https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_38394_S2_Watch_Words.pdf
+          description: from AGU's Sharing Science program
+        - name: Storytelling in Science Communcation
+          url: https://connect.agu.org/sharingscience/virtual-learning-modules/storytelling
+          description: Storytelling for the 21st Centruy Scientist from AGU Sharing Science. 
+        - name: Essential Tips and Tools for Communicating Your Science
+          url: https://www.agu.org/Share-and-Advocate/-/media/E0C8C9F83619467EB6D698B63203875A.ashx
+          description: 
+          
+    - title: Blogs
+      resources:
+        - name: Science Borealis
+          url: https://scienceborealis.ca
+          description: Blogging from Canadian Perspectives
+        - name: From the Lab Bench
+          url: http://www.fromthelabbench.com
+          description: Blogging about all things science
+        - name: SIGMA Peru
+          url: https://sigmaperu.wordpress.com/glacier-gifts/
+          description: Societal Impacts of Glacier Melt in the Andes, Peru
+        - name: Regalos Glaciares or Glacier Gifts
+          url: https://sigmaperu.wordpress.com/glacier-gifts/
+          description: An ebook by SIGMA Peru about glacier retreat within the Peruvian Andies 
+    - title: Science Communicators
+      resources: 
+        - name: Black in Science Communication
+          url: https://twitter.com/blackinscicomm?s=21
+          description: Building scientists and sharing science in service to our communities and beyond.
+        - name: Dr. Raven the Science Maven
+          url: https://www.scimaven.com
+          description: Raven Baxter, Ph.D., aka Dr. Raven the Science Maven, is an internationally acclaimed American educator and molecular biologist known for effortlessly merging science with pop culture. Using her magnetic personality, she challenges the status quo to prove that science communicators aren’t all one and the same.
+        - name: Cryotoons!
+          url: https://twitter.com/cryotoons
+          description: Cartoons about glaciers
+        - name: AGU's Sharing Science
+          url: https://connect.agu.org/sharingscience/home
+          twitter: AGU_SciComm
+          description: The Sharing Science Community is a community of science communication and policy-interested folks.
+
+# - tab: inequity
+#   image: /science-communication.png
+#   items:
+#     - title: Gender
+#       resources:
+#         - name: Bridging the crevasse; working toward gender equity in the cryosphere
+#           url: https://blogs.egu.eu/divisions/cr/2019/03/08/bridging-the-crevasse-working-toward-gender-equity-in-the-cryosphere/
+#           description: by Elizabeth Case, Violaine Coulon, and Florence Isaacs, March 2019
+# - tab: LGBTQIA+
+#   image: /science-communication.png
+#   items:
+#     - title: Jobs
+#       resources:
+#         - name: LGBTQIA+ Outdoor/Environmental Job Seekers and Job posting broad
+#           url: https://queeroutdoors.net
+#           description: Job listing and job seeker boards to connect queer outdoor enthusiasts with job opportunities.
+#     - title: Community
+#       resources:
+#         - name: LGBTQ Outdoor
+#           url: https://www.lgbtqoutdoorsummit.com
+#           description: Dedicated to the representation and inclusion of the LGBTQ community OUTside.
+#         - name: LGBTQ+ Adventurers, In Their Own Words
+#           url: https://www.rei.com/blog/camp/lgbtq-outdoor-adventurers
+#           description: by A. Parris
