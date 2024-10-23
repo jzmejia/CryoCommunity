@@ -34,5 +34,6 @@
     "vue-svg-loader": "^0.16.0",
     "vuetify-loader": "^1.7.3"
   },
-  "packageManager": "yarn@1.22.22"
+  "packageManager": "yarn@1.22.22",
+  "version": "0.0.0"
 }
