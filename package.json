@@ -7,31 +7,32 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/remark-prismjs": "^0.2.0",
-    "@gridsome/source-filesystem": "^0.6.0",
-    "@gridsome/transformer-json": "^0.2.1",
-    "@gridsome/transformer-remark": "^0.3.3",
+    "@gridsome/remark-prismjs": "^0.5.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
     "@gridsome/transformer-yaml": "^0.2.1",
-    "axios": "^0.21.4",
+    "@gridsome/vue-remark": "^0.2.6",
+    "axios": "^1.7.7",
+    "fs-extra": "^11.2.0",
     "gridsome": "^0.7.23",
-    "gridsome-plugin-flexsearch": "^2.0.2",
     "gridsome-plugin-gtag": "^0.1.10",
     "gridsome-plugin-remark-youtube": "^1.0.1",
-    "query-string": "^7.0.1",
-    "remark-heading-gap": "^5.0.0",
+    "node-html-to-image": "^5.0.0",
     "twitter-text": "^3.1.0",
-    "twitter-widgets": "^2.0.0",
     "vue-clipboard2": "^0.3.3",
     "vue-dynamic-marquee": "^0.1.7",
     "vue-tweet-embed": "^2.4.0",
-    "vuetify": "^2.5.8"
+    "vuetify": "^2.7.2"
   },
   "devDependencies": {
+    "@mdi/font": "^7.4.47",
     "deepmerge": "^4.2.2",
     "fibers": "^5.0.0",
     "js-yaml": "^4.1.0",
     "sass": "~1.32",
     "sass-loader": "7.3.1",
+    "vue-svg-loader": "^0.16.0",
     "vuetify-loader": "^1.7.3"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }

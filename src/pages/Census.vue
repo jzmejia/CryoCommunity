@@ -1,20 +1,20 @@
 <template>
   <Layout>
     <v-container>
-        <v-alert v-if="successMessage" tile dense color="yellow" dismissible>
-          You have successfully signed up!
-        </v-alert>
+      <v-alert v-if="successMessage" tile dense color="yellow" dismissible>
+        You have successfully signed up!
+      </v-alert>
       <v-row justify="center">
-        <v-col cols="12" lg="9" class="mb-6">
-          <div class="text-md-h3 text-h4 font-weight-black text-break">
+        <v-col cols="12" lg="9">
+          <div class="text-h3 font-weight-bold">
             A Census for the Science Workforce
           </div>
-          <div class="text-capitalize text-h5 grey--text">
+          <div class="text-capitalize text-h6">
             Towards Building Braided Rivers in STEM
           </div>
         </v-col>
-        <v-col cols="12" md="8" lg="6" class="pr-md-10 pr-4">
-          <div>
+        <v-col cols="12" lg="6" md="8" class="pr-md-10 pr-4">
+          <div class="text-body-1">
             <div class="text-h5 text-md-h4 font-weight-bold mb-1">
               Introduction
             </div>
@@ -23,11 +23,9 @@
               to federal agencies in the sciences (e.g. the National Science
               Foundation, NASA), to be implemented and managed by Diversity,
               Equity and Inclusion programs within these organizations.
-              <span class="font-weight-medium"
-                >We propose the creation of a common infrastructure and format
+              <span class="font-weight-medium">We propose the creation of a common infrastructure and format
                 for the collection of data from grant recipients regarding (a)
-                demographics and (b) availability of resources</span
-              >
+                demographics and (b) availability of resources</span>
               (e.g. fieldwork, training, mentorship, emotional health).
               Anonymized data would be made available both internally and to the
               larger social science community for analysis and to inform policy.
@@ -77,8 +75,7 @@
               specific students/researchers who are being left behind along with
               the resources most critical to their success. This dataset would
               also help inform
-              <span class="font-weight-black"
-                >long-term strategies to tackle systemic inequalities
+              <span class="font-weight-black">long-term strategies to tackle systemic inequalities
               </span>
               by identifying which resources are most crucial to success as well
               as how equitably these resources are distributed. Further,
@@ -105,9 +102,7 @@
               is most relevant to defining their success as scientists: their
               research community.
             </p>
-            <div
-              class="text-lg-h4 text-h5 font-weight-bold my-2 mt-8 pt-2 mt-lg-6"
-            >
+            <div class="text-lg-h4 text-h5 font-weight-bold my-2 mt-8 pt-2 mt-lg-6">
               Identify and Amplify Community Builders
             </div>
             <p>
@@ -127,14 +122,13 @@
               gender and race) are currently performing unpaid labor for the
               community at large.
             </p>
-            <v-card-text class="text--subtitle-2 d-flex align-center">
+            <v-card-text v-if="form_id" class="text--subtitle-2 d-flex align-center">
               Signed, The Cryosphere Community
               <SignatureCount class="ml-2" :count="count" :signatures="signatures" />
             </v-card-text>
           </div>
         </v-col>
-
-        <v-col cols="12" sm="6" md="4" lg="3" class="mx-4 mx-md-0">
+        <v-col cols="12" lg="3" md="4" sm="6" class="mx-4 mx-md-0">
           <ShareButtons />
           <v-divider />
           <div class="text-caption my-4">
@@ -150,7 +144,7 @@
             <a href="mailto: stemcensus@gmail.com">stemcensus@gmail.com</a>
           </div>
           <v-divider />
-          <div class="sticky_form">
+          <div v-if="form_id" class="sticky_form">
             <SignatureResults :signatures="signatures" />
             <SignatureForm />
           </div>
@@ -164,9 +158,6 @@
 
 <script>
 import axios from "axios";
-import SignatureForm from "~/components/SignatureForm";
-import SignatureResults from "~/components/SignatureResults";
-import ShareButtons from "~/components/ShareButtons";
 
 export default {
   name: "Census",
@@ -177,10 +168,10 @@ export default {
     form_id: process.env.GRIDSOME_NETLIFY_CENSUS_FORM_ID,
   }),
   components: {
-    SignatureForm,
-    SignatureResults,
+    SignatureForm: () => import("~/components/SignatureForm"),
+    SignatureResults: () => import("~/components/SignatureResults"),
     SignatureCount: () => import("~/components/SignatureCount"),
-    ShareButtons,
+    ShareButtons: () => import("~/components/ShareButtons"),
   },
   metaInfo: {
     title: "Census",
@@ -188,12 +179,6 @@ export default {
   computed: {
     successMessage() {
       return this.$route.query.success;
-    },
-    dark() {
-      return this.$vuetify.theme.dark;
-    },
-    smAndDown() {
-      return this.$vuetify.breakpoint.smAndDown;
     },
   },
   async mounted() {
@@ -209,6 +194,7 @@ export default {
           },
         }
       );
+
       this.signatures = data.map((item) => ({
         name: item.data.name,
         email: item.data.email,

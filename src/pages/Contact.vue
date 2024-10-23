@@ -2,90 +2,44 @@
   <Layout>
     <v-container>
       <v-row justify="center">
-        <v-col cols="12" lg="7">
-          <div
-            class="text-h2 primary--text font-weight-black"
-            :class="{ 'text-center': smAndDown }"
-          >
+        <v-col cols="12" lg="9">
+          <div class="text-h3 font-weight-bold d-flex align-center justify-space-between">
             Contact Us
+            <div>
+              <v-tooltip left color="black" transition="fade-transition">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn v-bind="attrs" v-on="on" icon href="https://twitter.com/cryocommunity">
+                    <TwitterIcon />
+                  </v-btn>
+                </template>
+                <span>@CryoCommunity</span>
+              </v-tooltip>
+            </div>
           </div>
-
-          <!-- </v-col>
-    <v-col cols="12" lg="6"> -->
-          <!-- <div class="text-lg-h2 text-h3">Contact Us</div> -->
-          <div class="text-h6" :class="{ 'text-center': smAndDown }">
+          <div class="text-h6">
             Send us a message
-            <!-- or an email to -->
           </div>
-          <!-- <g-link
-          class="text-decoration-none indigo--text text--accent-4"
-          href="mailto:cryospherecommunity@gmail.com"
-          >cryospherecommunity@gmail.com</g-link
-        > -->
         </v-col>
 
-        <v-col cols="12" lg="7">
-          <v-responsive :rounded="smAndDown ? '0' : 'lg'" flat>
-            <v-card-text class="pa-0" :class="{ 'pa-0': smAndDown }">
-              <v-form
-                name="contact"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                @submit.prevent="handleSubmit"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-                <p hidden>
-                  <label
-                    >Don’t fill this out: <input name="bot-field" />
-                  </label>
-                </p>
-                <v-text-field
-                  outlined
-                  v-model="formData.name"
-                  name="name"
-                  :rules="nameRules"
-                  label="Name"
-                  required
-                  class="rounded-0"
-                  color="primary"
-                  autocomplete="off"
-                ></v-text-field>
+        <v-col cols="12" lg="9">
+          <v-form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
+            <input type="hidden" name="form-name" value="contact" />
+            <p hidden>
+              <label>Don’t fill this out: <input name="bot-field" />
+              </label>
+            </p>
+            <v-text-field outlined v-model="formData.name" name="name" :rules="nameRules" label="Name" required
+              color="primary" autocomplete="off" />
 
-                <v-text-field
-                  outlined
-                  v-model="formData.email"
-                  name="email"
-                  :rules="emailRules"
-                  label="E-mail"
-                  required
-                  class="rounded-0"
-                  color="primary"
-                  autocomplete="off"
-                ></v-text-field>
+            <v-text-field outlined v-model="formData.email" name="email" :rules="emailRules" label="E-mail" required
+              color="primary" autocomplete="off" />
 
-                <v-textarea
-                  outlined
-                  rows="6"
-                  v-model="formData.message"
-                  name="message"
-                  :rules="messageRules"
-                  label="Message"
-                  class="rounded-0"
-                  color="primary"
-                  required
-                ></v-textarea>
-                <v-btn
-                  type="submit"
-                  :loading="loading"
-                  tile
-                  color="primary"
-                  depressed
-                >
-                  send
-                </v-btn>
-              </v-form>
-            </v-card-text>
-          </v-responsive>
+            <v-textarea outlined rows="6" v-model="formData.message" name="message" :rules="messageRules"
+              label="Message" color="primary" required />
+            <v-btn type="submit" :loading="loading" depressed block>
+              send
+            </v-btn>
+          </v-form>
         </v-col>
       </v-row>
     </v-container>
@@ -95,7 +49,11 @@
 <script>
 import axios from "axios";
 import qs from "query-string";
+
 export default {
+  components: {
+    TwitterIcon: () => import("~/assets/svgs/twitter.svg")
+  },
   data: () => ({
     valid: true,
     formData: {},
@@ -116,14 +74,6 @@ export default {
   }),
   metaInfo: {
     title: "Contact",
-  },
-  computed: {
-    smAndDown() {
-      return this.$vuetify.breakpoint.smAndDown;
-    },
-    dark() {
-      return this.$vuetify.theme.dark;
-    },
   },
   methods: {
     encode(data) {

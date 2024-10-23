@@ -1,5 +1,5 @@
 ---
-preview_image: "/uploads/Tunabreen_1.jpg"
+preview_image: "./images/footsteps-on-the-snow.jpg"
 author: MARS Pod Participants
 title: Mentoring Best Practices
 subtitle: How to be a mentor or mentee
