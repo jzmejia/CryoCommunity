@@ -2,10 +2,6 @@
   <v-card min-height="400">
     <v-card-title class="py-2">
       Request
-      <v-btn @click="toggle" class="ml-auto" icon
-        ><v-icon v-if="!isActive">mdi-plus</v-icon
-        ><v-icon v-else>mdi-minus</v-icon></v-btn
-      >
     </v-card-title>
     <v-divider />
     <v-card-text v-show="isActive">
