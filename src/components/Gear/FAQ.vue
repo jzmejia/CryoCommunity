@@ -1,21 +1,21 @@
 <template>
-	<div>
-		<v-card-title>FAQ</v-card-title>
-		<v-expansion-panels >
-			<v-expansion-panel v-for="(item, idx) in 10" :key="idx">
-				<v-expansion-panel-header>
-					Question {{ item }}
-				</v-expansion-panel-header>
-				<v-expansion-panel-content>
-					Answer {{ item }}
-				</v-expansion-panel-content>
-			</v-expansion-panel>
-		</v-expansion-panels>
-	</div>
+  <div>
+    <v-card-title>FAQ</v-card-title>
+    <v-expansion-panels>
+      <v-expansion-panel v-for="({ q, a }, idx) in faq" :key="idx">
+        <v-expansion-panel-header>
+          {{ q }}
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          {{ a }}
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
+  </div>
 </template>
 
 <script>
-import faq from "~/data/gear/faq.yaml"
+import faq from "~/data/gear/faq.yaml";
 // data structure:
 // {
 //   q: "q"
@@ -23,10 +23,10 @@ import faq from "~/data/gear/faq.yaml"
 // }
 
 export default {
-	data: () => ({
-		faq
-	})
-}
+  data: () => ({
+    faq,
+  }),
+};
 </script>
 
 <style></style>
