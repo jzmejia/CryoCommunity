@@ -4,7 +4,7 @@
       Gear Sharing
     </v-card-title>
     <v-card-subtitle>
-      Sub Title
+      A new resource to lend and borrow cold weather gear for cryosphereic scientists
     </v-card-subtitle>
     <v-card-text>
       A need for connection to resources regarding gear sharing, packing lists,
