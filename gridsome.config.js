@@ -73,6 +73,15 @@ module.exports = {
         },
       },
     },
+
+    {
+      use: "gridsome-source-google-sheets",
+      options: {
+        sheetId: process.env.GRIDSOME_GOOGLE_SHEET_ID,
+        apiKey: process.env.GRIDSOME_GOOGLE_SHEET_API_KEY,
+      },
+    },
+
     // {
     //   use: "@gridsome/source-filesystem",
     //   options: {

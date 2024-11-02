@@ -7,6 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@googleapis/sheets": "^9.3.1",
     "@gridsome/remark-prismjs": "^0.5.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
@@ -17,10 +18,12 @@
     "gridsome": "^0.7.23",
     "gridsome-plugin-gtag": "^0.1.10",
     "gridsome-plugin-remark-youtube": "^1.0.1",
+    "gridsome-source-google-sheets": "^0.4.1",
     "node-html-to-image": "^5.0.0",
     "twitter-text": "^3.1.0",
     "vue-clipboard2": "^0.3.3",
     "vue-dynamic-marquee": "^0.1.7",
+    "vue-gsheets": "^4.0.3",
     "vue-tweet-embed": "^2.4.0",
     "vuetify": "^2.7.2"
   },
@@ -34,6 +37,8 @@
     "vue-svg-loader": "^0.16.0",
     "vuetify-loader": "^1.7.3"
   },
-  "packageManager": "yarn@1.22.22",
-  "version": "0.0.0"
+  "resolutions": {
+    "gridsome/sharp": "0.29.3"
+  },
+  "packageManager": "yarn@1.22.22"
 }
