@@ -87,6 +87,7 @@ export default {
         { title: "About", path: "/about/" },
         { title: "Projects", path: "/projects/" },
         { title: "VICE Squads", path: "/vice/" },
+        { title: "Gear Sharing", path: "/gear-sharing/"},
         { title: "Stem Census", path: "/census/" },
         { title: "Resources", path: "/resources/" },
         { title: "Contact", path: "/contact/" },

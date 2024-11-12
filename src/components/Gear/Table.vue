@@ -16,72 +16,96 @@
 </template> -->
 
 <template>
-  <div>
-    <v-card-title>Gear Library</v-card-title>
-    <v-simple-table light>
-      <template v-slot:default>
-        <thead>
-          <tr>
-            <th v-for="(item, thId) in tableHeaders" :key="thId">{{ item }}</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td v-for="(item, tdId) in tableData" :key="tdId">{{ item }}</td>
-          </tr>
-          <tr>
-            <td v-for="(item, tdId) in tableData2" :key="tdId">{{ item }}</td>
-          </tr>
-        </tbody>
-      </template>
-    </v-simple-table>
-  </div>
+  <v-card>
+    <v-card-title flat dense color="transparent">
+      <v-toolbar-title>Gear Library</v-toolbar-title>
+      <v-spacer />
+      <v-chip-group v-model="selected" active-class="primary--text" mandatory>
+        <v-chip v-for="item in sheetList" :key="item" :value="item" small>
+          {{ item }}
+        </v-chip>
+      </v-chip-group>
+    </v-card-title>
+
+    <v-sheet v-for="(sheet, idx) in spreadsheetData" :key="idx">
+      <v-simple-table
+        v-if="sheet.range.includes(selected)"
+        fixed-header
+        height="350px"
+        style="border-radius: 4;"
+      >
+        <template v-slot:default>
+          <thead>
+            <tr>
+              <th v-for="(item, idh) in sheet.values[1]" :key="idh">
+                {{ item }}
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(row, idr) in sheet.values.slice(2)" :key="idr">
+              <td v-for="(item, idx) in row" :key="idx">
+                {{ item }}
+              </td>
+            </tr>
+          </tbody>
+        </template>
+      </v-simple-table>
+    </v-sheet>
+  </v-card>
 </template>
-<!-- https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?gid=84482305#gid=84482305
-https://docs.google.com/spreadsheets/d/e/2PACX-1vSC-EGjlqgKIfnqtGt5u_4j8pi1taAJaItGX2Gy2mwPKv2nF8imBHn-rlwafFGI6pQQaVS-Zk4WHhVr/pubhtml# -->
+
 <script>
 import axios from "axios";
-import table from "~/data/gear/table.yaml";
+// import table from "~/data/gear/table.yaml";
+
+const key = process.env.GRIDSOME_GOOGLE_SHEET_API_KEY;
+const spreadsheetId = process.env.GRIDSOME_GOOGLE_SPREADSHEET_ID;
+const baseURL = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}`;
+
+const config = {
+  baseURL,
+  params: {
+    key,
+  },
+};
+
+const instance = axios.create(config);
+
 export default {
   data: () => ({
-    spreadSheetUrl: `https://sheets.googleapis.com/v4/spreadsheets/${process.env.GRIDSOME_PUBLISHED_ID}/values/Gear Availability!A1%3AZZ10000`,
-    newUrl:
-      "https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/gviz/tq?tqx=out:csv&gid=898670185&tq",
-    table,
-    tableData: null,
-    tableHeaders: null,
+    selected: null,
+    sheetList: ["Gear Needs", "Gear Availability"],
+    spreadsheetData: null,
   }),
   computed: {
-    sheet() {
-      return this.$page.sheets.edges.node;
+    url() {
+      return `/values:batchGet?${this.sheetList
+        .map((item) => `ranges=${item}`)
+        .join("&")}`;
     },
+    // sheet() {
+    //   return this.$page.sheets.edges.node;
+    // },
   },
   methods: {
-    selectItem({ name, url }) {
-      if (url) window.open(url);
-    },
-    async getSpreadSheet() {
-      return await axios
-        .get(this.spreadSheetUrl, {
-          params: {
-            key: process.env.GRIDSOME_GOOGLE_SHEET_API_KEY,
-            majorDimension: "ROWS",
-          },
-        })
-        .then((res) => {
-          this.tableHeaders = res.data.values[0];
-          this.tableData = res.data.values[1];
-          this.tableData2 = res.data.values[2];
-        });
+    // selectItem({ name, url }) {
+    //   if (url) window.open(url);
+    // },
+    async getData() {
+      const {
+        data: { valueRanges },
+      } = await instance.get(this.url);
+      this.spreadsheetData = valueRanges;
     },
   },
   async mounted() {
-    await this.getSpreadSheet();
+    await this.getData();
   },
 };
 </script>
 
-<style scoped>
+<!-- <style scoped>
 :deep(.v-data-table__wrapper tbody) {
   display: block;
   max-height: 300px;
@@ -95,16 +119,5 @@ export default {
   table-layout: fixed;
 }
 
-/* .v-data-table__wrapper table {
-	display: flex !important;
-	flex-direction: column;
-	width: 100%;
-} */
-
-/* .v-data-table__wrapper tbody {
-	height: 50px !important;
-	overflow: auto !important;
-	flex-grow: 1;
-} */
-</style>
+</style> -->
 
