@@ -16,18 +16,18 @@
       </v-list-item>
 
       <v-list-item
-        href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?gid=898670185#gid=898670185"
-      >
-        <v-list-item-title>Browse Current Requests</v-list-item-title></v-list-item
-      >
-
-      <v-list-item
         href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?gid=84482305#gid=84482305"
       >
-        <v-list-item-title> Browse Available Gear </v-list-item-title>
+        <v-list-item-title> Browse Gear Library </v-list-item-title>
       </v-list-item>
       <v-list-item href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?gid=22125841#gid=22125841">
         <v-list-item-title>Community Expectations</v-list-item-title>
+        </v-list-item>
+      </v-list-item>
+        <v-list-item href="https://docs.google.com/document/d/1CX9xeCvr1eLMy8C9I78eX9sKS9RDqRGIxMr47aAPhm8/edit?tab=t.0">
+            <v-list-item-title>
+                    Gear Sharing Agreement
+            </v-list-item-title>
         </v-list-item>
     </v-card-text>
   </v-card>

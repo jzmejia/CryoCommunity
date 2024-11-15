@@ -7,9 +7,9 @@
                 </v-list-item-title>
             </v-list-item-content>
         </v-list-item>
-        <v-list-item href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?gid=84482305#gid=84482305">
+        <v-list-item href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?gid=898670185#gid=898670185">
             <v-list-item-title>
-                    Browse Gear Library
+                    Browse Current Requests
             </v-list-item-title>
         </v-list-item>
         <v-list-item href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?gid=22125841#gid=22125841">

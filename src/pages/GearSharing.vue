@@ -4,17 +4,15 @@
       Gear Sharing
     </v-card-title>
     <v-card-subtitle>
-      A new resource to lend and borrow cold weather gear for cryosphereic scientists
+      A new resource to lend and borrow cold weather gear, view packing lists, and share information between cryospheric scientists.
     </v-card-subtitle>
     <v-card-text>
       A need for connection to resources regarding gear sharing, packing lists,
-      and a list of local used gear shops. To address this need, we are
-      collaborating with CryoCommunity and Mariama Dryak with the Polar Science
-      Early Career Community Office PSECCO to develop a gear sharing database
-      through that will directly connect individuals seeking to borrow gear to
-      those willing to lend gear. Additionally, any region or
-      discipline-specific packing lists for fieldwork are being collected in a
-      separate Google sheet and made available to the community.
+      and a list of local used gear shops. To address this need, CryoCommunity is
+      developing a gear sharing database that will directly connect individuals 
+      seeking to borrow gear to those willing to lend gear. Region or
+      discipline-specific packing lists for fieldwork are also being collected 
+      for community use and availability.
     </v-card-text>
     <v-row>
 			<v-col>
