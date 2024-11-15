@@ -4,7 +4,7 @@
       Gear Sharing
     </v-card-title>
     <v-card-subtitle>
-      Sub Title
+      A new resource to lend and borrow cold weather gear for cryosphereic scientists
     </v-card-subtitle>
     <v-card-text>
       A need for connection to resources regarding gear sharing, packing lists,
@@ -25,14 +25,14 @@
         <v-card height="400">
           <v-card-title class="py-2">
             {{ item }}
-            <v-btn @click="toggle" class="ml-auto" icon
+            <!-- <v-btn @click="toggle" class="ml-auto" icon
               ><v-icon v-if="!isActive">mdi-plus</v-icon
               ><v-icon v-else>mdi-minus</v-icon></v-btn
-            >
+            > -->
           </v-card-title>
           <v-divider />
           <v-sheet>
-            <component v-show="isActive" :is="item"></component>
+            <component :is="item"></component>
           </v-sheet>
         </v-card>
       </v-col>
@@ -47,6 +47,18 @@
     </v-row>
   </v-container>
 </template>
+
+<page-query>
+  query MyData {
+    sheets: allGoogleSheet {
+      edges {
+        node {
+          id
+        }
+      }
+    }
+  }
+</page-query>
 
 <script>
 export default {
