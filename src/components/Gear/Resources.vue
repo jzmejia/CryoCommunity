@@ -24,6 +24,9 @@
         <v-list-item href="https://alwaystheadventure.com/sustainability/used-gear-stores#NorthCarolina=">
             <v-list-item-title>Used Outdoor Gear Store Guide in the U.S.</v-list-item-title>
         </v-list-item>
+        <v-list-item href="https://psecco.org/field-safe-risk-management-workshop-polar-early-career-field-scientists=">
+            <v-list-item-title>ADVANCEing FieldSafety through PSECCO Resources</v-list-item-title>
+        </v-list-item>
         <v-list-item href="https://www.melaninbasecamp.com/trip-reports/2018/1/28/ballin-on-a-budget?rq=Broke%20girl">
             <v-list-item-title>A Broke Girl's Guide to Getting Gear</v-list-item-title>
         </v-list-item>
