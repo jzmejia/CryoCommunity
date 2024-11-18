@@ -15,12 +15,25 @@
       for community use and availability.
     </v-card-text>
     <v-row>
-			<v-col>
-				<Request/>
-			</v-col>
+	
+			<Request/>
 
       <v-col cols="12" lg="4" v-for="(item, idx) in gearCards" :key="idx">
-        <v-card height="400">
+        <v-card height="450">
+          <div v-if="idx === 0">
+          <v-img
+            src="/fieldwork.jpg"
+            height="200px"
+           cover
+          ></v-img>
+          </div>
+          <div v-else>
+            <v-img
+            src="/tents.jpg"
+            height="200px"
+           cover
+          ></v-img>
+          </div>
           <v-card-title class="py-2">
             {{ item }}
             <!-- <v-btn @click="toggle" class="ml-auto" icon
@@ -34,6 +47,7 @@
           </v-sheet>
         </v-card>
       </v-col>
+    </v-row>
 
       <v-col cols="12">
         <Table />
@@ -42,7 +56,7 @@
       <v-col cols="12">
         <FAQ />
       </v-col>
-    </v-row>
+    <!-- </v-row> -->
   </v-container>
 </template>
 
@@ -64,6 +78,7 @@ export default {
   data: () => ({
     isActive: false,
     gearCards: ["Lend", "Resources"],
+    gearImgs: ["/fieldwork.jpg","/tents.jpg"],
   }),
   components: {
     FAQ: () => import("~/components/Gear/FAQ"),
