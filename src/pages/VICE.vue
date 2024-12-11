@@ -143,7 +143,7 @@ export default {
   },
   data: () => {
     return {
-      slackLink: "https://join.slack.com/t/vicesquads/shared_invite/zt-2fo1ysjxx-jgatSVL0knF5TxXAk3x0xg",
+      slackLink: "https://join.slack.com/t/vicesquads/shared_invite/zt-2ova7xyrq-OwT8YiWQP2MfcbwEAct0Hw",
       focus: '',
       type: 'month',
       selectedOpen: false,
