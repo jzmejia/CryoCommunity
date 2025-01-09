@@ -15,13 +15,16 @@
       for community use and availability.
     </v-card-text>
     <v-row>
-	
-			<Request/>
 
       <v-col cols="12" lg="4" v-for="(item, idx) in gearCards" :key="idx">
         <v-card height="450">
           <div v-if="idx === 0">
-          <v-img
+           <v-img
+            src="/boat.jpg"
+            height="200px"
+           cover
+          ></v-img>
+        <v-img
             src="/fieldwork.jpg"
             height="200px"
            cover
@@ -77,8 +80,8 @@ export default {
   name: "Gear",
   data: () => ({
     isActive: false,
-    gearCards: ["Lend", "Resources"],
-    gearImgs: ["/fieldwork.jpg","/tents.jpg"],
+    gearCards: ["Request", "Lend", "Resources"],
+    gearImgs: ["/ship.jpg","/fieldwork.jpg","/tents.jpg"],
   }),
   components: {
     FAQ: () => import("~/components/Gear/FAQ"),

@@ -33,6 +33,9 @@
         <v-list-item href="https://www.melaninbasecamp.com/trip-reports/2021/4/1/a-broke-girls-guide-to-getting-gear-part-2">
             <v-list-item-title>A Broke Girl's Guide to Getting Gear Part 2</v-list-item-title>
         </v-list-item>
+        <v-list-item href="https://www.earthscope.org/project-support-request/">
+        <v-list-item-title>EarthScope Consortium Resources</v-list-item-title>
+        </v-list-item>
     </v-list>
 </template>
 
