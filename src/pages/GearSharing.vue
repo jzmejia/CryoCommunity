@@ -20,7 +20,7 @@
         <v-card height="450">
           <div v-if="idx === 0">
            <v-img
-            src="/boat.jpg"
+            src="/fieldwork.jpg"
             height="200px"
            cover
           ></v-img>
