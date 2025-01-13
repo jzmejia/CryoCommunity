@@ -1,25 +1,14 @@
 <template>
     <v-list subheader class="py-0">
-  
-    <!-- v-card min-height="400">
-    <v-card-title class="py-2"> Request </v-card-title>
-    <v-divider />
-    <v-card-text> -->
-      <!-- <v-form>
-        <v-text-field dense outlined label="field-1"></v-text-field>
-        <v-text-field dense outlined label="field-2"></v-text-field>
-        <v-btn type="submit" depressed block>send request</v-btn>
-      </v-form> -->
-
-      <v-list-item
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeyQLTjbscKJC3HXeLy16AkkJpnvYLytVCrJp5YnRefiX-uAA/viewform"
-      >
+        <!-- v-list-item :ripple="false"> -->
+            <v-list-item-content>
+              <v-list-item
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeyQLTjbscKJC3HXeLy16AkkJpnvYLytVCrJp5YnRefiX-uAA/viewform">
         <v-list-item-title>Make a Request</v-list-item-title>
       </v-list-item>
 
       <v-list-item
-        href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?gid=84482305#gid=84482305"
-      >
+        href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?gid=84482305#gid=84482305">
         <v-list-item-title> Browse Gear Library </v-list-item-title>
       </v-list-item>
       <v-list-item href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?gid=22125841#gid=22125841">
