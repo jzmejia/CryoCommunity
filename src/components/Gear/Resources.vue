@@ -10,7 +10,7 @@
         <v-list-item href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?gid=1507354125#gid=1507354125">
             <v-list-item-title>Gear Stores</v-list-item-title>
         </v-list-item>
-        < <v-list-item href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?usp=sharing">
+        <v-list-item href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?usp=sharing">
             <v-list-title>Pro Deals and Discounts</v-list-title>
         </v-list-item>
         <!-- v-list-item>
