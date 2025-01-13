@@ -23,12 +23,12 @@
             src="/fieldwork.jpg"
             height="200px"
            cover
-          ></v-img>
-        <v-img
+            ></v-img>
+            <v-img
             src="/fieldwork.jpg"
             height="200px"
            cover
-          ></v-img>
+            ></v-img>
           </div>
           <div v-else>
             <v-img
