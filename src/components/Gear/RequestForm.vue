@@ -40,7 +40,7 @@
                     Gear Sharing Agreement
             </v-list-item-title>
         </v-list-item>
-    </v-card-text>
+      </v-list-item>
   </v-card>
   </v-col>
 </template>
