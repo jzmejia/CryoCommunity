@@ -17,8 +17,14 @@
         <v-list-item href="https://docs.google.com/document/d/1CX9xeCvr1eLMy8C9I78eX9sKS9RDqRGIxMr47aAPhm8/edit?tab=t.0">
             <v-list-item-title> Gear Sharing Agreement </v-list-item-title>
         </v-list-item>
+<<<<<<< HEAD
     </v-list-item-content>
   </v-list>
+=======
+      </v-list-item>
+  </v-card>
+  </v-col>
+>>>>>>> 0b78149 (update)
 </template>
 
 <script>
