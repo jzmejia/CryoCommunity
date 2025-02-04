@@ -1,8 +1,7 @@
 <template>
     <v-list subheader class="py-0">
-        <!-- v-list-item :ripple="false"> -->
-            <v-list-item-content>
-               <v-list-item href="https://docs.google.com/forms/d/e/1FAIpQLSeJWs2XsUN_M8wSQvkg87HT3CvI7HIjsW8_tbBBW9NaFvA_xQ/viewform">
+        <!-- <v-list-item :ripple="false"> -->
+        <v-list-item href="https://docs.google.com/forms/d/e/1FAIpQLSeJWs2XsUN_M8wSQvkg87HT3CvI7HIjsW8_tbBBW9NaFvA_xQ/viewform">
             <v-list-item-title>
                     Add your lendable gear to database
             </v-list-item-title>
@@ -26,9 +25,7 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style></style>
