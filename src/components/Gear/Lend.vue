@@ -3,9 +3,8 @@
         <!-- v-list-item :ripple="false"> -->
             <v-list-item-content>
               <v-list-
-      <v-list-item    
-
-href="https://docs.google.com/forms/d/e/1FAIpQLSdhijFFORu9X9gNpqP_a2aebONUhuNsdxkihYukLTZXoBYD0A/viewform?usp=sharing&ouid=104316629180025309314">
+      
+                <v-list-item href="https://docs.google.com/forms/d/e/1FAIpQLSdhijFFORu9X9gNpqP_a2aebONUhuNsdxkihYukLTZXoBYD0A/viewform?usp=sharing&ouid=104316629180025309314">
             <v-list-item-title>
                     Add your lendable gear to database
             </v-list-item-title>
