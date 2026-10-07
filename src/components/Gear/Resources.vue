@@ -1,4 +1,19 @@
 <template>
+    <v-list subheader class="py-0">
+        <v-list-item-content>
+            <v-list-item href="https://docs.google.com/spreadsheets/d/1yAoLJ7HVfotWlRHvposImrgPxXEYe_hGn8HBN71TUD4/edit?usp=sharing">
+                <v-list-item-title>Example Packing Lists</v-list-item-title>
+            </v-list-item>
+        <v-list-item href="https://docs.google.com/forms/d/e/1FAIpQLSeClI8mDXkI79IWBtBaSA4MO5UCiG8hjW8ubWfA2bMup9AAtw/viewform?usp=sharing&ouid=104316629180025309314">
+            <v-list-item-title>Add a packing list to database</v-list-item-title>
+        </v-list-item>
+        <v-list-item href="https://docs.google.com/spreadsheets/d/1yAoLJ7HVfotWlRHvposImrgPxXEYe_hGn8HBN71TUD4/edit?usp=sharing">
+            <v-list-item-title>Gear Stores</v-list-item-title>
+        </v-list-item>
+        <v-list-item href="https://docs.google.com/spreadsheets/d/1yAoLJ7HVfotWlRHvposImrgPxXEYe_hGn8HBN71TUD4/edit?usp=sharing">
+            <v-list-title>Pro Deals and Discounts</v-list-title>
+        </v-list-item>
+        <!-- v-list-item>
   <v-list subheader class="py-0">
     <v-list-item
       href="https://docs.google.com/spreadsheets/d/17yhJivJzU526hdAFKWWxq6S7nrTDBYPx25libBDPioI/edit?gid=1889059145#gid=1889059145"
