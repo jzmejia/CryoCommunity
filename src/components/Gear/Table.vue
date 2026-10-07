@@ -32,7 +32,7 @@
         v-if="sheet.range.includes(selected)"
         fixed-header
         height="350px"
-        style="border-radius: 4;"
+        style="border-radius: 4"
       >
         <template v-slot:default>
           <thead>

@@ -16,10 +16,11 @@
         </v-list-item>
       </v-list-item>
         <v-list-item href="https://docs.google.com/document/d/1INmwWaOiD0WOkpWx4UTUBh0D1w6t9uMb2Dx-IcOmFrM/edit?usp=sharing">
+        <v-list-item href="https://docs.google.com/document/d/1CX9xeCvr1eLMy8C9I78eX9sKS9RDqRGIxMr47aAPhm8/edit?tab=t.0">
             <v-list-item-title> Gear Sharing Agreement </v-list-item-title>
         </v-list-item>
-    </v-card-text>
-  </v-card>
+    </v-list-item-content>
+  </v-list>
 </template>
 
 <script>
@@ -39,7 +40,7 @@ export default {
     isActive: false,
   }),
   mounted() {
-    this.get();
+    // this.get();
   },
   methods: {
     get() {
